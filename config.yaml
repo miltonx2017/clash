@@ -1,0 +1,1615 @@
+﻿port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: :9090
+proxies:
+
+ - {name: "selectedserver00001", server: az04.kuli888.xyz, port: 520, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: az04.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00002", server: hugang03.kuli888.xyz, port: 20025, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: hugang03.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00003", server: fuzai.cnyun.space, port: 32369, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: fuzai.cnyun.space, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00004", server: 183.240.60.133, port: 48512, type: vmess, uuid: 048da825-d468-3a29-b015-2d60886f830d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00005", server: guang01.kuli888.xyz, port: 32370, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: guang01.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00006", server: bgptw02.kuli888.xyz, port: 10006, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: bgptw02.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00007", server: changsha.kulime.space, port: 52011, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: changsha.kulime.space, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00008", server: hugang03.kuli888.xyz, port: 20025, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: hugang03.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00009", server: bgptw02.kuli888.xyz, port: 10006, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: bgptw02.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00010", server: v1hugang4.kuli888.xyz, port: 11151, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: v1hugang4.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00011", server: v1hugang5.kuli888.xyz, port: 10028, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: v1hugang5.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00012", server: srzhongji.kuli888.xyz, port: 52019, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: srzhongji.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00013", server: v1shengang.kuli888.xyz, port: 52016, type: trojan, password: 0ea4ffba-f5d3-324b-946b-8db5c50266cb, sni: v1shengang.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00014", server: guangzhou.kuli888.xyz, port: 52100, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: guangzhou.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00015", server: changsha.kulime.space, port: 52011, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: changsha.kulime.space, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00016", server: xinjp.kulime.space, port: 10017, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: xinjp.kulime.space, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00017", server: changsha.kulime.space, port: 52012, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: changsha.kulime.space, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00018", server: guangzhou.kuli888.xyz, port: 52006, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: guangzhou.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00019", server: jp05.kulime.space, port: 10014, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: jp05.kulime.space, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00020", server: bgpwz02.kuli888.xyz, port: 20000, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: bgpwz02.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00021", server: fr1t.moonfree.top, port: 8443, type: vmess, uuid: 63f97910-6b3f-4abc-a92e-b9acaba4f467, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: fr1t.moonfree.top}, udp: true}
+ - {name: "selectedserver00022", server: guangzhou.kuli888.xyz, port: 52100, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: guangzhou.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00023", server: bgptw02.kuli888.xyz, port: 10006, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: bgptw02.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {"name": "selectedserver00024", "server":"159.27.91.183","type":"ss","country":"🇸🇬SG","port":40002,"password":"72b8aca3-ddcc-4c84-980a-98e853b3b10c","cipher":"chacha20-ietf-poly1305"}
+ - {name: "selectedserver00025", server: guangzhou.kuli888.xyz, port: 52100, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: guangzhou.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00026", server: zhongji.kulime.space, port: 10022, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: zhongji.kulime.space, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00027", server: changsha.kulime.space, port: 52010, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: changsha.kulime.space, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00028", server: bgptw02.kuli888.xyz, port: 10006, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: bgptw02.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00029", server: fs.keaiyun.top, port: 55155, type: vmess, uuid: 048da825-d468-3a29-b015-2d60886f830d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00030", server: v1hugang4.kuli888.xyz, port: 11151, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: v1hugang4.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00031", server: guangzhou.kuli888.xyz, port: 52101, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: guangzhou.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00032", server: srzhongji.kuli888.xyz, port: 52014, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: srzhongji.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00033", server: guangzhou.kuli888.xyz, port: 52001, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: guangzhou.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00034", server: changsha.kulime.space, port: 52034, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: changsha.kulime.space, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00035", server: v5.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v5.ssrsub.com}}, udp: true}
+ - {name: "selectedserver00036", server: guangzhou.kuli888.xyz, port: 52006, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: guangzhou.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00037", server: jp05.kulime.space, port: 10014, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: jp05.kulime.space, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00038", server: v1hugang4.kuli888.xyz, port: 11151, type: trojan, password: 0ea4ffba-f5d3-324b-946b-8db5c50266cb, sni: v1hugang4.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {"name": "selectedserver00039", "server":"43.155.117.192","type":"vmess","country":"🇦🇺AU","port":37132,"uuid":"0dda776a-5426-4003-8b08-c791971613c4","alterId":0,"cipher":"auto","network":"http","servername":"43.155.117.192","http-opts":{"method":"GET","path":["/"]},"h2-opts":{},"skip-cert-verify":true}
+ - {name: "selectedserver00040", server: guangzhou.kuli888.xyz, port: 52004, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: guangzhou.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00041", server: huhan01.kuli888.xyz, port: 52348, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: huhan01.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00042", server: hk020.kuli888.xyz, port: 250, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: hk020.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00043", server: v2bgp04.kuli888.xyz, port: 52020, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: v2bgp04.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00044", server: huhan01.kuli888.xyz, port: 52348, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: huhan01.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00045", server: bgpwr.kulime.space, port: 11152, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: bgpwr.kulime.space, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00046", server: bgpwz02.kuli888.xyz, port: 20000, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: bgpwz02.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {"name": "selectedserver00047", "server":"cm-jm.okvpn.xyz","type":"trojan","country":"🇨🇳CN","port":20003,"password":"da650643-87d3-4279-9b19-c8aa68568d16","skip-cert-verify":true,"udp":true}
+ - {name: "selectedserver00048", server: tt02.kuli888.xyz, port: 36368, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: tt02.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00049", server: srzhongji.kuli888.xyz, port: 52019, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: srzhongji.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00050", server: 183.240.60.133, port: 48514, type: vmess, uuid: 048da825-d468-3a29-b015-2d60886f830d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00051", server: ssrfree10.free4444.xyz, port: 443, type: ssr, cipher: dummy, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+ - {name: "selectedserver00052", server: changsha.kulime.space, port: 52011, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: changsha.kulime.space, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00053", server: fuzai.cnyun.space, port: 52031, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: fuzai.cnyun.space, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00054", server: changsha.kulime.space, port: 52034, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: changsha.kulime.space, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00055", server: v2bgp04.kuli888.xyz, port: 52020, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: v2bgp04.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00056", server: bgp.kuli888.xyz, port: 32405, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: bgp.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00057", server: cm-jm.okvpn.xyz, port: 20000, type: trojan, password: da650643-87d3-4279-9b19-c8aa68568d16, sni: cm-jm.okvpn.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00058", server: v1hugang4.kuli888.xyz, port: 11151, type: trojan, password: 0ea4ffba-f5d3-324b-946b-8db5c50266cb, sni: v1hugang4.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {"name": "selectedserver00059", "server":"shop-two.defun.us","type":"trojan","country":"🇺🇸US","port":8080,"password":"OzKXGbFNHwAurRQ0","skip-cert-verify":true,"udp":true}
+ - {"name": "selectedserver00060", "server":"shop-two.defun.us","type":"trojan","country":"🇺🇸US","port":8080,"password":"OzKXGbFNHwAurRQ0","skip-cert-verify":true,"udp":true}
+ - {"name": "selectedserver00061", "server":"shop-two.defun.us","type":"trojan","country":"🇺🇸US","port":8080,"password":"OzKXGbFNHwAurRQ0","skip-cert-verify":true,"udp":true}
+ - {name: "selectedserver00062", server: yuenan.kuli888.xyz, port: 11152, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: yuenan.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00063", server: shop-two.defun.us, port: 8080, type: trojan, password: OzKXGbFNHwAurRQ0, sni: shop-two.defun.us, skip-cert-verify: true, udp: true}
+ - {"name": "selectedserver00064", "server":"cm-jm.okvpn.xyz","type":"trojan","country":"🇨🇳CN","port":20005,"password":"da650643-87d3-4279-9b19-c8aa68568d16","skip-cert-verify":true,"udp":true}
+ - {name: "selectedserver00065", server: srzhongji.kuli888.xyz, port: 52014, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: srzhongji.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00066", server: 183.240.60.133, port: 48550, type: vmess, uuid: 048da825-d468-3a29-b015-2d60886f830d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00067", server: cm-jm.okvpn.xyz, port: 20003, type: trojan, password: da650643-87d3-4279-9b19-c8aa68568d16, sni: cm-jm.okvpn.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00068", server: cm-jm.okvpn.xyz, port: 20000, type: trojan, password: da650643-87d3-4279-9b19-c8aa68568d16, sni: cm-jm.okvpn.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00069", server: yuenan.kuli888.xyz, port: 11152, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: yuenan.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00070", server: dmit.kuli888.xyz, port: 20026, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: dmit.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00071", server: shlt03.kulime.space, port: 52018, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: shlt03.kulime.space, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00072", server: guang01.kuli888.xyz, port: 32370, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: guang01.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00073", server: v1shengang.kuli888.xyz, port: 52016, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: v1shengang.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00074", server: v1tw01.kuli888.xyz, port: 52035, type: trojan, password: 0ea4ffba-f5d3-324b-946b-8db5c50266cb, sni: v1tw01.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00075", server: v2bgp01.kuli888.xyz, port: 10009, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: v2bgp01.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00076", server: v1hugang5.kuli888.xyz, port: 10028, type: trojan, password: 0ea4ffba-f5d3-324b-946b-8db5c50266cb, sni: v1hugang5.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00077", server: srzhongji.kuli888.xyz, port: 52014, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: srzhongji.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00078", server: bgpwr.kulime.space, port: 11152, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: bgpwr.kulime.space, skip-cert-verify: true, udp: true}
+ - {"name": "selectedserver00079", "server":"cm-jm.okvpn.xyz","type":"trojan","country":"🇨🇳CN","port":20000,"password":"da650643-87d3-4279-9b19-c8aa68568d16","skip-cert-verify":true,"udp":true}
+ - {name: "selectedserver00080", server: ydzhongzhuan.kuli888.xyz, port: 52023, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: ydzhongzhuan.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00081", server: changsha01.kuli888.xyz, port: 52013, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: changsha01.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00082", server: malai.kuli888.xyz, port: 52033, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: malai.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {"name": "selectedserver00083", "server":"taiwjing.kuli888.xyz","type":"trojan","country":"🇹🇼TW","port":520,"password":"5e8c99a7-2c7b-3e0e-a3c9-3c5b41cb7101","skip-cert-verify":true,"udp":true}
+ - {name: "selectedserver00084", server: v1hugang3.kuli888.xyz, port: 11150, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: v1hugang3.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00085", server: jp05.kuli888.xyz, port: 443, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: jp05.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00086", server: changsha.kulime.space, port: 52012, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: changsha.kulime.space, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00087", server: v3bgptw.kuli888.xyz, port: 52025, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: v3bgptw.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00088", server: v3hgcshen.kuli888.xyz, port: 50217, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: v3hgcshen.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00089", server: changsha01.kuli888.xyz, port: 52013, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: changsha01.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00090", server: v1hugang3.kuli888.xyz, port: 11150, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: v1hugang3.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00091", server: v1hugang5.kuli888.xyz, port: 10028, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: v1hugang5.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00092", server: v3hgcshen.kuli888.xyz, port: 50217, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: v3hgcshen.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00093", server: els01.kuli888.xyz, port: 10020, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: els01.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00094", server: hugang03.kuli888.xyz, port: 20025, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: hugang03.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00095", server: fs.keaiyun.top, port: 48550, type: vmess, uuid: 048da825-d468-3a29-b015-2d60886f830d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {"name": "selectedserver00096", "server":"fhcamd2.gaox.ml","port":443,"type":"trojan","password":"dbf9bf9c-2c3f-474a-8031-d4c00666a989","skip-cert-verify":true,"udp":true}
+ - {name: "selectedserver00097", server: guangzhou.kuli888.xyz, port: 52001, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: guangzhou.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00098", server: malai01.kuli888.xyz, port: 52034, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: malai01.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00099", server: fuzai02.cnyun.space, port: 32395, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: fuzai02.cnyun.space, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00100", server: hk10.kuli888.xyz, port: 520, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: hk10.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00101", server: dmit.kuli888.xyz, port: 20026, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: dmit.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00102", server: v1tw01.kuli888.xyz, port: 52035, type: trojan, password: 0ea4ffba-f5d3-324b-946b-8db5c50266cb, sni: v1tw01.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00103", server: dmit.kuli888.xyz, port: 20026, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: dmit.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00104", server: malai01.kuli888.xyz, port: 52034, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: malai01.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00105", server: zhongji.kulime.space, port: 10022, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: zhongji.kulime.space, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00106", server: guangzhou.kuli888.xyz, port: 52001, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: guangzhou.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00107", server: bgp.kuli888.xyz, port: 52008, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: bgp.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00108", server: fuzai02.cnyun.space, port: 60010, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: fuzai02.cnyun.space, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00109", server: zhongji.kulime.space, port: 10022, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: zhongji.kulime.space, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00110", server: v1shengang.kuli888.xyz, port: 52016, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: v1shengang.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00111", server: guangzhou.kuli888.xyz, port: 52006, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: guangzhou.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00112", server: guangzhou.kuli888.xyz, port: 52101, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: guangzhou.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00113", server: fuzai02.cnyun.space, port: 32395, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: fuzai02.cnyun.space, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00114", server: bgpwz02.kuli888.xyz, port: 20000, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: bgpwz02.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00115", server: v1hugang3.kuli888.xyz, port: 11150, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: v1hugang3.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00116", server: v3az02.kuli888.xyz, port: 32391, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: v3az02.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00117", server: changsha01.kuli888.xyz, port: 52013, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: changsha01.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00118", server: az05feiy.kuli888.xyz, port: 443, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: az05feiy.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00119", server: bgp.kuli888.xyz, port: 32405, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: bgp.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00120", server: riben.kuli888.xyz, port: 443, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: riben.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00121", server: tw05.kulime.space, port: 10005, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: tw05.kulime.space, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00122", server: malai.kuli888.xyz, port: 52033, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: malai.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00123", server: v2bgp01.kuli888.xyz, port: 10009, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: v2bgp01.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00124", server: fuzai.cnyun.space, port: 11153, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: fuzai.cnyun.space, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00125", server: tw05.kulime.space, port: 10005, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: tw05.kulime.space, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00126", server: bgpwr.kulime.space, port: 11152, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: bgpwr.kulime.space, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00127", server: fuzai.cnyun.space, port: 32369, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: fuzai.cnyun.space, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00128", server: v2bgp01.kuli888.xyz, port: 10009, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: v2bgp01.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00129", server: fuzai02.cnyun.space, port: 10001, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: fuzai02.cnyun.space, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00130", server: fuzai02.cnyun.space, port: 10001, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: fuzai02.cnyun.space, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00131", server: oz.moonfree.top, port: 443, type: vmess, uuid: 63f97910-6b3f-4abc-a92e-b9acaba4f467, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: oz.moonfree.top}, udp: true}
+ - {name: "selectedserver00132", server: bgp.kuli888.xyz, port: 32405, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: bgp.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00133", server: v2bgp01.kuli888.xyz, port: 10009, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: v2bgp01.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00134", server: fs.keaiyun.top, port: 55155, type: vmess, uuid: 048da825-d468-3a29-b015-2d60886f830d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00135", server: v1shengang.kuli888.xyz, port: 52016, type: trojan, password: 0ea4ffba-f5d3-324b-946b-8db5c50266cb, sni: v1shengang.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00136", server: my.kuli888.xyz, port: 15369, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: my.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00137", server: ssrfree10.free4444.xyz, port: 443, type: ssr, cipher: dummy, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+ - {name: "selectedserver00138", server: us.kuli888.xyz, port: 35256, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: us.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00139", server: v1hugang3.kuli888.xyz, port: 11150, type: trojan, password: 0ea4ffba-f5d3-324b-946b-8db5c50266cb, sni: v1hugang3.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00140", server: huhan01.kuli888.xyz, port: 52348, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: huhan01.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00141", server: v3bgptw.kuli888.xyz, port: 52025, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: v3bgptw.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00142", server: tw05.kulime.space, port: 10005, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: tw05.kulime.space, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00143", server: fuzai02.cnyun.space, port: 35377, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: fuzai02.cnyun.space, skip-cert-verify: true, udp: true}
+ - {"name": "selectedserver00144", "server":"jgwcc1.gaox.ml","port":443,"type":"trojan","password":"7118b5f4-0ea4-4c11-be7f-11471cb91e4a","skip-cert-verify":true,"udp":true}
+ - {name: "selectedserver00145", server: v4.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v4.ssrsub.com}}, udp: true}
+ - {name: "selectedserver00146", server: ydzhongzhuan.kuli888.xyz, port: 52023, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: ydzhongzhuan.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00147", server: az05feiy.kuli888.xyz, port: 443, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: az05feiy.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00148", server: yingguo.kuli888.xyz, port: 443, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: yingguo.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00149", server: dmit.kuli888.xyz, port: 20026, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: dmit.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00150", server: yuenan.kuli888.xyz, port: 11152, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: yuenan.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {"name": "selectedserver00151", "server":"s2.upyun.online","type":"trojan","country":"🇨🇳 CN","port":12340,"password":"316b40c0-0dab-4ea1-9666-ac1658b033b2","skip-cert-verify":true,"udp":true}
+ - {name: "selectedserver00152", server: v3.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v3.ssrsub.com}}, udp: true}
+ - {"name": "selectedserver00153", "server":"centralchina1.cloudlink123.com","type":"ss","country":"🇨🇳CN","port":37005,"password":"3f6006ca-e8ba-49d5-af9d-f4806dd36e09","cipher":"aes-128-gcm"}
+ - {name: "selectedserver00154", server: hk06.kuli888.xyz, port: 12520, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: hk06.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00155", server: hanguo.kuli888.xyz, port: 443, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: hanguo.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00156", server: guangzhou.kuli888.xyz, port: 52004, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: guangzhou.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00157", server: az05.kuli888.xyz, port: 443, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: az05.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00158", server: fs.keaiyun.top, port: 55154, type: vmess, uuid: 048da825-d468-3a29-b015-2d60886f830d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00159", server: fuzai02.cnyun.space, port: 20023, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: fuzai02.cnyun.space, skip-cert-verify: true, udp: true}
+ - {"name": "selectedserver00160", "server":"de-01.fireplay.io","type":"trojan","country":"🇬🇧GB","port":443,"password":"lo3TmsNaLWUXpuoE","skip-cert-verify":true,"udp":true}
+ - {name: "selectedserver00161", server: my.kuli888.xyz, port: 15369, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: my.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {"name": "selectedserver00162", "server":"de-01.fireplay.io","type":"trojan","country":"🇬🇧GB","port":443,"password":"lo3TmsNaLWUXpuoE","skip-cert-verify":true,"udp":true}
+ - {"name": "selectedserver00163", "server":"de-01.fireplay.io","type":"trojan","country":"🇬🇧GB","port":443,"password":"lo3TmsNaLWUXpuoE","skip-cert-verify":true,"udp":true}
+ - {name: "selectedserver00164", server: shlt03.kulime.space, port: 52018, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: shlt03.kulime.space, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00165", server: fs.keaiyun.top, port: 55154, type: vmess, uuid: 048da825-d468-3a29-b015-2d60886f830d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00166", server: fr1t.moonfree.top, port: 8443, type: vmess, uuid: 63f97910-6b3f-4abc-a92e-b9acaba4f467, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: fr1t.moonfree.top}, udp: true}
+ - {name: "selectedserver00167", server: els.kuli888.xyz, port: 443, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: els.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {"name": "selectedserver00168", "server":"185.126.116.125","type":"ssr","country":"🇷🇴RO","port":9043,"password":"HSZuyJQcWe8dxNdF","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00169", "server":"185.126.116.125","type":"ssr","country":"🇷🇴RO","port":9011,"password":"M3t2ZEQcMGRWBjRa","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {name: "selectedserver00170", server: hk06.kuli888.xyz, port: 12520, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: hk06.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00171", server: huhan01.kuli888.xyz, port: 52348, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: huhan01.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00172", server: fuzai.cnyun.space, port: 52031, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: fuzai.cnyun.space, skip-cert-verify: true, udp: true}
+ - {"name": "selectedserver00173", "server":"iepl-gz.yyuuii.cyou","type":"ssr","country":"🇨🇳CN","port":49853,"password":"hGkQ6915tD","cipher":"aes-256-cfb","protocol":"auth_aes128_md5","protocol-param":"32381:C2pHyiQfgm","obfs":"tls1.2_ticket_auth","obfs-param":"ajax.microsoft.com"}
+ - {name: "selectedserver00174", server: v5.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v5.ssrsub.com}}, udp: true}
+ - {"name": "selectedserver00175", "server":"hk3.fdns.cloudlink123.com","type":"vmess","country":"🇺🇸US","port":80,"uuid":"3f6006ca-e8ba-49d5-af9d-f4806dd36e09","alterId":0,"cipher":"auto","network":"ws","ws-path":"/","http-opts":{},"h2-opts":{},"skip-cert-verify":true}
+ - {"name": "selectedserver00176", "server":"usa-sr-105.mitoption.com","type":"trojan","country":"🇺🇸US","port":443,"password":"e5d46365e25e31d94279c2bcf93390a2","skip-cert-verify":true,"udp":true}
+ - {name: "selectedserver00177", server: fs.keaiyun.top, port: 55154, type: vmess, uuid: 048da825-d468-3a29-b015-2d60886f830d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {"name": "selectedserver00178", "server":"185.126.116.125","type":"ssr","country":"🇷🇴RO","port":9011,"password":"M3t2ZEQcMGRWBjRa","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {name: "selectedserver00179", server: 20.214.159.88, port: 1021, type: trojan, password: da581cfe-683f-3169-9933-f221a5c0426c, skip-cert-verify: true, udp: true}
+ - {"name": "selectedserver00180", "server":"185.126.116.125","type":"ss","country":"🇷🇴RO","port":9038,"password":"gYCYXfkUQEs2TaJQ","cipher":"aes-256-cfb"}
+ - {"name": "selectedserver00181", "server":"hk3.fdns.cloudlink123.com","type":"vmess","country":"🇺🇸US","port":80,"uuid":"3f6006ca-e8ba-49d5-af9d-f4806dd36e09","alterId":0,"cipher":"auto","network":"ws","ws-path":"/","http-opts":{},"h2-opts":{},"skip-cert-verify":true}
+ - {name: "selectedserver00182", server: usa-sr-106.mitoption.com, port: 443, type: trojan, password: e5d46365e25e31d94279c2bcf93390a2, sni: usa-sr-106.mitoption.com, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00183", server: hk3.fdns.cloudlink123.com, port: 80, type: vmess, uuid: 3f6006ca-e8ba-49d5-af9d-f4806dd36e09, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk3.fdns.cloudlink123.com}, udp: true}
+ - {name: "selectedserver00184", server: 207.246.94.28, port: 42383, type: vmess, uuid: 4773dfdc-9c85-4873-8720-ce8cf5f74f7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {"name": "selectedserver00185", "server":"lu1.gogogoo.cyou","port":443,"type":"vmess","uuid":"db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda","alterId":0,"cipher":"auto","country":"default_name_59","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/go","headers":{"host":"lu1.gogogoo.cyou"}}}
+ - {"name": "selectedserver00186", "server":"jgwld1.gaox.ml","type":"trojan","country":"🇬🇧GB","port":443,"password":"02e653c9-7c93-46a9-999d-11834bd0c577","skip-cert-verify":true,"udp":true}
+ - {"name": "selectedserver00187", "server":"144.24.88.101","type":"vmess","country":"🇬🇧 GB","port":16833,"uuid":"f5425ccf-3946-4fb4-eb24-5393d78a392f","alterId":0,"cipher":"auto","network":"tcp","ws-path":"/","http-opts":{},"h2-opts":{},"skip-cert-verify":true}
+ - {name: "selectedserver00188", server: v1.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v1.ssrsub.com}}, udp: true}
+ - {name: "selectedserver00189", server: v1.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v1.ssrsub.com}}, udp: true}
+ - {"name": "selectedserver00190", "server":"ceshi.speedcncnforward3.tk","type":"trojan","country":"🇦🇺AU","port":8443,"password":"d0173f59-c7e7-4bb0-bc09-3da657c70dd6","skip-cert-verify":true,"udp":true}
+ - {name: "selectedserver00191", server: faguo.kuli888.xyz, port: 443, type: trojan, password: df5e17e8-a64c-3a3d-95ce-7d8b0dc86afb, sni: faguo.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00192", server: fs.keaiyun.top, port: 55154, type: vmess, uuid: 048da825-d468-3a29-b015-2d60886f830d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {"name": "selectedserver00193", "server":"213.183.53.177","type":"ssr","country":"🇱🇹LT","port":9088,"password":"f8npKgNzdkss2ytn","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00194", "server":"213.183.53.177","type":"ssr","country":"🇱🇹LT","port":9093,"password":"wfLC2y7rzZyCmuyt","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00195", "server":"hk3.fdns.cloudlink123.com","type":"vmess","country":"🇺🇸US","port":80,"uuid":"3f6006ca-e8ba-49d5-af9d-f4806dd36e09","alterId":0,"cipher":"auto","network":"ws","ws-path":"/","http-opts":{},"h2-opts":{},"skip-cert-verify":true}
+ - {"name": "selectedserver00196", "server":"ceshi.speedcncnforward3.tk","type":"trojan","country":"🇦🇺AU","port":8443,"password":"e816d28a-c617-4954-87f6-aac16c3189f5","skip-cert-verify":true,"udp":true}
+ - {"name": "selectedserver00197", "server":"213.183.53.177","type":"ssr","country":"🇱🇹LT","port":9040,"password":"p9z5BVADH2YFs3MN","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00198", "server":"213.183.53.177","type":"ssr","country":"🇱🇹LT","port":9011,"password":"M3t2ZEQcMGRWBjRa","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00199", "server":"ceshi.speedcncnforward3.tk","type":"trojan","country":"🇦🇺AU","port":8443,"password":"d0173f59-c7e7-4bb0-bc09-3da657c70dd6","skip-cert-verify":true,"udp":true}
+ - {"name": "selectedserver00200", "server":"185.167.117.171","type":"ss","country":"🇬🇧GB","port":9079,"password":"TPqX8edgbAURcAMb","cipher":"aes-256-cfb"}
+ - {"name": "selectedserver00201", "server":"213.183.53.177","type":"ssr","port":9018,"password":"fG2artUmHfNT2cX7","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00202", "server":"213.183.53.177","type":"ssr","country":"🇱🇹LT","port":9040,"password":"p9z5BVADH2YFs3MN","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00203", "server":"213.183.53.177","type":"ssr","country":"🇱🇹LT","port":9057,"password":"wjTugX3ZtHMB9c3Z","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00204", "server":"14.29.124.168","type":"ss","country":"🇨🇳CN","port":24015,"password":"QazEdcTgb159@$*","cipher":"aes-128-cfb"}
+ - {name: "selectedserver00205", server: faguo.kuli888.xyz, port: 443, type: trojan, password: 428774ff-8dce-3905-88e5-1576d2010c8c, sni: faguo.kuli888.xyz, skip-cert-verify: true, udp: true}
+ - {"name": "selectedserver00206", "server":"s1.upyun.online","type":"trojan","country":"🇨🇳CN","port":12340,"password":"316b40c0-0dab-4ea1-9666-ac1658b033b2","skip-cert-verify":true,"udp":true}
+ - {"name": "selectedserver00207", "server":"213.183.53.177","type":"ssr","country":"🇱🇹LT","port":9008,"password":"y9VURyNzJWNRYEGQ","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00208", "server":"213.183.53.177","type":"ss","country":"🇱🇹LT","port":9053,"password":"SBM7R883jBmnqe6C","cipher":"aes-256-cfb"}
+ - {"name": "selectedserver00209", "server":"185.167.117.171","type":"ss","country":"🇬🇧 GB","port":9038,"password":"gYCYXfkUQEs2TaJQ","cipher":"aes-256-cfb"}
+ - {"name": "selectedserver00210", "server":"ceshi.speedcncnforward3.tk","type":"trojan","country":"🇦🇺AU","port":8443,"password":"e816d28a-c617-4954-87f6-aac16c3189f5","skip-cert-verify":true,"udp":true}
+ - {"name": "selectedserver00211", "server":"43.154.72.145","type":"vmess","country":"🇦🇺AU","port":27091,"uuid":"2f1e82e4-5319-4278-92aa-74d49c04683f","alterId":0,"cipher":"auto","network":"http","servername":"43.154.72.145","http-opts":{"method":"GET","path":["/"]},"h2-opts":{},"skip-cert-verify":true}
+ - {"name": "selectedserver00212", "server":"213.183.51.171","type":"ss","country":"🇳🇱NL","port":9011,"password":"M3t2ZEQcMGRWBjRa","cipher":"aes-256-cfb"}
+ - {"name": "selectedserver00213", "server":"185.167.117.171","type":"ss","country":"🇬🇧 GB","port":9019,"password":"GA9KzeEgvfxNrgmM","cipher":"aes-256-cfb"}
+ - {"name": "selectedserver00214", "server":"ceshi.speedcncnforward3.tk","type":"trojan","country":"🇦🇺AU","port":8443,"password":"b961e31c-27e7-4219-92c0-c06057220001","skip-cert-verify":true,"udp":true}
+ - {"name": "selectedserver00215", "server":"213.183.53.177","type":"ssr","country":"🇱🇹LT","port":9032,"password":"UWZQeLRWnkqgkseq","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00216", "server":"213.183.53.177","type":"ssr","country":"🇱🇹LT","port":9094,"password":"rpgbNnU9rDDU4aWZ","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00217", "server":"213.183.53.177","type":"ssr","country":"🇱🇹LT","port":9079,"password":"TPqX8edgbAURcAMb","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00218", "server":"ceshi.speedcncnforward3.tk","type":"trojan","country":"🇦🇺AU","port":8443,"password":"e816d28a-c617-4954-87f6-aac16c3189f5","skip-cert-verify":true,"udp":true}
+ - {"name": "selectedserver00219", "server":"vps.qweasdzxc.ml","type":"vmess","country":"🇺🇸US","port":443,"uuid":"4850777c-1d10-4651-9936-27a2a500b9a2","alterId":0,"cipher":"auto","network":"ws","ws-path":"/","servername":"vps.qweasdzxc.ml","ws-headers":{"HOST":"vps.qweasdzxc.ml"},"http-opts":{},"h2-opts":{},"tls":true,"skip-cert-verify":true}
+ - {"name": "selectedserver00220", "server":"213.183.53.177","type":"ssr","country":"🇱🇹LT","port":9057,"password":"wjTugX3ZtHMB9c3Z","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00221", "server":"213.183.53.177","type":"ssr","port":9010,"password":"f63gg8EruDnUrmz4","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00222", "server":"213.183.53.177","type":"ssr","country":"🇱🇹LT","port":9031,"password":"BwcAUZk8hUFAkDGN","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {name: "selectedserver00223", server: v2.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v2.ssrsub.com}}, udp: true}
+ - {"name": "selectedserver00224", "server":"185.167.117.171","type":"ss","country":"🇬🇧GB","port":9040,"password":"p9z5BVADH2YFs3MN","cipher":"aes-256-cfb"}
+ - {"name": "selectedserver00225", "server":"213.183.51.171","type":"ss","country":"🇳🇱NL","port":9026,"password":"QWDDvVE9npNurQfA","cipher":"aes-256-cfb"}
+ - {name: "selectedserver00226", server: fs.keaiyun.top, port: 55154, type: vmess, uuid: 048da825-d468-3a29-b015-2d60886f830d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00227", server: fs.keaiyun.top, port: 55155, type: vmess, uuid: 048da825-d468-3a29-b015-2d60886f830d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {"name": "selectedserver00228", "server":"213.183.51.171","type":"ss","country":"🇳🇱NL","port":9060,"password":"ueLXVkvh4hckhErQ","cipher":"aes-256-cfb"}
+ - {"name": "selectedserver00229", "server":"213.183.53.177","type":"ssr","country":"🇱🇹LT","port":9037,"password":"TN2YqghxeFDKZfLU","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00230", "server":"213.183.53.177","type":"ssr","country":"🇱🇹LT","port":9050,"password":"FG5ddLsMPbV5CutE","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00231", "server":"213.183.53.177","type":"ssr","country":"🇱🇹LT","port":9041,"password":"U6qnYRhfyDmn8sgn","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00232", "server":"213.183.51.171","type":"ss","country":"🇳🇱NL","port":9040,"password":"p9z5BVADH2YFs3MN","cipher":"aes-256-cfb"}
+ - {name: "selectedserver00233", server: in-v1.sdgdn.com, port: 50701, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: telegram.channel.ripaojiedian}}, udp: true}
+ - {name: "selectedserver00234", server: in-v1.sdgdn.com, port: 50205, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: telegram.channel.ripaojiedian}}, udp: true}
+ - {"name": "selectedserver00235", "server":"213.183.53.177","type":"ssr","country":"🇱🇹LT","port":9043,"password":"HSZuyJQcWe8dxNdF","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00236", "server":"213.183.53.177","type":"ssr","country":"🇱🇹 LT","port":9007,"password":"kSPmvwdFzGMMW5pY","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00237", "server":"213.183.53.177","type":"ss","country":"🇱🇹LT","port":9015,"password":"ZpNDDKRu9MagNvaf","cipher":"aes-256-cfb"}
+ - {"name": "selectedserver00238", "server":"213.183.51.171","type":"ss","country":"🇳🇱 NL","port":9010,"password":"f63gg8EruDnUrmz4","cipher":"aes-256-cfb"}
+ - {"name": "selectedserver00239", "server":"185.167.117.171","type":"ss","country":"🇬🇧 GB","port":9003,"password":"JdmRK9gMEqFgs8nP","cipher":"aes-256-cfb"}
+ - {"name": "selectedserver00240", "server":"s2.upyun.online","type":"trojan","country":"🇨🇳CN","port":12340,"password":"316b40c0-0dab-4ea1-9666-ac1658b033b2","skip-cert-verify":true,"udp":true}
+ - {name: "selectedserver00241", server: in-v1.sdgdn.com, port: 50206, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: telegram.channel.p2psharing}}, udp: true}
+ - {"name": "selectedserver00242", "server":"cp-asus.ml","type":"trojan","country":"🇺🇸 US","port":50275,"password":"7Z29DRr1ts","skip-cert-verify":true,"udp":true}
+ - {"name": "selectedserver00243", "server":"213.183.53.177","type":"ssr","country":"🇱🇹LT","port":9031,"password":"BwcAUZk8hUFAkDGN","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00244", "server":"213.183.53.177","type":"ssr","country":"🇱🇹LT","port":9019,"password":"GA9KzeEgvfxNrgmM","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+
+
+proxy-groups:
+  - name: 自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 30
+    tolerance: 30
+    proxies:
+#proxy-groups:
+#  - name: 自动选择
+#    type: fallback
+#    url: http://www.gstatic.com/generate_204
+#    interval: 300
+#    proxies:
+#list-of-proxy-names
+      - selectedserver00001
+      - selectedserver00002
+      - selectedserver00003
+      - selectedserver00004
+      - selectedserver00005
+      - selectedserver00006
+      - selectedserver00007
+      - selectedserver00008
+      - selectedserver00009
+      - selectedserver00010
+      - selectedserver00011
+      - selectedserver00012
+      - selectedserver00013
+      - selectedserver00014
+      - selectedserver00015
+      - selectedserver00016
+      - selectedserver00017
+      - selectedserver00018
+      - selectedserver00019
+      - selectedserver00020
+      - selectedserver00021
+      - selectedserver00022
+      - selectedserver00023
+      - selectedserver00024
+      - selectedserver00025
+      - selectedserver00026
+      - selectedserver00027
+      - selectedserver00028
+      - selectedserver00029
+      - selectedserver00030
+      - selectedserver00031
+      - selectedserver00032
+      - selectedserver00033
+      - selectedserver00034
+      - selectedserver00035
+      - selectedserver00036
+      - selectedserver00037
+      - selectedserver00038
+      - selectedserver00039
+      - selectedserver00040
+      - selectedserver00041
+      - selectedserver00042
+      - selectedserver00043
+      - selectedserver00044
+      - selectedserver00045
+      - selectedserver00046
+      - selectedserver00047
+      - selectedserver00048
+      - selectedserver00049
+      - selectedserver00050
+      - selectedserver00051
+      - selectedserver00052
+      - selectedserver00053
+      - selectedserver00054
+      - selectedserver00055
+      - selectedserver00056
+      - selectedserver00057
+      - selectedserver00058
+      - selectedserver00059
+      - selectedserver00060
+      - selectedserver00061
+      - selectedserver00062
+      - selectedserver00063
+      - selectedserver00064
+      - selectedserver00065
+      - selectedserver00066
+      - selectedserver00067
+      - selectedserver00068
+      - selectedserver00069
+      - selectedserver00070
+      - selectedserver00071
+      - selectedserver00072
+      - selectedserver00073
+      - selectedserver00074
+      - selectedserver00075
+      - selectedserver00076
+      - selectedserver00077
+      - selectedserver00078
+      - selectedserver00079
+      - selectedserver00080
+      - selectedserver00081
+      - selectedserver00082
+      - selectedserver00083
+      - selectedserver00084
+      - selectedserver00085
+      - selectedserver00086
+      - selectedserver00087
+      - selectedserver00088
+      - selectedserver00089
+      - selectedserver00090
+      - selectedserver00091
+      - selectedserver00092
+      - selectedserver00093
+      - selectedserver00094
+      - selectedserver00095
+      - selectedserver00096
+      - selectedserver00097
+      - selectedserver00098
+      - selectedserver00099
+      - selectedserver00100
+      - selectedserver00101
+      - selectedserver00102
+      - selectedserver00103
+      - selectedserver00104
+      - selectedserver00105
+      - selectedserver00106
+      - selectedserver00107
+      - selectedserver00108
+      - selectedserver00109
+      - selectedserver00110
+      - selectedserver00111
+      - selectedserver00112
+      - selectedserver00113
+      - selectedserver00114
+      - selectedserver00115
+      - selectedserver00116
+      - selectedserver00117
+      - selectedserver00118
+      - selectedserver00119
+      - selectedserver00120
+      - selectedserver00121
+      - selectedserver00122
+      - selectedserver00123
+      - selectedserver00124
+      - selectedserver00125
+      - selectedserver00126
+      - selectedserver00127
+      - selectedserver00128
+      - selectedserver00129
+      - selectedserver00130
+      - selectedserver00131
+      - selectedserver00132
+      - selectedserver00133
+      - selectedserver00134
+      - selectedserver00135
+      - selectedserver00136
+      - selectedserver00137
+      - selectedserver00138
+      - selectedserver00139
+      - selectedserver00140
+      - selectedserver00141
+      - selectedserver00142
+      - selectedserver00143
+      - selectedserver00144
+      - selectedserver00145
+      - selectedserver00146
+      - selectedserver00147
+      - selectedserver00148
+      - selectedserver00149
+      - selectedserver00150
+      - selectedserver00151
+      - selectedserver00152
+      - selectedserver00153
+      - selectedserver00154
+      - selectedserver00155
+      - selectedserver00156
+      - selectedserver00157
+      - selectedserver00158
+      - selectedserver00159
+      - selectedserver00160
+      - selectedserver00161
+      - selectedserver00162
+      - selectedserver00163
+      - selectedserver00164
+      - selectedserver00165
+      - selectedserver00166
+      - selectedserver00167
+      - selectedserver00168
+      - selectedserver00169
+      - selectedserver00170
+      - selectedserver00171
+      - selectedserver00172
+      - selectedserver00173
+      - selectedserver00174
+      - selectedserver00175
+      - selectedserver00176
+      - selectedserver00177
+      - selectedserver00178
+      - selectedserver00179
+      - selectedserver00180
+      - selectedserver00181
+      - selectedserver00182
+      - selectedserver00183
+      - selectedserver00184
+      - selectedserver00185
+      - selectedserver00186
+      - selectedserver00187
+      - selectedserver00188
+      - selectedserver00189
+      - selectedserver00190
+      - selectedserver00191
+      - selectedserver00192
+      - selectedserver00193
+      - selectedserver00194
+      - selectedserver00195
+      - selectedserver00196
+      - selectedserver00197
+      - selectedserver00198
+      - selectedserver00199
+      - selectedserver00200
+      - selectedserver00201
+      - selectedserver00202
+      - selectedserver00203
+      - selectedserver00204
+      - selectedserver00205
+      - selectedserver00206
+      - selectedserver00207
+      - selectedserver00208
+      - selectedserver00209
+      - selectedserver00210
+      - selectedserver00211
+      - selectedserver00212
+      - selectedserver00213
+      - selectedserver00214
+      - selectedserver00215
+      - selectedserver00216
+      - selectedserver00217
+      - selectedserver00218
+      - selectedserver00219
+      - selectedserver00220
+      - selectedserver00221
+      - selectedserver00222
+      - selectedserver00223
+      - selectedserver00224
+      - selectedserver00225
+      - selectedserver00226
+      - selectedserver00227
+      - selectedserver00228
+      - selectedserver00229
+      - selectedserver00230
+      - selectedserver00231
+      - selectedserver00232
+      - selectedserver00233
+      - selectedserver00234
+      - selectedserver00235
+      - selectedserver00236
+      - selectedserver00237
+      - selectedserver00238
+      - selectedserver00239
+      - selectedserver00240
+      - selectedserver00241
+      - selectedserver00242
+      - selectedserver00243
+      - selectedserver00244
+
+
+rules:
+  - DOMAIN-SUFFIX,ampproject.org,自动选择
+  - DOMAIN-SUFFIX,appspot.com,自动选择
+  - DOMAIN-SUFFIX,blogger.com,自动选择
+  - DOMAIN-SUFFIX,getoutline.org,自动选择
+  - DOMAIN-SUFFIX,gvt0.com,自动选择
+  - DOMAIN-SUFFIX,gvt1.com,自动选择
+  - DOMAIN-SUFFIX,gvt3.com,自动选择
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,自动选择
+  - DOMAIN-KEYWORD,google,自动选择
+  - DOMAIN-KEYWORD,blogspot,自动选择
+  - DOMAIN-SUFFIX,onedrive.live.com,自动选择
+  - DOMAIN-SUFFIX,xboxlive.com,自动选择
+  - DOMAIN-SUFFIX,cdninstagram.com,自动选择
+  - DOMAIN-SUFFIX,fb.com,自动选择
+  - DOMAIN-SUFFIX,fb.me,自动选择
+  - DOMAIN-SUFFIX,fbaddins.com,自动选择
+  - DOMAIN-SUFFIX,fbcdn.net,自动选择
+  - DOMAIN-SUFFIX,fbsbx.com,自动选择
+  - DOMAIN-SUFFIX,fbworkmail.com,自动选择
+  - DOMAIN-SUFFIX,instagram.com,自动选择
+  - DOMAIN-SUFFIX,m.me,自动选择
+  - DOMAIN-SUFFIX,messenger.com,自动选择
+  - DOMAIN-SUFFIX,oculus.com,自动选择
+  - DOMAIN-SUFFIX,oculuscdn.com,自动选择
+  - DOMAIN-SUFFIX,rocksdb.org,自动选择
+  - DOMAIN-SUFFIX,whatsapp.com,自动选择
+  - DOMAIN-SUFFIX,whatsapp.net,自动选择
+  - DOMAIN-KEYWORD,facebook,自动选择
+  - IP-CIDR,3.123.36.126/32,自动选择,no-resolve
+  - IP-CIDR,35.157.215.84/32,自动选择,no-resolve
+  - IP-CIDR,35.157.217.255/32,自动选择,no-resolve
+  - IP-CIDR,52.58.209.134/32,自动选择,no-resolve
+  - IP-CIDR,54.93.124.31/32,自动选择,no-resolve
+  - IP-CIDR,54.162.243.80/32,自动选择,no-resolve
+  - IP-CIDR,54.173.34.141/32,自动选择,no-resolve
+  - IP-CIDR,54.235.23.242/32,自动选择,no-resolve
+  - IP-CIDR,169.45.248.118/32,自动选择,no-resolve
+  - DOMAIN-SUFFIX,pscp.tv,自动选择
+  - DOMAIN-SUFFIX,periscope.tv,自动选择
+  - DOMAIN-SUFFIX,t.co,自动选择
+  - DOMAIN-SUFFIX,twimg.co,自动选择
+  - DOMAIN-SUFFIX,twimg.com,自动选择
+  - DOMAIN-SUFFIX,twitpic.com,自动选择
+  - DOMAIN-SUFFIX,vine.co,自动选择
+  - DOMAIN-KEYWORD,twitter,自动选择
+  - DOMAIN-SUFFIX,t.me,自动选择
+  - DOMAIN-SUFFIX,tdesktop.com,自动选择
+  - DOMAIN-SUFFIX,telegra.ph,自动选择
+  - DOMAIN-SUFFIX,telegram.me,自动选择
+  - DOMAIN-SUFFIX,telegram.org,自动选择
+  - IP-CIDR,91.108.4.0/22,自动选择,no-resolve
+  - IP-CIDR,91.108.8.0/22,自动选择,no-resolve
+  - IP-CIDR,91.108.12.0/22,自动选择,no-resolve
+  - IP-CIDR,91.108.16.0/22,自动选择,no-resolve
+  - IP-CIDR,91.108.56.0/22,自动选择,no-resolve
+  - IP-CIDR,149.154.160.0/20,自动选择,no-resolve
+  - IP-CIDR6,2001:b28:f23d::/48,自动选择,no-resolve
+  - IP-CIDR6,2001:b28:f23f::/48,自动选择,no-resolve
+  - IP-CIDR6,2001:67c:4e8::/48,自动选择,no-resolve
+  - DOMAIN-SUFFIX,line.me,自动选择
+  - DOMAIN-SUFFIX,line-apps.com,自动选择
+  - DOMAIN-SUFFIX,line-scdn.net,自动选择
+  - DOMAIN-SUFFIX,naver.jp,自动选择
+  - IP-CIDR,103.2.30.0/23,自动选择,no-resolve
+  - IP-CIDR,125.209.208.0/20,自动选择,no-resolve
+  - IP-CIDR,147.92.128.0/17,自动选择,no-resolve
+  - IP-CIDR,203.104.144.0/21,自动选择,no-resolve
+  - DOMAIN-SUFFIX,4shared.com,自动选择
+  - DOMAIN-SUFFIX,520cc.cc,自动选择
+  - DOMAIN-SUFFIX,881903.com,自动选择
+  - DOMAIN-SUFFIX,9cache.com,自动选择
+  - DOMAIN-SUFFIX,9gag.com,自动选择
+  - DOMAIN-SUFFIX,abc.com,自动选择
+  - DOMAIN-SUFFIX,abc.net.au,自动选择
+  - DOMAIN-SUFFIX,abebooks.com,自动选择
+  - DOMAIN-SUFFIX,amazon.co.jp,自动选择
+  - DOMAIN-SUFFIX,apigee.com,自动选择
+  - DOMAIN-SUFFIX,apk-dl.com,自动选择
+  - DOMAIN-SUFFIX,apkfind.com,自动选择
+  - DOMAIN-SUFFIX,apkmirror.com,自动选择
+  - DOMAIN-SUFFIX,apkmonk.com,自动选择
+  - DOMAIN-SUFFIX,apkpure.com,自动选择
+  - DOMAIN-SUFFIX,aptoide.com,自动选择
+  - DOMAIN-SUFFIX,archive.is,自动选择
+  - DOMAIN-SUFFIX,archive.org,自动选择
+  - DOMAIN-SUFFIX,arte.tv,自动选择
+  - DOMAIN-SUFFIX,artstation.com,自动选择
+  - DOMAIN-SUFFIX,arukas.io,自动选择
+  - DOMAIN-SUFFIX,ask.com,自动选择
+  - DOMAIN-SUFFIX,avg.com,自动选择
+  - DOMAIN-SUFFIX,avgle.com,自动选择
+  - DOMAIN-SUFFIX,badoo.com,自动选择
+  - DOMAIN-SUFFIX,bandwagonhost.com,自动选择
+  - DOMAIN-SUFFIX,bbc.com,自动选择
+  - DOMAIN-SUFFIX,behance.net,自动选择
+  - DOMAIN-SUFFIX,bibox.com,自动选择
+  - DOMAIN-SUFFIX,biggo.com.tw,自动选择
+  - DOMAIN-SUFFIX,binance.com,自动选择
+  - DOMAIN-SUFFIX,bitcointalk.org,自动选择
+  - DOMAIN-SUFFIX,bitfinex.com,自动选择
+  - DOMAIN-SUFFIX,bitmex.com,自动选择
+  - DOMAIN-SUFFIX,bit-z.com,自动选择
+  - DOMAIN-SUFFIX,bloglovin.com,自动选择
+  - DOMAIN-SUFFIX,bloomberg.cn,自动选择
+  - DOMAIN-SUFFIX,bloomberg.com,自动选择
+  - DOMAIN-SUFFIX,blubrry.com,自动选择
+  - DOMAIN-SUFFIX,book.com.tw,自动选择
+  - DOMAIN-SUFFIX,booklive.jp,自动选择
+  - DOMAIN-SUFFIX,books.com.tw,自动选择
+  - DOMAIN-SUFFIX,boslife.net,自动选择
+  - DOMAIN-SUFFIX,box.com,自动选择
+  - DOMAIN-SUFFIX,businessinsider.com,自动选择
+  - DOMAIN-SUFFIX,bwh1.net,自动选择
+  - DOMAIN-SUFFIX,castbox.fm,自动选择
+  - DOMAIN-SUFFIX,cbc.ca,自动选择
+  - DOMAIN-SUFFIX,cdw.com,自动选择
+  - DOMAIN-SUFFIX,change.org,自动选择
+  - DOMAIN-SUFFIX,channelnewsasia.com,自动选择
+  - DOMAIN-SUFFIX,ck101.com,自动选择
+  - DOMAIN-SUFFIX,clarionproject.org,自动选择
+  - DOMAIN-SUFFIX,clyp.it,自动选择
+  - DOMAIN-SUFFIX,cna.com.tw,自动选择
+  - DOMAIN-SUFFIX,comparitech.com,自动选择
+  - DOMAIN-SUFFIX,conoha.jp,自动选择
+  - DOMAIN-SUFFIX,crucial.com,自动选择
+  - DOMAIN-SUFFIX,cts.com.tw,自动选择
+  - DOMAIN-SUFFIX,cw.com.tw,自动选择
+  - DOMAIN-SUFFIX,cyberctm.com,自动选择
+  - DOMAIN-SUFFIX,dailymotion.com,自动选择
+  - DOMAIN-SUFFIX,dailyview.tw,自动选择
+  - DOMAIN-SUFFIX,daum.net,自动选择
+  - DOMAIN-SUFFIX,daumcdn.net,自动选择
+  - DOMAIN-SUFFIX,dcard.tw,自动选择
+  - DOMAIN-SUFFIX,deepdiscount.com,自动选择
+  - DOMAIN-SUFFIX,depositphotos.com,自动选择
+  - DOMAIN-SUFFIX,deviantart.com,自动选择
+  - DOMAIN-SUFFIX,disconnect.me,自动选择
+  - DOMAIN-SUFFIX,discordapp.com,自动选择
+  - DOMAIN-SUFFIX,discordapp.net,自动选择
+  - DOMAIN-SUFFIX,disqus.com,自动选择
+  - DOMAIN-SUFFIX,dlercloud.com,自动选择
+  - DOMAIN-SUFFIX,dns2go.com,自动选择
+  - DOMAIN-SUFFIX,dowjones.com,自动选择
+  - DOMAIN-SUFFIX,dropbox.com,自动选择
+  - DOMAIN-SUFFIX,dropboxusercontent.com,自动选择
+  - DOMAIN-SUFFIX,duckduckgo.com,自动选择
+  - DOMAIN-SUFFIX,dw.com,自动选择
+  - DOMAIN-SUFFIX,dynu.com,自动选择
+  - DOMAIN-SUFFIX,earthcam.com,自动选择
+  - DOMAIN-SUFFIX,ebookservice.tw,自动选择
+  - DOMAIN-SUFFIX,economist.com,自动选择
+  - DOMAIN-SUFFIX,edgecastcdn.net,自动选择
+  - DOMAIN-SUFFIX,edu,自动选择
+  - DOMAIN-SUFFIX,elpais.com,自动选择
+  - DOMAIN-SUFFIX,enanyang.my,自动选择
+  - DOMAIN-SUFFIX,encyclopedia.com,自动选择
+  - DOMAIN-SUFFIX,esoir.be,自动选择
+  - DOMAIN-SUFFIX,etherscan.io,自动选择
+  - DOMAIN-SUFFIX,euronews.com,自动选择
+  - DOMAIN-SUFFIX,evozi.com,自动选择
+  - DOMAIN-SUFFIX,feedly.com,自动选择
+  - DOMAIN-SUFFIX,firech.at,自动选择
+  - DOMAIN-SUFFIX,flickr.com,自动选择
+  - DOMAIN-SUFFIX,flitto.com,自动选择
+  - DOMAIN-SUFFIX,foreignpolicy.com,自动选择
+  - DOMAIN-SUFFIX,freebrowser.org,自动选择
+  - DOMAIN-SUFFIX,freewechat.com,自动选择
+  - DOMAIN-SUFFIX,freeweibo.com,自动选择
+  - DOMAIN-SUFFIX,friday.tw,自动选择
+  - DOMAIN-SUFFIX,ftchinese.com,自动选择
+  - DOMAIN-SUFFIX,ftimg.net,自动选择
+  - DOMAIN-SUFFIX,gate.io,自动选择
+  - DOMAIN-SUFFIX,getlantern.org,自动选择
+  - DOMAIN-SUFFIX,getsync.com,自动选择
+  - DOMAIN-SUFFIX,globalvoices.org,自动选择
+  - DOMAIN-SUFFIX,goo.ne.jp,自动选择
+  - DOMAIN-SUFFIX,goodreads.com,自动选择
+  - DOMAIN-SUFFIX,gov,自动选择
+  - DOMAIN-SUFFIX,gov.tw,自动选择
+  - DOMAIN-SUFFIX,greatfire.org,自动选择
+  - DOMAIN-SUFFIX,gumroad.com,自动选择
+  - DOMAIN-SUFFIX,hbg.com,自动选择
+  - DOMAIN-SUFFIX,heroku.com,自动选择
+  - DOMAIN-SUFFIX,hightail.com,自动选择
+  - DOMAIN-SUFFIX,hk01.com,自动选择
+  - DOMAIN-SUFFIX,hkbf.org,自动选择
+  - DOMAIN-SUFFIX,hkbookcity.com,自动选择
+  - DOMAIN-SUFFIX,hkej.com,自动选择
+  - DOMAIN-SUFFIX,hket.com,自动选择
+  - DOMAIN-SUFFIX,hkgolden.com,自动选择
+  - DOMAIN-SUFFIX,hootsuite.com,自动选择
+  - DOMAIN-SUFFIX,hudson.org,自动选择
+  - DOMAIN-SUFFIX,hyread.com.tw,自动选择
+  - DOMAIN-SUFFIX,ibtimes.com,自动选择
+  - DOMAIN-SUFFIX,i-cable.com,自动选择
+  - DOMAIN-SUFFIX,icij.org,自动选择
+  - DOMAIN-SUFFIX,icoco.com,自动选择
+  - DOMAIN-SUFFIX,imgur.com,自动选择
+  - DOMAIN-SUFFIX,initiummall.com,自动选择
+  - DOMAIN-SUFFIX,insecam.org,自动选择
+  - DOMAIN-SUFFIX,ipfs.io,自动选择
+  - DOMAIN-SUFFIX,issuu.com,自动选择
+  - DOMAIN-SUFFIX,istockphoto.com,自动选择
+  - DOMAIN-SUFFIX,japantimes.co.jp,自动选择
+  - DOMAIN-SUFFIX,jiji.com,自动选择
+  - DOMAIN-SUFFIX,jinx.com,自动选择
+  - DOMAIN-SUFFIX,jkforum.net,自动选择
+  - DOMAIN-SUFFIX,joinmastodon.org,自动选择
+  - DOMAIN-SUFFIX,justmysocks.net,自动选择
+  - DOMAIN-SUFFIX,justpaste.it,自动选择
+  - DOMAIN-SUFFIX,kakao.com,自动选择
+  - DOMAIN-SUFFIX,kakaocorp.com,自动选择
+  - DOMAIN-SUFFIX,kik.com,自动选择
+  - DOMAIN-SUFFIX,kobo.com,自动选择
+  - DOMAIN-SUFFIX,kobobooks.com,自动选择
+  - DOMAIN-SUFFIX,kodingen.com,自动选择
+  - DOMAIN-SUFFIX,lemonde.fr,自动选择
+  - DOMAIN-SUFFIX,lepoint.fr,自动选择
+  - DOMAIN-SUFFIX,lihkg.com,自动选择
+  - DOMAIN-SUFFIX,listennotes.com,自动选择
+  - DOMAIN-SUFFIX,livestream.com,自动选择
+  - DOMAIN-SUFFIX,logmein.com,自动选择
+  - DOMAIN-SUFFIX,mail.ru,自动选择
+  - DOMAIN-SUFFIX,mailchimp.com,自动选择
+  - DOMAIN-SUFFIX,marc.info,自动选择
+  - DOMAIN-SUFFIX,matters.news,自动选择
+  - DOMAIN-SUFFIX,maying.co,自动选择
+  - DOMAIN-SUFFIX,medium.com,自动选择
+  - DOMAIN-SUFFIX,mega.nz,自动选择
+  - DOMAIN-SUFFIX,mil,自动选择
+  - DOMAIN-SUFFIX,mingpao.com,自动选择
+  - DOMAIN-SUFFIX,mobile01.com,自动选择
+  - DOMAIN-SUFFIX,myspace.com,自动选择
+  - DOMAIN-SUFFIX,myspacecdn.com,自动选择
+  - DOMAIN-SUFFIX,nanyang.com,自动选择
+  - DOMAIN-SUFFIX,naver.com,自动选择
+  - DOMAIN-SUFFIX,neowin.net,自动选择
+  - DOMAIN-SUFFIX,newstapa.org,自动选择
+  - DOMAIN-SUFFIX,nexitally.com,自动选择
+  - DOMAIN-SUFFIX,nhk.or.jp,自动选择
+  - DOMAIN-SUFFIX,nicovideo.jp,自动选择
+  - DOMAIN-SUFFIX,nii.ac.jp,自动选择
+  - DOMAIN-SUFFIX,nikkei.com,自动选择
+  - DOMAIN-SUFFIX,nofile.io,自动选择
+  - DOMAIN-SUFFIX,now.com,自动选择
+  - DOMAIN-SUFFIX,nrk.no,自动选择
+  - DOMAIN-SUFFIX,nyt.com,自动选择
+  - DOMAIN-SUFFIX,nytchina.com,自动选择
+  - DOMAIN-SUFFIX,nytcn.me,自动选择
+  - DOMAIN-SUFFIX,nytco.com,自动选择
+  - DOMAIN-SUFFIX,nytimes.com,自动选择
+  - DOMAIN-SUFFIX,nytimg.com,自动选择
+  - DOMAIN-SUFFIX,nytlog.com,自动选择
+  - DOMAIN-SUFFIX,nytstyle.com,自动选择
+  - DOMAIN-SUFFIX,ok.ru,自动选择
+  - DOMAIN-SUFFIX,okex.com,自动选择
+  - DOMAIN-SUFFIX,on.cc,自动选择
+  - DOMAIN-SUFFIX,orientaldaily.com.my,自动选择
+  - DOMAIN-SUFFIX,overcast.fm,自动选择
+  - DOMAIN-SUFFIX,paltalk.com,自动选择
+  - DOMAIN-SUFFIX,pao-pao.net,自动选择
+  - DOMAIN-SUFFIX,parsevideo.com,自动选择
+  - DOMAIN-SUFFIX,pbxes.com,自动选择
+  - DOMAIN-SUFFIX,pcdvd.com.tw,自动选择
+  - DOMAIN-SUFFIX,pchome.com.tw,自动选择
+  - DOMAIN-SUFFIX,pcloud.com,自动选择
+  - DOMAIN-SUFFIX,picacomic.com,自动选择
+  - DOMAIN-SUFFIX,pinimg.com,自动选择
+  - DOMAIN-SUFFIX,pixiv.net,自动选择
+  - DOMAIN-SUFFIX,player.fm,自动选择
+  - DOMAIN-SUFFIX,plurk.com,自动选择
+  - DOMAIN-SUFFIX,po18.tw,自动选择
+  - DOMAIN-SUFFIX,potato.im,自动选择
+  - DOMAIN-SUFFIX,potatso.com,自动选择
+  - DOMAIN-SUFFIX,prism-break.org,自动选择
+  - DOMAIN-SUFFIX,proxifier.com,自动选择
+  - DOMAIN-SUFFIX,pt.im,自动选择
+  - DOMAIN-SUFFIX,pts.org.tw,自动选择
+  - DOMAIN-SUFFIX,pubu.com.tw,自动选择
+  - DOMAIN-SUFFIX,pubu.tw,自动选择
+  - DOMAIN-SUFFIX,pureapk.com,自动选择
+  - DOMAIN-SUFFIX,quora.com,自动选择
+  - DOMAIN-SUFFIX,quoracdn.net,自动选择
+  - DOMAIN-SUFFIX,rakuten.co.jp,自动选择
+  - DOMAIN-SUFFIX,readingtimes.com.tw,自动选择
+  - DOMAIN-SUFFIX,readmoo.com,自动选择
+  - DOMAIN-SUFFIX,redbubble.com,自动选择
+  - DOMAIN-SUFFIX,reddit.com,自动选择
+  - DOMAIN-SUFFIX,redditmedia.com,自动选择
+  - DOMAIN-SUFFIX,resilio.com,自动选择
+  - DOMAIN-SUFFIX,reuters.com,自动选择
+  - DOMAIN-SUFFIX,reutersmedia.net,自动选择
+  - DOMAIN-SUFFIX,rfi.fr,自动选择
+  - DOMAIN-SUFFIX,rixcloud.com,自动选择
+  - DOMAIN-SUFFIX,roadshow.hk,自动选择
+  - DOMAIN-SUFFIX,scmp.com,自动选择
+  - DOMAIN-SUFFIX,scribd.com,自动选择
+  - DOMAIN-SUFFIX,seatguru.com,自动选择
+  - DOMAIN-SUFFIX,shadowsocks.org,自动选择
+  - DOMAIN-SUFFIX,shopee.tw,自动选择
+  - DOMAIN-SUFFIX,slideshare.net,自动选择
+  - DOMAIN-SUFFIX,softfamous.com,自动选择
+  - DOMAIN-SUFFIX,soundcloud.com,自动选择
+  - DOMAIN-SUFFIX,ssrcloud.org,自动选择
+  - DOMAIN-SUFFIX,startpage.com,自动选择
+  - DOMAIN-SUFFIX,steamcommunity.com,自动选择
+  - DOMAIN-SUFFIX,steemit.com,自动选择
+  - DOMAIN-SUFFIX,steemitwallet.com,自动选择
+  - DOMAIN-SUFFIX,t66y.com,自动选择
+  - DOMAIN-SUFFIX,tapatalk.com,自动选择
+  - DOMAIN-SUFFIX,teco-hk.org,自动选择
+  - DOMAIN-SUFFIX,teco-mo.org,自动选择
+  - DOMAIN-SUFFIX,teddysun.com,自动选择
+  - DOMAIN-SUFFIX,textnow.me,自动选择
+  - DOMAIN-SUFFIX,theguardian.com,自动选择
+  - DOMAIN-SUFFIX,theinitium.com,自动选择
+  - DOMAIN-SUFFIX,thetvdb.com,自动选择
+  - DOMAIN-SUFFIX,tineye.com,自动选择
+  - DOMAIN-SUFFIX,torproject.org,自动选择
+  - DOMAIN-SUFFIX,tumblr.com,自动选择
+  - DOMAIN-SUFFIX,turbobit.net,自动选择
+  - DOMAIN-SUFFIX,tutanota.com,自动选择
+  - DOMAIN-SUFFIX,tvboxnow.com,自动选择
+  - DOMAIN-SUFFIX,udn.com,自动选择
+  - DOMAIN-SUFFIX,unseen.is,自动选择
+  - DOMAIN-SUFFIX,upmedia.mg,自动选择
+  - DOMAIN-SUFFIX,uptodown.com,自动选择
+  - DOMAIN-SUFFIX,urbandictionary.com,自动选择
+  - DOMAIN-SUFFIX,ustream.tv,自动选择
+  - DOMAIN-SUFFIX,uwants.com,自动选择
+  - DOMAIN-SUFFIX,v2ray.com,自动选择
+  - DOMAIN-SUFFIX,viber.com,自动选择
+  - DOMAIN-SUFFIX,videopress.com,自动选择
+  - DOMAIN-SUFFIX,vimeo.com,自动选择
+  - DOMAIN-SUFFIX,voachinese.com,自动选择
+  - DOMAIN-SUFFIX,voanews.com,自动选择
+  - DOMAIN-SUFFIX,voxer.com,自动选择
+  - DOMAIN-SUFFIX,vzw.com,自动选择
+  - DOMAIN-SUFFIX,w3schools.com,自动选择
+  - DOMAIN-SUFFIX,washingtonpost.com,自动选择
+  - DOMAIN-SUFFIX,wattpad.com,自动选择
+  - DOMAIN-SUFFIX,whoer.net,自动选择
+  - DOMAIN-SUFFIX,wikimapia.org,自动选择
+  - DOMAIN-SUFFIX,wikipedia.org,自动选择
+  - DOMAIN-SUFFIX,wikiquote.org,自动选择
+  - DOMAIN-SUFFIX,wikiwand.com,自动选择
+  - DOMAIN-SUFFIX,winudf.com,自动选择
+  - DOMAIN-SUFFIX,wire.com,自动选择
+  - DOMAIN-SUFFIX,wordpress.com,自动选择
+  - DOMAIN-SUFFIX,workflow.is,自动选择
+  - DOMAIN-SUFFIX,worldcat.org,自动选择
+  - DOMAIN-SUFFIX,wsj.com,自动选择
+  - DOMAIN-SUFFIX,wsj.net,自动选择
+  - DOMAIN-SUFFIX,xhamster.com,自动选择
+  - DOMAIN-SUFFIX,xn--90wwvt03e.com,自动选择
+  - DOMAIN-SUFFIX,xn--i2ru8q2qg.com,自动选择
+  - DOMAIN-SUFFIX,xnxx.com,自动选择
+  - DOMAIN-SUFFIX,xvideos.com,自动选择
+  - DOMAIN-SUFFIX,yahoo.com,自动选择
+  - DOMAIN-SUFFIX,yandex.ru,自动选择
+  - DOMAIN-SUFFIX,ycombinator.com,自动选择
+  - DOMAIN-SUFFIX,yesasia.com,自动选择
+  - DOMAIN-SUFFIX,yes-news.com,自动选择
+  - DOMAIN-SUFFIX,yomiuri.co.jp,自动选择
+  - DOMAIN-SUFFIX,you-get.org,自动选择
+  - DOMAIN-SUFFIX,zaobao.com,自动选择
+  - DOMAIN-SUFFIX,zb.com,自动选择
+  - DOMAIN-SUFFIX,zello.com,自动选择
+  - DOMAIN-SUFFIX,zeronet.io,自动选择
+  - DOMAIN-SUFFIX,zoom.us,自动选择
+  - DOMAIN-KEYWORD,github,自动选择
+  - DOMAIN-KEYWORD,jav,自动选择
+  - DOMAIN-KEYWORD,pinterest,自动选择
+  - DOMAIN-KEYWORD,porn,自动选择
+  - DOMAIN-KEYWORD,wikileaks,自动选择
+  - DOMAIN-SUFFIX,apartmentratings.com,自动选择
+  - DOMAIN-SUFFIX,apartments.com,自动选择
+  - DOMAIN-SUFFIX,bankmobilevibe.com,自动选择
+  - DOMAIN-SUFFIX,bing.com,自动选择
+  - DOMAIN-SUFFIX,booktopia.com.au,自动选择
+  - DOMAIN-SUFFIX,cccat.io,自动选择
+  - DOMAIN-SUFFIX,centauro.com.br,自动选择
+  - DOMAIN-SUFFIX,clearsurance.com,自动选择
+  - DOMAIN-SUFFIX,costco.com,自动选择
+  - DOMAIN-SUFFIX,crackle.com,自动选择
+  - DOMAIN-SUFFIX,depositphotos.cn,自动选择
+  - DOMAIN-SUFFIX,dish.com,自动选择
+  - DOMAIN-SUFFIX,dmm.co.jp,自动选择
+  - DOMAIN-SUFFIX,dmm.com,自动选择
+  - DOMAIN-SUFFIX,dnvod.tv,自动选择
+  - DOMAIN-SUFFIX,esurance.com,自动选择
+  - DOMAIN-SUFFIX,extmatrix.com,自动选择
+  - DOMAIN-SUFFIX,fastpic.ru,自动选择
+  - DOMAIN-SUFFIX,flipboard.com,自动选择
+  - DOMAIN-SUFFIX,fnac.be,自动选择
+  - DOMAIN-SUFFIX,fnac.com,自动选择
+  - DOMAIN-SUFFIX,funkyimg.com,自动选择
+  - DOMAIN-SUFFIX,fxnetworks.com,自动选择
+  - DOMAIN-SUFFIX,gettyimages.com,自动选择
+  - DOMAIN-SUFFIX,go.com,自动选择
+  - DOMAIN-SUFFIX,here.com,自动选择
+  - DOMAIN-SUFFIX,jcpenney.com,自动选择
+  - DOMAIN-SUFFIX,jiehua.tv,自动选择
+  - DOMAIN-SUFFIX,mailfence.com,自动选择
+  - DOMAIN-SUFFIX,nationwide.com,自动选择
+  - DOMAIN-SUFFIX,nbc.com,自动选择
+  - DOMAIN-SUFFIX,nexon.com,自动选择
+  - DOMAIN-SUFFIX,nordstrom.com,自动选择
+  - DOMAIN-SUFFIX,nordstromimage.com,自动选择
+  - DOMAIN-SUFFIX,nordstromrack.com,自动选择
+  - DOMAIN-SUFFIX,superpages.com,自动选择
+  - DOMAIN-SUFFIX,target.com,自动选择
+  - DOMAIN-SUFFIX,thinkgeek.com,自动选择
+  - DOMAIN-SUFFIX,tracfone.com,自动选择
+  - DOMAIN-SUFFIX,unity3d.com,自动选择
+  - DOMAIN-SUFFIX,uploader.jp,自动选择
+  - DOMAIN-SUFFIX,vevo.com,自动选择
+  - DOMAIN-SUFFIX,viu.tv,自动选择
+  - DOMAIN-SUFFIX,vk.com,自动选择
+  - DOMAIN-SUFFIX,vsco.co,自动选择
+  - DOMAIN-SUFFIX,xfinity.com,自动选择
+  - DOMAIN-SUFFIX,zattoo.com,自动选择
+  - DOMAIN,testflight.apple.com,自动选择
+  - DOMAIN-SUFFIX,appsto.re,自动选择
+  - DOMAIN,books.itunes.apple.com,自动选择
+  - DOMAIN,hls.itunes.apple.com,自动选择
+  - DOMAIN,apps.apple.com,自动选择
+  - DOMAIN,itunes.apple.com,自动选择
+  - DOMAIN,api-glb-sea.smoot.apple.com,自动选择
+  - DOMAIN,lookup-api.apple.com,自动选择
+  - DOMAIN-SUFFIX,abc.xyz,自动选择
+  - DOMAIN-SUFFIX,android.com,自动选择
+  - DOMAIN-SUFFIX,androidify.com,自动选择
+  - DOMAIN-SUFFIX,dialogflow.com,自动选择
+  - DOMAIN-SUFFIX,autodraw.com,自动选择
+  - DOMAIN-SUFFIX,capitalg.com,自动选择
+  - DOMAIN-SUFFIX,certificate-transparency.org,自动选择
+  - DOMAIN-SUFFIX,chrome.com,自动选择
+  - DOMAIN-SUFFIX,chromeexperiments.com,自动选择
+  - DOMAIN-SUFFIX,chromestatus.com,自动选择
+  - DOMAIN-SUFFIX,chromium.org,自动选择
+  - DOMAIN-SUFFIX,creativelab5.com,自动选择
+  - DOMAIN-SUFFIX,debug.com,自动选择
+  - DOMAIN-SUFFIX,deepmind.com,自动选择
+  - DOMAIN-SUFFIX,firebaseio.com,自动选择
+  - DOMAIN-SUFFIX,getmdl.io,自动选择
+  - DOMAIN-SUFFIX,ggpht.com,自动选择
+  - DOMAIN-SUFFIX,gmail.com,自动选择
+  - DOMAIN-SUFFIX,gmodules.com,自动选择
+  - DOMAIN-SUFFIX,godoc.org,自动选择
+  - DOMAIN-SUFFIX,golang.org,自动选择
+  - DOMAIN-SUFFIX,gstatic.com,自动选择
+  - DOMAIN-SUFFIX,gv.com,自动选择
+  - DOMAIN-SUFFIX,gwtproject.org,自动选择
+  - DOMAIN-SUFFIX,itasoftware.com,自动选择
+  - DOMAIN-SUFFIX,madewithcode.com,自动选择
+  - DOMAIN-SUFFIX,material.io,自动选择
+  - DOMAIN-SUFFIX,polymer-project.org,自动选择
+  - DOMAIN-SUFFIX,admin.recaptcha.net,自动选择
+  - DOMAIN-SUFFIX,recaptcha.net,自动选择
+  - DOMAIN-SUFFIX,shattered.io,自动选择
+  - DOMAIN-SUFFIX,synergyse.com,自动选择
+  - DOMAIN-SUFFIX,tensorflow.org,自动选择
+  - DOMAIN-SUFFIX,tfhub.dev,自动选择
+  - DOMAIN-SUFFIX,tiltbrush.com,自动选择
+  - DOMAIN-SUFFIX,waveprotocol.org,自动选择
+  - DOMAIN-SUFFIX,waymo.com,自动选择
+  - DOMAIN-SUFFIX,webmproject.org,自动选择
+  - DOMAIN-SUFFIX,webrtc.org,自动选择
+  - DOMAIN-SUFFIX,whatbrowser.org,自动选择
+  - DOMAIN-SUFFIX,widevine.com,自动选择
+  - DOMAIN-SUFFIX,x.company,自动选择
+  - DOMAIN-SUFFIX,youtu.be,自动选择
+  - DOMAIN-SUFFIX,yt.be,自动选择
+  - DOMAIN-SUFFIX,ytimg.com,自动选择
+  - DOMAIN-SUFFIX,1drv.com,自动选择
+  - DOMAIN-SUFFIX,1drv.ms,自动选择
+  - DOMAIN-SUFFIX,blob.core.windows.net,自动选择
+  - DOMAIN-SUFFIX,livefilestore.com,自动选择
+  - DOMAIN-SUFFIX,onedrive.com,自动选择
+  - DOMAIN-SUFFIX,storage.live.com,自动选择
+  - DOMAIN-SUFFIX,storage.msn.com,自动选择
+  - DOMAIN,oneclient.sfx.ms,自动选择
+  - DOMAIN-SUFFIX,0rz.tw,自动选择
+  - DOMAIN-SUFFIX,4bluestones.biz,自动选择
+  - DOMAIN-SUFFIX,9bis.net,自动选择
+  - DOMAIN-SUFFIX,allconnected.co,自动选择
+  - DOMAIN-SUFFIX,aol.com,自动选择
+  - DOMAIN-SUFFIX,bcc.com.tw,自动选择
+  - DOMAIN-SUFFIX,bit.ly,自动选择
+  - DOMAIN-SUFFIX,bitshare.com,自动选择
+  - DOMAIN-SUFFIX,blog.jp,自动选择
+  - DOMAIN-SUFFIX,blogimg.jp,自动选择
+  - DOMAIN-SUFFIX,blogtd.org,自动选择
+  - DOMAIN-SUFFIX,broadcast.co.nz,自动选择
+  - DOMAIN-SUFFIX,camfrog.com,自动选择
+  - DOMAIN-SUFFIX,cfos.de,自动选择
+  - DOMAIN-SUFFIX,citypopulation.de,自动选择
+  - DOMAIN-SUFFIX,cloudfront.net,自动选择
+  - DOMAIN-SUFFIX,ctitv.com.tw,自动选择
+  - DOMAIN-SUFFIX,cuhk.edu.hk,自动选择
+  - DOMAIN-SUFFIX,cusu.hk,自动选择
+  - DOMAIN-SUFFIX,discord.gg,自动选择
+  - DOMAIN-SUFFIX,discuss.com.hk,自动选择
+  - DOMAIN-SUFFIX,dropboxapi.com,自动选择
+  - DOMAIN-SUFFIX,duolingo.cn,自动选择
+  - DOMAIN-SUFFIX,edditstatic.com,自动选择
+  - DOMAIN-SUFFIX,flickriver.com,自动选择
+  - DOMAIN-SUFFIX,focustaiwan.tw,自动选择
+  - DOMAIN-SUFFIX,free.fr,自动选择
+  - DOMAIN-SUFFIX,gigacircle.com,自动选择
+  - DOMAIN-SUFFIX,hk-pub.com,自动选择
+  - DOMAIN-SUFFIX,hosting.co.uk,自动选择
+  - DOMAIN-SUFFIX,hwcdn.net,自动选择
+  - DOMAIN-SUFFIX,ifixit.com,自动选择
+  - DOMAIN-SUFFIX,iphone4hongkong.com,自动选择
+  - DOMAIN-SUFFIX,iphonetaiwan.org,自动选择
+  - DOMAIN-SUFFIX,iptvbin.com,自动选择
+  - DOMAIN-SUFFIX,linksalpha.com,自动选择
+  - DOMAIN-SUFFIX,manyvids.com,自动选择
+  - DOMAIN-SUFFIX,myactimes.com,自动选择
+  - DOMAIN-SUFFIX,newsblur.com,自动选择
+  - DOMAIN-SUFFIX,now.im,自动选择
+  - DOMAIN-SUFFIX,nowe.com,自动选择
+  - DOMAIN-SUFFIX,redditlist.com,自动选择
+  - DOMAIN-SUFFIX,s3.amazonaws.com,自动选择
+  - DOMAIN-SUFFIX,signal.org,自动选择
+  - DOMAIN-SUFFIX,smartmailcloud.com,自动选择
+  - DOMAIN-SUFFIX,sparknotes.com,自动选择
+  - DOMAIN-SUFFIX,streetvoice.com,自动选择
+  - DOMAIN-SUFFIX,supertop.co,自动选择
+  - DOMAIN-SUFFIX,tv.com,自动选择
+  - DOMAIN-SUFFIX,typepad.com,自动选择
+  - DOMAIN-SUFFIX,udnbkk.com,自动选择
+  - DOMAIN-SUFFIX,urbanairship.com,自动选择
+  - DOMAIN-SUFFIX,whispersystems.org,自动选择
+  - DOMAIN-SUFFIX,wikia.com,自动选择
+  - DOMAIN-SUFFIX,wn.com,自动选择
+  - DOMAIN-SUFFIX,wolframalpha.com,自动选择
+  - DOMAIN-SUFFIX,x-art.com,自动选择
+  - DOMAIN-SUFFIX,yimg.com,自动选择
+  - DOMAIN,api.steampowered.com,自动选择
+  - DOMAIN,store.steampowered.com,自动选择
+
+  - DOMAIN-SUFFIX,t.me,自动选择
+  - DOMAIN-SUFFIX,tdesktop.com,自动选择
+  - DOMAIN-SUFFIX,telegra.ph,自动选择
+  - DOMAIN-SUFFIX,telegram.me,自动选择
+  - DOMAIN-SUFFIX,telegram.org,自动选择
+  - IP-CIDR,91.108.4.0/22,自动选择,no-resolve
+  - IP-CIDR,91.108.8.0/22,自动选择,no-resolve
+  - IP-CIDR,91.108.12.0/22,自动选择,no-resolve
+  - IP-CIDR,91.108.16.0/22,自动选择,no-resolve
+  - IP-CIDR,91.108.56.0/22,自动选择,no-resolve
+  - IP-CIDR,149.154.160.0/20,自动选择,no-resolve
+  - IP-CIDR6,2001:b28:f23d::/48,自动选择,no-resolve
+  - IP-CIDR6,2001:b28:f23f::/48,自动选择,no-resolve
+  - IP-CIDR6,2001:67c:4e8::/48,自动选择,no-resolve
+
+  - DOMAIN-SUFFIX,googlevideo.com,自动选择
+  - DOMAIN-SUFFIX,youtube.com,自动选择
+  - DOMAIN,youtubei.googleapis.com,自动选择
+
+  - DOMAIN-SUFFIX,netflix.com,自动选择
+  - DOMAIN-SUFFIX,netflix.net,自动选择
+  - DOMAIN-SUFFIX,nflxext.com,自动选择
+  - DOMAIN-SUFFIX,nflximg.com,自动选择
+  - DOMAIN-SUFFIX,nflximg.net,自动选择
+  - DOMAIN-SUFFIX,nflxso.net,自动选择
+  - DOMAIN-SUFFIX,nflxvideo.net,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest0.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest1.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest2.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest3.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest4.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest5.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest6.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest7.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest8.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest9.com,自动选择
+  - IP-CIDR,23.246.0.0/18,自动选择,no-resolve
+  - IP-CIDR,37.77.184.0/21,自动选择,no-resolve
+  - IP-CIDR,45.57.0.0/17,自动选择,no-resolve
+  - IP-CIDR,64.120.128.0/17,自动选择,no-resolve
+  - IP-CIDR,66.197.128.0/17,自动选择,no-resolve
+  - IP-CIDR,108.175.32.0/20,自动选择,no-resolve
+  - IP-CIDR,192.173.64.0/18,自动选择,no-resolve
+  - IP-CIDR,198.38.96.0/19,自动选择,no-resolve
+  - IP-CIDR,198.45.48.0/20,自动选择,no-resolve
+
+  - DOMAIN-SUFFIX,deezer.com,自动选择
+  - DOMAIN-SUFFIX,dzcdn.net,自动选择
+  - DOMAIN-SUFFIX,kkbox.com,自动选择
+  - DOMAIN-SUFFIX,kkbox.com.tw,自动选择
+  - DOMAIN-SUFFIX,kfs.io,自动选择
+  - DOMAIN-SUFFIX,joox.com,自动选择
+  - DOMAIN-SUFFIX,pandora.com,自动选择
+  - DOMAIN-SUFFIX,p-cdn.us,自动选择
+  - DOMAIN-SUFFIX,sndcdn.com,自动选择
+  - DOMAIN-SUFFIX,soundcloud.com,自动选择
+  - DOMAIN-SUFFIX,pscdn.co,自动选择
+  - DOMAIN-SUFFIX,scdn.co,自动选择
+  - DOMAIN-SUFFIX,spotify.com,自动选择
+  - DOMAIN-SUFFIX,spoti.fi,自动选择
+  - DOMAIN-KEYWORD,spotify.com,自动选择
+  - DOMAIN-KEYWORD,-spotify-com,自动选择
+  - DOMAIN-SUFFIX,tidal.com,自动选择
+  - DOMAIN-SUFFIX,c4assets.com,自动选择
+  - DOMAIN-SUFFIX,channel4.com,自动选择
+  - DOMAIN-SUFFIX,abema.io,自动选择
+  - DOMAIN-SUFFIX,ameba.jp,自动选择
+  - DOMAIN-SUFFIX,abema.tv,自动选择
+  - DOMAIN-SUFFIX,hayabusa.io,自动选择
+  - DOMAIN,abematv.akamaized.net,自动选择
+  - DOMAIN,ds-linear-abematv.akamaized.net,自动选择
+  - DOMAIN,ds-vod-abematv.akamaized.net,自动选择
+  - DOMAIN,linear-abematv.akamaized.net,自动选择
+  - DOMAIN-SUFFIX,aiv-cdn.net,自动选择
+  - DOMAIN-SUFFIX,aiv-delivery.net,自动选择
+  - DOMAIN-SUFFIX,amazonvideo.com,自动选择
+  - DOMAIN-SUFFIX,primevideo.com,自动选择
+  - DOMAIN,avodmp4s3ww-a.akamaihd.net,自动选择
+  - DOMAIN,d25xi40x97liuc.cloudfront.net,自动选择
+  - DOMAIN,dmqdd6hw24ucf.cloudfront.net,自动选择
+  - DOMAIN,d22qjgkvxw22r6.cloudfront.net,自动选择
+  - DOMAIN,d1v5ir2lpwr8os.cloudfront.net,自动选择
+  - DOMAIN-KEYWORD,avoddashs,自动选择
+  - DOMAIN-SUFFIX,bahamut.com.tw,自动选择
+  - DOMAIN-SUFFIX,gamer.com.tw,自动选择
+  - DOMAIN,gamer-cds.cdn.hinet.net,自动选择
+  - DOMAIN,gamer2-cds.cdn.hinet.net,自动选择
+  - DOMAIN-SUFFIX,bbc.co.uk,自动选择
+  - DOMAIN-SUFFIX,bbci.co.uk,自动选择
+  - DOMAIN-KEYWORD,bbcfmt,自动选择
+  - DOMAIN-KEYWORD,uk-live,自动选择
+  - DOMAIN-SUFFIX,dazn.com,自动选择
+  - DOMAIN-SUFFIX,dazn-api.com,自动选择
+  - DOMAIN,d151l6v8er5bdm.cloudfront.net,自动选择
+  - DOMAIN-KEYWORD,voddazn,自动选择
+  - DOMAIN-SUFFIX,bamgrid.com,自动选择
+  - DOMAIN-SUFFIX,disney-plus.net,自动选择
+  - DOMAIN-SUFFIX,disneyplus.com,自动选择
+  - DOMAIN-SUFFIX,dssott.com,自动选择
+  - DOMAIN,cdn.registerdisney.go.com,自动选择
+  - DOMAIN-SUFFIX,encoretvb.com,自动选择
+  - DOMAIN,edge.api.brightcove.com,自动选择
+  - DOMAIN,bcbolt446c5271-a.akamaihd.net,自动选择
+  - DOMAIN-SUFFIX,fox.com,自动选择
+  - DOMAIN-SUFFIX,foxdcg.com,自动选择
+  - DOMAIN-SUFFIX,theplatform.com,自动选择
+  - DOMAIN-SUFFIX,uplynk.com,自动选择
+  - DOMAIN-SUFFIX,hbo.com,自动选择
+  - DOMAIN-SUFFIX,hbogo.com,自动选择
+  - DOMAIN-SUFFIX,hbonow.com,自动选择
+  - DOMAIN-SUFFIX,hbogoasia.com,自动选择
+  - DOMAIN-SUFFIX,hbogoasia.hk,自动选择
+  - DOMAIN,bcbolthboa-a.akamaihd.net,自动选择
+  - DOMAIN,players.brightcove.net,自动选择
+  - DOMAIN,s3-ap-southeast-1.amazonaws.com,自动选择
+  - DOMAIN,dai3fd1oh325y.cloudfront.net,自动选择
+  - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,自动选择
+  - DOMAIN,hboasia1-i.akamaihd.net,自动选择
+  - DOMAIN,hboasia2-i.akamaihd.net,自动选择
+  - DOMAIN,hboasia3-i.akamaihd.net,自动选择
+  - DOMAIN,hboasia4-i.akamaihd.net,自动选择
+  - DOMAIN,hboasia5-i.akamaihd.net,自动选择
+  - DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,自动选择
+  - DOMAIN-SUFFIX,5itv.tv,自动选择
+  - DOMAIN-SUFFIX,ocnttv.com,自动选择
+  - DOMAIN-SUFFIX,hulu.com,自动选择
+  - DOMAIN-SUFFIX,huluim.com,自动选择
+  - DOMAIN-SUFFIX,hulustream.com,自动选择
+  - DOMAIN-SUFFIX,happyon.jp,自动选择
+  - DOMAIN-SUFFIX,hulu.jp,自动选择
+  - DOMAIN-SUFFIX,itv.com,自动选择
+  - DOMAIN-SUFFIX,itvstatic.com,自动选择
+  - DOMAIN,itvpnpmobile-a.akamaihd.net,自动选择
+  - DOMAIN-SUFFIX,kktv.com.tw,自动选择
+  - DOMAIN-SUFFIX,kktv.me,自动选择
+  - DOMAIN,kktv-theater.kk.stream,自动选择
+  - DOMAIN-SUFFIX,linetv.tw,自动选择
+  - DOMAIN,d3c7rimkq79yfu.cloudfront.net,自动选择
+  - DOMAIN-SUFFIX,litv.tv,自动选择
+  - DOMAIN,litvfreemobile-hichannel.cdn.hinet.net,自动选择
+  - DOMAIN-SUFFIX,channel5.com,自动选择
+  - DOMAIN-SUFFIX,my5.tv,自动选择
+  - DOMAIN,d349g9zuie06uo.cloudfront.net,自动选择
+  - DOMAIN-SUFFIX,mytvsuper.com,自动选择
+  - DOMAIN-SUFFIX,tvb.com,自动选择
+  - DOMAIN-SUFFIX,netflix.com,自动选择
+  - DOMAIN-SUFFIX,netflix.net,自动选择
+  - DOMAIN-SUFFIX,nflxext.com,自动选择
+  - DOMAIN-SUFFIX,nflximg.com,自动选择
+  - DOMAIN-SUFFIX,nflximg.net,自动选择
+  - DOMAIN-SUFFIX,nflxso.net,自动选择
+  - DOMAIN-SUFFIX,nflxvideo.net,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest0.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest1.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest2.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest3.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest4.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest5.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest6.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest7.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest8.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest9.com,自动选择
+  - IP-CIDR,23.246.0.0/18,自动选择,no-resolve
+  - IP-CIDR,37.77.184.0/21,自动选择,no-resolve
+  - IP-CIDR,45.57.0.0/17,自动选择,no-resolve
+  - IP-CIDR,64.120.128.0/17,自动选择,no-resolve
+  - IP-CIDR,66.197.128.0/17,自动选择,no-resolve
+  - IP-CIDR,108.175.32.0/20,自动选择,no-resolve
+  - IP-CIDR,192.173.64.0/18,自动选择,no-resolve
+  - IP-CIDR,198.38.96.0/19,自动选择,no-resolve
+  - IP-CIDR,198.45.48.0/20,自动选择,no-resolve
+  - DOMAIN-SUFFIX,dmc.nico,自动选择
+  - DOMAIN-SUFFIX,nicovideo.jp,自动选择
+  - DOMAIN-SUFFIX,nimg.jp,自动选择
+  - DOMAIN-SUFFIX,socdm.com,自动选择
+  - DOMAIN-SUFFIX,pbs.org,自动选择
+  - DOMAIN-SUFFIX,phncdn.com,自动选择
+  - DOMAIN-SUFFIX,pornhub.com,自动选择
+  - DOMAIN-SUFFIX,pornhubpremium.com,自动选择
+  - DOMAIN-SUFFIX,skyking.com.tw,自动选择
+  - DOMAIN,hamifans.emome.net,自动选择
+  - DOMAIN-SUFFIX,twitch.tv,自动选择
+  - DOMAIN-SUFFIX,twitchcdn.net,自动选择
+  - DOMAIN-SUFFIX,ttvnw.net,自动选择
+  - DOMAIN-SUFFIX,jtvnw.net,自动选择
+  - DOMAIN-SUFFIX,viu.com,自动选择
+  - DOMAIN-SUFFIX,viu.tv,自动选择
+  - DOMAIN,api.viu.now.com,自动选择
+  - DOMAIN,d1k2us671qcoau.cloudfront.net,自动选择
+  - DOMAIN,d2anahhhmp1ffz.cloudfront.net,自动选择
+  - DOMAIN,dfp6rglgjqszk.cloudfront.net,自动选择
+  - DOMAIN-SUFFIX,googlevideo.com,自动选择
+  - DOMAIN-SUFFIX,youtube.com,自动选择
+  - DOMAIN,youtubei.googleapis.com,自动选择
+
+  - DOMAIN-SUFFIX,linkedin.com,自动选择
+  - DOMAIN-SUFFIX,licdn.com,自动选择
+
+  - DOMAIN-SUFFIX,local,DIRECT
+  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+  - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+  - IP-CIDR6,::1/128,DIRECT,no-resolve
+  - IP-CIDR6,fc00::/7,DIRECT,no-resolve
+  - IP-CIDR6,fe80::/10,DIRECT,no-resolve
+  - IP-CIDR6,fd00::/8,DIRECT,no-resolve
+
+  - DOMAIN,app.adjust.com,DIRECT
+  - DOMAIN-SUFFIX,googletraveladservices.com,DIRECT
+  - DOMAIN,dl.google.com,DIRECT
+  - DOMAIN,mtalk.google.com,DIRECT
+  - DOMAIN,livew.l.qq.com,DIRECT
+  - DOMAIN,vd.l.qq.com,DIRECT
+  - DOMAIN,analytics.strava.com,DIRECT
+  - DOMAIN,msg.umeng.com,DIRECT
+  - DOMAIN,msg.umengcloud.com,DIRECT
+  - DOMAIN-SUFFIX,qhres.com,DIRECT
+  - DOMAIN-SUFFIX,qhimg.com,DIRECT
+  - DOMAIN-SUFFIX,akadns.net,DIRECT
+  - DOMAIN-SUFFIX,alibaba.com,DIRECT
+  - DOMAIN-SUFFIX,alicdn.com,DIRECT
+  - DOMAIN-SUFFIX,alikunlun.com,DIRECT
+  - DOMAIN-SUFFIX,alipay.com,DIRECT
+  - DOMAIN-SUFFIX,amap.com,DIRECT
+  - DOMAIN-SUFFIX,autonavi.com,DIRECT
+  - DOMAIN-SUFFIX,dingtalk.com,DIRECT
+  - DOMAIN-SUFFIX,mxhichina.com,DIRECT
+  - DOMAIN-SUFFIX,soku.com,DIRECT
+  - DOMAIN-SUFFIX,taobao.com,DIRECT
+  - DOMAIN-SUFFIX,tmall.com,DIRECT
+  - DOMAIN-SUFFIX,tmall.hk,DIRECT
+  - DOMAIN-SUFFIX,ykimg.com,DIRECT
+  - DOMAIN-SUFFIX,youku.com,DIRECT
+  - DOMAIN-SUFFIX,xiami.com,DIRECT
+  - DOMAIN-SUFFIX,xiami.net,DIRECT
+  - DOMAIN-SUFFIX,aaplimg.com,DIRECT
+  - DOMAIN-SUFFIX,apple.co,DIRECT
+  - DOMAIN-SUFFIX,apple.com,DIRECT
+  - DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT
+  - DOMAIN-SUFFIX,appstore.com,DIRECT
+  - DOMAIN-SUFFIX,cdn-apple.com,DIRECT
+  - DOMAIN-SUFFIX,crashlytics.com,DIRECT
+  - DOMAIN-SUFFIX,icloud.com,DIRECT
+  - DOMAIN-SUFFIX,icloud-content.com,DIRECT
+  - DOMAIN-SUFFIX,me.com,DIRECT
+  - DOMAIN-SUFFIX,mzstatic.com,DIRECT
+  - DOMAIN,www-cdn.icloud.com.akadns.net,DIRECT
+  - DOMAIN-SUFFIX,baidu.com,DIRECT
+  - DOMAIN-SUFFIX,baidubcr.com,DIRECT
+  - DOMAIN-SUFFIX,bdstatic.com,DIRECT
+  - DOMAIN-SUFFIX,yunjiasu-cdn.net,DIRECT
+  - DOMAIN-SUFFIX,acgvideo.com,DIRECT
+  - DOMAIN-SUFFIX,hdslb.com,DIRECT
+  - DOMAIN-SUFFIX,blizzard.com,DIRECT
+  - DOMAIN-SUFFIX,battle.net,DIRECT
+  - DOMAIN,blzddist1-a.akamaihd.net,DIRECT
+  - DOMAIN-SUFFIX,feiliao.com,DIRECT
+  - DOMAIN-SUFFIX,pstatp.com,DIRECT
+  - DOMAIN-SUFFIX,snssdk.com,DIRECT
+  - DOMAIN-SUFFIX,iesdouyin.com,DIRECT
+  - DOMAIN-SUFFIX,toutiao.com,DIRECT
+  - DOMAIN-SUFFIX,cctv.com,DIRECT
+  - DOMAIN-SUFFIX,cctvpic.com,DIRECT
+  - DOMAIN-SUFFIX,livechina.com,DIRECT
+  - DOMAIN-SUFFIX,didialift.com,DIRECT
+  - DOMAIN-SUFFIX,didiglobal.com,DIRECT
+  - DOMAIN-SUFFIX,udache.com,DIRECT
+  - DOMAIN-SUFFIX,343480.com,DIRECT
+  - DOMAIN-SUFFIX,baduziyuan.com,DIRECT
+  - DOMAIN-SUFFIX,com-hs-hkdy.com,DIRECT
+  - DOMAIN-SUFFIX,czybjz.com,DIRECT
+  - DOMAIN-SUFFIX,dandanzan.com,DIRECT
+  - DOMAIN-SUFFIX,fjhps.com,DIRECT
+  - DOMAIN-SUFFIX,kuyunbo.club,DIRECT
+  - DOMAIN-SUFFIX,21cn.com,DIRECT
+  - DOMAIN-SUFFIX,hitv.com,DIRECT
+  - DOMAIN-SUFFIX,mgtv.com,DIRECT
+  - DOMAIN-SUFFIX,iqiyi.com,DIRECT
+  - DOMAIN-SUFFIX,iqiyipic.com,DIRECT
+  - DOMAIN-SUFFIX,71.am.com,DIRECT
+  - DOMAIN-SUFFIX,jd.com,DIRECT
+  - DOMAIN-SUFFIX,jd.hk,DIRECT
+  - DOMAIN-SUFFIX,jdpay.com,DIRECT
+  - DOMAIN-SUFFIX,360buyimg.com,DIRECT
+  - DOMAIN-SUFFIX,iciba.com,DIRECT
+  - DOMAIN-SUFFIX,ksosoft.com,DIRECT
+  - DOMAIN-SUFFIX,meitu.com,DIRECT
+  - DOMAIN-SUFFIX,meitudata.com,DIRECT
+  - DOMAIN-SUFFIX,meitustat.com,DIRECT
+  - DOMAIN-SUFFIX,meipai.com,DIRECT
+  - DOMAIN-SUFFIX,duokan.com,DIRECT
+  - DOMAIN-SUFFIX,mi-img.com,DIRECT
+  - DOMAIN-SUFFIX,miui.com,DIRECT
+  - DOMAIN-SUFFIX,miwifi.com,DIRECT
+  - DOMAIN-SUFFIX,xiaomi.com,DIRECT
+  - DOMAIN-SUFFIX,microsoft.com,DIRECT
+  - DOMAIN-SUFFIX,msecnd.net,DIRECT
+  - DOMAIN-SUFFIX,office365.com,DIRECT
+  - DOMAIN-SUFFIX,outlook.com,DIRECT
+  - DOMAIN-SUFFIX,s-microsoft.com,DIRECT
+  - DOMAIN-SUFFIX,visualstudio.com,DIRECT
+  - DOMAIN-SUFFIX,windows.com,DIRECT
+  - DOMAIN-SUFFIX,windowsupdate.com,DIRECT
+  - DOMAIN,officecdn-microsoft-com.akamaized.net,DIRECT
+  - DOMAIN-SUFFIX,163.com,DIRECT
+  - DOMAIN-SUFFIX,126.net,DIRECT
+  - DOMAIN-SUFFIX,127.net,DIRECT
+  - DOMAIN-SUFFIX,163yun.com,DIRECT
+  - DOMAIN-SUFFIX,lofter.com,DIRECT
+  - DOMAIN-SUFFIX,netease.com,DIRECT
+  - DOMAIN-SUFFIX,ydstatic.com,DIRECT
+  - DOMAIN-SUFFIX,sina.com,DIRECT
+  - DOMAIN-SUFFIX,weibo.com,DIRECT
+  - DOMAIN-SUFFIX,weibocdn.com,DIRECT
+  - DOMAIN-SUFFIX,sohu.com,DIRECT
+  - DOMAIN-SUFFIX,sohucs.com,DIRECT
+  - DOMAIN-SUFFIX,sohu-inc.com,DIRECT
+  - DOMAIN-SUFFIX,v-56.com,DIRECT
+  - DOMAIN-SUFFIX,sogo.com,DIRECT
+  - DOMAIN-SUFFIX,sogou.com,DIRECT
+  - DOMAIN-SUFFIX,sogoucdn.com,DIRECT
+  - DOMAIN-SUFFIX,steampowered.com,DIRECT
+  - DOMAIN-SUFFIX,steam-chat.com,DIRECT
+  - DOMAIN-SUFFIX,steamgames.com,DIRECT
+  - DOMAIN-SUFFIX,steamusercontent.com,DIRECT
+  - DOMAIN-SUFFIX,steamcontent.com,DIRECT
+  - DOMAIN-SUFFIX,steamstatic.com,DIRECT
+  - DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,DIRECT
+  - DOMAIN-SUFFIX,steamstat.us,DIRECT
+  - DOMAIN-SUFFIX,gtimg.com,DIRECT
+  - DOMAIN-SUFFIX,idqqimg.com,DIRECT
+  - DOMAIN-SUFFIX,igamecj.com,DIRECT
+  - DOMAIN-SUFFIX,myapp.com,DIRECT
+  - DOMAIN-SUFFIX,myqcloud.com,DIRECT
+  - DOMAIN-SUFFIX,qq.com,DIRECT
+  - DOMAIN-SUFFIX,tencent.com,DIRECT
+  - DOMAIN-SUFFIX,tencent-cloud.net,DIRECT
+  - DOMAIN-SUFFIX,jstucdn.com,DIRECT
+  - DOMAIN-SUFFIX,zimuzu.io,DIRECT
+  - DOMAIN-SUFFIX,zimuzu.tv,DIRECT
+  - DOMAIN-SUFFIX,zmz2019.com,DIRECT
+  - DOMAIN-SUFFIX,zmzapi.com,DIRECT
+  - DOMAIN-SUFFIX,zmzapi.net,DIRECT
+  - DOMAIN-SUFFIX,zmzfile.com,DIRECT
+  - DOMAIN-SUFFIX,ccgslb.com,DIRECT
+  - DOMAIN-SUFFIX,ccgslb.net,DIRECT
+  - DOMAIN-SUFFIX,chinanetcenter.com,DIRECT
+  - DOMAIN-SUFFIX,meixincdn.com,DIRECT
+  - DOMAIN-SUFFIX,ourdvs.com,DIRECT
+  - DOMAIN-SUFFIX,staticdn.net,DIRECT
+  - DOMAIN-SUFFIX,wangsu.com,DIRECT
+  - DOMAIN-SUFFIX,ipip.net,DIRECT
+  - DOMAIN-SUFFIX,ip.la,DIRECT
+  - DOMAIN-SUFFIX,ip-cdn.com,DIRECT
+  - DOMAIN-SUFFIX,ipv6-test.com,DIRECT
+  - DOMAIN-SUFFIX,test-ipv6.com,DIRECT
+  - DOMAIN-SUFFIX,whatismyip.com,DIRECT
+  - DOMAIN-SUFFIX,netspeedtestmaster.com,DIRECT
+  - DOMAIN,speedtest.macpaw.com,DIRECT
+  - DOMAIN-SUFFIX,awesome-hd.me,DIRECT
+  - DOMAIN-SUFFIX,broadcasthe.net,DIRECT
+  - DOMAIN-SUFFIX,chdbits.co,DIRECT
+  - DOMAIN-SUFFIX,classix-unlimited.co.uk,DIRECT
+  - DOMAIN-SUFFIX,empornium.me,DIRECT
+  - DOMAIN-SUFFIX,gazellegames.net,DIRECT
+  - DOMAIN-SUFFIX,hdchina.org,DIRECT
+  - DOMAIN-SUFFIX,hdsky.me,DIRECT
+  - DOMAIN-SUFFIX,icetorrent.org,DIRECT
+  - DOMAIN-SUFFIX,jpopsuki.eu,DIRECT
+  - DOMAIN-SUFFIX,keepfrds.com,DIRECT
+  - DOMAIN-SUFFIX,madsrevolution.net,DIRECT
+  - DOMAIN-SUFFIX,m-team.cc,DIRECT
+  - DOMAIN-SUFFIX,nanyangpt.com,DIRECT
+  - DOMAIN-SUFFIX,ncore.cc,DIRECT
+  - DOMAIN-SUFFIX,open.cd,DIRECT
+  - DOMAIN-SUFFIX,ourbits.club,DIRECT
+  - DOMAIN-SUFFIX,passthepopcorn.me,DIRECT
+  - DOMAIN-SUFFIX,privatehd.to,DIRECT
+  - DOMAIN-SUFFIX,redacted.ch,DIRECT
+  - DOMAIN-SUFFIX,springsunday.net,DIRECT
+  - DOMAIN-SUFFIX,tjupt.org,DIRECT
+  - DOMAIN-SUFFIX,totheglory.im,DIRECT
+  - DOMAIN-SUFFIX,acm.org,DIRECT
+  - DOMAIN-SUFFIX,acs.org,DIRECT
+  - DOMAIN-SUFFIX,aip.org,DIRECT
+  - DOMAIN-SUFFIX,ams.org,DIRECT
+  - DOMAIN-SUFFIX,annualreviews.org,DIRECT
+  - DOMAIN-SUFFIX,aps.org,DIRECT
+  - DOMAIN-SUFFIX,ascelibrary.org,DIRECT
+  - DOMAIN-SUFFIX,asm.org,DIRECT
+  - DOMAIN-SUFFIX,asme.org,DIRECT
+  - DOMAIN-SUFFIX,astm.org,DIRECT
+  - DOMAIN-SUFFIX,bmj.com,DIRECT
+  - DOMAIN-SUFFIX,cambridge.org,DIRECT
+  - DOMAIN-SUFFIX,cas.org,DIRECT
+  - DOMAIN-SUFFIX,clarivate.com,DIRECT
+  - DOMAIN-SUFFIX,ebscohost.com,DIRECT
+  - DOMAIN-SUFFIX,emerald.com,DIRECT
+  - DOMAIN-SUFFIX,engineeringvillage.com,DIRECT
+  - DOMAIN-SUFFIX,icevirtuallibrary.com,DIRECT
+  - DOMAIN-SUFFIX,ieee.org,DIRECT
+  - DOMAIN-SUFFIX,imf.org,DIRECT
+  - DOMAIN-SUFFIX,iop.org,DIRECT
+  - DOMAIN-SUFFIX,jamanetwork.com,DIRECT
+  - DOMAIN-SUFFIX,jhu.edu,DIRECT
+  - DOMAIN-SUFFIX,jstor.org,DIRECT
+  - DOMAIN-SUFFIX,karger.com,DIRECT
+  - DOMAIN-SUFFIX,libguides.com,DIRECT
+  - DOMAIN-SUFFIX,madsrevolution.net,DIRECT
+  - DOMAIN-SUFFIX,mpg.de,DIRECT
+  - DOMAIN-SUFFIX,myilibrary.com,DIRECT
+  - DOMAIN-SUFFIX,nature.com,DIRECT
+  - DOMAIN-SUFFIX,oecd-ilibrary.org,DIRECT
+  - DOMAIN-SUFFIX,osapublishing.org,DIRECT
+  - DOMAIN-SUFFIX,oup.com,DIRECT
+  - DOMAIN-SUFFIX,ovid.com,DIRECT
+  - DOMAIN-SUFFIX,oxfordartonline.com,DIRECT
+  - DOMAIN-SUFFIX,oxfordbibliographies.com,DIRECT
+  - DOMAIN-SUFFIX,oxfordmusiconline.com,DIRECT
+  - DOMAIN-SUFFIX,pnas.org,DIRECT
+  - DOMAIN-SUFFIX,proquest.com,DIRECT
+  - DOMAIN-SUFFIX,rsc.org,DIRECT
+  - DOMAIN-SUFFIX,sagepub.com,DIRECT
+  - DOMAIN-SUFFIX,sciencedirect.com,DIRECT
+  - DOMAIN-SUFFIX,sciencemag.org,DIRECT
+  - DOMAIN-SUFFIX,scopus.com,DIRECT
+  - DOMAIN-SUFFIX,siam.org,DIRECT
+  - DOMAIN-SUFFIX,spiedigitallibrary.org,DIRECT
+  - DOMAIN-SUFFIX,springer.com,DIRECT
+  - DOMAIN-SUFFIX,springerlink.com,DIRECT
+  - DOMAIN-SUFFIX,tandfonline.com,DIRECT
+  - DOMAIN-SUFFIX,un.org,DIRECT
+  - DOMAIN-SUFFIX,uni-bielefeld.de,DIRECT
+  - DOMAIN-SUFFIX,webofknowledge.com,DIRECT
+  - DOMAIN-SUFFIX,westlaw.com,DIRECT
+  - DOMAIN-SUFFIX,wiley.com,DIRECT
+  - DOMAIN-SUFFIX,worldbank.org,DIRECT
+  - DOMAIN-SUFFIX,worldscientific.com,DIRECT
+  - DOMAIN-SUFFIX,cn,DIRECT
+  - DOMAIN-SUFFIX,360in.com,DIRECT
+  - DOMAIN-SUFFIX,51ym.me,DIRECT
+  - DOMAIN-SUFFIX,8686c.com,DIRECT
+  - DOMAIN-SUFFIX,abchina.com,DIRECT
+  - DOMAIN-SUFFIX,accuweather.com,DIRECT
+  - DOMAIN-SUFFIX,aicoinstorge.com,DIRECT
+  - DOMAIN-SUFFIX,air-matters.com,DIRECT
+  - DOMAIN-SUFFIX,air-matters.io,DIRECT
+  - DOMAIN-SUFFIX,aixifan.com,DIRECT
+  - DOMAIN-SUFFIX,amd.com,DIRECT
+  - DOMAIN-SUFFIX,b612.net,DIRECT
+  - DOMAIN-SUFFIX,bdatu.com,DIRECT
+  - DOMAIN-SUFFIX,beitaichufang.com,DIRECT
+  - DOMAIN-SUFFIX,bjango.com,DIRECT
+  - DOMAIN-SUFFIX,booking.com,DIRECT
+  - DOMAIN-SUFFIX,bstatic.com,DIRECT
+  - DOMAIN-SUFFIX,cailianpress.com,DIRECT
+  - DOMAIN-SUFFIX,camera360.com,DIRECT
+  - DOMAIN-SUFFIX,chinaso.com,DIRECT
+  - DOMAIN-SUFFIX,chua.pro,DIRECT
+  - DOMAIN-SUFFIX,chuimg.com,DIRECT
+  - DOMAIN-SUFFIX,chunyu.mobi,DIRECT
+  - DOMAIN-SUFFIX,chushou.tv,DIRECT
+  - DOMAIN-SUFFIX,cmbchina.com,DIRECT
+  - DOMAIN-SUFFIX,cmbimg.com,DIRECT
+  - DOMAIN-SUFFIX,ctrip.com,DIRECT
+  - DOMAIN-SUFFIX,dfcfw.com,DIRECT
+  - DOMAIN-SUFFIX,docschina.org,DIRECT
+  - DOMAIN-SUFFIX,douban.com,DIRECT
+  - DOMAIN-SUFFIX,doubanio.com,DIRECT
+  - DOMAIN-SUFFIX,douyu.com,DIRECT
+  - DOMAIN-SUFFIX,dxycdn.com,DIRECT
+  - DOMAIN-SUFFIX,dytt8.net,DIRECT
+  - DOMAIN-SUFFIX,eastmoney.com,DIRECT
+  - DOMAIN-SUFFIX,eudic.net,DIRECT
+  - DOMAIN-SUFFIX,feng.com,DIRECT
+  - DOMAIN-SUFFIX,fengkongcloud.com,DIRECT
+  - DOMAIN-SUFFIX,frdic.com,DIRECT
+  - DOMAIN-SUFFIX,futu5.com,DIRECT
+  - DOMAIN-SUFFIX,futunn.com,DIRECT
+  - DOMAIN-SUFFIX,gandi.net,DIRECT
+  - DOMAIN-SUFFIX,geilicdn.com,DIRECT
+  - DOMAIN-SUFFIX,getpricetag.com,DIRECT
+  - DOMAIN-SUFFIX,gifshow.com,DIRECT
+  - DOMAIN-SUFFIX,godic.net,DIRECT
+  - DOMAIN-SUFFIX,hicloud.com,DIRECT
+  - DOMAIN-SUFFIX,hongxiu.com,DIRECT
+  - DOMAIN-SUFFIX,hostbuf.com,DIRECT
+  - DOMAIN-SUFFIX,huxiucdn.com,DIRECT
+  - DOMAIN-SUFFIX,huya.com,DIRECT
+  - DOMAIN-SUFFIX,infinitynewtab.com,DIRECT
+  - DOMAIN-SUFFIX,ithome.com,DIRECT
+  - DOMAIN-SUFFIX,java.com,DIRECT
+  - DOMAIN-SUFFIX,jidian.im,DIRECT
+  - DOMAIN-SUFFIX,kaiyanapp.com,DIRECT
+  - DOMAIN-SUFFIX,kaspersky-labs.com,DIRECT
+  - DOMAIN-SUFFIX,keepcdn.com,DIRECT
+  - DOMAIN-SUFFIX,kkmh.com,DIRECT
+#  - DOMAIN-SUFFIX,licdn.com,DIRECT
+#  - DOMAIN-SUFFIX,linkedin.com,DIRECT
+  - DOMAIN-SUFFIX,loli.net,DIRECT
+  - DOMAIN-SUFFIX,luojilab.com,DIRECT
+  - DOMAIN-SUFFIX,maoyan.com,DIRECT
+  - DOMAIN-SUFFIX,maoyun.tv,DIRECT
+  - DOMAIN-SUFFIX,meituan.com,DIRECT
+  - DOMAIN-SUFFIX,meituan.net,DIRECT
+  - DOMAIN-SUFFIX,mobike.com,DIRECT
+  - DOMAIN-SUFFIX,moke.com,DIRECT
+  - DOMAIN-SUFFIX,mubu.com,DIRECT
+  - DOMAIN-SUFFIX,myzaker.com,DIRECT
+  - DOMAIN-SUFFIX,nim-lang-cn.org,DIRECT
+  - DOMAIN-SUFFIX,nvidia.com,DIRECT
+  - DOMAIN-SUFFIX,oracle.com,DIRECT
+  - DOMAIN-SUFFIX,paypal.com,DIRECT
+  - DOMAIN-SUFFIX,paypalobjects.com,DIRECT
+  - DOMAIN-SUFFIX,qdaily.com,DIRECT
+  - DOMAIN-SUFFIX,qidian.com,DIRECT
+  - DOMAIN-SUFFIX,qyer.com,DIRECT
+  - DOMAIN-SUFFIX,qyerstatic.com,DIRECT
+  - DOMAIN-SUFFIX,raychase.net,DIRECT
+  - DOMAIN-SUFFIX,ronghub.com,DIRECT
+  - DOMAIN-SUFFIX,ruguoapp.com,DIRECT
+  - DOMAIN-SUFFIX,s-reader.com,DIRECT
+  - DOMAIN-SUFFIX,sankuai.com,DIRECT
+  - DOMAIN-SUFFIX,scomper.me,DIRECT
+  - DOMAIN-SUFFIX,seafile.com,DIRECT
+  - DOMAIN-SUFFIX,sm.ms,DIRECT
+  - DOMAIN-SUFFIX,smzdm.com,DIRECT
+  - DOMAIN-SUFFIX,snapdrop.net,DIRECT
+  - DOMAIN-SUFFIX,snwx.com,DIRECT
+  - DOMAIN-SUFFIX,sspai.com,DIRECT
+  - DOMAIN-SUFFIX,takungpao.com,DIRECT
+  - DOMAIN-SUFFIX,teamviewer.com,DIRECT
+  - DOMAIN-SUFFIX,tianyancha.com,DIRECT
+  - DOMAIN-SUFFIX,udacity.com,DIRECT
+  - DOMAIN-SUFFIX,uning.com,DIRECT
+  - DOMAIN-SUFFIX,vmware.com,DIRECT
+  - DOMAIN-SUFFIX,weather.com,DIRECT
+  - DOMAIN-SUFFIX,weico.cc,DIRECT
+  - DOMAIN-SUFFIX,weidian.com,DIRECT
+  - DOMAIN-SUFFIX,xiachufang.com,DIRECT
+  - DOMAIN-SUFFIX,ximalaya.com,DIRECT
+  - DOMAIN-SUFFIX,xinhuanet.com,DIRECT
+  - DOMAIN-SUFFIX,xmcdn.com,DIRECT
+  - DOMAIN-SUFFIX,yangkeduo.com,DIRECT
+  - DOMAIN-SUFFIX,zhangzishi.cc,DIRECT
+  - DOMAIN-SUFFIX,zhihu.com,DIRECT
+  - DOMAIN-SUFFIX,zhimg.com,DIRECT
+  - DOMAIN-SUFFIX,zhuihd.com,DIRECT
+  - DOMAIN,download.jetbrains.com,DIRECT
+  - DOMAIN,images-cn.ssl-images-amazon.com,DIRECT
+  - IP-CIDR,119.28.28.28/32,DIRECT,no-resolve
+  - GEOIP,CN,DIRECT
+
+  - MATCH,自动选择
