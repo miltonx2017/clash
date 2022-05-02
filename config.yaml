@@ -6,210 +6,270 @@ log-level: info
 external-controller: :9090
 proxies:
 
- - {name: "selectedserver00001", server: 5.183.179.140, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
- - {name: "selectedserver00002", server: 152.89.210.84, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
- - {name: "selectedserver00003", server: 5.183.179.140, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
- - {name: "selectedserver00004", server: 14.29.124.168, port: 24015, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
- - {name: "selectedserver00005", server: cn1.relay.iepl.pw, port: 50400, type: ss, cipher: aes-128-gcm, password: df87f3f2-f2a7-4fae-ae7d-507cea790c95, udp: true}
- - {name: "selectedserver00006", server: 5.183.179.140, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
- - {name: "selectedserver00007", server: 217.30.10.67, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
- - {name: "selectedserver00008", server: fkgfw-prod.i.sxl.cn, port: 443, type: ss, cipher: aes-256-cfb, password: E4DNMf73kHPrd8Qq7aqGPf7f, udp: true}
- - {name: "selectedserver00009", server: 213.183.63.219, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
- - {name: "selectedserver00010", server: 5.183.179.140, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
- - {name: "selectedserver00011", server: 152.89.210.105, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
- - {name: "selectedserver00012", server: 152.89.210.105, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
- - {name: "selectedserver00013", server: 152.89.210.84, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
- - {name: "selectedserver00014", server: 152.89.210.105, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
- - {name: "selectedserver00015", server: 169.197.142.99, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
- - {name: "selectedserver00016", server: 5.183.179.140, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
- - {name: "selectedserver00017", server: 217.30.10.66, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
- - {name: "selectedserver00018", server: 5.183.179.140, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
- - {name: "selectedserver00019", server: 5.183.179.137, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
- - {name: "selectedserver00020", server: 5.183.179.146, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
- - {name: "selectedserver00021", server: 213.183.51.172, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
- - {name: "selectedserver00022", server: 217.30.10.67, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
- - {name: "selectedserver00023", server: 5.183.179.170, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
- - {name: "selectedserver00024", server: 5.183.179.146, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
- - {name: "selectedserver00025", server: 5.183.179.146, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
- - {name: "selectedserver00026", server: 5.183.179.166, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
- - {name: "selectedserver00027", server: 152.89.210.105, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
- - {name: "selectedserver00028", server: 5.183.179.146, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
- - {name: "selectedserver00029", server: 213.183.63.218, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
- - {name: "selectedserver00030", server: 38.68.135.19, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
- - {name: "selectedserver00031", server: 5.183.179.145, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
- - {name: "selectedserver00032", server: 5.183.179.146, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
- - {name: "selectedserver00033", server: 5.183.179.146, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
- - {name: "selectedserver00034", server: 5.183.179.146, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
- - {name: "selectedserver00035", server: 5.183.179.170, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
- - {name: "selectedserver00036", server: 5.183.179.146, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
- - {name: "selectedserver00037", server: 5.183.179.146, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
- - {name: "selectedserver00038", server: 213.183.51.172, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
- - {name: "selectedserver00039", server: 213.183.51.171, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
- - {name: "selectedserver00040", server: 217.30.10.66, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
- - {name: "selectedserver00041", server: 120.240.48.19, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: 120.240.48.19}}, udp: true}
- - {name: "selectedserver00042", server: 5.183.179.170, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
- - {name: "selectedserver00043", server: 5.183.179.146, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
- - {name: "selectedserver00044", server: 185.126.116.117, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
- - {name: "selectedserver00045", server: 217.30.10.67, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
- - {name: "selectedserver00046", server: 185.126.116.117, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
- - {name: "selectedserver00047", server: 5.183.179.167, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
- - {name: "selectedserver00048", server: 5.183.179.170, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
- - {name: "selectedserver00049", server: 5.183.179.146, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
- - {name: "selectedserver00050", server: 5.183.179.170, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
- - {name: "selectedserver00051", server: 152.89.210.84, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
- - {name: "selectedserver00052", server: 5.183.179.170, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
- - {name: "selectedserver00053", server: 5.183.179.166, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
- - {name: "selectedserver00054", server: 217.30.10.66, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
- - {name: "selectedserver00055", server: 5.183.179.170, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
- - {name: "selectedserver00056", server: 5.183.179.146, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
- - {name: "selectedserver00057", server: 5.183.179.145, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
- - {name: "selectedserver00058", server: 5.183.179.166, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
- - {name: "selectedserver00059", server: 5.183.179.166, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
- - {name: "selectedserver00060", server: 5.183.179.170, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
- - {name: "selectedserver00061", server: 5.183.179.145, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
- - {name: "selectedserver00062", server: 152.89.210.105, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
- - {name: "selectedserver00063", server: 5.183.179.167, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
- - {name: "selectedserver00064", server: 5.183.179.146, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
- - {name: "selectedserver00065", server: 185.126.116.117, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
- - {name: "selectedserver00066", server: 185.126.116.117, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
- - {name: "selectedserver00067", server: 185.126.116.117, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
- - {name: "selectedserver00068", server: 5.183.179.170, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
- - {name: "selectedserver00069", server: 152.89.210.84, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
- - {name: "selectedserver00070", server: 5.183.179.146, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
- - {name: "selectedserver00071", server: 5.183.179.166, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
- - {name: "selectedserver00072", server: 5.183.179.166, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
- - {name: "selectedserver00073", server: 5.183.179.167, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
- - {name: "selectedserver00074", server: 5.183.179.146, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
- - {name: "selectedserver00075", server: 213.183.51.172, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
- - {name: "selectedserver00076", server: 5.183.179.146, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
- - {name: "selectedserver00077", server: 217.30.10.65, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
- - {name: "selectedserver00078", server: 213.183.59.229, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
- - {name: "selectedserver00079", server: 5.183.179.145, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
- - {name: "selectedserver00080", server: 5.183.179.145, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
- - {name: "selectedserver00081", server: 5.183.179.146, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
- - {name: "selectedserver00082", server: 5.183.179.166, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
- - {name: "selectedserver00083", server: 213.183.51.172, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
- - {name: "selectedserver00084", server: 217.30.10.66, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
- - {name: "selectedserver00085", server: 185.126.116.117, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
- - {name: "selectedserver00086", server: 188.165.32.235, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
- - {name: "selectedserver00087", server: 213.183.53.200, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
- - {name: "selectedserver00088", server: 217.30.10.65, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
- - {name: "selectedserver00089", server: 5.183.179.170, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
- - {name: "selectedserver00090", server: 213.183.63.218, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
- - {name: "selectedserver00091", server: 185.126.116.117, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
- - {name: "selectedserver00092", server: 169.197.142.99, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
- - {name: "selectedserver00093", server: 5.183.179.140, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
- - {name: "selectedserver00094", server: 5.183.179.167, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
- - {name: "selectedserver00095", server: 5.183.179.166, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
- - {name: "selectedserver00096", server: 5.183.179.166, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
- - {name: "selectedserver00097", server: 217.30.10.65, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
- - {name: "selectedserver00098", server: 5.183.179.166, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
- - {name: "selectedserver00099", server: 185.126.116.117, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
- - {name: "selectedserver00100", server: 5.183.179.167, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
- - {name: "selectedserver00101", server: 5.183.179.146, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
- - {name: "selectedserver00102", server: 217.30.10.67, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
- - {name: "selectedserver00103", server: 5.183.179.166, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
- - {name: "selectedserver00104", server: 5.183.179.170, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
- - {name: "selectedserver00105", server: 217.30.10.65, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
- - {name: "selectedserver00106", server: 217.30.10.67, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
- - {name: "selectedserver00107", server: 5.183.179.166, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
- - {name: "selectedserver00108", server: 213.183.63.218, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
- - {name: "selectedserver00109", server: 217.30.10.66, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
- - {name: "selectedserver00110", server: 188.165.32.235, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
- - {name: "selectedserver00111", server: 185.167.117.171, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
- - {name: "selectedserver00112", server: 169.197.142.99, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
- - {name: "selectedserver00113", server: 169.197.142.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
- - {name: "selectedserver00114", server: 158.247.199.253, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
- - {name: "selectedserver00115", server: 172.105.244.165, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
- - {name: "selectedserver00116", server: 185.126.116.117, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
- - {name: "selectedserver00117", server: 5.183.179.146, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
- - {name: "selectedserver00118", server: 147.182.151.24, port: 20110, type: ss, cipher: aes-256-cfb, password: f5e0ecc4e6b84a668ee9ed98e0a30ca9, udp: true}
- - {name: "selectedserver00119", server: 5.183.179.166, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
- - {name: "selectedserver00120", server: 185.126.116.117, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
- - {name: "selectedserver00121", server: 5.183.179.170, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
- - {name: "selectedserver00122", server: 5.183.179.166, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
- - {name: "selectedserver00123", server: in-v1.sdgdn.com, port: 50301, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: in-v1.sdgdn.com}}, udp: true}
- - {name: "selectedserver00124", server: 217.30.10.66, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
- - {name: "selectedserver00125", server: 185.126.116.117, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
- - {name: "selectedserver00126", server: 213.183.53.177, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
- - {name: "selectedserver00127", server: 193.108.118.182, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
- - {name: "selectedserver00128", server: 213.183.53.200, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
- - {name: "selectedserver00129", server: 213.183.53.200, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
- - {name: "selectedserver00130", server: 213.183.51.171, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
- - {name: "selectedserver00131", server: 213.183.53.200, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
- - {name: "selectedserver00132", server: 213.183.53.177, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
- - {name: "selectedserver00133", server: 5.183.179.166, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
- - {name: "selectedserver00134", server: 213.183.59.229, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
- - {name: "selectedserver00135", server: 213.183.63.218, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
- - {name: "selectedserver00136", server: 217.30.10.65, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
- - {name: "selectedserver00137", server: 172.105.244.165, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
- - {name: "selectedserver00138", server: 188.165.32.235, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
- - {name: "selectedserver00139", server: 5.183.179.166, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
- - {name: "selectedserver00140", server: 152.89.210.105, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
- - {name: "selectedserver00141", server: 5.183.179.140, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
- - {name: "selectedserver00142", server: 213.183.53.177, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
- - {name: "selectedserver00143", server: sgiplcv1.hntgxxjc.com, port: 38607, type: ss, cipher: chacha20-ietf-poly1305, password: 71e5c050-aea8-42ab-b6d4-8255172dd3be, udp: true}
- - {name: "selectedserver00144", server: 213.183.53.200, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
- - {name: "selectedserver00145", server: 217.30.10.67, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
- - {name: "selectedserver00146", server: 217.30.10.66, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
- - {name: "selectedserver00147", server: 213.183.53.200, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
- - {name: "selectedserver00148", server: 185.126.116.117, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
- - {name: "selectedserver00149", server: 217.30.10.67, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
- - {name: "selectedserver00150", server: 172.105.244.165, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
- - {name: "selectedserver00151", server: 217.30.10.65, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
- - {name: "selectedserver00152", server: 213.183.53.177, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
- - {name: "selectedserver00153", server: 213.183.53.177, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
- - {name: "selectedserver00154", server: 185.167.116.253, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
- - {name: "selectedserver00155", server: 5.183.179.170, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
- - {name: "selectedserver00156", server: 5.183.179.146, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
- - {name: "selectedserver00157", server: 213.183.63.218, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
- - {name: "selectedserver00158", server: 120.232.82.202, port: 38607, type: ss, cipher: chacha20-ietf-poly1305, password: 71e5c050-aea8-42ab-b6d4-8255172dd3be, udp: true}
- - {name: "selectedserver00159", server: gzjpiplc.hntgxxjc.com, port: 38607, type: ss, cipher: chacha20-ietf-poly1305, password: 71e5c050-aea8-42ab-b6d4-8255172dd3be, udp: true}
- - {name: "selectedserver00160", server: 213.183.59.229, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
- - {name: "selectedserver00161", server: 213.183.53.200, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
- - {name: "selectedserver00162", server: huaweibgp.hntgxxjc.com, port: 38607, type: ss, cipher: chacha20-ietf-poly1305, password: 71e5c050-aea8-42ab-b6d4-8255172dd3be, udp: true}
- - {name: "selectedserver00163", server: 169.197.142.99, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
- - {name: "selectedserver00164", server: ggiplc03.jfjfhg.com, port: 38607, type: ss, cipher: chacha20-ietf-poly1305, password: 71e5c050-aea8-42ab-b6d4-8255172dd3be, udp: true}
- - {name: "selectedserver00165", server: 172.105.244.165, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
- - {name: "selectedserver00166", server: 5.183.179.170, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
- - {name: "selectedserver00167", server: 213.183.53.200, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
- - {name: "selectedserver00168", server: 172.105.244.165, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
- - {name: "selectedserver00169", server: 213.183.53.200, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
- - {name: "selectedserver00170", server: 213.183.53.200, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
- - {name: "selectedserver00171", server: 217.30.10.67, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
- - {name: "selectedserver00172", server: 5.183.179.167, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
- - {name: "selectedserver00173", server: 155.248.202.203, port: 14564, type: vmess, uuid: 4a0da379-a7cc-4389-88d7-45514b896883, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
- - {name: "selectedserver00174", server: 5.183.179.166, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
- - {name: "selectedserver00175", server: 185.167.116.253, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
- - {name: "selectedserver00176", server: 172.105.244.165, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
- - {name: "selectedserver00177", server: 213.183.63.218, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
- - {name: "selectedserver00178", server: 213.183.51.172, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
- - {name: "selectedserver00179", server: 213.183.51.171, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
- - {name: "selectedserver00180", server: 185.126.116.117, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
- - {name: "selectedserver00181", server: 169.197.142.99, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
- - {name: "selectedserver00182", server: 213.183.53.177, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
- - {name: "selectedserver00183", server: 172.105.244.165, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
- - {name: "selectedserver00184", server: sgiplc01.hntgxxjc.com, port: 38607, type: ss, cipher: chacha20-ietf-poly1305, password: 71e5c050-aea8-42ab-b6d4-8255172dd3be, udp: true}
- - {name: "selectedserver00185", server: 176.103.61.162, port: 444, type: ss, cipher: chacha20-ietf-poly1305, password: IjBemsAg, udp: true}
- - {name: "selectedserver00186", server: 5.183.179.170, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
- - {name: "selectedserver00187", server: 169.197.142.99, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
- - {name: "selectedserver00188", server: 172.105.244.165, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
- - {name: "selectedserver00189", server: 213.183.63.218, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
- - {name: "selectedserver00190", server: 213.183.53.200, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
- - {name: "selectedserver00191", server: 213.183.53.177, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
- - {name: "selectedserver00192", server: 5.183.179.166, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
- - {name: "selectedserver00193", server: 5.183.179.167, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
- - {name: "selectedserver00194", server: 120.240.168.126, port: 38607, type: ss, cipher: chacha20-ietf-poly1305, password: 71e5c050-aea8-42ab-b6d4-8255172dd3be, udp: true}
- - {name: "selectedserver00195", server: s1.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, sni: s1.upyun.online, skip-cert-verify: true, udp: true}
- - {name: "selectedserver00196", server: 213.183.53.177, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
- - {name: "selectedserver00197", server: 213.183.53.177, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
- - {name: "selectedserver00198", server: 217.30.10.66, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
- - {name: "selectedserver00199", server: 92.38.184.228, port: 55231, type: ss, cipher: chacha20-ietf-poly1305, password: zidKl2rcLVBm, udp: true}
- - {name: "selectedserver00200", server: 5.183.179.167, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
- - {name: "selectedserver00201", server: 5.183.179.166, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
- - {name: "selectedserver00202", server: 185.167.117.171, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
- - {name: "selectedserver00203", server: 172.105.244.165, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
- - {name: "selectedserver00204", server: 185.126.116.117, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+ - {name: "selectedserver00001", server: 152.89.210.105, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+ - {name: "selectedserver00002", server: 5.183.179.166, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+ - {name: "selectedserver00003", server: 185.126.116.125, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+ - {name: "selectedserver00004", server: 5.183.179.146, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+ - {name: "selectedserver00005", server: 5.183.179.146, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+ - {name: "selectedserver00006", server: 152.89.210.105, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+ - {name: "selectedserver00007", server: 152.89.210.105, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+ - {name: "selectedserver00008", server: 152.89.210.105, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+ - {name: "selectedserver00009", server: 38.68.135.19, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+ - {name: "selectedserver00010", server: 5.183.179.145, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+ - {name: "selectedserver00011", server: 5.183.179.166, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+ - {name: "selectedserver00012", server: 169.197.142.99, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+ - {name: "selectedserver00013", server: 5.183.179.146, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+ - {name: "selectedserver00014", server: 5.183.179.140, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+ - {name: "selectedserver00015", server: v5.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v5.ssrsub.com}}, udp: true}
+ - {name: "selectedserver00016", server: 5.183.179.146, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+ - {name: "selectedserver00017", server: 140.238.48.194, port: 8888, type: vmess, uuid: 24f1dfad-1267-4297-8e88-0e9b8ef47e47, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00018", server: 5.183.179.140, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
+ - {name: "selectedserver00019", server: 5.183.179.146, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+ - {name: "selectedserver00020", server: 152.89.210.105, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+ - {name: "selectedserver00021", server: v3.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v3.ssrsub.com}}, udp: true}
+ - {name: "selectedserver00022", server: 5.183.179.166, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+ - {name: "selectedserver00023", server: 217.30.10.66, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+ - {name: "selectedserver00024", server: 5.183.179.166, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+ - {name: "selectedserver00025", server: 5.183.179.146, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+ - {name: "selectedserver00026", server: 5.183.179.146, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+ - {name: "selectedserver00027", server: 117.28.242.137, port: 9359, type: ss, cipher: aes-256-cfb, password: !<str> 73117962, udp: true}
+ - {name: "selectedserver00028", server: 185.126.116.117, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+ - {name: "selectedserver00029", server: cn1.relay.iepl.pw, port: 50400, type: ss, cipher: aes-128-gcm, password: df87f3f2-f2a7-4fae-ae7d-507cea790c95, udp: true}
+ - {name: "selectedserver00030", server: 169.197.142.99, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+ - {name: "selectedserver00031", server: 169.197.142.99, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+ - {name: "selectedserver00032", server: 5.183.179.146, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+ - {name: "selectedserver00033", server: 185.126.116.117, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+ - {name: "selectedserver00034", server: 152.89.210.105, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+ - {name: "selectedserver00035", server: 5.183.179.146, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+ - {name: "selectedserver00036", server: 5.183.179.166, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+ - {name: "selectedserver00037", server: 213.183.63.219, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+ - {name: "selectedserver00038", server: 185.167.116.253, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+ - {name: "selectedserver00039", server: 217.30.10.65, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+ - {name: "selectedserver00040", server: 217.30.10.65, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+ - {name: "selectedserver00041", server: 169.197.142.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+ - {name: "selectedserver00042", server: 152.89.210.105, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+ - {name: "selectedserver00043", server: 5.183.179.166, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+ - {name: "selectedserver00044", server: 5.183.179.137, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+ - {name: "selectedserver00045", server: 5.183.179.146, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+ - {name: "selectedserver00046", server: iepl-gz.yyuuii.cyou, port: 49853, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+ - {name: "selectedserver00047", server: 213.183.51.172, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+ - {name: "selectedserver00048", server: 217.30.10.67, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+ - {name: "selectedserver00049", server: 5.183.179.140, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+ - {name: "selectedserver00050", server: 5.183.179.166, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+ - {name: "selectedserver00051", server: 38.68.135.19, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+ - {name: "selectedserver00052", server: 5.183.179.167, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+ - {name: "selectedserver00053", server: 217.30.10.67, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+ - {name: "selectedserver00054", server: 185.126.116.117, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+ - {name: "selectedserver00055", server: 185.126.116.117, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+ - {name: "selectedserver00056", server: 213.183.51.172, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+ - {name: "selectedserver00057", server: 217.30.10.66, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+ - {name: "selectedserver00058", server: v4.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v4.ssrsub.com}}, udp: true}
+ - {name: "selectedserver00059", server: 5.183.179.146, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+ - {name: "selectedserver00060", server: 5.183.179.140, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+ - {name: "selectedserver00061", server: 152.89.210.84, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+ - {name: "selectedserver00062", server: 152.89.210.84, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+ - {name: "selectedserver00063", server: 5.183.179.170, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+ - {name: "selectedserver00064", server: 217.30.10.66, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+ - {name: "selectedserver00065", server: 213.183.51.172, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+ - {name: "selectedserver00066", server: 5.183.179.140, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+ - {name: "selectedserver00067", server: 217.30.10.65, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+ - {name: "selectedserver00068", server: 5.183.179.167, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+ - {name: "selectedserver00069", server: 152.89.210.84, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+ - {name: "selectedserver00070", server: 217.30.10.67, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+ - {name: "selectedserver00071", server: 5.183.179.167, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+ - {name: "selectedserver00072", server: v2.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v2.ssrsub.com}}, udp: true}
+ - {name: "selectedserver00073", server: 217.30.10.67, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+ - {name: "selectedserver00074", server: 5.183.179.140, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+ - {name: "selectedserver00075", server: fkgfw-prod.i.sxl.cn, port: 443, type: ss, cipher: aes-256-cfb, password: E4DNMf73kHPrd8Qq7aqGPf7f, udp: true}
+ - {name: "selectedserver00076", server: 185.126.116.117, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+ - {name: "selectedserver00077", server: 169.197.142.99, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+ - {name: "selectedserver00078", server: 5.183.179.166, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+ - {name: "selectedserver00079", server: 5.183.179.170, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+ - {name: "selectedserver00080", server: 217.30.10.67, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+ - {name: "selectedserver00081", server: 185.126.116.117, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+ - {name: "selectedserver00082", server: 217.30.10.65, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+ - {name: "selectedserver00083", server: 169.197.142.99, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+ - {name: "selectedserver00084", server: 5.183.179.167, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+ - {name: "selectedserver00085", server: 5.183.179.167, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+ - {name: "selectedserver00086", server: 217.30.10.67, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+ - {name: "selectedserver00087", server: 217.30.10.65, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+ - {name: "selectedserver00088", server: 213.183.53.177, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+ - {name: "selectedserver00089", server: 185.126.116.117, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+ - {name: "selectedserver00090", server: 5.183.179.140, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+ - {name: "selectedserver00091", server: 5.183.179.170, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+ - {name: "selectedserver00092", server: yy02.nfeng6.pp.ua, port: 2706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 65199:xMcKnc, obfs-param: e167065199.microsoft.com, udp: true}
+ - {name: "selectedserver00093", server: 5.183.179.166, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+ - {name: "selectedserver00094", server: 172.105.244.165, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+ - {name: "selectedserver00095", server: 217.30.10.65, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+ - {name: "selectedserver00096", server: 5.183.179.170, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+ - {name: "selectedserver00097", server: 5.183.179.167, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+ - {name: "selectedserver00098", server: 5.183.179.170, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+ - {name: "selectedserver00099", server: 213.183.63.219, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+ - {name: "selectedserver00100", server: yy02.nfeng6.pp.ua, port: 2705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 65199:xMcKnc, obfs-param: e167065199.microsoft.com, udp: true}
+ - {name: "selectedserver00101", server: 213.183.51.172, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+ - {name: "selectedserver00102", server: 5.183.179.167, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+ - {name: "selectedserver00103", server: 5.183.179.167, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+ - {name: "selectedserver00104", server: 5.183.179.170, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+ - {name: "selectedserver00105", server: 5.183.179.146, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+ - {name: "selectedserver00106", server: 5.183.179.166, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+ - {name: "selectedserver00107", server: 172.105.244.165, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+ - {name: "selectedserver00108", server: 217.30.10.67, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+ - {name: "selectedserver00109", server: 169.197.142.99, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+ - {name: "selectedserver00110", server: 5.183.179.140, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+ - {name: "selectedserver00111", server: 5.183.179.166, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+ - {name: "selectedserver00112", server: 213.183.51.172, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+ - {name: "selectedserver00113", server: 5.183.179.170, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+ - {name: "selectedserver00114", server: 5.183.179.170, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+ - {name: "selectedserver00115", server: 5.183.179.170, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+ - {name: "selectedserver00116", server: 5.183.179.166, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+ - {name: "selectedserver00117", server: 185.126.116.117, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+ - {name: "selectedserver00118", server: 213.183.53.177, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+ - {name: "selectedserver00119", server: 5.183.179.140, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+ - {name: "selectedserver00120", server: 5.183.179.166, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+ - {name: "selectedserver00121", server: 5.183.179.167, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+ - {name: "selectedserver00122", server: 5.183.179.170, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+ - {name: "selectedserver00123", server: 213.183.53.200, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+ - {name: "selectedserver00124", server: 152.89.210.105, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+ - {name: "selectedserver00125", server: 213.183.63.218, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+ - {name: "selectedserver00126", server: 5.183.179.166, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+ - {name: "selectedserver00127", server: 5.183.179.166, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+ - {name: "selectedserver00128", server: 5.183.179.166, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+ - {name: "selectedserver00129", server: 185.126.116.117, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+ - {name: "selectedserver00130", server: 172.105.244.165, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+ - {name: "selectedserver00131", server: 185.167.116.253, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+ - {name: "selectedserver00132", server: 213.183.63.218, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+ - {name: "selectedserver00133", server: 213.183.59.229, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+ - {name: "selectedserver00134", server: 5.183.179.140, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+ - {name: "selectedserver00135", server: 5.183.179.167, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+ - {name: "selectedserver00136", server: 213.183.53.200, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+ - {name: "selectedserver00137", server: 169.197.142.99, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+ - {name: "selectedserver00138", server: 213.183.53.200, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+ - {name: "selectedserver00139", server: 5.183.179.140, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+ - {name: "selectedserver00140", server: 213.183.51.171, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+ - {name: "selectedserver00141", server: 5.183.179.170, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+ - {name: "selectedserver00142", server: 5.183.179.166, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+ - {name: "selectedserver00143", server: 5.183.179.167, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+ - {name: "selectedserver00144", server: 213.183.53.177, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+ - {name: "selectedserver00145", server: 5.183.179.170, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+ - {name: "selectedserver00146", server: 5.183.179.170, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+ - {name: "selectedserver00147", server: 172.105.244.165, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+ - {name: "selectedserver00148", server: 185.126.116.117, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+ - {name: "selectedserver00149", server: 217.30.10.67, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+ - {name: "selectedserver00150", server: 5.183.179.140, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+ - {name: "selectedserver00151", server: 213.183.59.229, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+ - {name: "selectedserver00152", server: 5.183.179.145, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+ - {name: "selectedserver00153", server: 5.183.179.170, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+ - {name: "selectedserver00154", server: 185.126.116.117, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+ - {name: "selectedserver00155", server: 213.183.53.200, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+ - {name: "selectedserver00156", server: 152.89.210.84, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+ - {name: "selectedserver00157", server: 213.183.53.200, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+ - {name: "selectedserver00158", server: 213.183.53.177, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+ - {name: "selectedserver00159", server: 172.105.244.165, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+ - {name: "selectedserver00160", server: 217.30.10.66, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+ - {name: "selectedserver00161", server: 172.105.244.165, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+ - {name: "selectedserver00162", server: 185.126.116.117, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+ - {name: "selectedserver00163", server: 5.183.179.146, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+ - {name: "selectedserver00164", server: 213.183.53.177, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+ - {name: "selectedserver00165", server: v1.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v1.ssrsub.com}}, udp: true}
+ - {name: "selectedserver00166", server: 213.183.53.200, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+ - {name: "selectedserver00167", server: 213.183.59.229, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+ - {name: "selectedserver00168", server: 213.183.63.218, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+ - {name: "selectedserver00169", server: 5.183.179.166, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+ - {name: "selectedserver00170", server: 185.167.117.171, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+ - {name: "selectedserver00171", server: 5.183.179.166, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+ - {name: "selectedserver00172", server: 213.183.53.177, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+ - {name: "selectedserver00173", server: 172.105.244.165, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+ - {name: "selectedserver00174", server: 213.183.53.177, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+ - {name: "selectedserver00175", server: 172.105.244.165, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+ - {name: "selectedserver00176", server: 213.183.63.218, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+ - {name: "selectedserver00177", server: 213.183.59.229, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+ - {name: "selectedserver00178", server: 172.105.244.165, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+ - {name: "selectedserver00179", server: 213.183.53.200, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+ - {name: "selectedserver00180", server: 213.183.53.177, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+ - {name: "selectedserver00181", server: 213.183.53.177, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+ - {name: "selectedserver00182", server: 213.183.53.177, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+ - {name: "selectedserver00183", server: 38.68.135.19, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+ - {name: "selectedserver00184", server: 213.183.53.177, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+ - {name: "selectedserver00185", server: 217.30.10.66, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+ - {name: "selectedserver00186", server: 213.183.53.200, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+ - {name: "selectedserver00187", server: 213.183.51.172, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+ - {name: "selectedserver00188", server: 213.183.53.200, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+ - {name: "selectedserver00189", server: 5.183.179.166, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+ - {name: "selectedserver00190", server: 217.30.10.65, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+ - {name: "selectedserver00191", server: 213.183.53.200, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+ - {name: "selectedserver00192", server: 213.183.53.200, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+ - {name: "selectedserver00193", server: 172.105.244.165, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+ - {name: "selectedserver00194", server: 5.183.179.167, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+ - {name: "selectedserver00195", server: 5.183.179.166, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+ - {name: "selectedserver00196", server: 213.183.53.177, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+ - {name: "selectedserver00197", server: 5.183.179.146, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+ - {name: "selectedserver00198", server: 213.183.53.200, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+ - {name: "selectedserver00199", server: 213.183.53.177, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+ - {name: "selectedserver00200", server: 213.183.51.171, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+ - {name: "selectedserver00201", server: 172.105.244.165, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+ - {name: "selectedserver00202", server: 5.183.179.146, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+ - {name: "selectedserver00203", server: 217.30.10.67, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+ - {name: "selectedserver00204", server: 217.30.10.66, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+ - {name: "selectedserver00205", server: 213.183.53.177, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
+ - {name: "selectedserver00206", server: 5.183.179.170, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+ - {name: "selectedserver00207", server: 5.183.179.170, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+ - {name: "selectedserver00208", server: 213.183.51.172, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+ - {name: "selectedserver00209", server: 213.183.51.171, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+ - {name: "selectedserver00210", server: 213.183.53.177, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
+ - {name: "selectedserver00211", server: 172.105.244.165, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+ - {name: "selectedserver00212", server: 213.183.53.177, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+ - {name: "selectedserver00213", server: 169.197.142.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+ - {name: "selectedserver00214", server: 213.183.53.200, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+ - {name: "selectedserver00215", server: 185.167.116.253, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+ - {name: "selectedserver00216", server: 5.183.179.146, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+ - {name: "selectedserver00217", server: 213.183.53.200, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
+ - {name: "selectedserver00218", server: 213.183.53.177, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+ - {name: "selectedserver00219", server: 213.183.53.177, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+ - {name: "selectedserver00220", server: 217.30.10.65, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+ - {name: "selectedserver00221", server: 169.197.142.99, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+ - {name: "selectedserver00222", server: 185.167.117.171, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+ - {name: "selectedserver00223", server: 213.183.53.200, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+ - {name: "selectedserver00224", server: 185.126.116.117, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+ - {name: "selectedserver00225", server: 213.183.53.200, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+ - {name: "selectedserver00226", server: 213.183.53.200, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+ - {name: "selectedserver00227", server: 213.183.53.177, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+ - {name: "selectedserver00228", server: 152.89.210.105, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+ - {name: "selectedserver00229", server: 217.30.10.67, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+ - {name: "selectedserver00230", server: 165.232.169.142, port: 29332, type: ss, cipher: aes-256-cfb, password: 1e5111699c45496da84112f35db665c4, udp: true}
+ - {name: "selectedserver00231", server: 213.183.53.177, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+ - {name: "selectedserver00232", server: 213.183.53.200, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+ - {name: "selectedserver00233", server: 5.183.179.166, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+ - {name: "selectedserver00234", server: 213.183.53.177, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+ - {name: "selectedserver00235", server: in-v1.sdgdn.com, port: 50301, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: in-v1.sdgdn.com}}, udp: true}
+ - {name: "selectedserver00236", server: 176.103.61.162, port: 444, type: ss, cipher: chacha20-ietf-poly1305, password: IjBemsAg, udp: true}
+ - {name: "selectedserver00237", server: 213.183.53.177, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+ - {name: "selectedserver00238", server: 169.197.142.99, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+ - {name: "selectedserver00239", server: in-v1.sdgdn.com, port: 50205, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: telegram.channel.ripaojiedian}}, udp: true}
+ - {name: "selectedserver00240", server: 213.183.63.218, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+ - {name: "selectedserver00241", server: 213.183.53.177, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+ - {name: "selectedserver00242", server: in-v1.sdgdn.com, port: 50701, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: telegram.channel.ripaojiedian}}, udp: true}
+ - {name: "selectedserver00243", server: 213.183.53.177, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+ - {name: "selectedserver00244", server: 185.167.116.253, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+ - {name: "selectedserver00245", server: 152.89.210.84, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+ - {name: "selectedserver00246", server: 213.183.63.218, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+ - {name: "selectedserver00247", server: 213.183.53.200, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+ - {name: "selectedserver00248", server: 213.183.53.177, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
+ - {name: "selectedserver00249", server: in-v1.sdgdn.com, port: 50207, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: in-v1.sdgdn.com}}, udp: true}
+ - {name: "selectedserver00250", server: gzyd-01.yyuuii.cyou, port: 23033, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
+ - {name: "selectedserver00251", server: 169.197.142.99, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+ - {name: "selectedserver00252", server: 213.183.63.218, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
+ - {name: "selectedserver00253", server: 172.105.58.152, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+ - {name: "selectedserver00254", server: 213.183.53.200, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+ - {name: "selectedserver00255", server: in-v1.sdgdn.com, port: 50206, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: telegram.channel.p2psharing}}, udp: true}
+ - {name: "selectedserver00256", server: 213.183.53.177, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+ - {name: "selectedserver00257", server: 172.105.58.152, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+ - {name: "selectedserver00258", server: 213.183.53.200, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+ - {name: "selectedserver00259", server: 185.167.116.253, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+ - {name: "selectedserver00260", server: 213.183.63.218, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+ - {name: "selectedserver00261", server: 213.183.63.218, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+ - {name: "selectedserver00262", server: 213.183.53.177, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+ - {name: "selectedserver00263", server: 169.197.142.99, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+ - {name: "selectedserver00264", server: 213.183.53.177, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
 
 
 proxy-groups:
@@ -430,6 +490,66 @@ proxy-groups:
       - selectedserver00202
       - selectedserver00203
       - selectedserver00204
+      - selectedserver00205
+      - selectedserver00206
+      - selectedserver00207
+      - selectedserver00208
+      - selectedserver00209
+      - selectedserver00210
+      - selectedserver00211
+      - selectedserver00212
+      - selectedserver00213
+      - selectedserver00214
+      - selectedserver00215
+      - selectedserver00216
+      - selectedserver00217
+      - selectedserver00218
+      - selectedserver00219
+      - selectedserver00220
+      - selectedserver00221
+      - selectedserver00222
+      - selectedserver00223
+      - selectedserver00224
+      - selectedserver00225
+      - selectedserver00226
+      - selectedserver00227
+      - selectedserver00228
+      - selectedserver00229
+      - selectedserver00230
+      - selectedserver00231
+      - selectedserver00232
+      - selectedserver00233
+      - selectedserver00234
+      - selectedserver00235
+      - selectedserver00236
+      - selectedserver00237
+      - selectedserver00238
+      - selectedserver00239
+      - selectedserver00240
+      - selectedserver00241
+      - selectedserver00242
+      - selectedserver00243
+      - selectedserver00244
+      - selectedserver00245
+      - selectedserver00246
+      - selectedserver00247
+      - selectedserver00248
+      - selectedserver00249
+      - selectedserver00250
+      - selectedserver00251
+      - selectedserver00252
+      - selectedserver00253
+      - selectedserver00254
+      - selectedserver00255
+      - selectedserver00256
+      - selectedserver00257
+      - selectedserver00258
+      - selectedserver00259
+      - selectedserver00260
+      - selectedserver00261
+      - selectedserver00262
+      - selectedserver00263
+      - selectedserver00264
 
 
 rules:
