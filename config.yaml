@@ -6,270 +6,378 @@ log-level: info
 external-controller: :9090
 proxies:
 
- - {name: "selectedserver00001", server: 152.89.210.105, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
- - {name: "selectedserver00002", server: 5.183.179.166, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
- - {name: "selectedserver00003", server: 185.126.116.125, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
- - {name: "selectedserver00004", server: 5.183.179.146, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
- - {name: "selectedserver00005", server: 5.183.179.146, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
- - {name: "selectedserver00006", server: 152.89.210.105, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
- - {name: "selectedserver00007", server: 152.89.210.105, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
- - {name: "selectedserver00008", server: 152.89.210.105, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
- - {name: "selectedserver00009", server: 38.68.135.19, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
- - {name: "selectedserver00010", server: 5.183.179.145, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
- - {name: "selectedserver00011", server: 5.183.179.166, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
- - {name: "selectedserver00012", server: 169.197.142.99, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
- - {name: "selectedserver00013", server: 5.183.179.146, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
- - {name: "selectedserver00014", server: 5.183.179.140, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
- - {name: "selectedserver00015", server: v5.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v5.ssrsub.com}}, udp: true}
- - {name: "selectedserver00016", server: 5.183.179.146, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
- - {name: "selectedserver00017", server: 140.238.48.194, port: 8888, type: vmess, uuid: 24f1dfad-1267-4297-8e88-0e9b8ef47e47, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
- - {name: "selectedserver00018", server: 5.183.179.140, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
- - {name: "selectedserver00019", server: 5.183.179.146, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
- - {name: "selectedserver00020", server: 152.89.210.105, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
- - {name: "selectedserver00021", server: v3.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v3.ssrsub.com}}, udp: true}
- - {name: "selectedserver00022", server: 5.183.179.166, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
- - {name: "selectedserver00023", server: 217.30.10.66, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
- - {name: "selectedserver00024", server: 5.183.179.166, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
- - {name: "selectedserver00025", server: 5.183.179.146, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
- - {name: "selectedserver00026", server: 5.183.179.146, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
- - {name: "selectedserver00027", server: 117.28.242.137, port: 9359, type: ss, cipher: aes-256-cfb, password: !<str> 73117962, udp: true}
- - {name: "selectedserver00028", server: 185.126.116.117, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
- - {name: "selectedserver00029", server: cn1.relay.iepl.pw, port: 50400, type: ss, cipher: aes-128-gcm, password: df87f3f2-f2a7-4fae-ae7d-507cea790c95, udp: true}
- - {name: "selectedserver00030", server: 169.197.142.99, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
- - {name: "selectedserver00031", server: 169.197.142.99, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
- - {name: "selectedserver00032", server: 5.183.179.146, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
- - {name: "selectedserver00033", server: 185.126.116.117, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
- - {name: "selectedserver00034", server: 152.89.210.105, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
- - {name: "selectedserver00035", server: 5.183.179.146, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
- - {name: "selectedserver00036", server: 5.183.179.166, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
- - {name: "selectedserver00037", server: 213.183.63.219, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
- - {name: "selectedserver00038", server: 185.167.116.253, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
- - {name: "selectedserver00039", server: 217.30.10.65, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
- - {name: "selectedserver00040", server: 217.30.10.65, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
- - {name: "selectedserver00041", server: 169.197.142.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
- - {name: "selectedserver00042", server: 152.89.210.105, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
- - {name: "selectedserver00043", server: 5.183.179.166, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
- - {name: "selectedserver00044", server: 5.183.179.137, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
- - {name: "selectedserver00045", server: 5.183.179.146, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
- - {name: "selectedserver00046", server: iepl-gz.yyuuii.cyou, port: 49853, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
- - {name: "selectedserver00047", server: 213.183.51.172, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
- - {name: "selectedserver00048", server: 217.30.10.67, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
- - {name: "selectedserver00049", server: 5.183.179.140, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
- - {name: "selectedserver00050", server: 5.183.179.166, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
- - {name: "selectedserver00051", server: 38.68.135.19, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
- - {name: "selectedserver00052", server: 5.183.179.167, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
- - {name: "selectedserver00053", server: 217.30.10.67, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
- - {name: "selectedserver00054", server: 185.126.116.117, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
- - {name: "selectedserver00055", server: 185.126.116.117, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
- - {name: "selectedserver00056", server: 213.183.51.172, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
- - {name: "selectedserver00057", server: 217.30.10.66, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
- - {name: "selectedserver00058", server: v4.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v4.ssrsub.com}}, udp: true}
- - {name: "selectedserver00059", server: 5.183.179.146, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
- - {name: "selectedserver00060", server: 5.183.179.140, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
- - {name: "selectedserver00061", server: 152.89.210.84, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
- - {name: "selectedserver00062", server: 152.89.210.84, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
- - {name: "selectedserver00063", server: 5.183.179.170, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
- - {name: "selectedserver00064", server: 217.30.10.66, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
- - {name: "selectedserver00065", server: 213.183.51.172, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
- - {name: "selectedserver00066", server: 5.183.179.140, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
- - {name: "selectedserver00067", server: 217.30.10.65, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
- - {name: "selectedserver00068", server: 5.183.179.167, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
- - {name: "selectedserver00069", server: 152.89.210.84, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
- - {name: "selectedserver00070", server: 217.30.10.67, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
- - {name: "selectedserver00071", server: 5.183.179.167, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
- - {name: "selectedserver00072", server: v2.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v2.ssrsub.com}}, udp: true}
- - {name: "selectedserver00073", server: 217.30.10.67, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
- - {name: "selectedserver00074", server: 5.183.179.140, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
- - {name: "selectedserver00075", server: fkgfw-prod.i.sxl.cn, port: 443, type: ss, cipher: aes-256-cfb, password: E4DNMf73kHPrd8Qq7aqGPf7f, udp: true}
- - {name: "selectedserver00076", server: 185.126.116.117, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
- - {name: "selectedserver00077", server: 169.197.142.99, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
- - {name: "selectedserver00078", server: 5.183.179.166, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
- - {name: "selectedserver00079", server: 5.183.179.170, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
- - {name: "selectedserver00080", server: 217.30.10.67, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
- - {name: "selectedserver00081", server: 185.126.116.117, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
- - {name: "selectedserver00082", server: 217.30.10.65, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
- - {name: "selectedserver00083", server: 169.197.142.99, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
- - {name: "selectedserver00084", server: 5.183.179.167, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
- - {name: "selectedserver00085", server: 5.183.179.167, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
- - {name: "selectedserver00086", server: 217.30.10.67, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
- - {name: "selectedserver00087", server: 217.30.10.65, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
- - {name: "selectedserver00088", server: 213.183.53.177, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
- - {name: "selectedserver00089", server: 185.126.116.117, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
- - {name: "selectedserver00090", server: 5.183.179.140, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
- - {name: "selectedserver00091", server: 5.183.179.170, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
- - {name: "selectedserver00092", server: yy02.nfeng6.pp.ua, port: 2706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 65199:xMcKnc, obfs-param: e167065199.microsoft.com, udp: true}
- - {name: "selectedserver00093", server: 5.183.179.166, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
- - {name: "selectedserver00094", server: 172.105.244.165, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
- - {name: "selectedserver00095", server: 217.30.10.65, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
- - {name: "selectedserver00096", server: 5.183.179.170, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
- - {name: "selectedserver00097", server: 5.183.179.167, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
- - {name: "selectedserver00098", server: 5.183.179.170, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
- - {name: "selectedserver00099", server: 213.183.63.219, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
- - {name: "selectedserver00100", server: yy02.nfeng6.pp.ua, port: 2705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 65199:xMcKnc, obfs-param: e167065199.microsoft.com, udp: true}
- - {name: "selectedserver00101", server: 213.183.51.172, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
- - {name: "selectedserver00102", server: 5.183.179.167, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
- - {name: "selectedserver00103", server: 5.183.179.167, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
- - {name: "selectedserver00104", server: 5.183.179.170, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
- - {name: "selectedserver00105", server: 5.183.179.146, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
- - {name: "selectedserver00106", server: 5.183.179.166, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
- - {name: "selectedserver00107", server: 172.105.244.165, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
- - {name: "selectedserver00108", server: 217.30.10.67, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
- - {name: "selectedserver00109", server: 169.197.142.99, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
- - {name: "selectedserver00110", server: 5.183.179.140, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
- - {name: "selectedserver00111", server: 5.183.179.166, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
- - {name: "selectedserver00112", server: 213.183.51.172, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
- - {name: "selectedserver00113", server: 5.183.179.170, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
- - {name: "selectedserver00114", server: 5.183.179.170, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
- - {name: "selectedserver00115", server: 5.183.179.170, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
- - {name: "selectedserver00116", server: 5.183.179.166, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
- - {name: "selectedserver00117", server: 185.126.116.117, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
- - {name: "selectedserver00118", server: 213.183.53.177, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
- - {name: "selectedserver00119", server: 5.183.179.140, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
- - {name: "selectedserver00120", server: 5.183.179.166, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
- - {name: "selectedserver00121", server: 5.183.179.167, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
- - {name: "selectedserver00122", server: 5.183.179.170, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
- - {name: "selectedserver00123", server: 213.183.53.200, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
- - {name: "selectedserver00124", server: 152.89.210.105, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
- - {name: "selectedserver00125", server: 213.183.63.218, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
- - {name: "selectedserver00126", server: 5.183.179.166, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
- - {name: "selectedserver00127", server: 5.183.179.166, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
- - {name: "selectedserver00128", server: 5.183.179.166, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
- - {name: "selectedserver00129", server: 185.126.116.117, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
- - {name: "selectedserver00130", server: 172.105.244.165, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
- - {name: "selectedserver00131", server: 185.167.116.253, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
- - {name: "selectedserver00132", server: 213.183.63.218, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
- - {name: "selectedserver00133", server: 213.183.59.229, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
- - {name: "selectedserver00134", server: 5.183.179.140, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
- - {name: "selectedserver00135", server: 5.183.179.167, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
- - {name: "selectedserver00136", server: 213.183.53.200, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
- - {name: "selectedserver00137", server: 169.197.142.99, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
- - {name: "selectedserver00138", server: 213.183.53.200, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
- - {name: "selectedserver00139", server: 5.183.179.140, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
- - {name: "selectedserver00140", server: 213.183.51.171, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
- - {name: "selectedserver00141", server: 5.183.179.170, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
- - {name: "selectedserver00142", server: 5.183.179.166, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
- - {name: "selectedserver00143", server: 5.183.179.167, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
- - {name: "selectedserver00144", server: 213.183.53.177, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
- - {name: "selectedserver00145", server: 5.183.179.170, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
- - {name: "selectedserver00146", server: 5.183.179.170, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
- - {name: "selectedserver00147", server: 172.105.244.165, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
- - {name: "selectedserver00148", server: 185.126.116.117, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
- - {name: "selectedserver00149", server: 217.30.10.67, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
- - {name: "selectedserver00150", server: 5.183.179.140, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
- - {name: "selectedserver00151", server: 213.183.59.229, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
- - {name: "selectedserver00152", server: 5.183.179.145, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
- - {name: "selectedserver00153", server: 5.183.179.170, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
- - {name: "selectedserver00154", server: 185.126.116.117, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
- - {name: "selectedserver00155", server: 213.183.53.200, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
- - {name: "selectedserver00156", server: 152.89.210.84, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
- - {name: "selectedserver00157", server: 213.183.53.200, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
- - {name: "selectedserver00158", server: 213.183.53.177, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
- - {name: "selectedserver00159", server: 172.105.244.165, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
- - {name: "selectedserver00160", server: 217.30.10.66, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
- - {name: "selectedserver00161", server: 172.105.244.165, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
- - {name: "selectedserver00162", server: 185.126.116.117, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
- - {name: "selectedserver00163", server: 5.183.179.146, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
- - {name: "selectedserver00164", server: 213.183.53.177, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
- - {name: "selectedserver00165", server: v1.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v1.ssrsub.com}}, udp: true}
- - {name: "selectedserver00166", server: 213.183.53.200, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
- - {name: "selectedserver00167", server: 213.183.59.229, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
- - {name: "selectedserver00168", server: 213.183.63.218, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
- - {name: "selectedserver00169", server: 5.183.179.166, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
- - {name: "selectedserver00170", server: 185.167.117.171, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
- - {name: "selectedserver00171", server: 5.183.179.166, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
- - {name: "selectedserver00172", server: 213.183.53.177, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
- - {name: "selectedserver00173", server: 172.105.244.165, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
- - {name: "selectedserver00174", server: 213.183.53.177, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
- - {name: "selectedserver00175", server: 172.105.244.165, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
- - {name: "selectedserver00176", server: 213.183.63.218, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
- - {name: "selectedserver00177", server: 213.183.59.229, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
- - {name: "selectedserver00178", server: 172.105.244.165, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
- - {name: "selectedserver00179", server: 213.183.53.200, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
- - {name: "selectedserver00180", server: 213.183.53.177, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
- - {name: "selectedserver00181", server: 213.183.53.177, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
- - {name: "selectedserver00182", server: 213.183.53.177, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
- - {name: "selectedserver00183", server: 38.68.135.19, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
- - {name: "selectedserver00184", server: 213.183.53.177, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
- - {name: "selectedserver00185", server: 217.30.10.66, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
- - {name: "selectedserver00186", server: 213.183.53.200, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
- - {name: "selectedserver00187", server: 213.183.51.172, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
- - {name: "selectedserver00188", server: 213.183.53.200, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
- - {name: "selectedserver00189", server: 5.183.179.166, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
- - {name: "selectedserver00190", server: 217.30.10.65, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
- - {name: "selectedserver00191", server: 213.183.53.200, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
- - {name: "selectedserver00192", server: 213.183.53.200, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
- - {name: "selectedserver00193", server: 172.105.244.165, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
- - {name: "selectedserver00194", server: 5.183.179.167, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
- - {name: "selectedserver00195", server: 5.183.179.166, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
- - {name: "selectedserver00196", server: 213.183.53.177, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
- - {name: "selectedserver00197", server: 5.183.179.146, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
- - {name: "selectedserver00198", server: 213.183.53.200, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
- - {name: "selectedserver00199", server: 213.183.53.177, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
- - {name: "selectedserver00200", server: 213.183.51.171, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
- - {name: "selectedserver00201", server: 172.105.244.165, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
- - {name: "selectedserver00202", server: 5.183.179.146, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
- - {name: "selectedserver00203", server: 217.30.10.67, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
- - {name: "selectedserver00204", server: 217.30.10.66, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
- - {name: "selectedserver00205", server: 213.183.53.177, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
- - {name: "selectedserver00206", server: 5.183.179.170, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
- - {name: "selectedserver00207", server: 5.183.179.170, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
- - {name: "selectedserver00208", server: 213.183.51.172, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
- - {name: "selectedserver00209", server: 213.183.51.171, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
- - {name: "selectedserver00210", server: 213.183.53.177, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
- - {name: "selectedserver00211", server: 172.105.244.165, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
- - {name: "selectedserver00212", server: 213.183.53.177, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
- - {name: "selectedserver00213", server: 169.197.142.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
- - {name: "selectedserver00214", server: 213.183.53.200, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
- - {name: "selectedserver00215", server: 185.167.116.253, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
- - {name: "selectedserver00216", server: 5.183.179.146, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
- - {name: "selectedserver00217", server: 213.183.53.200, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
- - {name: "selectedserver00218", server: 213.183.53.177, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
- - {name: "selectedserver00219", server: 213.183.53.177, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
- - {name: "selectedserver00220", server: 217.30.10.65, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
- - {name: "selectedserver00221", server: 169.197.142.99, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
- - {name: "selectedserver00222", server: 185.167.117.171, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
- - {name: "selectedserver00223", server: 213.183.53.200, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
- - {name: "selectedserver00224", server: 185.126.116.117, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
- - {name: "selectedserver00225", server: 213.183.53.200, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
- - {name: "selectedserver00226", server: 213.183.53.200, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
- - {name: "selectedserver00227", server: 213.183.53.177, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
- - {name: "selectedserver00228", server: 152.89.210.105, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
- - {name: "selectedserver00229", server: 217.30.10.67, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
- - {name: "selectedserver00230", server: 165.232.169.142, port: 29332, type: ss, cipher: aes-256-cfb, password: 1e5111699c45496da84112f35db665c4, udp: true}
- - {name: "selectedserver00231", server: 213.183.53.177, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
- - {name: "selectedserver00232", server: 213.183.53.200, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
- - {name: "selectedserver00233", server: 5.183.179.166, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
- - {name: "selectedserver00234", server: 213.183.53.177, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
- - {name: "selectedserver00235", server: in-v1.sdgdn.com, port: 50301, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: in-v1.sdgdn.com}}, udp: true}
- - {name: "selectedserver00236", server: 176.103.61.162, port: 444, type: ss, cipher: chacha20-ietf-poly1305, password: IjBemsAg, udp: true}
- - {name: "selectedserver00237", server: 213.183.53.177, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
- - {name: "selectedserver00238", server: 169.197.142.99, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
- - {name: "selectedserver00239", server: in-v1.sdgdn.com, port: 50205, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: telegram.channel.ripaojiedian}}, udp: true}
- - {name: "selectedserver00240", server: 213.183.63.218, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
- - {name: "selectedserver00241", server: 213.183.53.177, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
- - {name: "selectedserver00242", server: in-v1.sdgdn.com, port: 50701, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: telegram.channel.ripaojiedian}}, udp: true}
- - {name: "selectedserver00243", server: 213.183.53.177, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
- - {name: "selectedserver00244", server: 185.167.116.253, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
- - {name: "selectedserver00245", server: 152.89.210.84, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
- - {name: "selectedserver00246", server: 213.183.63.218, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
- - {name: "selectedserver00247", server: 213.183.53.200, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
- - {name: "selectedserver00248", server: 213.183.53.177, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
- - {name: "selectedserver00249", server: in-v1.sdgdn.com, port: 50207, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: in-v1.sdgdn.com}}, udp: true}
- - {name: "selectedserver00250", server: gzyd-01.yyuuii.cyou, port: 23033, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 32381:C2pHyiQfgm, obfs-param: ajax.microsoft.com, udp: true}
- - {name: "selectedserver00251", server: 169.197.142.99, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
- - {name: "selectedserver00252", server: 213.183.63.218, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
- - {name: "selectedserver00253", server: 172.105.58.152, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
- - {name: "selectedserver00254", server: 213.183.53.200, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
- - {name: "selectedserver00255", server: in-v1.sdgdn.com, port: 50206, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: telegram.channel.p2psharing}}, udp: true}
- - {name: "selectedserver00256", server: 213.183.53.177, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
- - {name: "selectedserver00257", server: 172.105.58.152, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
- - {name: "selectedserver00258", server: 213.183.53.200, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
- - {name: "selectedserver00259", server: 185.167.116.253, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
- - {name: "selectedserver00260", server: 213.183.63.218, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
- - {name: "selectedserver00261", server: 213.183.63.218, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
- - {name: "selectedserver00262", server: 213.183.53.177, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
- - {name: "selectedserver00263", server: 169.197.142.99, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
- - {name: "selectedserver00264", server: 213.183.53.177, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+ - {"name": "selectedserver00001", "server":"5.183.179.145","port":9026,"type":"ss","country":"🇩🇪_DE_德国_7","cipher":"aes-256-cfb","password":"QWDDvVE9npNurQfA"}
+ - {"name": "selectedserver00002", "server":"116.129.254.5","port":63955,"type":"ss","country":"长沙联通转日本Webarena[M][倍率:0_9]_104","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00003", "server":"116.129.254.16","port":33954,"type":"ss","country":"湖南联通转日本NTT3[M][倍率:0_8]_79","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00004", "server":"198.57.27.225","port":8118,"type":"ss","country":"🇨🇦_CA_加拿大_16","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+ - {"name": "selectedserver00005", "server":"5.183.179.145","port":9056,"type":"ss","country":"🇩🇪_DE_德国_30","cipher":"aes-256-cfb","password":"rNBfNuuANFCAk7KB"}
+ - {"name": "selectedserver00006", "server":"62.216.91.232","port":9005,"type":"ss","country":"🇷🇴_RO_罗马尼亚_46","cipher":"aes-256-cfb","password":"ZET59LF6DvCC8KVt"}
+ - {"name": "selectedserver00007", "server":"198.57.27.225","port":5004,"type":"ss","country":"🇨🇦_CA_加拿大_5","cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+ - {"name": "selectedserver00008", "server":"116.129.254.15","port":33954,"type":"ss","country":"湖南联通转美国Cera[倍率:0_8]_81","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00009", "server":"5.183.179.167","port":9031,"type":"ss","country":"🇩🇪_DE_德国_33","cipher":"aes-256-cfb","password":"BwcAUZk8hUFAkDGN"}
+ - {"name": "selectedserver00010", "server":"198.57.27.225","port":5004,"type":"ss","country":"🇨🇦_CA_加拿大_19","cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+ - {"name": "selectedserver00011", "server":"198.57.27.225","port":6697,"type":"ss","country":"🇨🇦_CA_加拿大_18","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+ - {"name": "selectedserver00012", "server":"x.gotout.work","port":30012,"type":"ss","country":"🇨🇳_CN中国->🇭🇰_HK香港_1","cipher":"aes-256-gcm","password":"e0uyakendg7"}
+ - {"name": "selectedserver00013", "server":"120.232.192.61","port":33954,"type":"ss","country":"广州移动转新加坡AWS[M][倍率:0_8]_24","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00014", "server":"62.216.91.232","port":9005,"type":"ss","country":"🇷🇴_RO_罗马尼亚_7","cipher":"aes-256-cfb","password":"ZET59LF6DvCC8KVt"}
+ - {"name": "selectedserver00015", "server":"120.232.192.59","port":63955,"type":"ss","country":"广州移动转香港AWS[倍率:0_9]_39","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00016", "server":"198.57.27.225","port":8118,"type":"ss","country":"🇨🇦_CA_加拿大_17","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+ - {"name": "selectedserver00017", "server":"38.68.135.19","port":5004,"type":"ss","country":"🇺🇸_US_美国_22","cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+ - {"name": "selectedserver00018", "server":"198.57.27.225","port":7001,"type":"ss","country":"🇨🇦_CA_加拿大_20","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+ - {"name": "selectedserver00019", "server":"152.89.210.84","port":9038,"type":"ss","country":"🇬🇧_GB_英国_2","cipher":"aes-256-cfb","password":"gYCYXfkUQEs2TaJQ"}
+ - {"name": "selectedserver00020", "server":"198.57.27.225","port":8118,"type":"ss","country":"🇨🇦_CA_加拿大_17","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+ - {"name": "selectedserver00021", "server":"116.129.253.139","port":63955,"type":"ss","country":"长沙联通转香港NTT[倍率:0_8]_114","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00022", "server":"cn1.relay.iepl.pw","port":50400,"type":"ss","country":"🇨🇳_CN_中国->🇰🇷_KR_韩国_24","cipher":"aes-128-gcm","password":"df87f3f2-f2a7-4fae-ae7d-507cea790c95"}
+ - {"name": "selectedserver00023", "server":"38.68.135.19","port":5500,"type":"ss","country":"🇺🇸_US_美国_9","cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+ - {"name": "selectedserver00024", "server":"5.183.179.167","port":9031,"type":"ss","country":"🇩🇪_DE_德国_33","cipher":"aes-256-cfb","password":"BwcAUZk8hUFAkDGN"}
+ - {"name": "selectedserver00025", "server":"38.68.135.19","port":5004,"type":"ss","country":"🇺🇸_US_美国_22","cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+ - {"name": "selectedserver00026", "server":"38.68.135.19","port":2376,"type":"ss","country":"🇺🇸_US美国_4","cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
+ - {"name": "selectedserver00027", "server":"120.232.193.92","port":4572,"type":"trojan","country":"广州移动转日本Azure[Trojan测试][倍率:1]_28","skip-cert-verify":true,"udp":true,"password":"432f5543-80ad-300a-84d4-cac0797e4e8f","sni":"gzjpaz.cc.tjcct.xyz"}
+ - {"name": "selectedserver00028", "server":"5.183.179.146","port":9018,"type":"ss","country":"🇩🇪_DE_德国_6","cipher":"aes-256-cfb","password":"fG2artUmHfNT2cX7"}
+ - {"name": "selectedserver00029", "server":"213.183.63.219","port":9033,"type":"ss","country":"🇧🇬_BG_保加利亚_12","cipher":"aes-256-cfb","password":"UTJA57ypk2XKQpnm"}
+ - {"name": "selectedserver00030", "server":"116.129.254.5","port":33954,"type":"ss","country":"湖南联通转香港Azure[倍率:0_9]_89","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00031", "server":"120.232.193.98","port":63955,"type":"ss","country":"广东移动转马来西亚TM[M][倍率:1]_20","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00032", "server":"x.gotout.work","port":30031,"type":"ss","country":"🇨🇳_CN_中国->🇯🇵_JP_日本_12","cipher":"aes-256-gcm","password":"e0uyakendg7"}
+ - {"name": "selectedserver00033", "server":"ssl.tcpbbr.net","port":443,"type":"trojan","country":"🇭🇰_HK_香港_1","skip-cert-verify":true,"udp":true,"password":"7b4066ae-accc-11eb-a8bf-f23c91cfbbc9"}
+ - {"name": "selectedserver00034", "server":"120.232.192.59","port":33954,"type":"ss","country":"广州移动转美国Azure[倍率:1]_31","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00035", "server":"198.57.27.225","port":8118,"type":"ss","country":"🇨🇦_CA_加拿大_17","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+ - {"name": "selectedserver00036", "server":"38.68.135.19","port":2376,"type":"ss","country":"🇺🇸_US_美国_25","cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
+ - {"name": "selectedserver00037", "server":"free-sh.vmess.top","port":24715,"type":"trojan","country":"JP-19_专线_公益节点www_paopao_dog_2X_18","skip-cert-verify":true,"udp":true,"password":"a26bf01f-72bf-47df-a953-49b461c22701"}
+ - {"name": "selectedserver00038", "server":"152.89.210.105","port":9050,"type":"ss","country":"🇬🇧_GB_英国_2","cipher":"aes-256-cfb","password":"FG5ddLsMPbV5CutE"}
+ - {"name": "selectedserver00039", "server":"5.183.179.167","port":9010,"type":"ss","country":"🇩🇪_DE_德国_46","cipher":"aes-256-cfb","password":"f63gg8EruDnUrmz4"}
+ - {"name": "selectedserver00040", "server":"217.30.10.67","port":9056,"type":"ss","country":"🇵🇱_PL_波兰_41","cipher":"aes-256-cfb","password":"rNBfNuuANFCAk7KB"}
+ - {"name": "selectedserver00041", "server":"198.57.27.225","port":6697,"type":"ss","country":"🇨🇦_CA_加拿大_18","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+ - {"name": "selectedserver00042", "server":"5.183.179.167","port":9093,"type":"ss","country":"🇩🇪_DE_德国_35","cipher":"aes-256-cfb","password":"wfLC2y7rzZyCmuyt"}
+ - {"name": "selectedserver00043", "server":"198.57.27.225","port":7001,"type":"ss","country":"🇨🇦_CA_加拿大_20","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+ - {"name": "selectedserver00044", "server":"198.57.27.225","port":7001,"type":"ss","country":"🇨🇦_CA_加拿大_20","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+ - {"name": "selectedserver00045", "server":"5.183.179.167","port":9031,"type":"ss","country":"🇩🇪_DE_德国_33","cipher":"aes-256-cfb","password":"BwcAUZk8hUFAkDGN"}
+ - {"name": "selectedserver00046", "server":"cn1.relay.iepl.pw","port":50400,"type":"ss","country":"🇨🇳_CN中国->🇰🇷_KR_韩国_15","cipher":"aes-128-gcm","password":"df87f3f2-f2a7-4fae-ae7d-507cea790c95"}
+ - {"name": "selectedserver00047", "server":"116.129.253.160","port":33954,"type":"ss","country":"长沙联通转日本NTT5[倍率:0_8]_103","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00048", "server":"free-hk.vmess.top","port":39123,"type":"trojan","country":"HK-1_公益节点www_paopao_dog_2X_20","skip-cert-verify":true,"udp":true,"password":"a26bf01f-72bf-47df-a953-49b461c22701"}
+ - {"name": "selectedserver00049", "server":"198.57.27.225","port":8118,"type":"ss","country":"🇨🇦_CA_加拿大_17","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+ - {"name": "selectedserver00050", "server":"x.gotout.work","port":30041,"type":"ss","country":"🇨🇳_CN中国->🇸🇬_SG新加坡_2","cipher":"aes-256-gcm","password":"e0uyakendg7"}
+ - {"name": "selectedserver00051", "server":"42.157.196.248","port":45322,"type":"trojan","country":"深港专线[Trojan测试][倍率:2_5]_47","skip-cert-verify":true,"udp":true,"password":"432f5543-80ad-300a-84d4-cac0797e4e8f","sni":"sgtest.cc.tjcct.xyz"}
+ - {"name": "selectedserver00052", "server":"213.183.63.219","port":9003,"type":"ss","country":"🇧🇬_BG_保加利亚_43","cipher":"aes-256-cfb","password":"JdmRK9gMEqFgs8nP"}
+ - {"name": "selectedserver00053", "server":"152.89.210.84","port":9079,"type":"ss","country":"🇬🇧_GB_英国_38","cipher":"aes-256-cfb","password":"TPqX8edgbAURcAMb"}
+ - {"name": "selectedserver00054", "server":"217.30.10.66","port":9059,"type":"ss","country":"🇵🇱_PL_波兰_48","cipher":"aes-256-cfb","password":"9XwYyZsK8SNzQDtY"}
+ - {"name": "selectedserver00055", "server":"152.89.210.105","port":9064,"type":"ssr","country":"🇬🇧_GB_英国_6","password":"cp8pRSUAyLhTfVWH","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00056", "server":"120.232.193.95","port":33954,"type":"ss","country":"广东移动转香港NTT[倍率:0_8]_17","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00057", "server":"198.57.27.225","port":8118,"type":"ss","country":"🇨🇦_CA_加拿大_6","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+ - {"name": "selectedserver00058", "server":"x.gotout.work","port":30041,"type":"ss","country":"🇨🇳_CN_中国->🇸🇬_SG_新加坡_28","cipher":"aes-256-gcm","password":"e0uyakendg7"}
+ - {"name": "selectedserver00059", "server":"120.232.193.99","port":63955,"type":"ss","country":"广东移动转香港Azure[倍率:1]_12","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00060", "server":"211.99.100.20","port":33954,"type":"ss","country":"深港专线转香港HGC商宽3[倍率:2_5]_59","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00061", "server":"116.129.253.137","port":33954,"type":"ss","country":"长沙联通转香港NTT2[倍率:0_8]_115","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00062", "server":"116.129.254.7","port":63955,"type":"ss","country":"湖南联通转日本Webarena[M][倍率:0_8]_80","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00063", "server":"198.57.27.225","port":6697,"type":"ss","country":"🇨🇦_CA_加拿大_18","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+ - {"name": "selectedserver00064", "server":"140.238.6.99","port":443,"type":"vmess","uuid":"f613af75-f9eb-3d84-9357-7c3b00d950a2","alterId":2,"cipher":"auto","country":"🇰🇷_KR_韩国_38","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/live/cctv6_2/index.m3u8","headers":{"host":"ora1.speedsvip.co"}}}
+ - {"name": "selectedserver00065", "server":"120.232.193.99","port":33954,"type":"ss","country":"广东移动转香港HKT[M][倍率:0_9]_16","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00066", "server":"169.197.142.99","port":8118,"type":"ss","country":"🇺🇸_US美国_6","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+ - {"name": "selectedserver00067", "server":"213.183.63.219","port":9003,"type":"ss","country":"🇧🇬_BG_保加利亚_43","cipher":"aes-256-cfb","password":"JdmRK9gMEqFgs8nP"}
+ - {"name": "selectedserver00068", "server":"116.129.254.25","port":33954,"type":"ss","country":"湖南联通转香港HKT2[M][倍率:0_9]_92","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00069", "server":"116.129.254.12","port":63955,"type":"ss","country":"湖南联通转德国HE[倍率:0_8]_72","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00070", "server":"38.68.135.19","port":5601,"type":"ss","country":"🇺🇸_US美国_7","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+ - {"name": "selectedserver00071", "server":"217.30.10.67","port":9079,"type":"ss","country":"🇵🇱_PL_波兰_47","cipher":"aes-256-cfb","password":"TPqX8edgbAURcAMb"}
+ - {"name": "selectedserver00072", "server":"217.30.10.66","port":9059,"type":"ss","country":"🇵🇱_PL_波兰_48","cipher":"aes-256-cfb","password":"9XwYyZsK8SNzQDtY"}
+ - {"name": "selectedserver00073", "server":"cn1.relay.iepl.pw","port":50300,"type":"ss","country":"🇨🇳_CN_中国->🇯🇵_JP_日本_1","cipher":"aes-128-gcm","password":"df87f3f2-f2a7-4fae-ae7d-507cea790c95"}
+ - {"name": "selectedserver00074", "server":"213.183.51.172","port":9070,"type":"ss","country":"🇳🇱_NL_荷兰_3","cipher":"aes-256-cfb","password":"bf7v334KKDV3YDhH"}
+ - {"name": "selectedserver00075", "server":"116.129.254.12","port":33954,"type":"ss","country":"湖南联通转美国DP[M][倍率:0_8]_84","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00076", "server":"fkgfw-prod.i.sxl.cn","port":443,"type":"ss","country":"502更新_CN_中国_1","cipher":"aes-256-cfb","password":"E4DNMf73kHPrd8Qq7aqGPf7f"}
+ - {"name": "selectedserver00077", "server":"x.gotout.work","port":30012,"type":"ss","country":"🇨🇳_CN_中国->🇭🇰_HK_香港_2","cipher":"aes-256-gcm","password":"e0uyakendg7"}
+ - {"name": "selectedserver00078", "server":"183.232.163.31","port":33954,"type":"ss","country":"广东移动转香港NTT3[倍率:0_8]_19","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00079", "server":"213.183.63.219","port":9003,"type":"ss","country":"🇧🇬_BG_保加利亚_43","cipher":"aes-256-cfb","password":"JdmRK9gMEqFgs8nP"}
+ - {"name": "selectedserver00080", "server":"152.89.210.105","port":9084,"type":"ssr","country":"🇬🇧_GB_英国_5","password":"c3NtHJ5ujV2tGDfj","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00081", "server":"116.129.254.28","port":33954,"type":"ss","country":"湖南联通转韩国Azure[倍率:0_9]_88","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00082", "server":"152.89.210.105","port":9088,"type":"ssr","country":"🇬🇧_GB_英国_3","password":"f8npKgNzdkss2ytn","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00083", "server":"198.57.27.225","port":7001,"type":"ss","country":"🇨🇦_CA_加拿大_19","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+ - {"name": "selectedserver00084", "server":"152.89.210.105","port":9093,"type":"ss","country":"🇬🇧_GB_英国_9","cipher":"aes-256-cfb","password":"wfLC2y7rzZyCmuyt"}
+ - {"name": "selectedserver00085", "server":"198.57.27.225","port":6697,"type":"ss","country":"🇨🇦_CA_加拿大_17","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+ - {"name": "selectedserver00086", "server":"x.gotout.work","port":30031,"type":"ss","country":"🇨🇳_CN_中国->🇯🇵_JP_日本_12","cipher":"aes-256-gcm","password":"e0uyakendg7"}
+ - {"name": "selectedserver00087", "server":"116.129.253.148","port":63955,"type":"ss","country":"长沙联通转新加坡Azure[倍率:0_9]_97","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00088", "server":"120.232.192.62","port":33954,"type":"ss","country":"广州移动转美国DP[M][倍率:0_8]_34","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00089", "server":"42.157.196.248","port":33954,"type":"ss","country":"深港专线转台湾HiNet[M][倍率:2_5]_52","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00090", "server":"152.89.210.105","port":9088,"type":"ssr","country":"🇬🇧_GB_英国_3","password":"f8npKgNzdkss2ytn","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00091", "server":"ssl.tcpbbr.net","port":443,"type":"trojan","country":"🇭🇰_HK_香港_2","skip-cert-verify":true,"udp":true,"password":"7b4066ae-accc-11eb-a8bf-f23c91cfbbc9"}
+ - {"name": "selectedserver00092", "server":"152.89.210.105","port":9093,"type":"ss","country":"🇬🇧_GB_英国_8","cipher":"aes-256-cfb","password":"wfLC2y7rzZyCmuyt"}
+ - {"name": "selectedserver00093", "server":"x.gotout.work","port":30021,"type":"ss","country":"🇨🇳_CN中国->🇹🇼_TW台湾_12","cipher":"aes-256-gcm","password":"e0uyakendg7"}
+ - {"name": "selectedserver00094", "server":"217.30.10.67","port":9001,"type":"ss","country":"🇵🇱_PL_波兰_3","cipher":"aes-256-cfb","password":"UkXRsXvR6buDMG2Y"}
+ - {"name": "selectedserver00095", "server":"116.129.254.5","port":4563,"type":"trojan","country":"湖南联通转台湾KBT2[Trojan测试][倍率:1]_71","skip-cert-verify":true,"udp":true,"password":"432f5543-80ad-300a-84d4-cac0797e4e8f","sni":"cctwkbt.cc.tjcct.xyz"}
+ - {"name": "selectedserver00096", "server":"217.30.10.67","port":9001,"type":"ss","country":"🇵🇱_PL_波兰_3","cipher":"aes-256-cfb","password":"UkXRsXvR6buDMG2Y"}
+ - {"name": "selectedserver00097", "server":"116.129.254.5","port":4568,"type":"trojan","country":"湖南联通转香港HKT[Trojan测试][倍率:0_9]_91","skip-cert-verify":true,"udp":true,"password":"432f5543-80ad-300a-84d4-cac0797e4e8f","sni":"hnhkhkt.cc.tjcct.xyz"}
+ - {"name": "selectedserver00098", "server":"158.247.199.253","port":443,"type":"ss","country":"🇰🇷_KR_韩国_8","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+ - {"name": "selectedserver00099", "server":"116.129.254.34","port":33954,"type":"ss","country":"湖南联通转英国Azure2[倍率:0_9]_87","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00100", "server":"fhcarm1.gaox.ml","port":443,"type":"trojan","country":"🇺🇸_US_美国_14","skip-cert-verify":true,"udp":true,"password":"05742120-ce23-4cc8-88f5-6d221ce45bf4"}
+ - {"name": "selectedserver00101", "server":"116.129.253.160","port":63955,"type":"ss","country":"长沙联通转美国DP[M][倍率:0_8]_105","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00102", "server":"cn1.relay.iepl.pw","port":50500,"type":"ss","country":"502更新_CN_中国_16","cipher":"aes-128-gcm","password":"df87f3f2-f2a7-4fae-ae7d-507cea790c95"}
+ - {"name": "selectedserver00103", "server":"152.89.210.105","port":9056,"type":"ss","country":"🇬🇧_GB_英国_5","cipher":"aes-256-cfb","password":"rNBfNuuANFCAk7KB"}
+ - {"name": "selectedserver00104", "server":"116.129.254.13","port":33954,"type":"ss","country":"湖南联通转美国Cera2[倍率:0_8]_82","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00105", "server":"lu1.gogogoo.cyou","port":443,"type":"vmess","uuid":"db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda","alterId":0,"cipher":"auto","country":"default_name_16","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/go","headers":{"host":"lu1.gogogoo.cyou"}}}
+ - {"name": "selectedserver00106", "server":"116.129.254.15","port":63955,"type":"ss","country":"湖南联通转香港Azure2[倍率:0_9]_90","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00107", "server":"213.183.63.219","port":9033,"type":"ss","country":"🇧🇬_BG_保加利亚_12","cipher":"aes-256-cfb","password":"UTJA57ypk2XKQpnm"}
+ - {"name": "selectedserver00108", "server":"152.89.210.105","port":9056,"type":"ss","country":"🇬🇧_GB_英国_25","cipher":"aes-256-cfb","password":"rNBfNuuANFCAk7KB"}
+ - {"name": "selectedserver00109", "server":"152.89.210.105","port":9032,"type":"ssr","country":"🇬🇧_GB_英国_39","password":"UWZQeLRWnkqgkseq","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00110", "server":"120.232.193.100","port":63955,"type":"ss","country":"广东移动转日本NTT[倍率:0_8]_6","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00111", "server":"152.89.210.105","port":9032,"type":"ssr","country":"🇬🇧_GB_英国_41","password":"UWZQeLRWnkqgkseq","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00112", "server":"38.68.135.19","port":6379,"type":"ss","country":"🇺🇸_US美国_9","cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
+ - {"name": "selectedserver00113", "server":"120.232.193.91","port":63955,"type":"ss","country":"广东移动转香港AWS[倍率:0_9]_11","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00114", "server":"5.183.179.146","port":9043,"type":"ss","country":"🇩🇪_DE_德国_31","cipher":"aes-256-cfb","password":"HSZuyJQcWe8dxNdF"}
+ - {"name": "selectedserver00115", "server":"116.129.253.138","port":33954,"type":"ss","country":"长沙联通转日本NTT2[M][倍率:0_8]_100","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00116", "server":"217.30.10.67","port":9057,"type":"ss","country":"🇵🇱_PL_波兰_9","cipher":"aes-256-cfb","password":"wjTugX3ZtHMB9c3Z"}
+ - {"name": "selectedserver00117", "server":"152.89.210.105","port":9088,"type":"ss","country":"🇬🇧_GB_英国_10","cipher":"aes-256-cfb","password":"f8npKgNzdkss2ytn"}
+ - {"name": "selectedserver00118", "server":"152.89.210.105","port":9056,"type":"ss","country":"🇬🇧_GB_英国_26","cipher":"aes-256-cfb","password":"rNBfNuuANFCAk7KB"}
+ - {"name": "selectedserver00119", "server":"158.247.199.253","port":2376,"type":"ss","country":"🇰🇷_KR_韩国_3","cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
+ - {"name": "selectedserver00120", "server":"213.183.51.172","port":9070,"type":"ss","country":"🇳🇱_NL_荷兰_2","cipher":"aes-256-cfb","password":"bf7v334KKDV3YDhH"}
+ - {"name": "selectedserver00121", "server":"152.89.210.105","port":9094,"type":"ss","country":"🇬🇧_GB_英国_7","cipher":"aes-256-cfb","password":"rpgbNnU9rDDU4aWZ"}
+ - {"name": "selectedserver00122", "server":"116.129.254.13","port":63955,"type":"ss","country":"湖南联通转日本Azure[倍率:1]_75","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00123", "server":"5.183.179.140","port":9053,"type":"ss","country":"🇩🇪_DE_德国_8","cipher":"aes-256-cfb","password":"SBM7R883jBmnqe6C"}
+ - {"name": "selectedserver00124", "server":"42.157.196.246","port":33954,"type":"ss","country":"深港专线转香港HGC商宽7[倍率:2_5]_62","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00125", "server":"5.183.179.140","port":9015,"type":"ss","country":"🇩🇪_DE_德国_7","cipher":"aes-256-cfb","password":"ZpNDDKRu9MagNvaf"}
+ - {"name": "selectedserver00126", "server":"152.89.210.105","port":9037,"type":"ssr","country":"🇬🇧_GB_英国_4","password":"TN2YqghxeFDKZfLU","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00127", "server":"42.157.196.246","port":63955,"type":"ss","country":"深港专线转香港HGC2[倍率:2_5]_57","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00128", "server":"213.183.63.218","port":9097,"type":"ss","country":"🇧🇬_BG_保加利亚_40","cipher":"aes-256-cfb","password":"Sn5B7jTqr76aCJT8"}
+ - {"name": "selectedserver00129", "server":"ssl.tcpbbr.net","port":443,"type":"trojan","country":"🇭🇰_HK_香港_1","skip-cert-verify":true,"udp":true,"password":"7b4066ae-accc-11eb-a8bf-f23c91cfbbc9"}
+ - {"name": "selectedserver00130", "server":"169.197.142.99","port":5004,"type":"ss","country":"🇺🇸_US_美国_1","cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+ - {"name": "selectedserver00131", "server":"152.89.210.105","port":9084,"type":"ssr","country":"🇬🇧_GB_英国_6","password":"c3NtHJ5ujV2tGDfj","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00132", "server":"62.216.91.232","port":9005,"type":"ss","country":"🇷🇴_RO_罗马尼亚_46","cipher":"aes-256-cfb","password":"ZET59LF6DvCC8KVt"}
+ - {"name": "selectedserver00133", "server":"x.gotout.work","port":30021,"type":"ss","country":"🇨🇳_CN_中国->🇹🇼_TW_台湾_36","cipher":"aes-256-gcm","password":"e0uyakendg7"}
+ - {"name": "selectedserver00134", "server":"152.89.210.105","port":9084,"type":"ssr","country":"🇬🇧_GB_英国_6","password":"c3NtHJ5ujV2tGDfj","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00135", "server":"120.232.193.92","port":4566,"type":"trojan","country":"广州移动转香港NTT2[Trojan测试][倍率:0_8]_45","skip-cert-verify":true,"udp":true,"password":"432f5543-80ad-300a-84d4-cac0797e4e8f","sni":"gzhkntt.cc.tjcct.xyz"}
+ - {"name": "selectedserver00136", "server":"5.183.179.140","port":9003,"type":"ss","country":"🇩🇪_DE_德国_1","cipher":"aes-256-cfb","password":"JdmRK9gMEqFgs8nP"}
+ - {"name": "selectedserver00137", "server":"ssl.tcpbbr.net","port":443,"type":"trojan","country":"🇭🇰_HK_香港_1","skip-cert-verify":true,"udp":true,"password":"7b4066ae-accc-11eb-a8bf-f23c91cfbbc9"}
+ - {"name": "selectedserver00138", "server":"213.183.51.172","port":9070,"type":"ss","country":"🇳🇱_NL_荷兰_45","cipher":"aes-256-cfb","password":"bf7v334KKDV3YDhH"}
+ - {"name": "selectedserver00139", "server":"42.157.196.194","port":33954,"type":"ss","country":"深港专线转日本Webarena[倍率:2_5]_53","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00140", "server":"152.89.210.105","port":9093,"type":"ssr","country":"🇬🇧_GB_英国_11","password":"wfLC2y7rzZyCmuyt","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00141", "server":"152.89.210.105","port":9064,"type":"ssr","country":"🇬🇧_GB_英国_22","password":"cp8pRSUAyLhTfVWH","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00142", "server":"42.157.196.243","port":33954,"type":"ss","country":"深港专线转香港HGC[倍率:2_5]_56","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00143", "server":"185.167.117.171","port":9084,"type":"ss","country":"🇬🇧_GB_英国_39","cipher":"aes-256-cfb","password":"c3NtHJ5ujV2tGDfj"}
+ - {"name": "selectedserver00144", "server":"185.167.117.171","port":9032,"type":"ss","country":"🇬🇧_GB_英国_36","cipher":"aes-256-cfb","password":"UWZQeLRWnkqgkseq"}
+ - {"name": "selectedserver00145", "server":"5.183.179.146","port":9043,"type":"ss","country":"🇩🇪_DE_德国_31","cipher":"aes-256-cfb","password":"HSZuyJQcWe8dxNdF"}
+ - {"name": "selectedserver00146", "server":"5.183.179.140","port":9057,"type":"ss","country":"🇩🇪_DE_德国_34","cipher":"aes-256-cfb","password":"wjTugX3ZtHMB9c3Z"}
+ - {"name": "selectedserver00147", "server":"x.gotout.work","port":30012,"type":"ss","country":"🇨🇳_CN_中国->🇭🇰_HK_香港_2","cipher":"aes-256-gcm","password":"e0uyakendg7"}
+ - {"name": "selectedserver00148", "server":"5.183.179.140","port":9057,"type":"ss","country":"🇩🇪_DE_德国_34","cipher":"aes-256-cfb","password":"wjTugX3ZtHMB9c3Z"}
+ - {"name": "selectedserver00149", "server":"185.167.117.171","port":9003,"type":"ss","country":"🇬🇧_GB_英国_13","cipher":"aes-256-cfb","password":"JdmRK9gMEqFgs8nP"}
+ - {"name": "selectedserver00150", "server":"169.197.142.99","port":9101,"type":"ss","country":"🇺🇸_US美国_13","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+ - {"name": "selectedserver00151", "server":"116.129.254.34","port":63955,"type":"ss","country":"湖南联通转俄罗斯新西伯利亚[倍率:0_9]_67","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00152", "server":"152.89.210.105","port":9088,"type":"ssr","country":"🇬🇧_GB_英国_3","password":"f8npKgNzdkss2ytn","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00153", "server":"217.30.10.67","port":9079,"type":"ss","country":"🇵🇱_PL_波兰_47","cipher":"aes-256-cfb","password":"TPqX8edgbAURcAMb"}
+ - {"name": "selectedserver00154", "server":"5.183.179.167","port":9093,"type":"ss","country":"🇩🇪_DE_德国_35","cipher":"aes-256-cfb","password":"wfLC2y7rzZyCmuyt"}
+ - {"name": "selectedserver00155", "server":"169.197.142.99","port":8090,"type":"ss","country":"🇺🇸_US_美国_37","cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
+ - {"name": "selectedserver00156", "server":"185.167.117.171","port":9003,"type":"ss","country":"🇬🇧_GB_英国_37","cipher":"aes-256-cfb","password":"JdmRK9gMEqFgs8nP"}
+ - {"name": "selectedserver00157", "server":"116.129.253.193","port":63955,"type":"ss","country":"长沙联通转香港Azure[倍率:1]_109","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00158", "server":"cn1.relay.iepl.pw","port":50300,"type":"ss","country":"🇨🇳_CN_中国->🇯🇵_JP_日本_1","cipher":"aes-128-gcm","password":"df87f3f2-f2a7-4fae-ae7d-507cea790c95"}
+ - {"name": "selectedserver00159", "server":"169.197.142.99","port":8118,"type":"ss","country":"🇺🇸_US_美国_20","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+ - {"name": "selectedserver00160", "server":"120.232.193.96","port":65522,"type":"trojan","country":"广东移动转台湾HiNet[M][Trojan测试][倍率:1]_2","skip-cert-verify":true,"udp":true,"password":"432f5543-80ad-300a-84d4-cac0797e4e8f","sni":"ggtwhinet.cc.tjcct.xyz"}
+ - {"name": "selectedserver00161", "server":"5.183.179.146","port":9043,"type":"ss","country":"🇩🇪_DE_德国_29","cipher":"aes-256-cfb","password":"HSZuyJQcWe8dxNdF"}
+ - {"name": "selectedserver00162", "server":"152.89.210.105","port":9093,"type":"ss","country":"🇬🇧_GB_英国_9","cipher":"aes-256-cfb","password":"wfLC2y7rzZyCmuyt"}
+ - {"name": "selectedserver00163", "server":"217.30.10.66","port":9038,"type":"ss","country":"🇵🇱_PL_波兰_49","cipher":"aes-256-cfb","password":"gYCYXfkUQEs2TaJQ"}
+ - {"name": "selectedserver00164", "server":"185.167.117.171","port":9020,"type":"ss","country":"🇬🇧_GB_英国_40","cipher":"aes-256-cfb","password":"BNmAXXxAHYpTRdzu"}
+ - {"name": "selectedserver00165", "server":"152.89.210.105","port":9032,"type":"ssr","country":"🇬🇧_GB_英国_41","password":"UWZQeLRWnkqgkseq","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00166", "server":"152.89.210.105","port":9093,"type":"ssr","country":"🇬🇧_GB_英国_8","password":"wfLC2y7rzZyCmuyt","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00167", "server":"213.183.63.219","port":9003,"type":"ss","country":"🇧🇬_BG_保加利亚_43","cipher":"aes-256-cfb","password":"JdmRK9gMEqFgs8nP"}
+ - {"name": "selectedserver00168", "server":"152.89.210.105","port":9064,"type":"ssr","country":"🇬🇧_GB_英国_7","password":"cp8pRSUAyLhTfVWH","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00169", "server":"5.183.179.140","port":9003,"type":"ss","country":"🇩🇪_DE_德国_5","cipher":"aes-256-cfb","password":"JdmRK9gMEqFgs8nP"}
+ - {"name": "selectedserver00170", "server":"5.183.179.146","port":9097,"type":"ss","country":"🇩🇪_DE_德国_23","cipher":"aes-256-cfb","password":"Sn5B7jTqr76aCJT8"}
+ - {"name": "selectedserver00171", "server":"152.89.210.105","port":9056,"type":"ss","country":"🇬🇧_GB_英国_24","cipher":"aes-256-cfb","password":"rNBfNuuANFCAk7KB"}
+ - {"name": "selectedserver00172", "server":"116.129.253.137","port":63955,"type":"ss","country":"长沙联通转香港HKBN[倍率:0_9]_111","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00173", "server":"120.232.193.91","port":33954,"type":"ss","country":"广东移动转日本Webarena2[倍率:0_8]_7","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00174", "server":"169.197.142.99","port":6697,"type":"ss","country":"🇺🇸_US_美国_13","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+ - {"name": "selectedserver00175", "server":"116.129.253.131","port":33954,"type":"ss","country":"长沙联通转美国HE[倍率:0_8]_106","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00176", "server":"217.30.10.66","port":9059,"type":"ss","country":"🇵🇱_PL_波兰_46","cipher":"aes-256-cfb","password":"9XwYyZsK8SNzQDtY"}
+ - {"name": "selectedserver00177", "server":"120.232.193.92","port":4567,"type":"trojan","country":"广州移动转香港HKT2[M][Trojan测试][倍率:0_9]_43","skip-cert-verify":true,"udp":true,"password":"432f5543-80ad-300a-84d4-cac0797e4e8f","sni":"gzhkhkt.cc.tjcct.xyz"}
+ - {"name": "selectedserver00178", "server":"42.157.196.245","port":63955,"type":"ss","country":"深港专线4[倍率:2_5]_50","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00179", "server":"116.129.253.139","port":33954,"type":"ss","country":"长沙联通转香港Azure2[倍率:1]_110","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00180", "server":"5.183.179.146","port":9019,"type":"ss","country":"🇩🇪_DE_德国_49","cipher":"aes-256-cfb","password":"GA9KzeEgvfxNrgmM"}
+ - {"name": "selectedserver00181", "server":"152.89.210.105","port":9094,"type":"ss","country":"🇬🇧_GB_英国_21","cipher":"aes-256-cfb","password":"rpgbNnU9rDDU4aWZ"}
+ - {"name": "selectedserver00182", "server":"169.197.142.99","port":8090,"type":"ss","country":"🇺🇸_US_美国_22","cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
+ - {"name": "selectedserver00183", "server":"5.183.179.167","port":9093,"type":"ss","country":"🇩🇪_DE_德国_35","cipher":"aes-256-cfb","password":"wfLC2y7rzZyCmuyt"}
+ - {"name": "selectedserver00184", "server":"5.183.179.146","port":9057,"type":"ss","country":"🇩🇪_DE_德国_29","cipher":"aes-256-cfb","password":"wjTugX3ZtHMB9c3Z"}
+ - {"name": "selectedserver00185", "server":"169.197.142.99","port":8090,"type":"ss","country":"🇺🇸_US_美国_21","cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
+ - {"name": "selectedserver00186", "server":"120.232.193.97","port":63955,"type":"ss","country":"广东移动转新加坡Azure[倍率:0_9]_3","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00187", "server":"5.183.179.140","port":9003,"type":"ss","country":"🇩🇪_DE_德国_8","cipher":"aes-256-cfb","password":"JdmRK9gMEqFgs8nP"}
+ - {"name": "selectedserver00188", "server":"fhcarm1.gaox.ml","port":443,"type":"trojan","country":"🇺🇸_US_美国_14","skip-cert-verify":true,"udp":true,"password":"05742120-ce23-4cc8-88f5-6d221ce45bf4"}
+ - {"name": "selectedserver00189", "server":"152.89.210.105","port":9032,"type":"ssr","country":"🇬🇧_GB_英国_41","password":"UWZQeLRWnkqgkseq","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00190", "server":"5.183.179.146","port":9057,"type":"ss","country":"🇩🇪_DE_德国_9","cipher":"aes-256-cfb","password":"wjTugX3ZtHMB9c3Z"}
+ - {"name": "selectedserver00191", "server":"198.57.27.225","port":5004,"type":"ss","country":"🇨🇦_CA_加拿大_19","cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+ - {"name": "selectedserver00192", "server":"185.167.117.171","port":9020,"type":"ss","country":"🇬🇧_GB_英国_2","cipher":"aes-256-cfb","password":"BNmAXXxAHYpTRdzu"}
+ - {"name": "selectedserver00193", "server":"5.183.179.146","port":9043,"type":"ss","country":"🇩🇪_DE_德国_31","cipher":"aes-256-cfb","password":"HSZuyJQcWe8dxNdF"}
+ - {"name": "selectedserver00194", "server":"169.197.142.99","port":6697,"type":"ss","country":"🇺🇸_US_美国_13","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+ - {"name": "selectedserver00195", "server":"5.183.179.167","port":9031,"type":"ss","country":"🇩🇪_DE_德国_33","cipher":"aes-256-cfb","password":"BwcAUZk8hUFAkDGN"}
+ - {"name": "selectedserver00196", "server":"5.183.179.167","port":9031,"type":"ss","country":"🇩🇪_DE_德国_31","cipher":"aes-256-cfb","password":"BwcAUZk8hUFAkDGN"}
+ - {"name": "selectedserver00197", "server":"120.232.193.92","port":4571,"type":"trojan","country":"广州移动转香港Azure2[Trojan测试][倍率:1]_41","skip-cert-verify":true,"udp":true,"password":"432f5543-80ad-300a-84d4-cac0797e4e8f","sni":"gzhkaz.cc.tjcct.xyz"}
+ - {"name": "selectedserver00198", "server":"217.30.10.65","port":9027,"type":"ss","country":"🇵🇱_PL_波兰_27","cipher":"aes-256-cfb","password":"EXN3S3eQpjE7EJu8"}
+ - {"name": "selectedserver00199", "server":"185.167.117.171","port":9003,"type":"ss","country":"🇬🇧_GB_英国_37","cipher":"aes-256-cfb","password":"JdmRK9gMEqFgs8nP"}
+ - {"name": "selectedserver00200", "server":"120.232.193.96","port":63955,"type":"ss","country":"广东移动转香港CM[M][倍率:0_9]_13","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00201", "server":"42.157.196.243","port":63955,"type":"ss","country":"深港专线5[倍率:2_5]_51","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00202", "server":"217.30.10.66","port":9038,"type":"ss","country":"🇵🇱_PL_波兰_11","cipher":"aes-256-cfb","password":"gYCYXfkUQEs2TaJQ"}
+ - {"name": "selectedserver00203", "server":"5.183.179.140","port":9053,"type":"ss","country":"🇩🇪_DE_德国_8","cipher":"aes-256-cfb","password":"SBM7R883jBmnqe6C"}
+ - {"name": "selectedserver00204", "server":"217.30.10.66","port":9038,"type":"ss","country":"🇵🇱_PL_波兰_49","cipher":"aes-256-cfb","password":"gYCYXfkUQEs2TaJQ"}
+ - {"name": "selectedserver00205", "server":"185.167.117.171","port":9032,"type":"ss","country":"🇬🇧_GB_英国_36","cipher":"aes-256-cfb","password":"UWZQeLRWnkqgkseq"}
+ - {"name": "selectedserver00206", "server":"152.89.210.105","port":9084,"type":"ssr","country":"🇬🇧_GB_英国_6","password":"c3NtHJ5ujV2tGDfj","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00207", "server":"45.78.8.236","port":29369,"type":"ss","country":"502更新_US_美国_9","cipher":"aes-256-gcm","password":"XB9Xj5EXtsn5ZwbA"}
+ - {"name": "selectedserver00208", "server":"38.68.135.19","port":2376,"type":"ss","country":"🇺🇸_US_美国_8","cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
+ - {"name": "selectedserver00209", "server":"42.157.196.249","port":63955,"type":"ss","country":"深港专线转香港HGC商宽8[倍率:2_5]_63","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00210", "server":"152.89.210.105","port":9088,"type":"ss","country":"🇬🇧_GB_英国_9","cipher":"aes-256-cfb","password":"f8npKgNzdkss2ytn"}
+ - {"name": "selectedserver00211", "server":"5.183.179.140","port":9057,"type":"ss","country":"🇩🇪_DE_德国_32","cipher":"aes-256-cfb","password":"wjTugX3ZtHMB9c3Z"}
+ - {"name": "selectedserver00212", "server":"5.183.179.145","port":9056,"type":"ss","country":"🇩🇪_DE_德国_28","cipher":"aes-256-cfb","password":"rNBfNuuANFCAk7KB"}
+ - {"name": "selectedserver00213", "server":"5.183.179.146","port":9057,"type":"ss","country":"🇩🇪_DE_德国_29","cipher":"aes-256-cfb","password":"wjTugX3ZtHMB9c3Z"}
+ - {"name": "selectedserver00214", "server":"152.89.210.105","port":9056,"type":"ss","country":"🇬🇧_GB_英国_25","cipher":"aes-256-cfb","password":"rNBfNuuANFCAk7KB"}
+ - {"name": "selectedserver00215", "server":"5.183.179.146","port":9057,"type":"ss","country":"🇩🇪_DE_德国_29","cipher":"aes-256-cfb","password":"wjTugX3ZtHMB9c3Z"}
+ - {"name": "selectedserver00216", "server":"x.gotout.work","port":30061,"type":"ss","country":"🇨🇳_CN_中国->🇺🇸_US_美国_35","cipher":"aes-256-gcm","password":"e0uyakendg7"}
+ - {"name": "selectedserver00217", "server":"5.183.179.140","port":9057,"type":"ss","country":"🇩🇪_DE_德国_34","cipher":"aes-256-cfb","password":"wjTugX3ZtHMB9c3Z"}
+ - {"name": "selectedserver00218", "server":"185.167.117.171","port":9020,"type":"ss","country":"🇬🇧_GB_英国_40","cipher":"aes-256-cfb","password":"BNmAXXxAHYpTRdzu"}
+ - {"name": "selectedserver00219", "server":"152.89.210.105","port":9073,"type":"ss","country":"🇬🇧_GB_英国_24","cipher":"aes-256-cfb","password":"daFYagqDdBdA6VTX"}
+ - {"name": "selectedserver00220", "server":"5.183.179.146","port":9043,"type":"ss","country":"🇩🇪_DE_德国_31","cipher":"aes-256-cfb","password":"HSZuyJQcWe8dxNdF"}
+ - {"name": "selectedserver00221", "server":"169.197.142.99","port":8009,"type":"ss","country":"🇺🇸_US_美国_39","cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+ - {"name": "selectedserver00222", "server":"152.89.210.105","port":9093,"type":"ssr","country":"🇬🇧_GB_英国_10","password":"wfLC2y7rzZyCmuyt","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00223", "server":"213.183.63.219","port":9033,"type":"ss","country":"🇧🇬_BG_保加利亚_12","cipher":"aes-256-cfb","password":"UTJA57ypk2XKQpnm"}
+ - {"name": "selectedserver00224", "server":"152.89.210.105","port":9064,"type":"ssr","country":"🇬🇧_GB_英国_7","password":"cp8pRSUAyLhTfVWH","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00225", "server":"152.89.210.105","port":9093,"type":"ss","country":"🇬🇧_GB_英国_9","cipher":"aes-256-cfb","password":"wfLC2y7rzZyCmuyt"}
+ - {"name": "selectedserver00226", "server":"169.197.142.99","port":5004,"type":"ss","country":"🇺🇸_US_美国_17","cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+ - {"name": "selectedserver00227", "server":"169.197.142.99","port":9102,"type":"ss","country":"🇺🇸_US_美国_23","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+ - {"name": "selectedserver00228", "server":"5.183.179.140","port":9057,"type":"ss","country":"🇩🇪_DE_德国_34","cipher":"aes-256-cfb","password":"wjTugX3ZtHMB9c3Z"}
+ - {"name": "selectedserver00229", "server":"217.30.10.66","port":9038,"type":"ss","country":"🇵🇱_PL_波兰_49","cipher":"aes-256-cfb","password":"gYCYXfkUQEs2TaJQ"}
+ - {"name": "selectedserver00230", "server":"5.183.179.167","port":9093,"type":"ss","country":"🇩🇪_DE_德国_35","cipher":"aes-256-cfb","password":"wfLC2y7rzZyCmuyt"}
+ - {"name": "selectedserver00231", "server":"152.89.210.105","port":9094,"type":"ss","country":"🇬🇧_GB_英国_8","cipher":"aes-256-cfb","password":"rpgbNnU9rDDU4aWZ"}
+ - {"name": "selectedserver00232", "server":"5.183.179.140","port":9003,"type":"ss","country":"🇩🇪_DE_德国_28","cipher":"aes-256-cfb","password":"JdmRK9gMEqFgs8nP"}
+ - {"name": "selectedserver00233", "server":"42.157.196.245","port":65530,"type":"trojan","country":"深港专线3[Trojan测试][倍率:2_5]_49","skip-cert-verify":true,"udp":true,"password":"432f5543-80ad-300a-84d4-cac0797e4e8f","sni":"sgtest2.cc.tjcct.xyz"}
+ - {"name": "selectedserver00234", "server":"217.30.10.67","port":9079,"type":"ss","country":"🇵🇱_PL_波兰_47","cipher":"aes-256-cfb","password":"TPqX8edgbAURcAMb"}
+ - {"name": "selectedserver00235", "server":"169.197.142.99","port":443,"type":"ss","country":"🇺🇸_US_美国_20","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+ - {"name": "selectedserver00236", "server":"140.238.6.99","port":443,"type":"vmess","uuid":"f613af75-f9eb-3d84-9357-7c3b00d950a2","alterId":2,"cipher":"auto","country":"🇰🇷_KR_韩国_38","skip-cert-verify":true,"tls":true,"network":"ws","ws-opts":{"path":"/live/cctv6_2/index.m3u8","headers":{"host":"ora1.speedsvip.co"}}}
+ - {"name": "selectedserver00237", "server":"5.183.179.166","port":9032,"type":"ss","country":"🇩🇪_DE_德国_48","cipher":"aes-256-cfb","password":"UWZQeLRWnkqgkseq"}
+ - {"name": "selectedserver00238", "server":"213.183.63.218","port":9040,"type":"ss","country":"🇧🇬_BG_保加利亚_44","cipher":"aes-256-cfb","password":"p9z5BVADH2YFs3MN"}
+ - {"name": "selectedserver00239", "server":"152.89.210.105","port":9088,"type":"ssr","country":"🇬🇧_GB_英国_3","password":"f8npKgNzdkss2ytn","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00240", "server":"213.183.63.218","port":9040,"type":"ss","country":"🇧🇬_BG_保加利亚_19","cipher":"aes-256-cfb","password":"p9z5BVADH2YFs3MN"}
+ - {"name": "selectedserver00241", "server":"152.89.210.105","port":9050,"type":"ss","country":"🇬🇧_GB_英国_6","cipher":"aes-256-cfb","password":"FG5ddLsMPbV5CutE"}
+ - {"name": "selectedserver00242", "server":"62.216.91.232","port":9005,"type":"ss","country":"🇷🇴_RO_罗马尼亚_46","cipher":"aes-256-cfb","password":"ZET59LF6DvCC8KVt"}
+ - {"name": "selectedserver00243", "server":"42.157.196.249","port":33954,"type":"ss","country":"深港专线转香港Azure[倍率:2_5]_55","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00244", "server":"185.167.117.171","port":9020,"type":"ss","country":"🇬🇧_GB_英国_38","cipher":"aes-256-cfb","password":"BNmAXXxAHYpTRdzu"}
+ - {"name": "selectedserver00245", "server":"211.99.100.21","port":33954,"type":"ss","country":"深港专线转香港NTT2[倍率:2_5]_66","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00246", "server":"152.89.210.105","port":9046,"type":"ss","country":"🇬🇧_GB_英国_5","cipher":"aes-256-cfb","password":"NvS8N4Vf8qAGPSCL"}
+ - {"name": "selectedserver00247", "server":"185.167.117.171","port":9084,"type":"ss","country":"🇬🇧_GB_英国_39","cipher":"aes-256-cfb","password":"c3NtHJ5ujV2tGDfj"}
+ - {"name": "selectedserver00248", "server":"217.30.10.66","port":9093,"type":"ss","country":"🇵🇱_PL_波兰_50","cipher":"aes-256-cfb","password":"wfLC2y7rzZyCmuyt"}
+ - {"name": "selectedserver00249", "server":"217.30.10.65","port":9027,"type":"ss","country":"🇵🇱_PL_波兰_15","cipher":"aes-256-cfb","password":"EXN3S3eQpjE7EJu8"}
+ - {"name": "selectedserver00250", "server":"152.89.210.105","port":9064,"type":"ssr","country":"🇬🇧_GB_英国_7","password":"cp8pRSUAyLhTfVWH","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00251", "server":"5.183.179.145","port":9056,"type":"ss","country":"🇩🇪_DE_德国_30","cipher":"aes-256-cfb","password":"rNBfNuuANFCAk7KB"}
+ - {"name": "selectedserver00252", "server":"5.183.179.146","port":9057,"type":"ss","country":"🇩🇪_DE_德国_29","cipher":"aes-256-cfb","password":"wjTugX3ZtHMB9c3Z"}
+ - {"name": "selectedserver00253", "server":"116.129.254.7","port":33954,"type":"ss","country":"湖南联通转日本AWS[M][倍率:0_9]_74","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00254", "server":"5.183.179.146","port":9003,"type":"ss","country":"🇩🇪_DE_德国_4","cipher":"aes-256-cfb","password":"JdmRK9gMEqFgs8nP"}
+ - {"name": "selectedserver00255", "server":"152.89.210.105","port":9056,"type":"ss","country":"🇬🇧_GB_英国_25","cipher":"aes-256-cfb","password":"rNBfNuuANFCAk7KB"}
+ - {"name": "selectedserver00256", "server":"42.157.196.194","port":63955,"type":"ss","country":"深港专线转香港HGC商宽6[倍率:2_5]_61","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00257", "server":"152.89.210.105","port":9073,"type":"ss","country":"🇬🇧_GB_英国_26","cipher":"aes-256-cfb","password":"daFYagqDdBdA6VTX"}
+ - {"name": "selectedserver00258", "server":"213.183.63.218","port":9097,"type":"ss","country":"🇧🇬_BG_保加利亚_15","cipher":"aes-256-cfb","password":"Sn5B7jTqr76aCJT8"}
+ - {"name": "selectedserver00259", "server":"213.183.63.218","port":9040,"type":"ss","country":"🇧🇬_BG_保加利亚_44","cipher":"aes-256-cfb","password":"p9z5BVADH2YFs3MN"}
+ - {"name": "selectedserver00260", "server":"5.183.179.145","port":9056,"type":"ss","country":"🇩🇪_DE_德国_30","cipher":"aes-256-cfb","password":"rNBfNuuANFCAk7KB"}
+ - {"name": "selectedserver00261", "server":"158.247.205.87","port":5601,"type":"ss","country":"🇰🇷_KR_韩国_4","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+ - {"name": "selectedserver00262", "server":"5.183.179.140","port":9003,"type":"ss","country":"🇩🇪_DE_德国_28","cipher":"aes-256-cfb","password":"JdmRK9gMEqFgs8nP"}
+ - {"name": "selectedserver00263", "server":"169.197.142.99","port":8090,"type":"ss","country":"🇺🇸_US_美国_22","cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
+ - {"name": "selectedserver00264", "server":"217.30.10.67","port":9079,"type":"ss","country":"🇵🇱_PL_波兰_13","cipher":"aes-256-cfb","password":"TPqX8edgbAURcAMb"}
+ - {"name": "selectedserver00265", "server":"169.197.142.99","port":443,"type":"ss","country":"🇺🇸_US_美国_1","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+ - {"name": "selectedserver00266", "server":"185.167.117.171","port":9084,"type":"ss","country":"🇬🇧_GB_英国_39","cipher":"aes-256-cfb","password":"c3NtHJ5ujV2tGDfj"}
+ - {"name": "selectedserver00267", "server":"fhcarm1.gaox.ml","port":443,"type":"trojan","country":"🇺🇸_US_美国_13","skip-cert-verify":true,"udp":true,"password":"05742120-ce23-4cc8-88f5-6d221ce45bf4"}
+ - {"name": "selectedserver00268", "server":"38.68.135.19","port":5003,"type":"ss","country":"🇺🇸_US美国_3","cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+ - {"name": "selectedserver00269", "server":"5.183.179.167","port":9093,"type":"ss","country":"🇩🇪_DE_德国_33","cipher":"aes-256-cfb","password":"wfLC2y7rzZyCmuyt"}
+ - {"name": "selectedserver00270", "server":"169.197.142.99","port":3389,"type":"ss","country":"502更新_US_美国_19","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+ - {"name": "selectedserver00271", "server":"42.157.196.247","port":33954,"type":"ss","country":"深港专线转香港HGC商宽[倍率:2_5]_58","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00272", "server":"169.197.142.99","port":443,"type":"ss","country":"🇺🇸_US_美国_6","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+ - {"name": "selectedserver00273", "server":"152.89.210.105","port":9088,"type":"ssr","country":"🇬🇧_GB_英国_9","password":"f8npKgNzdkss2ytn","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00274", "server":"5.183.179.146","port":9003,"type":"ss","country":"🇩🇪_DE_德国_24","cipher":"aes-256-cfb","password":"JdmRK9gMEqFgs8nP"}
+ - {"name": "selectedserver00275", "server":"152.89.210.105","port":9032,"type":"ssr","country":"🇬🇧_GB_英国_10","password":"UWZQeLRWnkqgkseq","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00276", "server":"cn.speedabc.xyz","port":42005,"type":"trojan","country":"韩国-CephBGP-2x_44","skip-cert-verify":true,"udp":true,"password":"cfbabf31-2cf6-40ca-9688-abbb682370aa"}
+ - {"name": "selectedserver00277", "server":"116.129.254.25","port":63955,"type":"ss","country":"湖南联通转新加坡NTT[倍率:0_9]_73","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00278", "server":"158.247.205.87","port":8119,"type":"ss","country":"🇰🇷_KR_韩国_19","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+ - {"name": "selectedserver00279", "server":"152.89.210.105","port":9073,"type":"ssr","country":"🇬🇧_GB_英国_4","password":"daFYagqDdBdA6VTX","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00280", "server":"152.89.210.105","port":9084,"type":"ssr","country":"🇬🇧_GB_英国_25","password":"c3NtHJ5ujV2tGDfj","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00281", "server":"5.183.179.167","port":9031,"type":"ss","country":"🇩🇪_DE_德国_45","cipher":"aes-256-cfb","password":"BwcAUZk8hUFAkDGN"}
+ - {"name": "selectedserver00282", "server":"152.89.210.105","port":9093,"type":"ss","country":"🇬🇧_GB_英国_9","cipher":"aes-256-cfb","password":"wfLC2y7rzZyCmuyt"}
+ - {"name": "selectedserver00283", "server":"169.197.142.99","port":443,"type":"ss","country":"🇺🇸_US_美国_29","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+ - {"name": "selectedserver00284", "server":"185.167.117.171","port":9003,"type":"ss","country":"🇬🇧_GB_英国_35","cipher":"aes-256-cfb","password":"JdmRK9gMEqFgs8nP"}
+ - {"name": "selectedserver00285", "server":"cn.speedabc.xyz","port":42011,"type":"trojan","country":"🇨🇳_CN_中国->🇭🇰_HK_香港_27","skip-cert-verify":true,"udp":true,"password":"cfbabf31-2cf6-40ca-9688-abbb682370aa"}
+ - {"name": "selectedserver00286", "server":"169.197.142.99","port":8090,"type":"ss","country":"🇺🇸_US_美国_17","cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
+ - {"name": "selectedserver00287", "server":"152.89.210.105","port":9088,"type":"ss","country":"🇬🇧_GB_英国_12","cipher":"aes-256-cfb","password":"f8npKgNzdkss2ytn"}
+ - {"name": "selectedserver00288", "server":"185.167.117.171","port":9084,"type":"ss","country":"🇬🇧_GB_英国_37","cipher":"aes-256-cfb","password":"c3NtHJ5ujV2tGDfj"}
+ - {"name": "selectedserver00289", "server":"169.197.142.99","port":8090,"type":"ss","country":"502更新_US_美国_23","cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
+ - {"name": "selectedserver00290", "server":"5.183.179.145","port":9056,"type":"ss","country":"🇩🇪_DE_德国_30","cipher":"aes-256-cfb","password":"rNBfNuuANFCAk7KB"}
+ - {"name": "selectedserver00291", "server":"api.tcpbbr.net","port":443,"type":"trojan","country":"🇭🇰_HK_香港_22","skip-cert-verify":true,"udp":true,"password":"08d178d4-ec8b-11eb-a8bf-f23c91cfbbc9"}
+ - {"name": "selectedserver00292", "server":"217.30.10.65","port":9046,"type":"ss","country":"🇵🇱_PL_波兰_16","cipher":"aes-256-cfb","password":"NvS8N4Vf8qAGPSCL"}
+ - {"name": "selectedserver00293", "server":"198.57.27.225","port":5004,"type":"ss","country":"🇨🇦_CA_加拿大_18","cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+ - {"name": "selectedserver00294", "server":"198.57.27.225","port":6697,"type":"ss","country":"🇨🇦_CA_加拿大_18","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+ - {"name": "selectedserver00295", "server":"5.183.179.140","port":9003,"type":"ss","country":"🇩🇪_DE_德国_28","cipher":"aes-256-cfb","password":"JdmRK9gMEqFgs8nP"}
+ - {"name": "selectedserver00296", "server":"38.68.135.19","port":9102,"type":"ss","country":"🇺🇸_US_美国_11","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+ - {"name": "selectedserver00297", "server":"cn.speedabc.xyz","port":32002,"type":"trojan","country":"日本-NTRB-1x_45","skip-cert-verify":true,"udp":true,"password":"cfbabf31-2cf6-40ca-9688-abbb682370aa"}
+ - {"name": "selectedserver00298", "server":"152.89.210.105","port":9094,"type":"ss","country":"🇬🇧_GB_英国_8","cipher":"aes-256-cfb","password":"rpgbNnU9rDDU4aWZ"}
+ - {"name": "selectedserver00299", "server":"62.216.91.232","port":9005,"type":"ss","country":"🇷🇴_RO_罗马尼亚_46","cipher":"aes-256-cfb","password":"ZET59LF6DvCC8KVt"}
+ - {"name": "selectedserver00300", "server":"116.129.253.148","port":33954,"type":"ss","country":"长沙联通转韩国NTT[倍率:1]_107","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00301", "server":"5.183.179.146","port":9097,"type":"ss","country":"🇩🇪_DE_德国_23","cipher":"aes-256-cfb","password":"Sn5B7jTqr76aCJT8"}
+ - {"name": "selectedserver00302", "server":"5.183.179.146","port":9079,"type":"ss","country":"🇩🇪_DE_德国_32","cipher":"aes-256-cfb","password":"TPqX8edgbAURcAMb"}
+ - {"name": "selectedserver00303", "server":"38.68.135.19","port":7306,"type":"ss","country":"🇺🇸_US_美国_10","cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
+ - {"name": "selectedserver00304", "server":"116.129.253.138","port":63955,"type":"ss","country":"长沙联通转日本NTT[M][倍率:0_8]_99","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00305", "server":"213.183.63.218","port":9097,"type":"ss","country":"🇧🇬_BG_保加利亚_42","cipher":"aes-256-cfb","password":"Sn5B7jTqr76aCJT8"}
+ - {"name": "selectedserver00306", "server":"213.183.63.218","port":9097,"type":"ss","country":"🇧🇬_BG_保加利亚_42","cipher":"aes-256-cfb","password":"Sn5B7jTqr76aCJT8"}
+ - {"name": "selectedserver00307", "server":"169.197.142.99","port":8091,"type":"ss","country":"🇺🇸_US_美国_25","cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
+ - {"name": "selectedserver00308", "server":"152.89.210.105","port":9037,"type":"ssr","country":"🇬🇧_GB_英国_23","password":"TN2YqghxeFDKZfLU","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00309", "server":"38.68.135.19","port":2376,"type":"ss","country":"🇺🇸_US_美国_27","cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
+ - {"name": "selectedserver00310", "server":"169.197.142.99","port":6679,"type":"ss","country":"🇺🇸_US_美国_26","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+ - {"name": "selectedserver00311", "server":"5.183.179.140","port":9003,"type":"ss","country":"🇩🇪_DE_德国_26","cipher":"aes-256-cfb","password":"JdmRK9gMEqFgs8nP"}
+ - {"name": "selectedserver00312", "server":"169.197.142.99","port":8090,"type":"ss","country":"🇺🇸_US_美国_2","cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
+ - {"name": "selectedserver00313", "server":"169.197.142.99","port":5500,"type":"ss","country":"502更新_US_美国_21","cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+ - {"name": "selectedserver00314", "server":"198.57.27.225","port":5004,"type":"ss","country":"🇨🇦_CA_加拿大_19","cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+ - {"name": "selectedserver00315", "server":"185.167.117.171","port":9073,"type":"ss","country":"🇬🇧_GB_英国_3","cipher":"aes-256-cfb","password":"daFYagqDdBdA6VTX"}
+ - {"name": "selectedserver00316", "server":"169.197.142.99","port":443,"type":"ss","country":"🇺🇸_US_美国_21","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+ - {"name": "selectedserver00317", "server":"213.183.63.218","port":9097,"type":"ss","country":"🇧🇬_BG_保加利亚_42","cipher":"aes-256-cfb","password":"Sn5B7jTqr76aCJT8"}
+ - {"name": "selectedserver00318", "server":"211.99.100.26","port":33954,"type":"ss","country":"深港专线2[倍率:2_5]_48","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00319", "server":"152.89.210.105","port":9037,"type":"ssr","country":"🇬🇧_GB_英国_4","password":"TN2YqghxeFDKZfLU","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00320", "server":"213.183.63.218","port":9097,"type":"ss","country":"🇧🇬_BG_保加利亚_42","cipher":"aes-256-cfb","password":"Sn5B7jTqr76aCJT8"}
+ - {"name": "selectedserver00321", "server":"cn.speedabc.xyz","port":42004,"type":"trojan","country":"Relay_🇨🇳CN-🏁ZZ_268","skip-cert-verify":true,"udp":true,"password":"cfbabf31-2cf6-40ca-9688-abbb682370aa"}
+ - {"name": "selectedserver00322", "server":"217.30.10.66","port":9093,"type":"ss","country":"🇵🇱_PL_波兰_50","cipher":"aes-256-cfb","password":"wfLC2y7rzZyCmuyt"}
+ - {"name": "selectedserver00323", "server":"5.183.179.166","port":9019,"type":"ss","country":"🇩🇪_DE_德国_44","cipher":"aes-256-cfb","password":"GA9KzeEgvfxNrgmM"}
+ - {"name": "selectedserver00324", "server":"169.197.142.99","port":8009,"type":"ss","country":"502更新_US_美国_7","cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+ - {"name": "selectedserver00325", "server":"169.197.142.99","port":8090,"type":"ss","country":"🇺🇸_US_美国_22","cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
+ - {"name": "selectedserver00326", "server":"152.89.210.105","port":9094,"type":"ss","country":"🇬🇧_GB_英国_8","cipher":"aes-256-cfb","password":"rpgbNnU9rDDU4aWZ"}
+ - {"name": "selectedserver00327", "server":"5.183.179.146","port":9057,"type":"ss","country":"🇩🇪_DE_德国_27","cipher":"aes-256-cfb","password":"wjTugX3ZtHMB9c3Z"}
+ - {"name": "selectedserver00328", "server":"5.183.179.146","port":9079,"type":"ss","country":"🇩🇪_DE_德国_32","cipher":"aes-256-cfb","password":"TPqX8edgbAURcAMb"}
+ - {"name": "selectedserver00329", "server":"ssl.tcpbbr.net","port":443,"type":"trojan","country":"🇭🇰_HK_香港_2","skip-cert-verify":true,"udp":true,"password":"7b4066ae-accc-11eb-a8bf-f23c91cfbbc9"}
+ - {"name": "selectedserver00330", "server":"152.89.210.105","port":9037,"type":"ssr","country":"🇬🇧_GB_英国_4","password":"TN2YqghxeFDKZfLU","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00331", "server":"152.89.210.105","port":9073,"type":"ss","country":"🇬🇧_GB_英国_26","cipher":"aes-256-cfb","password":"daFYagqDdBdA6VTX"}
+ - {"name": "selectedserver00332", "server":"169.197.142.99","port":443,"type":"ss","country":"🇺🇸_US_美国_21","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+ - {"name": "selectedserver00333", "server":"5.183.179.166","port":9007,"type":"ss","country":"🇩🇪_DE_德国_47","cipher":"aes-256-cfb","password":"kSPmvwdFzGMMW5pY"}
+ - {"name": "selectedserver00334", "server":"185.167.117.171","port":9003,"type":"ss","country":"🇬🇧_GB_英国_37","cipher":"aes-256-cfb","password":"JdmRK9gMEqFgs8nP"}
+ - {"name": "selectedserver00335", "server":"152.89.210.105","port":9088,"type":"ss","country":"🇬🇧_GB_英国_10","cipher":"aes-256-cfb","password":"f8npKgNzdkss2ytn"}
+ - {"name": "selectedserver00336", "server":"fhcarm1.gaox.ml","port":443,"type":"trojan","country":"🇺🇸_US_美国_14","skip-cert-verify":true,"udp":true,"password":"05742120-ce23-4cc8-88f5-6d221ce45bf4"}
+ - {"name": "selectedserver00337", "server":"217.30.10.67","port":9079,"type":"ss","country":"🇵🇱_PL_波兰_47","cipher":"aes-256-cfb","password":"TPqX8edgbAURcAMb"}
+ - {"name": "selectedserver00338", "server":"38.68.135.19","port":8119,"type":"ss","country":"🇺🇸_US美国_11","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+ - {"name": "selectedserver00339", "server":"213.183.63.218","port":9040,"type":"ss","country":"🇧🇬_BG_保加利亚_44","cipher":"aes-256-cfb","password":"p9z5BVADH2YFs3MN"}
+ - {"name": "selectedserver00340", "server":"5.183.179.140","port":9003,"type":"ss","country":"🇩🇪_DE_德国_2","cipher":"aes-256-cfb","password":"JdmRK9gMEqFgs8nP"}
+ - {"name": "selectedserver00341", "server":"152.89.210.105","port":9037,"type":"ssr","country":"🇬🇧_GB_英国_4","password":"TN2YqghxeFDKZfLU","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00342", "server":"169.197.142.99","port":5004,"type":"ss","country":"🇺🇸_US_美国_21","cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+ - {"name": "selectedserver00343", "server":"213.183.51.172","port":9070,"type":"ss","country":"🇳🇱_NL_荷兰_45","cipher":"aes-256-cfb","password":"bf7v334KKDV3YDhH"}
+ - {"name": "selectedserver00344", "server":"169.197.142.99","port":443,"type":"ss","country":"🇺🇸_US_美国_1","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+ - {"name": "selectedserver00345", "server":"5.183.179.146","port":9097,"type":"ss","country":"🇩🇪_DE_德国_23","cipher":"aes-256-cfb","password":"Sn5B7jTqr76aCJT8"}
+ - {"name": "selectedserver00346", "server":"217.30.10.66","port":9059,"type":"ss","country":"🇵🇱_PL_波兰_48","cipher":"aes-256-cfb","password":"9XwYyZsK8SNzQDtY"}
+ - {"name": "selectedserver00347", "server":"169.197.142.99","port":443,"type":"ss","country":"🇺🇸_US_美国_21","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+ - {"name": "selectedserver00348", "server":"5.183.179.146","port":9084,"type":"ss","country":"502更新_DE_德国_15","cipher":"aes-256-cfb","password":"c3NtHJ5ujV2tGDfj"}
+ - {"name": "selectedserver00349", "server":"185.167.117.171","port":9003,"type":"ss","country":"🇬🇧_GB_英国_37","cipher":"aes-256-cfb","password":"JdmRK9gMEqFgs8nP"}
+ - {"name": "selectedserver00350", "server":"198.57.27.225","port":5004,"type":"ss","country":"🇨🇦_CA_加拿大_19","cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+ - {"name": "selectedserver00351", "server":"217.30.10.66","port":9038,"type":"ss","country":"🇵🇱_PL_波兰_47","cipher":"aes-256-cfb","password":"gYCYXfkUQEs2TaJQ"}
+ - {"name": "selectedserver00352", "server":"152.89.210.105","port":9088,"type":"ss","country":"🇬🇧_GB_英国_10","cipher":"aes-256-cfb","password":"f8npKgNzdkss2ytn"}
+ - {"name": "selectedserver00353", "server":"5.183.179.140","port":9003,"type":"ss","country":"🇩🇪_DE_德国_28","cipher":"aes-256-cfb","password":"JdmRK9gMEqFgs8nP"}
+ - {"name": "selectedserver00354", "server":"ssl.tcpbbr.net","port":443,"type":"trojan","country":"🇭🇰_HK_香港_4","skip-cert-verify":true,"udp":true,"password":"7b4066ae-accc-11eb-a8bf-f23c91cfbbc9"}
+ - {"name": "selectedserver00355", "server":"38.68.135.19","port":5003,"type":"ss","country":"🇺🇸_US_美国_6","cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+ - {"name": "selectedserver00356", "server":"120.232.192.69","port":33954,"type":"ss","country":"广州移动转香港NTT3[倍率:0_9]_46","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00357", "server":"217.30.10.65","port":9046,"type":"ss","country":"🇵🇱_PL_波兰_16","cipher":"aes-256-cfb","password":"NvS8N4Vf8qAGPSCL"}
+ - {"name": "selectedserver00358", "server":"152.89.210.105","port":9088,"type":"ssr","country":"🇬🇧_GB_英国_3","password":"f8npKgNzdkss2ytn","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00359", "server":"152.89.210.105","port":9093,"type":"ssr","country":"🇬🇧_GB_英国_11","password":"wfLC2y7rzZyCmuyt","cipher":"aes-256-cfb","protocol":"origin","obfs":"plain"}
+ - {"name": "selectedserver00360", "server":"213.183.63.219","port":9033,"type":"ss","country":"🇧🇬_BG_保加利亚_12","cipher":"aes-256-cfb","password":"UTJA57ypk2XKQpnm"}
+ - {"name": "selectedserver00361", "server":"213.183.63.218","port":9040,"type":"ss","country":"🇧🇬_BG_保加利亚_42","cipher":"aes-256-cfb","password":"p9z5BVADH2YFs3MN"}
+ - {"name": "selectedserver00362", "server":"42.157.196.245","port":33954,"type":"ss","country":"深港专线转香港HKTA[M][倍率:2_5]_64","cipher":"chacha20-ietf","password":"xQOCD5"}
+ - {"name": "selectedserver00363", "server":"217.30.10.67","port":9079,"type":"ss","country":"🇵🇱_PL_波兰_45","cipher":"aes-256-cfb","password":"TPqX8edgbAURcAMb"}
+ - {"name": "selectedserver00364", "server":"152.89.210.84","port":9024,"type":"ss","country":"🇬🇧_GB_英国_8","cipher":"aes-256-cfb","password":"BejrQvtu9sqUeNuZ"}
+ - {"name": "selectedserver00365", "server":"169.197.142.99","port":443,"type":"ss","country":"🇺🇸_US_美国_2","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+ - {"name": "selectedserver00366", "server":"217.30.10.66","port":9093,"type":"ss","country":"🇵🇱_PL_波兰_50","cipher":"aes-256-cfb","password":"wfLC2y7rzZyCmuyt"}
+ - {"name": "selectedserver00367", "server":"185.167.117.171","port":9003,"type":"ss","country":"🇬🇧_GB_英国_7","cipher":"aes-256-cfb","password":"JdmRK9gMEqFgs8nP"}
+ - {"name": "selectedserver00368", "server":"213.183.63.218","port":9040,"type":"ss","country":"🇧🇬_BG_保加利亚_44","cipher":"aes-256-cfb","password":"p9z5BVADH2YFs3MN"}
+ - {"name": "selectedserver00369", "server":"cn1.relay.iepl.pw","port":50600,"type":"ss","country":"502更新_CN_中国_4","cipher":"aes-128-gcm","password":"df87f3f2-f2a7-4fae-ae7d-507cea790c95"}
+ - {"name": "selectedserver00370", "server":"213.183.63.219","port":9033,"type":"ss","country":"🇧🇬_BG_保加利亚_11","cipher":"aes-256-cfb","password":"UTJA57ypk2XKQpnm"}
+ - {"name": "selectedserver00371", "server":"217.30.10.67","port":9031,"type":"ss","country":"🇵🇱_PL_波兰_23","cipher":"aes-256-cfb","password":"BwcAUZk8hUFAkDGN"}
+ - {"name": "selectedserver00372", "server":"185.167.117.171","port":9020,"type":"ss","country":"🇬🇧_GB_英国_9","cipher":"aes-256-cfb","password":"BNmAXXxAHYpTRdzu"}
 
 
 proxy-groups:
@@ -550,6 +658,114 @@ proxy-groups:
       - selectedserver00262
       - selectedserver00263
       - selectedserver00264
+      - selectedserver00265
+      - selectedserver00266
+      - selectedserver00267
+      - selectedserver00268
+      - selectedserver00269
+      - selectedserver00270
+      - selectedserver00271
+      - selectedserver00272
+      - selectedserver00273
+      - selectedserver00274
+      - selectedserver00275
+      - selectedserver00276
+      - selectedserver00277
+      - selectedserver00278
+      - selectedserver00279
+      - selectedserver00280
+      - selectedserver00281
+      - selectedserver00282
+      - selectedserver00283
+      - selectedserver00284
+      - selectedserver00285
+      - selectedserver00286
+      - selectedserver00287
+      - selectedserver00288
+      - selectedserver00289
+      - selectedserver00290
+      - selectedserver00291
+      - selectedserver00292
+      - selectedserver00293
+      - selectedserver00294
+      - selectedserver00295
+      - selectedserver00296
+      - selectedserver00297
+      - selectedserver00298
+      - selectedserver00299
+      - selectedserver00300
+      - selectedserver00301
+      - selectedserver00302
+      - selectedserver00303
+      - selectedserver00304
+      - selectedserver00305
+      - selectedserver00306
+      - selectedserver00307
+      - selectedserver00308
+      - selectedserver00309
+      - selectedserver00310
+      - selectedserver00311
+      - selectedserver00312
+      - selectedserver00313
+      - selectedserver00314
+      - selectedserver00315
+      - selectedserver00316
+      - selectedserver00317
+      - selectedserver00318
+      - selectedserver00319
+      - selectedserver00320
+      - selectedserver00321
+      - selectedserver00322
+      - selectedserver00323
+      - selectedserver00324
+      - selectedserver00325
+      - selectedserver00326
+      - selectedserver00327
+      - selectedserver00328
+      - selectedserver00329
+      - selectedserver00330
+      - selectedserver00331
+      - selectedserver00332
+      - selectedserver00333
+      - selectedserver00334
+      - selectedserver00335
+      - selectedserver00336
+      - selectedserver00337
+      - selectedserver00338
+      - selectedserver00339
+      - selectedserver00340
+      - selectedserver00341
+      - selectedserver00342
+      - selectedserver00343
+      - selectedserver00344
+      - selectedserver00345
+      - selectedserver00346
+      - selectedserver00347
+      - selectedserver00348
+      - selectedserver00349
+      - selectedserver00350
+      - selectedserver00351
+      - selectedserver00352
+      - selectedserver00353
+      - selectedserver00354
+      - selectedserver00355
+      - selectedserver00356
+      - selectedserver00357
+      - selectedserver00358
+      - selectedserver00359
+      - selectedserver00360
+      - selectedserver00361
+      - selectedserver00362
+      - selectedserver00363
+      - selectedserver00364
+      - selectedserver00365
+      - selectedserver00366
+      - selectedserver00367
+      - selectedserver00368
+      - selectedserver00369
+      - selectedserver00370
+      - selectedserver00371
+      - selectedserver00372
 
 
 rules:
