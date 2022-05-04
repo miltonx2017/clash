@@ -1,0 +1,2093 @@
+﻿port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: :9090
+proxies:
+
+ - {name: "selectedserver00001", server: trojan2.free4444.xyz, port: 443, type: trojan, password: dongtaiwang.com, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00002", server: 169.197.143.157, type: ss, country: x, port: 6697, password: TEzjfAYq2IjtuoS, cipher: aes-256-gcm}
+ - {name: "selectedserver00003", server: fkgfw-prod.i.sxl.cn, port: 443, type: ss, cipher: aes-256-cfb, password: E4DNMf73kHPrd8Qq7aqGPf7f, udp: true}
+ - {name: "selectedserver00004", server: 169.197.143.157, type: ss, country: x, port: 8091, password: PCnnH6SQSnfoS27, cipher: aes-256-gcm}
+ - {name: "selectedserver00005", server: 213.183.59.229, type: ss, country: x, port: 9020, password: BNmAXXxAHYpTRdzu, cipher: aes-256-cfb}
+ - {name: "selectedserver00006", server: 169.197.143.157, type: ss, country: x, port: 443, password: pKEW8JPByTVTLtM, cipher: aes-256-gcm}
+ - {name: "selectedserver00007", server: 185.126.116.125, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+ - {name: "selectedserver00008", server: 38.68.135.19, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+ - {name: "selectedserver00009", server: 169.197.143.157, type: ss, country: x, port: 8090, password: PCnnH6SQSnfoS27, cipher: aes-256-gcm}
+ - {name: "selectedserver00010", server: cn1.relay.iepl.pw, type: ss, country: x, port: 50400, password: df87f3f2-f2a7-4fae-ae7d-507cea790c95, cipher: aes-128-gcm}
+ - {name: "selectedserver00011", server: 198.57.27.225, type: ss, country: x, port: 7001, password: RexnBgU7EV5ADxG, cipher: aes-256-gcm}
+ - {name: "selectedserver00012", server: 198.57.27.225, type: ss, country: x, port: 8118, password: cdBIDV42DCwnfIN, cipher: aes-256-gcm}
+ - {name: "selectedserver00013", server: cn1.relay.iepl.pw, type: ss, country: x, port: 50500, password: df87f3f2-f2a7-4fae-ae7d-507cea790c95, cipher: aes-128-gcm}
+ - {name: "selectedserver00014", server: cn1.relay.iepl.pw, port: 50400, type: ss, country: x, cipher: aes-128-gcm, password: df87f3f2-f2a7-4fae-ae7d-507cea790c95}
+ - {name: "selectedserver00015", server: 169.197.143.157, type: ss, country: x, port: 6379, password: zDNVedRFPQexG9v, cipher: aes-256-gcm}
+ - {name: "selectedserver00016", server: cn1.relay.iepl.pw, port: 50400, type: ss, cipher: aes-128-gcm, password: df87f3f2-f2a7-4fae-ae7d-507cea790c95, udp: true}
+ - {name: "selectedserver00017", server: cn1.relay.iepl.pw, type: ss, country: x, port: 50200, password: df87f3f2-f2a7-4fae-ae7d-507cea790c95, cipher: aes-128-gcm}
+ - {name: "selectedserver00018", server: 169.197.143.157, type: ss, country: x, port: 8080, password: KixLvKzwjekG00rm, cipher: aes-256-gcm}
+ - {name: "selectedserver00019", server: 198.57.27.225, port: 6697, type: ss, country: x, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+ - {name: "selectedserver00020", server: v3.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v3.ssrsub.com}}, udp: true}
+ - {name: "selectedserver00021", server: 213.183.63.219, type: ss, country: x, port: 9003, password: JdmRK9gMEqFgs8nP, cipher: aes-256-cfb}
+ - {name: "selectedserver00022", server: cn1.relay.iepl.pw, type: ss, country: x, port: 50700, password: df87f3f2-f2a7-4fae-ae7d-507cea790c95, cipher: aes-128-gcm}
+ - {name: "selectedserver00023", server: 169.197.143.157, type: ss, country: x, port: 5004, password: g5MeD6Ft3CWlJId, cipher: aes-256-gcm}
+ - {name: "selectedserver00024", server: 169.197.143.157, type: ss, country: x, port: 7002, password: RexnBgU7EV5ADxG, cipher: aes-256-gcm}
+ - {name: "selectedserver00025", server: 198.57.27.225, type: ss, country: x, port: 5600, password: Y6R9pAtvxxzmGC, cipher: aes-256-gcm}
+ - {name: "selectedserver00026", server: 198.57.27.225, type: ss, country: x, port: 6697, password: TEzjfAYq2IjtuoS, cipher: aes-256-gcm}
+ - {name: "selectedserver00027", server: 185.167.116.253, type: ss, country: x, port: 9040, password: p9z5BVADH2YFs3MN, cipher: aes-256-cfb}
+ - {name: "selectedserver00028", server: 169.197.143.157, type: ss, country: x, port: 8881, password: kDWvXYZoTBcGkC4, cipher: aes-256-gcm}
+ - {name: "selectedserver00029", server: 213.183.59.229, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+ - {name: "selectedserver00030", server: 38.68.135.19, type: ss, country: x, port: 5601, password: Y6R9pAtvxxzmGC, cipher: aes-256-gcm}
+ - {name: "selectedserver00031", server: 5.183.179.166, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+ - {name: "selectedserver00032", server: 217.30.10.65, type: ss, country: x, port: 9014, password: KnJGad3FqTvjqbaX, cipher: aes-256-cfb}
+ - {name: "selectedserver00033", server: cn1.relay.iepl.pw, type: ss, country: x, port: 50600, password: df87f3f2-f2a7-4fae-ae7d-507cea790c95, cipher: aes-128-gcm}
+ - {name: "selectedserver00034", server: 213.183.63.219, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+ - {name: "selectedserver00035", server: trojan2.free4444.xyz, type: trojan, country: x, port: 443, password: dongtaiwang.com, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00036", server: 169.197.143.157, type: ss, country: x, port: 8118, password: cdBIDV42DCwnfIN, cipher: aes-256-gcm}
+ - {name: "selectedserver00037", server: 169.197.143.157, type: ss, country: x, port: 3306, password: Y6R9pAtvxxzmGC, cipher: aes-256-gcm}
+ - {name: "selectedserver00038", server: 5.183.179.166, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+ - {name: "selectedserver00039", server: 38.68.135.19, type: ss, country: x, port: 3389, password: Y6R9pAtvxxzmGC, cipher: aes-256-gcm}
+ - {name: "selectedserver00040", server: 213.183.63.219, type: ss, country: x, port: 9008, password: y9VURyNzJWNRYEGQ, cipher: aes-256-cfb}
+ - {name: "selectedserver00041", server: 213.183.51.172, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+ - {name: "selectedserver00042", server: 169.197.143.157, type: ss, country: x, port: 5000, password: Y6R9pAtvxxzmGC, cipher: aes-256-gcm}
+ - {name: "selectedserver00043", server: 213.183.53.177, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+ - {name: "selectedserver00044", server: 5.183.179.166, type: ss, country: x, port: 9040, password: p9z5BVADH2YFs3MN, cipher: aes-256-cfb}
+ - {name: "selectedserver00045", server: 5.183.179.140, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
+ - {name: "selectedserver00046", server: 217.30.10.65, type: ss, country: x, port: 9045, password: Lp27rqyJq72bZsqX, cipher: aes-256-cfb}
+ - {name: "selectedserver00047", server: 169.197.143.157, type: ss, country: x, port: 9101, password: e4FCWrgpkji3QY, cipher: aes-256-gcm}
+ - {name: "selectedserver00048", server: 217.30.10.65, type: ss, country: x, port: 9026, password: QWDDvVE9npNurQfA, cipher: aes-256-cfb}
+ - {name: "selectedserver00049", server: 185.126.116.117, type: ss, country: x, port: 9050, password: FG5ddLsMPbV5CutE, cipher: aes-256-cfb}
+ - {name: "selectedserver00050", server: 213.183.51.172, type: ss, country: x, port: 9057, password: wjTugX3ZtHMB9c3Z, cipher: aes-256-cfb}
+ - {name: "selectedserver00051", server: 169.197.143.157, type: ss, country: x, port: 7307, password: FoOiGlkAA9yPEGP, cipher: aes-256-gcm}
+ - {name: "selectedserver00052", server: 5.183.179.167, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+ - {name: "selectedserver00053", server: 169.197.143.157, type: ss, country: x, port: 5500, password: KixLvKzwjekG00rm, cipher: aes-256-gcm}
+ - {name: "selectedserver00054", server: 169.197.143.157, type: ss, country: x, port: 9102, password: e4FCWrgpkji3QY, cipher: aes-256-gcm}
+ - {name: "selectedserver00055", server: 5.183.179.170, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+ - {name: "selectedserver00056", server: 5.183.179.170, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+ - {name: "selectedserver00057", server: 185.126.116.117, type: ss, country: x, port: 9011, password: M3t2ZEQcMGRWBjRa, cipher: aes-256-cfb}
+ - {name: "selectedserver00058", server: 185.126.116.117, type: ss, country: x, port: 9043, password: HSZuyJQcWe8dxNdF, cipher: aes-256-cfb}
+ - {name: "selectedserver00059", server: 213.183.63.219, type: ss, country: x, port: 9027, password: EXN3S3eQpjE7EJu8, cipher: aes-256-cfb}
+ - {name: "selectedserver00060", server: 185.126.116.117, type: ss, country: x, port: 9032, password: UWZQeLRWnkqgkseq, cipher: aes-256-cfb}
+ - {name: "selectedserver00061", server: 169.197.143.157, type: ss, port: 8881, password: kDWvXYZoTBcGkC4, cipher: aes-256-gcm}
+ - {name: "selectedserver00062", server: 213.183.59.229, type: ss, country: x, port: 9084, password: c3NtHJ5ujV2tGDfj, cipher: aes-256-cfb}
+ - {name: "selectedserver00063", server: 85.208.108.58, port: 8080, type: ss, country: x, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+ - {name: "selectedserver00064", server: 5.183.179.167, type: ss, country: x, port: 9037, password: TN2YqghxeFDKZfLU, cipher: aes-256-cfb}
+ - {name: "selectedserver00065", server: 5.183.179.170, type: ss, country: x, port: 9005, password: ZET59LF6DvCC8KVt, cipher: aes-256-cfb}
+ - {name: "selectedserver00066", server: 169.197.143.157, type: ss, country: x, port: 5003, password: g5MeD6Ft3CWlJId, cipher: aes-256-gcm}
+ - {name: "selectedserver00067", server: 185.126.116.117, type: ss, country: x, port: 9020, password: BNmAXXxAHYpTRdzu, cipher: aes-256-cfb}
+ - {name: "selectedserver00068", server: 185.126.116.117, type: ss, country: x, port: 9005, password: ZET59LF6DvCC8KVt, cipher: aes-256-cfb}
+ - {name: "selectedserver00069", server: 5.183.179.166, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+ - {name: "selectedserver00070", server: 120.233.10.230, type: ss, country: x, port: 50700, password: df87f3f2-f2a7-4fae-ae7d-507cea790c95, cipher: aes-128-gcm}
+ - {name: "selectedserver00071", server: 217.30.10.65, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+ - {name: "selectedserver00072", server: 185.126.116.117, type: ss, country: x, port: 9040, password: p9z5BVADH2YFs3MN, cipher: aes-256-cfb}
+ - {name: "selectedserver00073", server: 5.183.179.166, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+ - {name: "selectedserver00074", server: 5.183.179.170, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+ - {name: "selectedserver00075", server: 169.197.143.157, type: ss, country: x, port: 7306, password: FoOiGlkAA9yPEGP, cipher: aes-256-gcm}
+ - {name: "selectedserver00076", server: 5.183.179.140, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+ - {name: "selectedserver00077", server: 152.89.210.105, type: ssr, country: x, port: 9064, password: cp8pRSUAyLhTfVWH, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00078", server: 5.183.179.166, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+ - {name: "selectedserver00079", server: 5.183.179.166, type: ss, country: x, port: 9011, password: M3t2ZEQcMGRWBjRa, cipher: aes-256-cfb}
+ - {name: "selectedserver00080", server: 5.183.179.140, type: ss, country: x, port: 9003, password: JdmRK9gMEqFgs8nP, cipher: aes-256-cfb}
+ - {name: "selectedserver00081", server: 185.126.116.117, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+ - {name: "selectedserver00082", server: 5.183.179.167, type: ss, country: x, port: 9088, password: f8npKgNzdkss2ytn, cipher: aes-256-cfb}
+ - {name: "selectedserver00083", server: 185.126.116.117, type: ss, country: x, port: 9042, password: S7KwUu7yBy58S3Ga, cipher: aes-256-cfb}
+ - {name: "selectedserver00084", server: us-am32-5.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: YFVrXZgRo, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: , obfs-param: , udp: true}
+ - {name: "selectedserver00085", server: 185.126.116.117, type: ss, country: x, port: 9064, password: cp8pRSUAyLhTfVWH, cipher: aes-256-cfb}
+ - {name: "selectedserver00086", server: 169.197.143.157, type: ss, country: x, port: 8882, password: kDWvXYZoTBcGkC4, cipher: aes-256-gcm}
+ - {name: "selectedserver00087", server: 5.183.179.146, type: ss, country: x, port: 9098, password: aLpQtfEZe445QyHk, cipher: aes-256-cfb}
+ - {name: "selectedserver00088", server: 185.126.116.117, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+ - {name: "selectedserver00089", server: 169.197.143.157, type: ss, country: x, port: 2375, password: faBAoD54k87UJG7, cipher: aes-256-gcm}
+ - {name: "selectedserver00090", server: us-am32-5.eqnode.net, port: 8081, type: ssr, password: YFVrXZgRo, cipher: aes-256-cfb, protocol: origin, obfs: tls1.2_ticket_auth}
+ - {name: "selectedserver00091", server: 169.197.143.157, type: ss, country: x, port: 3389, password: Y6R9pAtvxxzmGC, cipher: aes-256-gcm}
+ - {name: "selectedserver00092", server: 185.126.116.117, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+ - {name: "selectedserver00093", server: 5.183.179.170, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+ - {name: "selectedserver00094", server: 213.183.53.200, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+ - {name: "selectedserver00095", server: 5.183.179.166, type: ss, country: x, port: 9098, password: aLpQtfEZe445QyHk, cipher: aes-256-cfb}
+ - {name: "selectedserver00096", server: 185.126.116.117, type: ss, country: x, port: 9038, password: gYCYXfkUQEs2TaJQ, cipher: aes-256-cfb}
+ - {name: "selectedserver00097", server: 5.183.179.166, type: ss, country: x, port: 9007, password: kSPmvwdFzGMMW5pY, cipher: aes-256-cfb}
+ - {name: "selectedserver00098", server: 169.197.143.157, type: ss, country: x, port: 6679, password: TEzjfAYq2IjtuoS, cipher: aes-256-gcm}
+ - {name: "selectedserver00099", server: 5.183.179.166, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+ - {name: "selectedserver00100", server: 185.126.116.117, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+ - {name: "selectedserver00101", server: 185.126.116.117, type: ss, country: x, port: 9007, password: kSPmvwdFzGMMW5pY, cipher: aes-256-cfb}
+ - {name: "selectedserver00102", server: 213.183.63.218, type: ss, country: x, port: 9060, password: ueLXVkvh4hckhErQ, cipher: aes-256-cfb}
+ - {name: "selectedserver00103", server: 5.183.179.170, type: ss, country: x, port: 9070, password: bf7v334KKDV3YDhH, cipher: aes-256-cfb}
+ - {name: "selectedserver00104", server: 185.126.116.117, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+ - {name: "selectedserver00105", server: 185.126.116.117, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+ - {name: "selectedserver00106", server: 185.126.116.117, type: ss, country: x, port: 9024, password: BejrQvtu9sqUeNuZ, cipher: aes-256-cfb}
+ - {name: "selectedserver00107", server: 5.183.179.170, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+ - {name: "selectedserver00108", server: 213.183.51.172, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
+ - {name: "selectedserver00109", server: 5.183.179.166, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+ - {name: "selectedserver00110", server: 5.183.179.167, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+ - {name: "selectedserver00111", server: 213.183.51.172, type: ss, country: x, port: 9000, password: a3GFYt36Sm82Vys9, cipher: aes-256-cfb}
+ - {name: "selectedserver00112", server: 213.183.53.177, type: ssr, country: x, port: 9026, password: QWDDvVE9npNurQfA, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00113", server: 5.183.179.170, type: ss, country: x, port: 9020, password: BNmAXXxAHYpTRdzu, cipher: aes-256-cfb}
+ - {name: "selectedserver00114", server: 213.183.53.177, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+ - {name: "selectedserver00115", server: 5.183.179.146, type: ss, country: x, port: 9020, password: BNmAXXxAHYpTRdzu, cipher: aes-256-cfb}
+ - {name: "selectedserver00116", server: 5.183.179.166, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+ - {name: "selectedserver00117", server: 5.183.179.140, type: ss, country: x, port: 9001, password: UkXRsXvR6buDMG2Y, cipher: aes-256-cfb}
+ - {name: "selectedserver00118", server: 169.197.143.157, type: ss, country: x, port: 2376, password: faBAoD54k87UJG7, cipher: aes-256-gcm}
+ - {name: "selectedserver00119", server: 185.126.116.117, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+ - {name: "selectedserver00120", server: jgwdb1.gaox.ml, type: trojan, country: x, port: 443, password: a580d839-ee41-4df1-bf03-6789dca32e30, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00121", server: 213.183.53.177, type: ssr, country: x, port: 9040, password: p9z5BVADH2YFs3MN, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00122", server: 185.126.116.117, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+ - {name: "selectedserver00123", server: 5.183.179.166, type: ss, country: x, port: 9079, password: TPqX8edgbAURcAMb, cipher: aes-256-cfb}
+ - {name: "selectedserver00124", server: 14.29.124.168, type: ss, country: x, port: 24015, password: QazEdcTgb159@$*, cipher: aes-128-cfb}
+ - {name: "selectedserver00125", server: 5.183.179.146, type: ss, country: x, port: 9033, password: UTJA57ypk2XKQpnm, cipher: aes-256-cfb}
+ - {name: "selectedserver00126", server: 5.183.179.167, type: ss, country: x, port: 9003, password: JdmRK9gMEqFgs8nP, cipher: aes-256-cfb}
+ - {name: "selectedserver00127", server: 5.183.179.170, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+ - {name: "selectedserver00128", server: 5.183.179.167, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+ - {name: "selectedserver00129", server: 5.183.179.170, type: ss, country: x, port: 9046, password: NvS8N4Vf8qAGPSCL, cipher: aes-256-cfb}
+ - {name: "selectedserver00130", server: 213.183.63.218, type: ss, country: x, port: 9011, password: M3t2ZEQcMGRWBjRa, cipher: aes-256-cfb}
+ - {name: "selectedserver00131", server: 5.183.179.146, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+ - {name: "selectedserver00132", server: 152.89.210.105, type: ss, country: x, port: 9037, password: TN2YqghxeFDKZfLU, cipher: aes-256-cfb}
+ - {name: "selectedserver00133", server: 185.126.116.117, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+ - {name: "selectedserver00134", server: 213.183.53.177, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+ - {name: "selectedserver00135", server: 213.183.53.177, type: ssr, country: x, port: 9031, password: BwcAUZk8hUFAkDGN, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00136", server: 185.126.116.117, type: ss, country: x, port: 9046, password: NvS8N4Vf8qAGPSCL, cipher: aes-256-cfb}
+ - {name: "selectedserver00137", server: 5.183.179.166, type: ss, country: x, port: 9042, password: S7KwUu7yBy58S3Ga, cipher: aes-256-cfb}
+ - {name: "selectedserver00138", server: 217.30.10.67, type: ss, country: x, port: 9042, password: S7KwUu7yBy58S3Ga, cipher: aes-256-cfb}
+ - {name: "selectedserver00139", server: 5.183.179.170, type: ss, country: x, port: 9000, password: a3GFYt36Sm82Vys9, cipher: aes-256-cfb}
+ - {name: "selectedserver00140", server: 185.126.116.117, type: ss, country: x, port: 9014, password: KnJGad3FqTvjqbaX, cipher: aes-256-cfb}
+ - {name: "selectedserver00141", server: 213.183.53.177, type: ssr, country: x, port: 9060, password: ueLXVkvh4hckhErQ, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00142", server: 213.183.51.172, type: ss, country: x, port: 9001, password: UkXRsXvR6buDMG2Y, cipher: aes-256-cfb}
+ - {name: "selectedserver00143", server: 5.183.179.166, type: ss, country: x, port: 9006, password: FAdUvMJUq5vDgKEq, cipher: aes-256-cfb}
+ - {name: "selectedserver00144", server: 213.183.53.177, type: ss, country: x, port: 9041, password: U6qnYRhfyDmn8sgn, cipher: aes-256-cfb}
+ - {name: "selectedserver00145", server: 185.126.116.117, type: ss, country: x, port: 9000, password: a3GFYt36Sm82Vys9, cipher: aes-256-cfb}
+ - {name: "selectedserver00146", server: 5.183.179.166, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+ - {name: "selectedserver00147", server: 5.183.179.166, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+ - {name: "selectedserver00148", server: 185.126.116.117, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+ - {name: "selectedserver00149", server: 185.126.116.117, type: ss, country: x, port: 9026, password: QWDDvVE9npNurQfA, cipher: aes-256-cfb}
+ - {name: "selectedserver00150", server: 213.183.53.177, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+ - {name: "selectedserver00151", server: 213.183.51.172, type: ss, country: x, port: 9026, password: QWDDvVE9npNurQfA, cipher: aes-256-cfb}
+ - {name: "selectedserver00152", server: 38.68.135.19, port: 7306, type: ss, country: x, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+ - {name: "selectedserver00153", server: 5.183.179.170, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+ - {name: "selectedserver00154", server: 5.183.179.170, type: ss, country: x, port: 9093, password: wfLC2y7rzZyCmuyt, cipher: aes-256-cfb}
+ - {name: "selectedserver00155", server: 5.183.179.166, type: ss, country: x, port: 9014, password: KnJGad3FqTvjqbaX, cipher: aes-256-cfb}
+ - {name: "selectedserver00156", server: 213.183.53.200, type: ssr, country: x, port: 9025, password: XPtzA9sCug3SPR4c, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00157", server: 213.183.53.200, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+ - {name: "selectedserver00158", server: 5.183.179.170, type: ss, country: x, port: 9097, password: Sn5B7jTqr76aCJT8, cipher: aes-256-cfb}
+ - {name: "selectedserver00159", server: 5.183.179.166, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+ - {name: "selectedserver00160", server: 169.197.143.157, type: ss, country: x, port: 5001, password: Y6R9pAtvxxzmGC, cipher: aes-256-gcm}
+ - {name: "selectedserver00161", server: 185.126.116.117, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+ - {name: "selectedserver00162", server: 213.183.53.177, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+ - {name: "selectedserver00163", server: 213.183.51.172, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+ - {name: "selectedserver00164", server: us-am32-5.eqnode.net, type: ssr, country: x, port: 8081, password: YFVrXZgRo, cipher: aes-256-cfb, protocol: origin, obfs: tls1.2_ticket_auth}
+ - {name: "selectedserver00165", server: 213.183.51.172, type: ss, country: x, port: 9064, password: cp8pRSUAyLhTfVWH, cipher: aes-256-cfb}
+ - {name: "selectedserver00166", server: 185.126.116.117, type: ss, country: x, port: 9045, password: Lp27rqyJq72bZsqX, cipher: aes-256-cfb}
+ - {name: "selectedserver00167", server: 5.183.179.167, type: ss, country: x, port: 9064, password: cp8pRSUAyLhTfVWH, cipher: aes-256-cfb}
+ - {name: "selectedserver00168", server: 5.183.179.166, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+ - {name: "selectedserver00169", server: 5.183.179.166, type: ss, country: x, port: 9015, password: ZpNDDKRu9MagNvaf, cipher: aes-256-cfb}
+ - {name: "selectedserver00170", server: 5.183.179.167, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+ - {name: "selectedserver00171", server: 5.183.179.166, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+ - {name: "selectedserver00172", server: 185.126.116.117, type: ss, country: x, port: 9079, password: TPqX8edgbAURcAMb, cipher: aes-256-cfb}
+ - {name: "selectedserver00173", server: 198.57.27.225, type: ss, country: x, port: 8009, password: XKFKl2rULjIp74, cipher: aes-256-gcm}
+ - {name: "selectedserver00174", server: 213.183.53.177, type: ssr, country: x, port: 9043, password: HSZuyJQcWe8dxNdF, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00175", server: 5.183.179.140, type: ss, country: x, port: 9064, password: cp8pRSUAyLhTfVWH, cipher: aes-256-cfb}
+ - {name: "selectedserver00176", server: 213.183.53.177, type: ssr, country: x, port: 9046, password: NvS8N4Vf8qAGPSCL, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00177", server: 213.183.53.177, type: ssr, country: x, port: 9019, password: GA9KzeEgvfxNrgmM, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00178", server: 185.126.116.117, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+ - {name: "selectedserver00179", server: 213.183.53.177, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+ - {name: "selectedserver00180", server: 213.183.63.218, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+ - {name: "selectedserver00181", server: 198.57.27.225, type: ss, country: x, port: 3306, password: Y6R9pAtvxxzmGC, cipher: aes-256-gcm}
+ - {name: "selectedserver00182", server: 169.197.143.157, type: ss, country: x, port: 8888, password: Y6R9pAtvxxzmGC, cipher: aes-256-gcm}
+ - {name: "selectedserver00183", server: v4.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v4.ssrsub.com}}, udp: true}
+ - {name: "selectedserver00184", server: 5.183.179.166, type: ss, country: x, port: 9060, password: ueLXVkvh4hckhErQ, cipher: aes-256-cfb}
+ - {name: "selectedserver00185", server: 169.197.143.157, type: ss, country: x, port: 8008, password: XKFKl2rULjIp74, cipher: aes-256-gcm}
+ - {name: "selectedserver00186", server: 5.183.179.146, type: ss, country: x, port: 9097, password: Sn5B7jTqr76aCJT8, cipher: aes-256-cfb}
+ - {name: "selectedserver00187", server: 185.126.116.117, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+ - {name: "selectedserver00188", server: 5.183.179.170, type: ss, country: x, port: 9033, password: UTJA57ypk2XKQpnm, cipher: aes-256-cfb}
+ - {name: "selectedserver00189", server: 213.183.53.177, type: ssr, country: x, port: 9070, password: bf7v334KKDV3YDhH, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00190", server: 5.183.179.170, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+ - {name: "selectedserver00191", server: 5.183.179.166, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+ - {name: "selectedserver00192", server: 5.183.179.140, type: ss, country: x, port: 9015, password: ZpNDDKRu9MagNvaf, cipher: aes-256-cfb}
+ - {name: "selectedserver00193", server: 213.183.53.200, type: ssr, country: x, port: 9026, password: QWDDvVE9npNurQfA, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00194", server: 5.183.179.167, type: ss, country: x, port: 9018, password: fG2artUmHfNT2cX7, cipher: aes-256-cfb}
+ - {name: "selectedserver00195", server: 198.57.27.225, port: 7001, type: ss, country: x, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+ - {name: "selectedserver00196", server: 5.183.179.166, type: ss, country: x, port: 9031, password: BwcAUZk8hUFAkDGN, cipher: aes-256-cfb}
+ - {name: "selectedserver00197", server: 213.183.53.200, type: ssr, country: x, port: 9020, password: BNmAXXxAHYpTRdzu, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00198", server: 5.183.179.166, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+ - {name: "selectedserver00199", server: 5.183.179.170, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+ - {name: "selectedserver00200", server: 120.233.10.230, type: ss, country: x, port: 50500, password: df87f3f2-f2a7-4fae-ae7d-507cea790c95, cipher: aes-128-gcm}
+ - {name: "selectedserver00201", server: 5.183.179.166, type: ss, country: x, port: 9094, password: rpgbNnU9rDDU4aWZ, cipher: aes-256-cfb}
+ - {name: "selectedserver00202", server: 5.183.179.146, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+ - {name: "selectedserver00203", server: 213.183.53.200, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+ - {name: "selectedserver00204", server: 185.126.116.117, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+ - {name: "selectedserver00205", server: 213.183.53.200, type: ssr, country: x, port: 9093, password: wfLC2y7rzZyCmuyt, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00206", server: 5.183.179.166, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+ - {name: "selectedserver00207", server: 213.183.53.200, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+ - {name: "selectedserver00208", server: 5.183.179.170, type: ss, country: x, port: 9098, password: aLpQtfEZe445QyHk, cipher: aes-256-cfb}
+ - {name: "selectedserver00209", server: 5.183.179.140, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+ - {name: "selectedserver00210", server: 185.167.116.253, type: ss, country: x, port: 9038, password: gYCYXfkUQEs2TaJQ, cipher: aes-256-cfb}
+ - {name: "selectedserver00211", server: 14.29.124.168, port: 24015, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+ - {name: "selectedserver00212", server: 213.183.53.200, type: ssr, country: x, port: 9059, password: 9XwYyZsK8SNzQDtY, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00213", server: 5.183.179.167, type: ss, country: x, port: 9059, password: 9XwYyZsK8SNzQDtY, cipher: aes-256-cfb}
+ - {name: "selectedserver00214", server: 213.183.53.177, type: ssr, country: x, port: 9097, password: Sn5B7jTqr76aCJT8, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00215", server: 152.89.210.105, type: ssr, country: x, port: 9050, password: FG5ddLsMPbV5CutE, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00216", server: 213.183.53.177, type: ssr, country: x, port: 9005, password: ZET59LF6DvCC8KVt, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00217", server: 5.183.179.140, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+ - {name: "selectedserver00218", server: 5.183.179.166, type: ss, country: x, port: 9057, password: wjTugX3ZtHMB9c3Z, cipher: aes-256-cfb}
+ - {name: "selectedserver00219", server: 185.126.116.125, type: ssr, country: x, port: 9043, password: HSZuyJQcWe8dxNdF, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00220", server: 213.183.51.172, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+ - {name: "selectedserver00221", server: 213.183.53.200, type: ssr, country: x, port: 9050, password: FG5ddLsMPbV5CutE, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00222", server: 213.183.53.200, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+ - {name: "selectedserver00223", server: 213.183.53.200, type: ssr, country: x, port: 9073, password: daFYagqDdBdA6VTX, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00224", server: 217.30.10.65, type: ss, country: x, port: 9053, password: SBM7R883jBmnqe6C, cipher: aes-256-cfb}
+ - {name: "selectedserver00225", server: 213.183.59.229, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+ - {name: "selectedserver00226", server: 213.183.53.177, type: ssr, port: 9020, password: BNmAXXxAHYpTRdzu, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00227", server: 213.183.63.219, type: ss, country: x, port: 9033, password: UTJA57ypk2XKQpnm, cipher: aes-256-cfb}
+ - {name: "selectedserver00228", server: 5.183.179.140, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+ - {name: "selectedserver00229", server: 5.183.179.166, type: ss, country: x, port: 9019, password: GA9KzeEgvfxNrgmM, cipher: aes-256-cfb}
+ - {name: "selectedserver00230", server: 213.183.53.177, type: ssr, country: x, port: 9084, password: c3NtHJ5ujV2tGDfj, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00231", server: de-01.fireplay.io, type: trojan, country: x, port: 443, password: lo3TmsNaLWUXpuoE, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00232", server: 5.183.179.170, type: ss, country: x, port: 9031, password: BwcAUZk8hUFAkDGN, cipher: aes-256-cfb}
+ - {name: "selectedserver00233", server: 213.183.53.200, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+ - {name: "selectedserver00234", server: 213.183.51.172, type: ss, country: x, port: 9073, password: daFYagqDdBdA6VTX, cipher: aes-256-cfb}
+ - {name: "selectedserver00235", server: jgwdb1.gaox.ml, port: 443, type: trojan, password: a580d839-ee41-4df1-bf03-6789dca32e30, skip-cert-verify: true, udp: true}
+ - {name: "selectedserver00236", server: 5.183.179.146, type: ss, country: x, port: 9093, password: wfLC2y7rzZyCmuyt, cipher: aes-256-cfb}
+ - {name: "selectedserver00237", server: 213.183.53.177, type: ssr, country: x, port: 9037, password: TN2YqghxeFDKZfLU, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00238", server: 120.233.10.230, type: ss, country: x, port: 50200, password: df87f3f2-f2a7-4fae-ae7d-507cea790c95, cipher: aes-128-gcm}
+ - {name: "selectedserver00239", server: 5.183.179.170, type: ss, country: x, port: 9006, password: FAdUvMJUq5vDgKEq, cipher: aes-256-cfb}
+ - {name: "selectedserver00240", server: 5.183.179.166, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+ - {name: "selectedserver00241", server: 213.183.53.177, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+ - {name: "selectedserver00242", server: 213.183.53.177, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+ - {name: "selectedserver00243", server: 217.30.10.65, type: ss, country: x, port: 9025, password: XPtzA9sCug3SPR4c, cipher: aes-256-cfb}
+ - {name: "selectedserver00244", server: 5.183.179.170, type: ss, country: x, port: 9060, password: ueLXVkvh4hckhErQ, cipher: aes-256-cfb}
+ - {name: "selectedserver00245", server: 5.183.179.140, type: ss, country: x, port: 9040, password: p9z5BVADH2YFs3MN, cipher: aes-256-cfb}
+ - {name: "selectedserver00246", server: 213.183.53.177, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
+ - {name: "selectedserver00247", server: 217.30.10.67, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+ - {name: "selectedserver00248", server: 213.183.53.177, type: ssr, country: x, port: 9033, password: UTJA57ypk2XKQpnm, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00249", server: 213.183.53.200, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
+ - {name: "selectedserver00250", server: 5.183.179.166, type: ss, country: x, port: 9059, password: 9XwYyZsK8SNzQDtY, cipher: aes-256-cfb}
+ - {name: "selectedserver00251", server: 5.183.179.140, type: ss, country: x, port: 9037, password: TN2YqghxeFDKZfLU, cipher: aes-256-cfb}
+ - {name: "selectedserver00252", server: 213.183.53.177, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+ - {name: "selectedserver00253", server: 5.183.179.166, type: ss, country: x, port: 9018, password: fG2artUmHfNT2cX7, cipher: aes-256-cfb}
+ - {name: "selectedserver00254", server: 213.183.53.200, type: ssr, country: x, port: 9057, password: wjTugX3ZtHMB9c3Z, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00255", server: 5.183.179.170, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+ - {name: "selectedserver00256", server: v1.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v1.ssrsub.com}}, udp: true}
+ - {name: "selectedserver00257", server: 5.183.179.146, type: ss, country: x, port: 9007, password: kSPmvwdFzGMMW5pY, cipher: aes-256-cfb}
+ - {name: "selectedserver00258", server: 213.183.53.200, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+ - {name: "selectedserver00259", server: 5.183.179.170, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+ - {name: "selectedserver00260", server: 185.126.116.117, type: ss, country: x, port: 9057, password: wjTugX3ZtHMB9c3Z, cipher: aes-256-cfb}
+ - {name: "selectedserver00261", server: 198.57.27.225, type: ss, country: x, port: 9101, password: e4FCWrgpkji3QY, cipher: aes-256-gcm}
+ - {name: "selectedserver00262", server: 213.183.53.200, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+ - {name: "selectedserver00263", server: 38.68.135.19, port: 5500, type: ss, country: x, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+ - {name: "selectedserver00264", server: 5.183.179.146, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+ - {name: "selectedserver00265", server: 5.183.179.170, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+ - {name: "selectedserver00266", server: 213.183.63.219, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+ - {name: "selectedserver00267", server: 185.167.117.171, type: ss, country: x, port: 9084, password: c3NtHJ5ujV2tGDfj, cipher: aes-256-cfb}
+ - {name: "selectedserver00268", server: 217.30.10.67, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+ - {name: "selectedserver00269", server: 5.183.179.140, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+ - {name: "selectedserver00270", server: 5.183.179.166, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+ - {name: "selectedserver00271", server: 5.183.179.166, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+ - {name: "selectedserver00272", server: 213.183.53.200, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+ - {name: "selectedserver00273", server: 213.183.51.172, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+ - {name: "selectedserver00274", server: 152.89.210.105, type: ssr, country: x, port: 9098, password: aLpQtfEZe445QyHk, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00275", server: 185.126.116.117, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+ - {name: "selectedserver00276", server: 5.183.179.170, type: ss, country: x, port: 9059, password: 9XwYyZsK8SNzQDtY, cipher: aes-256-cfb}
+ - {name: "selectedserver00277", server: 213.183.53.177, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+ - {name: "selectedserver00278", server: 185.126.116.117, type: ss, country: x, port: 9019, password: GA9KzeEgvfxNrgmM, cipher: aes-256-cfb}
+ - {name: "selectedserver00279", server: 213.183.63.218, type: ss, country: x, port: 9073, password: daFYagqDdBdA6VTX, cipher: aes-256-cfb}
+ - {name: "selectedserver00280", server: 213.183.53.200, type: ssr, country: x, port: 9042, password: S7KwUu7yBy58S3Ga, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00281", server: 213.183.53.200, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+ - {name: "selectedserver00282", server: 172.105.244.165, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+ - {name: "selectedserver00283", server: 185.126.116.117, type: ss, country: x, port: 9041, password: U6qnYRhfyDmn8sgn, cipher: aes-256-cfb}
+ - {name: "selectedserver00284", server: 213.183.53.177, type: ssr, country: x, port: 9098, password: aLpQtfEZe445QyHk, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00285", server: 217.30.10.67, type: ss, country: x, port: 9097, password: Sn5B7jTqr76aCJT8, cipher: aes-256-cfb}
+ - {name: "selectedserver00286", server: 213.183.63.218, type: ss, country: x, port: 9059, password: 9XwYyZsK8SNzQDtY, cipher: aes-256-cfb}
+ - {name: "selectedserver00287", server: 185.126.116.117, type: ss, country: x, port: 9059, password: 9XwYyZsK8SNzQDtY, cipher: aes-256-cfb}
+ - {name: "selectedserver00288", server: streaming-1-route.teacher2050.com, type: vmess, country: x, port: 31222, uuid: B8AAA6E1-F0B3-B9EC-3DFC-BB226C167B33, alterId: 0, cipher: auto, network: tcp, ws-path: /, http-opts: {}, h2-opts: {}, skip-cert-verify: true}
+ - {name: "selectedserver00289", server: 139.162.132.116, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+ - {name: "selectedserver00290", server: 5.183.179.167, type: ss, country: x, port: 9001, password: UkXRsXvR6buDMG2Y, cipher: aes-256-cfb}
+ - {name: "selectedserver00291", server: 5.183.179.170, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+ - {name: "selectedserver00292", server: 213.183.53.177, type: ssr, country: x, port: 9027, password: EXN3S3eQpjE7EJu8, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00293", server: 5.183.179.166, type: ss, country: x, port: 9056, password: rNBfNuuANFCAk7KB, cipher: aes-256-cfb}
+ - {name: "selectedserver00294", server: 213.183.53.200, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+ - {name: "selectedserver00295", server: 5.183.179.170, type: ss, country: x, port: 9024, password: BejrQvtu9sqUeNuZ, cipher: aes-256-cfb}
+ - {name: "selectedserver00296", server: 5.183.179.146, type: ss, country: x, port: 9045, password: Lp27rqyJq72bZsqX, cipher: aes-256-cfb}
+ - {name: "selectedserver00297", server: 213.183.53.177, type: ssr, country: x, port: 9011, password: M3t2ZEQcMGRWBjRa, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00298", server: 185.167.117.171, type: ss, country: x, port: 9073, password: daFYagqDdBdA6VTX, cipher: aes-256-cfb}
+ - {name: "selectedserver00299", server: 213.183.63.218, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+ - {name: "selectedserver00300", server: 172.105.244.165, type: ss, country: x, port: 5004, password: g5MeD6Ft3CWlJId, cipher: aes-256-gcm}
+ - {name: "selectedserver00301", server: 5.183.179.167, type: ss, country: x, port: 9008, password: y9VURyNzJWNRYEGQ, cipher: aes-256-cfb}
+ - {name: "selectedserver00302", server: 5.183.179.166, type: ss, country: x, port: 9000, password: a3GFYt36Sm82Vys9, cipher: aes-256-cfb}
+ - {name: "selectedserver00303", server: v5.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v5.ssrsub.com}}, udp: true}
+ - {name: "selectedserver00304", server: 5.183.179.146, type: ss, country: x, port: 9000, password: a3GFYt36Sm82Vys9, cipher: aes-256-cfb}
+ - {name: "selectedserver00305", server: 5.183.179.166, type: ss, country: x, port: 9032, password: UWZQeLRWnkqgkseq, cipher: aes-256-cfb}
+ - {name: "selectedserver00306", server: 213.183.53.177, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+ - {name: "selectedserver00307", server: 5.183.179.146, type: ss, country: x, port: 9038, password: gYCYXfkUQEs2TaJQ, cipher: aes-256-cfb}
+ - {name: "selectedserver00308", server: 38.68.135.19, type: ss, country: x, port: 5004, password: g5MeD6Ft3CWlJId, cipher: aes-256-gcm}
+ - {name: "selectedserver00309", server: 213.183.51.171, type: ss, country: x, port: 9031, password: BwcAUZk8hUFAkDGN, cipher: aes-256-cfb}
+ - {name: "selectedserver00310", server: 185.126.116.117, type: ss, country: x, port: 9056, password: rNBfNuuANFCAk7KB, cipher: aes-256-cfb}
+ - {name: "selectedserver00311", server: 213.183.53.200, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+ - {name: "selectedserver00312", server: 5.183.179.166, type: ss, country: x, port: 9097, password: Sn5B7jTqr76aCJT8, cipher: aes-256-cfb}
+ - {name: "selectedserver00313", server: 213.183.53.200, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+ - {name: "selectedserver00314", server: 213.183.53.200, type: ssr, country: x, port: 9032, password: UWZQeLRWnkqgkseq, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00315", server: 5.183.179.170, type: ss, country: x, port: 9045, password: Lp27rqyJq72bZsqX, cipher: aes-256-cfb}
+ - {name: "selectedserver00316", server: 5.183.179.170, type: ss, country: x, port: 9050, password: FG5ddLsMPbV5CutE, cipher: aes-256-cfb}
+ - {name: "selectedserver00317", server: 213.183.53.177, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+ - {name: "selectedserver00318", server: 5.183.179.170, type: ss, country: x, port: 9032, password: UWZQeLRWnkqgkseq, cipher: aes-256-cfb}
+ - {name: "selectedserver00319", server: 185.167.117.171, type: ss, country: x, port: 9010, password: f63gg8EruDnUrmz4, cipher: aes-256-cfb}
+ - {name: "selectedserver00320", server: 185.167.117.171, type: ss, country: x, port: 9060, password: ueLXVkvh4hckhErQ, cipher: aes-256-cfb}
+ - {name: "selectedserver00321", server: 5.183.179.166, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+ - {name: "selectedserver00322", server: 139.162.132.116, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+ - {name: "selectedserver00323", server: 213.183.53.177, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+ - {name: "selectedserver00324", server: 5.183.179.170, type: ss, country: x, port: 9043, password: HSZuyJQcWe8dxNdF, cipher: aes-256-cfb}
+ - {name: "selectedserver00325", server: 213.183.53.177, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
+ - {name: "selectedserver00326", server: 213.183.63.218, type: ss, country: x, port: 9038, password: gYCYXfkUQEs2TaJQ, cipher: aes-256-cfb}
+ - {name: "selectedserver00327", server: 213.183.53.200, type: ssr, country: x, port: 9040, password: p9z5BVADH2YFs3MN, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00328", server: 217.30.10.65, type: ss, country: x, port: 9027, password: EXN3S3eQpjE7EJu8, cipher: aes-256-cfb}
+ - {name: "selectedserver00329", server: in-v1.sdgdn.com, port: 50301, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: in-v1.sdgdn.com}}, udp: true}
+ - {name: "selectedserver00330", server: 5.183.179.170, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+ - {name: "selectedserver00331", server: 185.167.117.171, type: ss, country: x, port: 9032, password: UWZQeLRWnkqgkseq, cipher: aes-256-cfb}
+ - {name: "selectedserver00332", server: 185.167.117.171, type: ss, country: x, port: 9000, password: a3GFYt36Sm82Vys9, cipher: aes-256-cfb}
+ - {name: "selectedserver00333", server: 213.183.53.200, type: ssr, country: x, port: 9001, password: UkXRsXvR6buDMG2Y, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00334", server: 213.183.53.200, type: ssr, country: x, port: 9031, password: BwcAUZk8hUFAkDGN, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00335", server: 213.183.63.218, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
+ - {name: "selectedserver00336", server: 213.183.53.177, type: ssr, country: x, port: 9045, password: Lp27rqyJq72bZsqX, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00337", server: 213.183.53.200, type: ssr, country: x, port: 9027, password: EXN3S3eQpjE7EJu8, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00338", server: 217.30.10.65, type: ss, country: x, port: 9015, password: ZpNDDKRu9MagNvaf, cipher: aes-256-cfb}
+ - {name: "selectedserver00339", server: 5.183.179.140, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+ - {name: "selectedserver00340", server: 172.105.244.165, type: ss, country: x, port: 8090, password: PCnnH6SQSnfoS27, cipher: aes-256-gcm}
+ - {name: "selectedserver00341", server: 213.183.53.177, type: ssr, port: 9018, password: fG2artUmHfNT2cX7, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00342", server: 185.167.117.171, type: ss, country: x, port: 9040, password: p9z5BVADH2YFs3MN, cipher: aes-256-cfb}
+ - {name: "selectedserver00343", server: 213.183.53.200, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+ - {name: "selectedserver00344", server: 5.183.179.166, type: ss, country: x, port: 9038, password: gYCYXfkUQEs2TaJQ, cipher: aes-256-cfb}
+ - {name: "selectedserver00345", server: 213.183.53.177, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+ - {name: "selectedserver00346", server: 5.183.179.167, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+ - {name: "selectedserver00347", server: 5.183.179.167, type: ss, country: x, port: 9040, password: p9z5BVADH2YFs3MN, cipher: aes-256-cfb}
+ - {name: "selectedserver00348", server: 198.57.27.225, type: ss, country: x, port: 9102, password: e4FCWrgpkji3QY, cipher: aes-256-gcm}
+ - {name: "selectedserver00349", server: 38.68.135.19, port: 8119, type: ss, country: x, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+ - {name: "selectedserver00350", server: 213.183.51.172, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+ - {name: "selectedserver00351", server: 38.68.135.19, type: ss, country: x, port: 9102, password: e4FCWrgpkji3QY, cipher: aes-256-gcm}
+ - {name: "selectedserver00352", server: 172.105.244.165, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+ - {name: "selectedserver00353", server: 213.183.53.177, type: ssr, country: x, port: 9020, password: BNmAXXxAHYpTRdzu, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00354", server: 5.183.179.140, type: ss, country: x, port: 9018, password: fG2artUmHfNT2cX7, cipher: aes-256-cfb}
+ - {name: "selectedserver00355", server: 213.183.63.218, type: ss, country: x, port: 9018, password: fG2artUmHfNT2cX7, cipher: aes-256-cfb}
+ - {name: "selectedserver00356", server: 152.89.210.105, type: ss, country: x, port: 9006, password: FAdUvMJUq5vDgKEq, cipher: aes-256-cfb}
+ - {name: "selectedserver00357", server: 185.167.117.171, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+ - {name: "selectedserver00358", server: 217.30.10.67, type: ss, country: x, port: 9059, password: 9XwYyZsK8SNzQDtY, cipher: aes-256-cfb}
+ - {name: "selectedserver00359", server: 213.183.51.171, type: ss, country: x, port: 9040, password: p9z5BVADH2YFs3MN, cipher: aes-256-cfb}
+ - {name: "selectedserver00360", server: 213.183.51.171, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+ - {name: "selectedserver00361", server: 5.183.179.167, type: ss, country: x, port: 9027, password: EXN3S3eQpjE7EJu8, cipher: aes-256-cfb}
+ - {name: "selectedserver00362", server: v2.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssrsub, headers: {Host: v2.ssrsub.com}}, udp: true}
+ - {name: "selectedserver00363", server: 5.183.179.166, type: ss, country: x, port: 9043, password: HSZuyJQcWe8dxNdF, cipher: aes-256-cfb}
+ - {name: "selectedserver00364", server: 213.183.53.200, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+ - {name: "selectedserver00365", server: 213.183.53.177, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+ - {name: "selectedserver00366", server: 185.167.117.171, type: ss, country: x, port: 9020, password: BNmAXXxAHYpTRdzu, cipher: aes-256-cfb}
+ - {name: "selectedserver00367", server: 5.183.179.167, type: ss, country: x, port: 9045, password: Lp27rqyJq72bZsqX, cipher: aes-256-cfb}
+ - {name: "selectedserver00368", server: 213.183.51.172, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+ - {name: "selectedserver00369", server: 5.183.179.140, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+ - {name: "selectedserver00370", server: 5.183.179.170, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+ - {name: "selectedserver00371", server: 5.183.179.167, type: ss, country: x, port: 9042, password: S7KwUu7yBy58S3Ga, cipher: aes-256-cfb}
+ - {name: "selectedserver00372", server: 213.183.53.200, type: ssr, country: x, port: 9003, password: JdmRK9gMEqFgs8nP, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00373", server: 213.183.53.200, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+ - {name: "selectedserver00374", server: 5.183.179.166, type: ss, country: x, port: 9041, password: U6qnYRhfyDmn8sgn, cipher: aes-256-cfb}
+ - {name: "selectedserver00375", server: 185.167.117.171, type: ss, country: x, port: 9015, password: ZpNDDKRu9MagNvaf, cipher: aes-256-cfb}
+ - {name: "selectedserver00376", server: 217.30.10.65, type: ss, country: x, port: 9056, password: rNBfNuuANFCAk7KB, cipher: aes-256-cfb}
+ - {name: "selectedserver00377", server: 5.183.179.170, type: ss, country: x, port: 9041, password: U6qnYRhfyDmn8sgn, cipher: aes-256-cfb}
+ - {name: "selectedserver00378", server: 185.167.117.171, type: ss, country: x, port: 9003, password: JdmRK9gMEqFgs8nP, cipher: aes-256-cfb}
+ - {name: "selectedserver00379", server: 213.183.63.218, type: ss, country: x, port: 9000, password: a3GFYt36Sm82Vys9, cipher: aes-256-cfb}
+ - {name: "selectedserver00380", server: 185.126.116.117, type: ss, country: x, port: 9027, password: EXN3S3eQpjE7EJu8, cipher: aes-256-cfb}
+ - {name: "selectedserver00381", server: 213.183.53.177, type: ssr, country: x, port: 9088, password: f8npKgNzdkss2ytn, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00382", server: 213.183.53.200, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+ - {name: "selectedserver00383", server: 213.183.53.200, type: ssr, country: x, port: 9041, password: U6qnYRhfyDmn8sgn, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00384", server: 213.183.51.171, type: ss, country: x, port: 9079, password: TPqX8edgbAURcAMb, cipher: aes-256-cfb}
+ - {name: "selectedserver00385", server: 213.183.63.218, type: ss, country: x, port: 9064, password: cp8pRSUAyLhTfVWH, cipher: aes-256-cfb}
+ - {name: "selectedserver00386", server: 213.183.51.171, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
+ - {name: "selectedserver00387", server: 213.183.53.200, type: ssr, country: x, port: 9014, password: KnJGad3FqTvjqbaX, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00388", server: 213.183.53.177, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+ - {name: "selectedserver00389", server: 217.30.10.67, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+ - {name: "selectedserver00390", server: 213.183.53.177, type: ssr, country: x, port: 9010, password: f63gg8EruDnUrmz4, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00391", server: 5.183.179.145, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+ - {name: "selectedserver00392", server: 172.105.244.165, type: ss, country: x, port: 7306, password: FoOiGlkAA9yPEGP, cipher: aes-256-gcm}
+ - {name: "selectedserver00393", server: 213.183.53.177, type: ssr, country: x, port: 9003, password: JdmRK9gMEqFgs8nP, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00394", server: 213.183.53.177, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
+ - {name: "selectedserver00395", server: 5.183.179.146, type: ss, country: x, port: 9042, password: S7KwUu7yBy58S3Ga, cipher: aes-256-cfb}
+ - {name: "selectedserver00396", server: 185.167.117.171, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+ - {name: "selectedserver00397", server: 213.183.51.172, type: ss, country: x, port: 9025, password: XPtzA9sCug3SPR4c, cipher: aes-256-cfb}
+ - {name: "selectedserver00398", server: 5.183.179.170, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+ - {name: "selectedserver00399", server: 185.126.116.117, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+ - {name: "selectedserver00400", server: 213.183.51.171, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+ - {name: "selectedserver00401", server: 185.167.116.253, type: ss, country: x, port: 9057, password: wjTugX3ZtHMB9c3Z, cipher: aes-256-cfb}
+ - {name: "selectedserver00402", server: 213.183.53.177, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+ - {name: "selectedserver00403", server: 213.183.53.200, type: ssr, country: x, port: 9038, password: gYCYXfkUQEs2TaJQ, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00404", server: 213.183.53.177, type: ssr, country: x, port: 9032, password: UWZQeLRWnkqgkseq, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00405", server: 213.183.53.200, type: ssr, country: x, port: 9043, password: HSZuyJQcWe8dxNdF, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00406", server: 5.183.179.166, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+ - {name: "selectedserver00407", server: 213.183.63.218, type: ss, country: x, port: 9024, password: BejrQvtu9sqUeNuZ, cipher: aes-256-cfb}
+ - {name: "selectedserver00408", server: 5.183.179.146, type: ss, country: x, port: 9037, password: TN2YqghxeFDKZfLU, cipher: aes-256-cfb}
+ - {name: "selectedserver00409", server: 169.197.143.157, type: ss, country: x, port: 7001, password: RexnBgU7EV5ADxG, cipher: aes-256-gcm}
+ - {name: "selectedserver00410", server: 5.183.179.146, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+ - {name: "selectedserver00411", server: 185.167.117.171, type: ss, country: x, port: 9088, password: f8npKgNzdkss2ytn, cipher: aes-256-cfb}
+ - {name: "selectedserver00412", server: 213.183.53.177, type: ssr, country: x, port: 9008, password: y9VURyNzJWNRYEGQ, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00413", server: 213.183.53.177, type: ssr, country: x, port: 9056, password: rNBfNuuANFCAk7KB, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00414", server: 213.183.53.200, type: ssr, country: x, port: 9070, password: bf7v334KKDV3YDhH, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00415", server: 213.183.53.200, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+ - {name: "selectedserver00416", server: 172.105.244.165, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+ - {name: "selectedserver00417", server: 213.183.51.171, type: ss, country: x, port: 9084, password: c3NtHJ5ujV2tGDfj, cipher: aes-256-cfb}
+ - {name: "selectedserver00418", server: 213.183.53.200, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+ - {name: "selectedserver00419", server: 213.183.53.177, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+ - {name: "selectedserver00420", server: 172.105.244.165, type: ss, port: 8090, password: PCnnH6SQSnfoS27, cipher: aes-256-gcm}
+ - {name: "selectedserver00421", server: 5.183.179.166, type: ss, country: x, port: 9003, password: JdmRK9gMEqFgs8nP, cipher: aes-256-cfb}
+ - {name: "selectedserver00422", server: 5.183.179.140, type: ss, country: x, port: 9025, password: XPtzA9sCug3SPR4c, cipher: aes-256-cfb}
+ - {name: "selectedserver00423", server: 217.30.10.65, type: ss, country: x, port: 9088, password: f8npKgNzdkss2ytn, cipher: aes-256-cfb}
+ - {name: "selectedserver00424", server: 217.30.10.67, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+ - {name: "selectedserver00425", server: 217.30.10.67, type: ss, country: x, port: 9001, password: UkXRsXvR6buDMG2Y, cipher: aes-256-cfb}
+ - {name: "selectedserver00426", server: 172.105.244.165, type: ss, country: x, port: 7307, password: FoOiGlkAA9yPEGP, cipher: aes-256-gcm}
+ - {name: "selectedserver00427", server: 185.167.117.171, type: ss, country: x, port: 9070, password: bf7v334KKDV3YDhH, cipher: aes-256-cfb}
+ - {name: "selectedserver00428", server: 5.183.179.146, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+ - {name: "selectedserver00429", server: 213.183.53.177, type: ssr, country: x, port: 9057, password: wjTugX3ZtHMB9c3Z, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00430", server: 213.183.53.177, type: ssr, country: x, port: 9053, password: SBM7R883jBmnqe6C, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00431", server: 213.183.51.171, type: ss, country: x, port: 9056, password: rNBfNuuANFCAk7KB, cipher: aes-256-cfb}
+ - {name: "selectedserver00432", server: 213.183.51.171, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+ - {name: "selectedserver00433", server: 213.183.53.177, type: ssr, country: x, port: 9001, password: UkXRsXvR6buDMG2Y, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00434", server: 5.183.179.146, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+ - {name: "selectedserver00435", server: 213.183.63.218, type: ss, country: x, port: 9084, password: c3NtHJ5ujV2tGDfj, cipher: aes-256-cfb}
+ - {name: "selectedserver00436", server: 185.167.117.171, type: ss, country: x, port: 9038, password: gYCYXfkUQEs2TaJQ, cipher: aes-256-cfb}
+ - {name: "selectedserver00437", server: 172.105.244.165, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+ - {name: "selectedserver00438", server: 185.167.117.171, type: ss, country: x, port: 9046, password: NvS8N4Vf8qAGPSCL, cipher: aes-256-cfb}
+ - {name: "selectedserver00439", server: 213.183.59.229, type: ss, country: x, port: 9042, password: S7KwUu7yBy58S3Ga, cipher: aes-256-cfb}
+ - {name: "selectedserver00440", server: 213.183.53.177, type: ss, country: x, port: 9084, password: c3NtHJ5ujV2tGDfj, cipher: aes-256-cfb}
+ - {name: "selectedserver00441", server: 176.103.61.162, type: ss, country: x, port: 444, password: IjBemsAg, cipher: chacha20-ietf-poly1305}
+ - {name: "selectedserver00442", server: 217.30.10.67, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+ - {name: "selectedserver00443", server: 5.183.179.166, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+ - {name: "selectedserver00444", server: 213.183.53.200, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+ - {name: "selectedserver00445", server: 213.183.53.177, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+ - {name: "selectedserver00446", server: 213.183.53.200, type: ssr, country: x, port: 9060, password: ueLXVkvh4hckhErQ, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00447", server: 213.183.53.200, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+ - {name: "selectedserver00448", server: 5.183.179.166, type: ss, country: x, port: 9050, password: FG5ddLsMPbV5CutE, cipher: aes-256-cfb}
+ - {name: "selectedserver00449", server: 5.183.179.145, type: ss, country: x, port: 9018, password: fG2artUmHfNT2cX7, cipher: aes-256-cfb}
+ - {name: "selectedserver00450", server: 172.105.244.165, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+ - {name: "selectedserver00451", server: 185.167.116.253, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+ - {name: "selectedserver00452", server: 213.183.51.171, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+ - {name: "selectedserver00453", server: 217.30.10.67, type: ss, country: x, port: 9098, password: aLpQtfEZe445QyHk, cipher: aes-256-cfb}
+ - {name: "selectedserver00454", server: 176.103.61.162, port: 444, type: ss, cipher: chacha20-ietf-poly1305, password: IjBemsAg, udp: true}
+ - {name: "selectedserver00455", server: 5.183.179.146, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+ - {name: "selectedserver00456", server: 213.183.53.200, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+ - {name: "selectedserver00457", server: 213.183.53.177, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+ - {name: "selectedserver00458", server: 213.183.53.200, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+ - {name: "selectedserver00459", server: 172.105.244.165, port: 7307, type: ss, country: x, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+ - {name: "selectedserver00460", server: 217.30.10.65, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+ - {name: "selectedserver00461", server: 213.183.53.200, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+ - {name: "selectedserver00462", server: 213.183.53.200, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+ - {name: "selectedserver00463", server: 172.105.244.165, port: 3389, type: ss, country: x, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+ - {name: "selectedserver00464", server: 172.105.244.165, port: 8090, type: ss, country: x, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+ - {name: "selectedserver00465", server: 213.183.53.200, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
+ - {name: "selectedserver00466", server: 5.183.179.166, type: ss, country: x, port: 9073, password: daFYagqDdBdA6VTX, cipher: aes-256-cfb}
+ - {name: "selectedserver00467", server: 213.183.53.200, type: ssr, country: x, port: 9079, password: TPqX8edgbAURcAMb, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00468", server: 5.183.179.170, type: ss, country: x, port: 9014, password: KnJGad3FqTvjqbaX, cipher: aes-256-cfb}
+ - {name: "selectedserver00469", server: 213.183.63.218, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+ - {name: "selectedserver00470", server: 213.183.53.177, type: ssr, country: x, port: 9015, password: ZpNDDKRu9MagNvaf, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00471", server: 172.105.244.165, port: 7306, type: ss, country: x, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+ - {name: "selectedserver00472", server: 49.12.203.80, type: ss, port: 40960, udp: true, password: 6kA7b3f9Aw2508erQ3W7D4, cipher: aes-256-gcm}
+ - {name: "selectedserver00473", server: 5.183.179.166, type: ss, country: x, port: 9020, password: BNmAXXxAHYpTRdzu, cipher: aes-256-cfb}
+ - {name: "selectedserver00474", server: 172.105.244.165, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+ - {name: "selectedserver00475", server: 198.57.27.225, type: ss, country: x, port: 443, password: pKEW8JPByTVTLtM, cipher: aes-256-gcm}
+ - {name: "selectedserver00476", server: 213.183.53.177, type: ssr, country: x, port: 9050, password: FG5ddLsMPbV5CutE, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00477", server: 5.183.179.140, type: ss, country: x, port: 9053, password: SBM7R883jBmnqe6C, cipher: aes-256-cfb}
+ - {name: "selectedserver00478", server: 213.183.53.200, type: ssr, country: x, port: 9018, password: fG2artUmHfNT2cX7, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00479", server: 213.183.53.200, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+ - {name: "selectedserver00480", server: 213.183.51.172, type: ss, country: x, port: 9070, password: bf7v334KKDV3YDhH, cipher: aes-256-cfb}
+ - {name: "selectedserver00481", server: 5.183.179.170, type: ss, country: x, port: 9079, password: TPqX8edgbAURcAMb, cipher: aes-256-cfb}
+ - {name: "selectedserver00482", server: 213.183.53.200, type: ssr, country: x, port: 9000, password: a3GFYt36Sm82Vys9, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: "selectedserver00483", server: 169.197.142.99, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+
+
+proxy-groups:
+  - name: 自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 30
+    tolerance: 30
+    proxies:
+#proxy-groups:
+#  - name: 自动选择
+#    type: fallback
+#    url: http://www.gstatic.com/generate_204
+#    interval: 300
+#    proxies:
+#list-of-proxy-names
+      - selectedserver00001
+      - selectedserver00002
+      - selectedserver00003
+      - selectedserver00004
+      - selectedserver00005
+      - selectedserver00006
+      - selectedserver00007
+      - selectedserver00008
+      - selectedserver00009
+      - selectedserver00010
+      - selectedserver00011
+      - selectedserver00012
+      - selectedserver00013
+      - selectedserver00014
+      - selectedserver00015
+      - selectedserver00016
+      - selectedserver00017
+      - selectedserver00018
+      - selectedserver00019
+      - selectedserver00020
+      - selectedserver00021
+      - selectedserver00022
+      - selectedserver00023
+      - selectedserver00024
+      - selectedserver00025
+      - selectedserver00026
+      - selectedserver00027
+      - selectedserver00028
+      - selectedserver00029
+      - selectedserver00030
+      - selectedserver00031
+      - selectedserver00032
+      - selectedserver00033
+      - selectedserver00034
+      - selectedserver00035
+      - selectedserver00036
+      - selectedserver00037
+      - selectedserver00038
+      - selectedserver00039
+      - selectedserver00040
+      - selectedserver00041
+      - selectedserver00042
+      - selectedserver00043
+      - selectedserver00044
+      - selectedserver00045
+      - selectedserver00046
+      - selectedserver00047
+      - selectedserver00048
+      - selectedserver00049
+      - selectedserver00050
+      - selectedserver00051
+      - selectedserver00052
+      - selectedserver00053
+      - selectedserver00054
+      - selectedserver00055
+      - selectedserver00056
+      - selectedserver00057
+      - selectedserver00058
+      - selectedserver00059
+      - selectedserver00060
+      - selectedserver00061
+      - selectedserver00062
+      - selectedserver00063
+      - selectedserver00064
+      - selectedserver00065
+      - selectedserver00066
+      - selectedserver00067
+      - selectedserver00068
+      - selectedserver00069
+      - selectedserver00070
+      - selectedserver00071
+      - selectedserver00072
+      - selectedserver00073
+      - selectedserver00074
+      - selectedserver00075
+      - selectedserver00076
+      - selectedserver00077
+      - selectedserver00078
+      - selectedserver00079
+      - selectedserver00080
+      - selectedserver00081
+      - selectedserver00082
+      - selectedserver00083
+      - selectedserver00084
+      - selectedserver00085
+      - selectedserver00086
+      - selectedserver00087
+      - selectedserver00088
+      - selectedserver00089
+      - selectedserver00090
+      - selectedserver00091
+      - selectedserver00092
+      - selectedserver00093
+      - selectedserver00094
+      - selectedserver00095
+      - selectedserver00096
+      - selectedserver00097
+      - selectedserver00098
+      - selectedserver00099
+      - selectedserver00100
+      - selectedserver00101
+      - selectedserver00102
+      - selectedserver00103
+      - selectedserver00104
+      - selectedserver00105
+      - selectedserver00106
+      - selectedserver00107
+      - selectedserver00108
+      - selectedserver00109
+      - selectedserver00110
+      - selectedserver00111
+      - selectedserver00112
+      - selectedserver00113
+      - selectedserver00114
+      - selectedserver00115
+      - selectedserver00116
+      - selectedserver00117
+      - selectedserver00118
+      - selectedserver00119
+      - selectedserver00120
+      - selectedserver00121
+      - selectedserver00122
+      - selectedserver00123
+      - selectedserver00124
+      - selectedserver00125
+      - selectedserver00126
+      - selectedserver00127
+      - selectedserver00128
+      - selectedserver00129
+      - selectedserver00130
+      - selectedserver00131
+      - selectedserver00132
+      - selectedserver00133
+      - selectedserver00134
+      - selectedserver00135
+      - selectedserver00136
+      - selectedserver00137
+      - selectedserver00138
+      - selectedserver00139
+      - selectedserver00140
+      - selectedserver00141
+      - selectedserver00142
+      - selectedserver00143
+      - selectedserver00144
+      - selectedserver00145
+      - selectedserver00146
+      - selectedserver00147
+      - selectedserver00148
+      - selectedserver00149
+      - selectedserver00150
+      - selectedserver00151
+      - selectedserver00152
+      - selectedserver00153
+      - selectedserver00154
+      - selectedserver00155
+      - selectedserver00156
+      - selectedserver00157
+      - selectedserver00158
+      - selectedserver00159
+      - selectedserver00160
+      - selectedserver00161
+      - selectedserver00162
+      - selectedserver00163
+      - selectedserver00164
+      - selectedserver00165
+      - selectedserver00166
+      - selectedserver00167
+      - selectedserver00168
+      - selectedserver00169
+      - selectedserver00170
+      - selectedserver00171
+      - selectedserver00172
+      - selectedserver00173
+      - selectedserver00174
+      - selectedserver00175
+      - selectedserver00176
+      - selectedserver00177
+      - selectedserver00178
+      - selectedserver00179
+      - selectedserver00180
+      - selectedserver00181
+      - selectedserver00182
+      - selectedserver00183
+      - selectedserver00184
+      - selectedserver00185
+      - selectedserver00186
+      - selectedserver00187
+      - selectedserver00188
+      - selectedserver00189
+      - selectedserver00190
+      - selectedserver00191
+      - selectedserver00192
+      - selectedserver00193
+      - selectedserver00194
+      - selectedserver00195
+      - selectedserver00196
+      - selectedserver00197
+      - selectedserver00198
+      - selectedserver00199
+      - selectedserver00200
+      - selectedserver00201
+      - selectedserver00202
+      - selectedserver00203
+      - selectedserver00204
+      - selectedserver00205
+      - selectedserver00206
+      - selectedserver00207
+      - selectedserver00208
+      - selectedserver00209
+      - selectedserver00210
+      - selectedserver00211
+      - selectedserver00212
+      - selectedserver00213
+      - selectedserver00214
+      - selectedserver00215
+      - selectedserver00216
+      - selectedserver00217
+      - selectedserver00218
+      - selectedserver00219
+      - selectedserver00220
+      - selectedserver00221
+      - selectedserver00222
+      - selectedserver00223
+      - selectedserver00224
+      - selectedserver00225
+      - selectedserver00226
+      - selectedserver00227
+      - selectedserver00228
+      - selectedserver00229
+      - selectedserver00230
+      - selectedserver00231
+      - selectedserver00232
+      - selectedserver00233
+      - selectedserver00234
+      - selectedserver00235
+      - selectedserver00236
+      - selectedserver00237
+      - selectedserver00238
+      - selectedserver00239
+      - selectedserver00240
+      - selectedserver00241
+      - selectedserver00242
+      - selectedserver00243
+      - selectedserver00244
+      - selectedserver00245
+      - selectedserver00246
+      - selectedserver00247
+      - selectedserver00248
+      - selectedserver00249
+      - selectedserver00250
+      - selectedserver00251
+      - selectedserver00252
+      - selectedserver00253
+      - selectedserver00254
+      - selectedserver00255
+      - selectedserver00256
+      - selectedserver00257
+      - selectedserver00258
+      - selectedserver00259
+      - selectedserver00260
+      - selectedserver00261
+      - selectedserver00262
+      - selectedserver00263
+      - selectedserver00264
+      - selectedserver00265
+      - selectedserver00266
+      - selectedserver00267
+      - selectedserver00268
+      - selectedserver00269
+      - selectedserver00270
+      - selectedserver00271
+      - selectedserver00272
+      - selectedserver00273
+      - selectedserver00274
+      - selectedserver00275
+      - selectedserver00276
+      - selectedserver00277
+      - selectedserver00278
+      - selectedserver00279
+      - selectedserver00280
+      - selectedserver00281
+      - selectedserver00282
+      - selectedserver00283
+      - selectedserver00284
+      - selectedserver00285
+      - selectedserver00286
+      - selectedserver00287
+      - selectedserver00288
+      - selectedserver00289
+      - selectedserver00290
+      - selectedserver00291
+      - selectedserver00292
+      - selectedserver00293
+      - selectedserver00294
+      - selectedserver00295
+      - selectedserver00296
+      - selectedserver00297
+      - selectedserver00298
+      - selectedserver00299
+      - selectedserver00300
+      - selectedserver00301
+      - selectedserver00302
+      - selectedserver00303
+      - selectedserver00304
+      - selectedserver00305
+      - selectedserver00306
+      - selectedserver00307
+      - selectedserver00308
+      - selectedserver00309
+      - selectedserver00310
+      - selectedserver00311
+      - selectedserver00312
+      - selectedserver00313
+      - selectedserver00314
+      - selectedserver00315
+      - selectedserver00316
+      - selectedserver00317
+      - selectedserver00318
+      - selectedserver00319
+      - selectedserver00320
+      - selectedserver00321
+      - selectedserver00322
+      - selectedserver00323
+      - selectedserver00324
+      - selectedserver00325
+      - selectedserver00326
+      - selectedserver00327
+      - selectedserver00328
+      - selectedserver00329
+      - selectedserver00330
+      - selectedserver00331
+      - selectedserver00332
+      - selectedserver00333
+      - selectedserver00334
+      - selectedserver00335
+      - selectedserver00336
+      - selectedserver00337
+      - selectedserver00338
+      - selectedserver00339
+      - selectedserver00340
+      - selectedserver00341
+      - selectedserver00342
+      - selectedserver00343
+      - selectedserver00344
+      - selectedserver00345
+      - selectedserver00346
+      - selectedserver00347
+      - selectedserver00348
+      - selectedserver00349
+      - selectedserver00350
+      - selectedserver00351
+      - selectedserver00352
+      - selectedserver00353
+      - selectedserver00354
+      - selectedserver00355
+      - selectedserver00356
+      - selectedserver00357
+      - selectedserver00358
+      - selectedserver00359
+      - selectedserver00360
+      - selectedserver00361
+      - selectedserver00362
+      - selectedserver00363
+      - selectedserver00364
+      - selectedserver00365
+      - selectedserver00366
+      - selectedserver00367
+      - selectedserver00368
+      - selectedserver00369
+      - selectedserver00370
+      - selectedserver00371
+      - selectedserver00372
+      - selectedserver00373
+      - selectedserver00374
+      - selectedserver00375
+      - selectedserver00376
+      - selectedserver00377
+      - selectedserver00378
+      - selectedserver00379
+      - selectedserver00380
+      - selectedserver00381
+      - selectedserver00382
+      - selectedserver00383
+      - selectedserver00384
+      - selectedserver00385
+      - selectedserver00386
+      - selectedserver00387
+      - selectedserver00388
+      - selectedserver00389
+      - selectedserver00390
+      - selectedserver00391
+      - selectedserver00392
+      - selectedserver00393
+      - selectedserver00394
+      - selectedserver00395
+      - selectedserver00396
+      - selectedserver00397
+      - selectedserver00398
+      - selectedserver00399
+      - selectedserver00400
+      - selectedserver00401
+      - selectedserver00402
+      - selectedserver00403
+      - selectedserver00404
+      - selectedserver00405
+      - selectedserver00406
+      - selectedserver00407
+      - selectedserver00408
+      - selectedserver00409
+      - selectedserver00410
+      - selectedserver00411
+      - selectedserver00412
+      - selectedserver00413
+      - selectedserver00414
+      - selectedserver00415
+      - selectedserver00416
+      - selectedserver00417
+      - selectedserver00418
+      - selectedserver00419
+      - selectedserver00420
+      - selectedserver00421
+      - selectedserver00422
+      - selectedserver00423
+      - selectedserver00424
+      - selectedserver00425
+      - selectedserver00426
+      - selectedserver00427
+      - selectedserver00428
+      - selectedserver00429
+      - selectedserver00430
+      - selectedserver00431
+      - selectedserver00432
+      - selectedserver00433
+      - selectedserver00434
+      - selectedserver00435
+      - selectedserver00436
+      - selectedserver00437
+      - selectedserver00438
+      - selectedserver00439
+      - selectedserver00440
+      - selectedserver00441
+      - selectedserver00442
+      - selectedserver00443
+      - selectedserver00444
+      - selectedserver00445
+      - selectedserver00446
+      - selectedserver00447
+      - selectedserver00448
+      - selectedserver00449
+      - selectedserver00450
+      - selectedserver00451
+      - selectedserver00452
+      - selectedserver00453
+      - selectedserver00454
+      - selectedserver00455
+      - selectedserver00456
+      - selectedserver00457
+      - selectedserver00458
+      - selectedserver00459
+      - selectedserver00460
+      - selectedserver00461
+      - selectedserver00462
+      - selectedserver00463
+      - selectedserver00464
+      - selectedserver00465
+      - selectedserver00466
+      - selectedserver00467
+      - selectedserver00468
+      - selectedserver00469
+      - selectedserver00470
+      - selectedserver00471
+      - selectedserver00472
+      - selectedserver00473
+      - selectedserver00474
+      - selectedserver00475
+      - selectedserver00476
+      - selectedserver00477
+      - selectedserver00478
+      - selectedserver00479
+      - selectedserver00480
+      - selectedserver00481
+      - selectedserver00482
+      - selectedserver00483
+
+
+rules:
+  - DOMAIN-SUFFIX,ampproject.org,自动选择
+  - DOMAIN-SUFFIX,appspot.com,自动选择
+  - DOMAIN-SUFFIX,blogger.com,自动选择
+  - DOMAIN-SUFFIX,getoutline.org,自动选择
+  - DOMAIN-SUFFIX,gvt0.com,自动选择
+  - DOMAIN-SUFFIX,gvt1.com,自动选择
+  - DOMAIN-SUFFIX,gvt3.com,自动选择
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,自动选择
+  - DOMAIN-KEYWORD,google,自动选择
+  - DOMAIN-KEYWORD,blogspot,自动选择
+  - DOMAIN-SUFFIX,onedrive.live.com,自动选择
+  - DOMAIN-SUFFIX,xboxlive.com,自动选择
+  - DOMAIN-SUFFIX,cdninstagram.com,自动选择
+  - DOMAIN-SUFFIX,fb.com,自动选择
+  - DOMAIN-SUFFIX,fb.me,自动选择
+  - DOMAIN-SUFFIX,fbaddins.com,自动选择
+  - DOMAIN-SUFFIX,fbcdn.net,自动选择
+  - DOMAIN-SUFFIX,fbsbx.com,自动选择
+  - DOMAIN-SUFFIX,fbworkmail.com,自动选择
+  - DOMAIN-SUFFIX,instagram.com,自动选择
+  - DOMAIN-SUFFIX,m.me,自动选择
+  - DOMAIN-SUFFIX,messenger.com,自动选择
+  - DOMAIN-SUFFIX,oculus.com,自动选择
+  - DOMAIN-SUFFIX,oculuscdn.com,自动选择
+  - DOMAIN-SUFFIX,rocksdb.org,自动选择
+  - DOMAIN-SUFFIX,whatsapp.com,自动选择
+  - DOMAIN-SUFFIX,whatsapp.net,自动选择
+  - DOMAIN-KEYWORD,facebook,自动选择
+  - IP-CIDR,3.123.36.126/32,自动选择,no-resolve
+  - IP-CIDR,35.157.215.84/32,自动选择,no-resolve
+  - IP-CIDR,35.157.217.255/32,自动选择,no-resolve
+  - IP-CIDR,52.58.209.134/32,自动选择,no-resolve
+  - IP-CIDR,54.93.124.31/32,自动选择,no-resolve
+  - IP-CIDR,54.162.243.80/32,自动选择,no-resolve
+  - IP-CIDR,54.173.34.141/32,自动选择,no-resolve
+  - IP-CIDR,54.235.23.242/32,自动选择,no-resolve
+  - IP-CIDR,169.45.248.118/32,自动选择,no-resolve
+  - DOMAIN-SUFFIX,pscp.tv,自动选择
+  - DOMAIN-SUFFIX,periscope.tv,自动选择
+  - DOMAIN-SUFFIX,t.co,自动选择
+  - DOMAIN-SUFFIX,twimg.co,自动选择
+  - DOMAIN-SUFFIX,twimg.com,自动选择
+  - DOMAIN-SUFFIX,twitpic.com,自动选择
+  - DOMAIN-SUFFIX,vine.co,自动选择
+  - DOMAIN-KEYWORD,twitter,自动选择
+  - DOMAIN-SUFFIX,t.me,自动选择
+  - DOMAIN-SUFFIX,tdesktop.com,自动选择
+  - DOMAIN-SUFFIX,telegra.ph,自动选择
+  - DOMAIN-SUFFIX,telegram.me,自动选择
+  - DOMAIN-SUFFIX,telegram.org,自动选择
+  - IP-CIDR,91.108.4.0/22,自动选择,no-resolve
+  - IP-CIDR,91.108.8.0/22,自动选择,no-resolve
+  - IP-CIDR,91.108.12.0/22,自动选择,no-resolve
+  - IP-CIDR,91.108.16.0/22,自动选择,no-resolve
+  - IP-CIDR,91.108.56.0/22,自动选择,no-resolve
+  - IP-CIDR,149.154.160.0/20,自动选择,no-resolve
+  - IP-CIDR6,2001:b28:f23d::/48,自动选择,no-resolve
+  - IP-CIDR6,2001:b28:f23f::/48,自动选择,no-resolve
+  - IP-CIDR6,2001:67c:4e8::/48,自动选择,no-resolve
+  - DOMAIN-SUFFIX,line.me,自动选择
+  - DOMAIN-SUFFIX,line-apps.com,自动选择
+  - DOMAIN-SUFFIX,line-scdn.net,自动选择
+  - DOMAIN-SUFFIX,naver.jp,自动选择
+  - IP-CIDR,103.2.30.0/23,自动选择,no-resolve
+  - IP-CIDR,125.209.208.0/20,自动选择,no-resolve
+  - IP-CIDR,147.92.128.0/17,自动选择,no-resolve
+  - IP-CIDR,203.104.144.0/21,自动选择,no-resolve
+  - DOMAIN-SUFFIX,4shared.com,自动选择
+  - DOMAIN-SUFFIX,520cc.cc,自动选择
+  - DOMAIN-SUFFIX,881903.com,自动选择
+  - DOMAIN-SUFFIX,9cache.com,自动选择
+  - DOMAIN-SUFFIX,9gag.com,自动选择
+  - DOMAIN-SUFFIX,abc.com,自动选择
+  - DOMAIN-SUFFIX,abc.net.au,自动选择
+  - DOMAIN-SUFFIX,abebooks.com,自动选择
+  - DOMAIN-SUFFIX,amazon.co.jp,自动选择
+  - DOMAIN-SUFFIX,apigee.com,自动选择
+  - DOMAIN-SUFFIX,apk-dl.com,自动选择
+  - DOMAIN-SUFFIX,apkfind.com,自动选择
+  - DOMAIN-SUFFIX,apkmirror.com,自动选择
+  - DOMAIN-SUFFIX,apkmonk.com,自动选择
+  - DOMAIN-SUFFIX,apkpure.com,自动选择
+  - DOMAIN-SUFFIX,aptoide.com,自动选择
+  - DOMAIN-SUFFIX,archive.is,自动选择
+  - DOMAIN-SUFFIX,archive.org,自动选择
+  - DOMAIN-SUFFIX,arte.tv,自动选择
+  - DOMAIN-SUFFIX,artstation.com,自动选择
+  - DOMAIN-SUFFIX,arukas.io,自动选择
+  - DOMAIN-SUFFIX,ask.com,自动选择
+  - DOMAIN-SUFFIX,avg.com,自动选择
+  - DOMAIN-SUFFIX,avgle.com,自动选择
+  - DOMAIN-SUFFIX,badoo.com,自动选择
+  - DOMAIN-SUFFIX,bandwagonhost.com,自动选择
+  - DOMAIN-SUFFIX,bbc.com,自动选择
+  - DOMAIN-SUFFIX,behance.net,自动选择
+  - DOMAIN-SUFFIX,bibox.com,自动选择
+  - DOMAIN-SUFFIX,biggo.com.tw,自动选择
+  - DOMAIN-SUFFIX,binance.com,自动选择
+  - DOMAIN-SUFFIX,bitcointalk.org,自动选择
+  - DOMAIN-SUFFIX,bitfinex.com,自动选择
+  - DOMAIN-SUFFIX,bitmex.com,自动选择
+  - DOMAIN-SUFFIX,bit-z.com,自动选择
+  - DOMAIN-SUFFIX,bloglovin.com,自动选择
+  - DOMAIN-SUFFIX,bloomberg.cn,自动选择
+  - DOMAIN-SUFFIX,bloomberg.com,自动选择
+  - DOMAIN-SUFFIX,blubrry.com,自动选择
+  - DOMAIN-SUFFIX,book.com.tw,自动选择
+  - DOMAIN-SUFFIX,booklive.jp,自动选择
+  - DOMAIN-SUFFIX,books.com.tw,自动选择
+  - DOMAIN-SUFFIX,boslife.net,自动选择
+  - DOMAIN-SUFFIX,box.com,自动选择
+  - DOMAIN-SUFFIX,businessinsider.com,自动选择
+  - DOMAIN-SUFFIX,bwh1.net,自动选择
+  - DOMAIN-SUFFIX,castbox.fm,自动选择
+  - DOMAIN-SUFFIX,cbc.ca,自动选择
+  - DOMAIN-SUFFIX,cdw.com,自动选择
+  - DOMAIN-SUFFIX,change.org,自动选择
+  - DOMAIN-SUFFIX,channelnewsasia.com,自动选择
+  - DOMAIN-SUFFIX,ck101.com,自动选择
+  - DOMAIN-SUFFIX,clarionproject.org,自动选择
+  - DOMAIN-SUFFIX,clyp.it,自动选择
+  - DOMAIN-SUFFIX,cna.com.tw,自动选择
+  - DOMAIN-SUFFIX,comparitech.com,自动选择
+  - DOMAIN-SUFFIX,conoha.jp,自动选择
+  - DOMAIN-SUFFIX,crucial.com,自动选择
+  - DOMAIN-SUFFIX,cts.com.tw,自动选择
+  - DOMAIN-SUFFIX,cw.com.tw,自动选择
+  - DOMAIN-SUFFIX,cyberctm.com,自动选择
+  - DOMAIN-SUFFIX,dailymotion.com,自动选择
+  - DOMAIN-SUFFIX,dailyview.tw,自动选择
+  - DOMAIN-SUFFIX,daum.net,自动选择
+  - DOMAIN-SUFFIX,daumcdn.net,自动选择
+  - DOMAIN-SUFFIX,dcard.tw,自动选择
+  - DOMAIN-SUFFIX,deepdiscount.com,自动选择
+  - DOMAIN-SUFFIX,depositphotos.com,自动选择
+  - DOMAIN-SUFFIX,deviantart.com,自动选择
+  - DOMAIN-SUFFIX,disconnect.me,自动选择
+  - DOMAIN-SUFFIX,discordapp.com,自动选择
+  - DOMAIN-SUFFIX,discordapp.net,自动选择
+  - DOMAIN-SUFFIX,disqus.com,自动选择
+  - DOMAIN-SUFFIX,dlercloud.com,自动选择
+  - DOMAIN-SUFFIX,dns2go.com,自动选择
+  - DOMAIN-SUFFIX,dowjones.com,自动选择
+  - DOMAIN-SUFFIX,dropbox.com,自动选择
+  - DOMAIN-SUFFIX,dropboxusercontent.com,自动选择
+  - DOMAIN-SUFFIX,duckduckgo.com,自动选择
+  - DOMAIN-SUFFIX,dw.com,自动选择
+  - DOMAIN-SUFFIX,dynu.com,自动选择
+  - DOMAIN-SUFFIX,earthcam.com,自动选择
+  - DOMAIN-SUFFIX,ebookservice.tw,自动选择
+  - DOMAIN-SUFFIX,economist.com,自动选择
+  - DOMAIN-SUFFIX,edgecastcdn.net,自动选择
+  - DOMAIN-SUFFIX,edu,自动选择
+  - DOMAIN-SUFFIX,elpais.com,自动选择
+  - DOMAIN-SUFFIX,enanyang.my,自动选择
+  - DOMAIN-SUFFIX,encyclopedia.com,自动选择
+  - DOMAIN-SUFFIX,esoir.be,自动选择
+  - DOMAIN-SUFFIX,etherscan.io,自动选择
+  - DOMAIN-SUFFIX,euronews.com,自动选择
+  - DOMAIN-SUFFIX,evozi.com,自动选择
+  - DOMAIN-SUFFIX,feedly.com,自动选择
+  - DOMAIN-SUFFIX,firech.at,自动选择
+  - DOMAIN-SUFFIX,flickr.com,自动选择
+  - DOMAIN-SUFFIX,flitto.com,自动选择
+  - DOMAIN-SUFFIX,foreignpolicy.com,自动选择
+  - DOMAIN-SUFFIX,freebrowser.org,自动选择
+  - DOMAIN-SUFFIX,freewechat.com,自动选择
+  - DOMAIN-SUFFIX,freeweibo.com,自动选择
+  - DOMAIN-SUFFIX,friday.tw,自动选择
+  - DOMAIN-SUFFIX,ftchinese.com,自动选择
+  - DOMAIN-SUFFIX,ftimg.net,自动选择
+  - DOMAIN-SUFFIX,gate.io,自动选择
+  - DOMAIN-SUFFIX,getlantern.org,自动选择
+  - DOMAIN-SUFFIX,getsync.com,自动选择
+  - DOMAIN-SUFFIX,globalvoices.org,自动选择
+  - DOMAIN-SUFFIX,goo.ne.jp,自动选择
+  - DOMAIN-SUFFIX,goodreads.com,自动选择
+  - DOMAIN-SUFFIX,gov,自动选择
+  - DOMAIN-SUFFIX,gov.tw,自动选择
+  - DOMAIN-SUFFIX,greatfire.org,自动选择
+  - DOMAIN-SUFFIX,gumroad.com,自动选择
+  - DOMAIN-SUFFIX,hbg.com,自动选择
+  - DOMAIN-SUFFIX,heroku.com,自动选择
+  - DOMAIN-SUFFIX,hightail.com,自动选择
+  - DOMAIN-SUFFIX,hk01.com,自动选择
+  - DOMAIN-SUFFIX,hkbf.org,自动选择
+  - DOMAIN-SUFFIX,hkbookcity.com,自动选择
+  - DOMAIN-SUFFIX,hkej.com,自动选择
+  - DOMAIN-SUFFIX,hket.com,自动选择
+  - DOMAIN-SUFFIX,hkgolden.com,自动选择
+  - DOMAIN-SUFFIX,hootsuite.com,自动选择
+  - DOMAIN-SUFFIX,hudson.org,自动选择
+  - DOMAIN-SUFFIX,hyread.com.tw,自动选择
+  - DOMAIN-SUFFIX,ibtimes.com,自动选择
+  - DOMAIN-SUFFIX,i-cable.com,自动选择
+  - DOMAIN-SUFFIX,icij.org,自动选择
+  - DOMAIN-SUFFIX,icoco.com,自动选择
+  - DOMAIN-SUFFIX,imgur.com,自动选择
+  - DOMAIN-SUFFIX,initiummall.com,自动选择
+  - DOMAIN-SUFFIX,insecam.org,自动选择
+  - DOMAIN-SUFFIX,ipfs.io,自动选择
+  - DOMAIN-SUFFIX,issuu.com,自动选择
+  - DOMAIN-SUFFIX,istockphoto.com,自动选择
+  - DOMAIN-SUFFIX,japantimes.co.jp,自动选择
+  - DOMAIN-SUFFIX,jiji.com,自动选择
+  - DOMAIN-SUFFIX,jinx.com,自动选择
+  - DOMAIN-SUFFIX,jkforum.net,自动选择
+  - DOMAIN-SUFFIX,joinmastodon.org,自动选择
+  - DOMAIN-SUFFIX,justmysocks.net,自动选择
+  - DOMAIN-SUFFIX,justpaste.it,自动选择
+  - DOMAIN-SUFFIX,kakao.com,自动选择
+  - DOMAIN-SUFFIX,kakaocorp.com,自动选择
+  - DOMAIN-SUFFIX,kik.com,自动选择
+  - DOMAIN-SUFFIX,kobo.com,自动选择
+  - DOMAIN-SUFFIX,kobobooks.com,自动选择
+  - DOMAIN-SUFFIX,kodingen.com,自动选择
+  - DOMAIN-SUFFIX,lemonde.fr,自动选择
+  - DOMAIN-SUFFIX,lepoint.fr,自动选择
+  - DOMAIN-SUFFIX,lihkg.com,自动选择
+  - DOMAIN-SUFFIX,listennotes.com,自动选择
+  - DOMAIN-SUFFIX,livestream.com,自动选择
+  - DOMAIN-SUFFIX,logmein.com,自动选择
+  - DOMAIN-SUFFIX,mail.ru,自动选择
+  - DOMAIN-SUFFIX,mailchimp.com,自动选择
+  - DOMAIN-SUFFIX,marc.info,自动选择
+  - DOMAIN-SUFFIX,matters.news,自动选择
+  - DOMAIN-SUFFIX,maying.co,自动选择
+  - DOMAIN-SUFFIX,medium.com,自动选择
+  - DOMAIN-SUFFIX,mega.nz,自动选择
+  - DOMAIN-SUFFIX,mil,自动选择
+  - DOMAIN-SUFFIX,mingpao.com,自动选择
+  - DOMAIN-SUFFIX,mobile01.com,自动选择
+  - DOMAIN-SUFFIX,myspace.com,自动选择
+  - DOMAIN-SUFFIX,myspacecdn.com,自动选择
+  - DOMAIN-SUFFIX,nanyang.com,自动选择
+  - DOMAIN-SUFFIX,naver.com,自动选择
+  - DOMAIN-SUFFIX,neowin.net,自动选择
+  - DOMAIN-SUFFIX,newstapa.org,自动选择
+  - DOMAIN-SUFFIX,nexitally.com,自动选择
+  - DOMAIN-SUFFIX,nhk.or.jp,自动选择
+  - DOMAIN-SUFFIX,nicovideo.jp,自动选择
+  - DOMAIN-SUFFIX,nii.ac.jp,自动选择
+  - DOMAIN-SUFFIX,nikkei.com,自动选择
+  - DOMAIN-SUFFIX,nofile.io,自动选择
+  - DOMAIN-SUFFIX,now.com,自动选择
+  - DOMAIN-SUFFIX,nrk.no,自动选择
+  - DOMAIN-SUFFIX,nyt.com,自动选择
+  - DOMAIN-SUFFIX,nytchina.com,自动选择
+  - DOMAIN-SUFFIX,nytcn.me,自动选择
+  - DOMAIN-SUFFIX,nytco.com,自动选择
+  - DOMAIN-SUFFIX,nytimes.com,自动选择
+  - DOMAIN-SUFFIX,nytimg.com,自动选择
+  - DOMAIN-SUFFIX,nytlog.com,自动选择
+  - DOMAIN-SUFFIX,nytstyle.com,自动选择
+  - DOMAIN-SUFFIX,ok.ru,自动选择
+  - DOMAIN-SUFFIX,okex.com,自动选择
+  - DOMAIN-SUFFIX,on.cc,自动选择
+  - DOMAIN-SUFFIX,orientaldaily.com.my,自动选择
+  - DOMAIN-SUFFIX,overcast.fm,自动选择
+  - DOMAIN-SUFFIX,paltalk.com,自动选择
+  - DOMAIN-SUFFIX,pao-pao.net,自动选择
+  - DOMAIN-SUFFIX,parsevideo.com,自动选择
+  - DOMAIN-SUFFIX,pbxes.com,自动选择
+  - DOMAIN-SUFFIX,pcdvd.com.tw,自动选择
+  - DOMAIN-SUFFIX,pchome.com.tw,自动选择
+  - DOMAIN-SUFFIX,pcloud.com,自动选择
+  - DOMAIN-SUFFIX,picacomic.com,自动选择
+  - DOMAIN-SUFFIX,pinimg.com,自动选择
+  - DOMAIN-SUFFIX,pixiv.net,自动选择
+  - DOMAIN-SUFFIX,player.fm,自动选择
+  - DOMAIN-SUFFIX,plurk.com,自动选择
+  - DOMAIN-SUFFIX,po18.tw,自动选择
+  - DOMAIN-SUFFIX,potato.im,自动选择
+  - DOMAIN-SUFFIX,potatso.com,自动选择
+  - DOMAIN-SUFFIX,prism-break.org,自动选择
+  - DOMAIN-SUFFIX,proxifier.com,自动选择
+  - DOMAIN-SUFFIX,pt.im,自动选择
+  - DOMAIN-SUFFIX,pts.org.tw,自动选择
+  - DOMAIN-SUFFIX,pubu.com.tw,自动选择
+  - DOMAIN-SUFFIX,pubu.tw,自动选择
+  - DOMAIN-SUFFIX,pureapk.com,自动选择
+  - DOMAIN-SUFFIX,quora.com,自动选择
+  - DOMAIN-SUFFIX,quoracdn.net,自动选择
+  - DOMAIN-SUFFIX,rakuten.co.jp,自动选择
+  - DOMAIN-SUFFIX,readingtimes.com.tw,自动选择
+  - DOMAIN-SUFFIX,readmoo.com,自动选择
+  - DOMAIN-SUFFIX,redbubble.com,自动选择
+  - DOMAIN-SUFFIX,reddit.com,自动选择
+  - DOMAIN-SUFFIX,redditmedia.com,自动选择
+  - DOMAIN-SUFFIX,resilio.com,自动选择
+  - DOMAIN-SUFFIX,reuters.com,自动选择
+  - DOMAIN-SUFFIX,reutersmedia.net,自动选择
+  - DOMAIN-SUFFIX,rfi.fr,自动选择
+  - DOMAIN-SUFFIX,rixcloud.com,自动选择
+  - DOMAIN-SUFFIX,roadshow.hk,自动选择
+  - DOMAIN-SUFFIX,scmp.com,自动选择
+  - DOMAIN-SUFFIX,scribd.com,自动选择
+  - DOMAIN-SUFFIX,seatguru.com,自动选择
+  - DOMAIN-SUFFIX,shadowsocks.org,自动选择
+  - DOMAIN-SUFFIX,shopee.tw,自动选择
+  - DOMAIN-SUFFIX,slideshare.net,自动选择
+  - DOMAIN-SUFFIX,softfamous.com,自动选择
+  - DOMAIN-SUFFIX,soundcloud.com,自动选择
+  - DOMAIN-SUFFIX,ssrcloud.org,自动选择
+  - DOMAIN-SUFFIX,startpage.com,自动选择
+  - DOMAIN-SUFFIX,steamcommunity.com,自动选择
+  - DOMAIN-SUFFIX,steemit.com,自动选择
+  - DOMAIN-SUFFIX,steemitwallet.com,自动选择
+  - DOMAIN-SUFFIX,t66y.com,自动选择
+  - DOMAIN-SUFFIX,tapatalk.com,自动选择
+  - DOMAIN-SUFFIX,teco-hk.org,自动选择
+  - DOMAIN-SUFFIX,teco-mo.org,自动选择
+  - DOMAIN-SUFFIX,teddysun.com,自动选择
+  - DOMAIN-SUFFIX,textnow.me,自动选择
+  - DOMAIN-SUFFIX,theguardian.com,自动选择
+  - DOMAIN-SUFFIX,theinitium.com,自动选择
+  - DOMAIN-SUFFIX,thetvdb.com,自动选择
+  - DOMAIN-SUFFIX,tineye.com,自动选择
+  - DOMAIN-SUFFIX,torproject.org,自动选择
+  - DOMAIN-SUFFIX,tumblr.com,自动选择
+  - DOMAIN-SUFFIX,turbobit.net,自动选择
+  - DOMAIN-SUFFIX,tutanota.com,自动选择
+  - DOMAIN-SUFFIX,tvboxnow.com,自动选择
+  - DOMAIN-SUFFIX,udn.com,自动选择
+  - DOMAIN-SUFFIX,unseen.is,自动选择
+  - DOMAIN-SUFFIX,upmedia.mg,自动选择
+  - DOMAIN-SUFFIX,uptodown.com,自动选择
+  - DOMAIN-SUFFIX,urbandictionary.com,自动选择
+  - DOMAIN-SUFFIX,ustream.tv,自动选择
+  - DOMAIN-SUFFIX,uwants.com,自动选择
+  - DOMAIN-SUFFIX,v2ray.com,自动选择
+  - DOMAIN-SUFFIX,viber.com,自动选择
+  - DOMAIN-SUFFIX,videopress.com,自动选择
+  - DOMAIN-SUFFIX,vimeo.com,自动选择
+  - DOMAIN-SUFFIX,voachinese.com,自动选择
+  - DOMAIN-SUFFIX,voanews.com,自动选择
+  - DOMAIN-SUFFIX,voxer.com,自动选择
+  - DOMAIN-SUFFIX,vzw.com,自动选择
+  - DOMAIN-SUFFIX,w3schools.com,自动选择
+  - DOMAIN-SUFFIX,washingtonpost.com,自动选择
+  - DOMAIN-SUFFIX,wattpad.com,自动选择
+  - DOMAIN-SUFFIX,whoer.net,自动选择
+  - DOMAIN-SUFFIX,wikimapia.org,自动选择
+  - DOMAIN-SUFFIX,wikipedia.org,自动选择
+  - DOMAIN-SUFFIX,wikiquote.org,自动选择
+  - DOMAIN-SUFFIX,wikiwand.com,自动选择
+  - DOMAIN-SUFFIX,winudf.com,自动选择
+  - DOMAIN-SUFFIX,wire.com,自动选择
+  - DOMAIN-SUFFIX,wordpress.com,自动选择
+  - DOMAIN-SUFFIX,workflow.is,自动选择
+  - DOMAIN-SUFFIX,worldcat.org,自动选择
+  - DOMAIN-SUFFIX,wsj.com,自动选择
+  - DOMAIN-SUFFIX,wsj.net,自动选择
+  - DOMAIN-SUFFIX,xhamster.com,自动选择
+  - DOMAIN-SUFFIX,xn--90wwvt03e.com,自动选择
+  - DOMAIN-SUFFIX,xn--i2ru8q2qg.com,自动选择
+  - DOMAIN-SUFFIX,xnxx.com,自动选择
+  - DOMAIN-SUFFIX,xvideos.com,自动选择
+  - DOMAIN-SUFFIX,yahoo.com,自动选择
+  - DOMAIN-SUFFIX,yandex.ru,自动选择
+  - DOMAIN-SUFFIX,ycombinator.com,自动选择
+  - DOMAIN-SUFFIX,yesasia.com,自动选择
+  - DOMAIN-SUFFIX,yes-news.com,自动选择
+  - DOMAIN-SUFFIX,yomiuri.co.jp,自动选择
+  - DOMAIN-SUFFIX,you-get.org,自动选择
+  - DOMAIN-SUFFIX,zaobao.com,自动选择
+  - DOMAIN-SUFFIX,zb.com,自动选择
+  - DOMAIN-SUFFIX,zello.com,自动选择
+  - DOMAIN-SUFFIX,zeronet.io,自动选择
+  - DOMAIN-SUFFIX,zoom.us,自动选择
+  - DOMAIN-KEYWORD,github,自动选择
+  - DOMAIN-KEYWORD,jav,自动选择
+  - DOMAIN-KEYWORD,pinterest,自动选择
+  - DOMAIN-KEYWORD,porn,自动选择
+  - DOMAIN-KEYWORD,wikileaks,自动选择
+  - DOMAIN-SUFFIX,apartmentratings.com,自动选择
+  - DOMAIN-SUFFIX,apartments.com,自动选择
+  - DOMAIN-SUFFIX,bankmobilevibe.com,自动选择
+  - DOMAIN-SUFFIX,bing.com,自动选择
+  - DOMAIN-SUFFIX,booktopia.com.au,自动选择
+  - DOMAIN-SUFFIX,cccat.io,自动选择
+  - DOMAIN-SUFFIX,centauro.com.br,自动选择
+  - DOMAIN-SUFFIX,clearsurance.com,自动选择
+  - DOMAIN-SUFFIX,costco.com,自动选择
+  - DOMAIN-SUFFIX,crackle.com,自动选择
+  - DOMAIN-SUFFIX,depositphotos.cn,自动选择
+  - DOMAIN-SUFFIX,dish.com,自动选择
+  - DOMAIN-SUFFIX,dmm.co.jp,自动选择
+  - DOMAIN-SUFFIX,dmm.com,自动选择
+  - DOMAIN-SUFFIX,dnvod.tv,自动选择
+  - DOMAIN-SUFFIX,esurance.com,自动选择
+  - DOMAIN-SUFFIX,extmatrix.com,自动选择
+  - DOMAIN-SUFFIX,fastpic.ru,自动选择
+  - DOMAIN-SUFFIX,flipboard.com,自动选择
+  - DOMAIN-SUFFIX,fnac.be,自动选择
+  - DOMAIN-SUFFIX,fnac.com,自动选择
+  - DOMAIN-SUFFIX,funkyimg.com,自动选择
+  - DOMAIN-SUFFIX,fxnetworks.com,自动选择
+  - DOMAIN-SUFFIX,gettyimages.com,自动选择
+  - DOMAIN-SUFFIX,go.com,自动选择
+  - DOMAIN-SUFFIX,here.com,自动选择
+  - DOMAIN-SUFFIX,jcpenney.com,自动选择
+  - DOMAIN-SUFFIX,jiehua.tv,自动选择
+  - DOMAIN-SUFFIX,mailfence.com,自动选择
+  - DOMAIN-SUFFIX,nationwide.com,自动选择
+  - DOMAIN-SUFFIX,nbc.com,自动选择
+  - DOMAIN-SUFFIX,nexon.com,自动选择
+  - DOMAIN-SUFFIX,nordstrom.com,自动选择
+  - DOMAIN-SUFFIX,nordstromimage.com,自动选择
+  - DOMAIN-SUFFIX,nordstromrack.com,自动选择
+  - DOMAIN-SUFFIX,superpages.com,自动选择
+  - DOMAIN-SUFFIX,target.com,自动选择
+  - DOMAIN-SUFFIX,thinkgeek.com,自动选择
+  - DOMAIN-SUFFIX,tracfone.com,自动选择
+  - DOMAIN-SUFFIX,unity3d.com,自动选择
+  - DOMAIN-SUFFIX,uploader.jp,自动选择
+  - DOMAIN-SUFFIX,vevo.com,自动选择
+  - DOMAIN-SUFFIX,viu.tv,自动选择
+  - DOMAIN-SUFFIX,vk.com,自动选择
+  - DOMAIN-SUFFIX,vsco.co,自动选择
+  - DOMAIN-SUFFIX,xfinity.com,自动选择
+  - DOMAIN-SUFFIX,zattoo.com,自动选择
+  - DOMAIN,testflight.apple.com,自动选择
+  - DOMAIN-SUFFIX,appsto.re,自动选择
+  - DOMAIN,books.itunes.apple.com,自动选择
+  - DOMAIN,hls.itunes.apple.com,自动选择
+  - DOMAIN,apps.apple.com,自动选择
+  - DOMAIN,itunes.apple.com,自动选择
+  - DOMAIN,api-glb-sea.smoot.apple.com,自动选择
+  - DOMAIN,lookup-api.apple.com,自动选择
+  - DOMAIN-SUFFIX,abc.xyz,自动选择
+  - DOMAIN-SUFFIX,android.com,自动选择
+  - DOMAIN-SUFFIX,androidify.com,自动选择
+  - DOMAIN-SUFFIX,dialogflow.com,自动选择
+  - DOMAIN-SUFFIX,autodraw.com,自动选择
+  - DOMAIN-SUFFIX,capitalg.com,自动选择
+  - DOMAIN-SUFFIX,certificate-transparency.org,自动选择
+  - DOMAIN-SUFFIX,chrome.com,自动选择
+  - DOMAIN-SUFFIX,chromeexperiments.com,自动选择
+  - DOMAIN-SUFFIX,chromestatus.com,自动选择
+  - DOMAIN-SUFFIX,chromium.org,自动选择
+  - DOMAIN-SUFFIX,creativelab5.com,自动选择
+  - DOMAIN-SUFFIX,debug.com,自动选择
+  - DOMAIN-SUFFIX,deepmind.com,自动选择
+  - DOMAIN-SUFFIX,firebaseio.com,自动选择
+  - DOMAIN-SUFFIX,getmdl.io,自动选择
+  - DOMAIN-SUFFIX,ggpht.com,自动选择
+  - DOMAIN-SUFFIX,gmail.com,自动选择
+  - DOMAIN-SUFFIX,gmodules.com,自动选择
+  - DOMAIN-SUFFIX,godoc.org,自动选择
+  - DOMAIN-SUFFIX,golang.org,自动选择
+  - DOMAIN-SUFFIX,gstatic.com,自动选择
+  - DOMAIN-SUFFIX,gv.com,自动选择
+  - DOMAIN-SUFFIX,gwtproject.org,自动选择
+  - DOMAIN-SUFFIX,itasoftware.com,自动选择
+  - DOMAIN-SUFFIX,madewithcode.com,自动选择
+  - DOMAIN-SUFFIX,material.io,自动选择
+  - DOMAIN-SUFFIX,polymer-project.org,自动选择
+  - DOMAIN-SUFFIX,admin.recaptcha.net,自动选择
+  - DOMAIN-SUFFIX,recaptcha.net,自动选择
+  - DOMAIN-SUFFIX,shattered.io,自动选择
+  - DOMAIN-SUFFIX,synergyse.com,自动选择
+  - DOMAIN-SUFFIX,tensorflow.org,自动选择
+  - DOMAIN-SUFFIX,tfhub.dev,自动选择
+  - DOMAIN-SUFFIX,tiltbrush.com,自动选择
+  - DOMAIN-SUFFIX,waveprotocol.org,自动选择
+  - DOMAIN-SUFFIX,waymo.com,自动选择
+  - DOMAIN-SUFFIX,webmproject.org,自动选择
+  - DOMAIN-SUFFIX,webrtc.org,自动选择
+  - DOMAIN-SUFFIX,whatbrowser.org,自动选择
+  - DOMAIN-SUFFIX,widevine.com,自动选择
+  - DOMAIN-SUFFIX,x.company,自动选择
+  - DOMAIN-SUFFIX,youtu.be,自动选择
+  - DOMAIN-SUFFIX,yt.be,自动选择
+  - DOMAIN-SUFFIX,ytimg.com,自动选择
+  - DOMAIN-SUFFIX,1drv.com,自动选择
+  - DOMAIN-SUFFIX,1drv.ms,自动选择
+  - DOMAIN-SUFFIX,blob.core.windows.net,自动选择
+  - DOMAIN-SUFFIX,livefilestore.com,自动选择
+  - DOMAIN-SUFFIX,onedrive.com,自动选择
+  - DOMAIN-SUFFIX,storage.live.com,自动选择
+  - DOMAIN-SUFFIX,storage.msn.com,自动选择
+  - DOMAIN,oneclient.sfx.ms,自动选择
+  - DOMAIN-SUFFIX,0rz.tw,自动选择
+  - DOMAIN-SUFFIX,4bluestones.biz,自动选择
+  - DOMAIN-SUFFIX,9bis.net,自动选择
+  - DOMAIN-SUFFIX,allconnected.co,自动选择
+  - DOMAIN-SUFFIX,aol.com,自动选择
+  - DOMAIN-SUFFIX,bcc.com.tw,自动选择
+  - DOMAIN-SUFFIX,bit.ly,自动选择
+  - DOMAIN-SUFFIX,bitshare.com,自动选择
+  - DOMAIN-SUFFIX,blog.jp,自动选择
+  - DOMAIN-SUFFIX,blogimg.jp,自动选择
+  - DOMAIN-SUFFIX,blogtd.org,自动选择
+  - DOMAIN-SUFFIX,broadcast.co.nz,自动选择
+  - DOMAIN-SUFFIX,camfrog.com,自动选择
+  - DOMAIN-SUFFIX,cfos.de,自动选择
+  - DOMAIN-SUFFIX,citypopulation.de,自动选择
+  - DOMAIN-SUFFIX,cloudfront.net,自动选择
+  - DOMAIN-SUFFIX,ctitv.com.tw,自动选择
+  - DOMAIN-SUFFIX,cuhk.edu.hk,自动选择
+  - DOMAIN-SUFFIX,cusu.hk,自动选择
+  - DOMAIN-SUFFIX,discord.gg,自动选择
+  - DOMAIN-SUFFIX,discuss.com.hk,自动选择
+  - DOMAIN-SUFFIX,dropboxapi.com,自动选择
+  - DOMAIN-SUFFIX,duolingo.cn,自动选择
+  - DOMAIN-SUFFIX,edditstatic.com,自动选择
+  - DOMAIN-SUFFIX,flickriver.com,自动选择
+  - DOMAIN-SUFFIX,focustaiwan.tw,自动选择
+  - DOMAIN-SUFFIX,free.fr,自动选择
+  - DOMAIN-SUFFIX,gigacircle.com,自动选择
+  - DOMAIN-SUFFIX,hk-pub.com,自动选择
+  - DOMAIN-SUFFIX,hosting.co.uk,自动选择
+  - DOMAIN-SUFFIX,hwcdn.net,自动选择
+  - DOMAIN-SUFFIX,ifixit.com,自动选择
+  - DOMAIN-SUFFIX,iphone4hongkong.com,自动选择
+  - DOMAIN-SUFFIX,iphonetaiwan.org,自动选择
+  - DOMAIN-SUFFIX,iptvbin.com,自动选择
+  - DOMAIN-SUFFIX,linksalpha.com,自动选择
+  - DOMAIN-SUFFIX,manyvids.com,自动选择
+  - DOMAIN-SUFFIX,myactimes.com,自动选择
+  - DOMAIN-SUFFIX,newsblur.com,自动选择
+  - DOMAIN-SUFFIX,now.im,自动选择
+  - DOMAIN-SUFFIX,nowe.com,自动选择
+  - DOMAIN-SUFFIX,redditlist.com,自动选择
+  - DOMAIN-SUFFIX,s3.amazonaws.com,自动选择
+  - DOMAIN-SUFFIX,signal.org,自动选择
+  - DOMAIN-SUFFIX,smartmailcloud.com,自动选择
+  - DOMAIN-SUFFIX,sparknotes.com,自动选择
+  - DOMAIN-SUFFIX,streetvoice.com,自动选择
+  - DOMAIN-SUFFIX,supertop.co,自动选择
+  - DOMAIN-SUFFIX,tv.com,自动选择
+  - DOMAIN-SUFFIX,typepad.com,自动选择
+  - DOMAIN-SUFFIX,udnbkk.com,自动选择
+  - DOMAIN-SUFFIX,urbanairship.com,自动选择
+  - DOMAIN-SUFFIX,whispersystems.org,自动选择
+  - DOMAIN-SUFFIX,wikia.com,自动选择
+  - DOMAIN-SUFFIX,wn.com,自动选择
+  - DOMAIN-SUFFIX,wolframalpha.com,自动选择
+  - DOMAIN-SUFFIX,x-art.com,自动选择
+  - DOMAIN-SUFFIX,yimg.com,自动选择
+  - DOMAIN,api.steampowered.com,自动选择
+  - DOMAIN,store.steampowered.com,自动选择
+
+  - DOMAIN-SUFFIX,t.me,自动选择
+  - DOMAIN-SUFFIX,tdesktop.com,自动选择
+  - DOMAIN-SUFFIX,telegra.ph,自动选择
+  - DOMAIN-SUFFIX,telegram.me,自动选择
+  - DOMAIN-SUFFIX,telegram.org,自动选择
+  - IP-CIDR,91.108.4.0/22,自动选择,no-resolve
+  - IP-CIDR,91.108.8.0/22,自动选择,no-resolve
+  - IP-CIDR,91.108.12.0/22,自动选择,no-resolve
+  - IP-CIDR,91.108.16.0/22,自动选择,no-resolve
+  - IP-CIDR,91.108.56.0/22,自动选择,no-resolve
+  - IP-CIDR,149.154.160.0/20,自动选择,no-resolve
+  - IP-CIDR6,2001:b28:f23d::/48,自动选择,no-resolve
+  - IP-CIDR6,2001:b28:f23f::/48,自动选择,no-resolve
+  - IP-CIDR6,2001:67c:4e8::/48,自动选择,no-resolve
+
+  - DOMAIN-SUFFIX,googlevideo.com,自动选择
+  - DOMAIN-SUFFIX,youtube.com,自动选择
+  - DOMAIN,youtubei.googleapis.com,自动选择
+
+  - DOMAIN-SUFFIX,netflix.com,自动选择
+  - DOMAIN-SUFFIX,netflix.net,自动选择
+  - DOMAIN-SUFFIX,nflxext.com,自动选择
+  - DOMAIN-SUFFIX,nflximg.com,自动选择
+  - DOMAIN-SUFFIX,nflximg.net,自动选择
+  - DOMAIN-SUFFIX,nflxso.net,自动选择
+  - DOMAIN-SUFFIX,nflxvideo.net,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest0.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest1.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest2.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest3.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest4.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest5.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest6.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest7.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest8.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest9.com,自动选择
+  - IP-CIDR,23.246.0.0/18,自动选择,no-resolve
+  - IP-CIDR,37.77.184.0/21,自动选择,no-resolve
+  - IP-CIDR,45.57.0.0/17,自动选择,no-resolve
+  - IP-CIDR,64.120.128.0/17,自动选择,no-resolve
+  - IP-CIDR,66.197.128.0/17,自动选择,no-resolve
+  - IP-CIDR,108.175.32.0/20,自动选择,no-resolve
+  - IP-CIDR,192.173.64.0/18,自动选择,no-resolve
+  - IP-CIDR,198.38.96.0/19,自动选择,no-resolve
+  - IP-CIDR,198.45.48.0/20,自动选择,no-resolve
+
+  - DOMAIN-SUFFIX,deezer.com,自动选择
+  - DOMAIN-SUFFIX,dzcdn.net,自动选择
+  - DOMAIN-SUFFIX,kkbox.com,自动选择
+  - DOMAIN-SUFFIX,kkbox.com.tw,自动选择
+  - DOMAIN-SUFFIX,kfs.io,自动选择
+  - DOMAIN-SUFFIX,joox.com,自动选择
+  - DOMAIN-SUFFIX,pandora.com,自动选择
+  - DOMAIN-SUFFIX,p-cdn.us,自动选择
+  - DOMAIN-SUFFIX,sndcdn.com,自动选择
+  - DOMAIN-SUFFIX,soundcloud.com,自动选择
+  - DOMAIN-SUFFIX,pscdn.co,自动选择
+  - DOMAIN-SUFFIX,scdn.co,自动选择
+  - DOMAIN-SUFFIX,spotify.com,自动选择
+  - DOMAIN-SUFFIX,spoti.fi,自动选择
+  - DOMAIN-KEYWORD,spotify.com,自动选择
+  - DOMAIN-KEYWORD,-spotify-com,自动选择
+  - DOMAIN-SUFFIX,tidal.com,自动选择
+  - DOMAIN-SUFFIX,c4assets.com,自动选择
+  - DOMAIN-SUFFIX,channel4.com,自动选择
+  - DOMAIN-SUFFIX,abema.io,自动选择
+  - DOMAIN-SUFFIX,ameba.jp,自动选择
+  - DOMAIN-SUFFIX,abema.tv,自动选择
+  - DOMAIN-SUFFIX,hayabusa.io,自动选择
+  - DOMAIN,abematv.akamaized.net,自动选择
+  - DOMAIN,ds-linear-abematv.akamaized.net,自动选择
+  - DOMAIN,ds-vod-abematv.akamaized.net,自动选择
+  - DOMAIN,linear-abematv.akamaized.net,自动选择
+  - DOMAIN-SUFFIX,aiv-cdn.net,自动选择
+  - DOMAIN-SUFFIX,aiv-delivery.net,自动选择
+  - DOMAIN-SUFFIX,amazonvideo.com,自动选择
+  - DOMAIN-SUFFIX,primevideo.com,自动选择
+  - DOMAIN,avodmp4s3ww-a.akamaihd.net,自动选择
+  - DOMAIN,d25xi40x97liuc.cloudfront.net,自动选择
+  - DOMAIN,dmqdd6hw24ucf.cloudfront.net,自动选择
+  - DOMAIN,d22qjgkvxw22r6.cloudfront.net,自动选择
+  - DOMAIN,d1v5ir2lpwr8os.cloudfront.net,自动选择
+  - DOMAIN-KEYWORD,avoddashs,自动选择
+  - DOMAIN-SUFFIX,bahamut.com.tw,自动选择
+  - DOMAIN-SUFFIX,gamer.com.tw,自动选择
+  - DOMAIN,gamer-cds.cdn.hinet.net,自动选择
+  - DOMAIN,gamer2-cds.cdn.hinet.net,自动选择
+  - DOMAIN-SUFFIX,bbc.co.uk,自动选择
+  - DOMAIN-SUFFIX,bbci.co.uk,自动选择
+  - DOMAIN-KEYWORD,bbcfmt,自动选择
+  - DOMAIN-KEYWORD,uk-live,自动选择
+  - DOMAIN-SUFFIX,dazn.com,自动选择
+  - DOMAIN-SUFFIX,dazn-api.com,自动选择
+  - DOMAIN,d151l6v8er5bdm.cloudfront.net,自动选择
+  - DOMAIN-KEYWORD,voddazn,自动选择
+  - DOMAIN-SUFFIX,bamgrid.com,自动选择
+  - DOMAIN-SUFFIX,disney-plus.net,自动选择
+  - DOMAIN-SUFFIX,disneyplus.com,自动选择
+  - DOMAIN-SUFFIX,dssott.com,自动选择
+  - DOMAIN,cdn.registerdisney.go.com,自动选择
+  - DOMAIN-SUFFIX,encoretvb.com,自动选择
+  - DOMAIN,edge.api.brightcove.com,自动选择
+  - DOMAIN,bcbolt446c5271-a.akamaihd.net,自动选择
+  - DOMAIN-SUFFIX,fox.com,自动选择
+  - DOMAIN-SUFFIX,foxdcg.com,自动选择
+  - DOMAIN-SUFFIX,theplatform.com,自动选择
+  - DOMAIN-SUFFIX,uplynk.com,自动选择
+  - DOMAIN-SUFFIX,hbo.com,自动选择
+  - DOMAIN-SUFFIX,hbogo.com,自动选择
+  - DOMAIN-SUFFIX,hbonow.com,自动选择
+  - DOMAIN-SUFFIX,hbogoasia.com,自动选择
+  - DOMAIN-SUFFIX,hbogoasia.hk,自动选择
+  - DOMAIN,bcbolthboa-a.akamaihd.net,自动选择
+  - DOMAIN,players.brightcove.net,自动选择
+  - DOMAIN,s3-ap-southeast-1.amazonaws.com,自动选择
+  - DOMAIN,dai3fd1oh325y.cloudfront.net,自动选择
+  - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,自动选择
+  - DOMAIN,hboasia1-i.akamaihd.net,自动选择
+  - DOMAIN,hboasia2-i.akamaihd.net,自动选择
+  - DOMAIN,hboasia3-i.akamaihd.net,自动选择
+  - DOMAIN,hboasia4-i.akamaihd.net,自动选择
+  - DOMAIN,hboasia5-i.akamaihd.net,自动选择
+  - DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,自动选择
+  - DOMAIN-SUFFIX,5itv.tv,自动选择
+  - DOMAIN-SUFFIX,ocnttv.com,自动选择
+  - DOMAIN-SUFFIX,hulu.com,自动选择
+  - DOMAIN-SUFFIX,huluim.com,自动选择
+  - DOMAIN-SUFFIX,hulustream.com,自动选择
+  - DOMAIN-SUFFIX,happyon.jp,自动选择
+  - DOMAIN-SUFFIX,hulu.jp,自动选择
+  - DOMAIN-SUFFIX,itv.com,自动选择
+  - DOMAIN-SUFFIX,itvstatic.com,自动选择
+  - DOMAIN,itvpnpmobile-a.akamaihd.net,自动选择
+  - DOMAIN-SUFFIX,kktv.com.tw,自动选择
+  - DOMAIN-SUFFIX,kktv.me,自动选择
+  - DOMAIN,kktv-theater.kk.stream,自动选择
+  - DOMAIN-SUFFIX,linetv.tw,自动选择
+  - DOMAIN,d3c7rimkq79yfu.cloudfront.net,自动选择
+  - DOMAIN-SUFFIX,litv.tv,自动选择
+  - DOMAIN,litvfreemobile-hichannel.cdn.hinet.net,自动选择
+  - DOMAIN-SUFFIX,channel5.com,自动选择
+  - DOMAIN-SUFFIX,my5.tv,自动选择
+  - DOMAIN,d349g9zuie06uo.cloudfront.net,自动选择
+  - DOMAIN-SUFFIX,mytvsuper.com,自动选择
+  - DOMAIN-SUFFIX,tvb.com,自动选择
+  - DOMAIN-SUFFIX,netflix.com,自动选择
+  - DOMAIN-SUFFIX,netflix.net,自动选择
+  - DOMAIN-SUFFIX,nflxext.com,自动选择
+  - DOMAIN-SUFFIX,nflximg.com,自动选择
+  - DOMAIN-SUFFIX,nflximg.net,自动选择
+  - DOMAIN-SUFFIX,nflxso.net,自动选择
+  - DOMAIN-SUFFIX,nflxvideo.net,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest0.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest1.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest2.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest3.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest4.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest5.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest6.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest7.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest8.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest9.com,自动选择
+  - IP-CIDR,23.246.0.0/18,自动选择,no-resolve
+  - IP-CIDR,37.77.184.0/21,自动选择,no-resolve
+  - IP-CIDR,45.57.0.0/17,自动选择,no-resolve
+  - IP-CIDR,64.120.128.0/17,自动选择,no-resolve
+  - IP-CIDR,66.197.128.0/17,自动选择,no-resolve
+  - IP-CIDR,108.175.32.0/20,自动选择,no-resolve
+  - IP-CIDR,192.173.64.0/18,自动选择,no-resolve
+  - IP-CIDR,198.38.96.0/19,自动选择,no-resolve
+  - IP-CIDR,198.45.48.0/20,自动选择,no-resolve
+  - DOMAIN-SUFFIX,dmc.nico,自动选择
+  - DOMAIN-SUFFIX,nicovideo.jp,自动选择
+  - DOMAIN-SUFFIX,nimg.jp,自动选择
+  - DOMAIN-SUFFIX,socdm.com,自动选择
+  - DOMAIN-SUFFIX,pbs.org,自动选择
+  - DOMAIN-SUFFIX,phncdn.com,自动选择
+  - DOMAIN-SUFFIX,pornhub.com,自动选择
+  - DOMAIN-SUFFIX,pornhubpremium.com,自动选择
+  - DOMAIN-SUFFIX,skyking.com.tw,自动选择
+  - DOMAIN,hamifans.emome.net,自动选择
+  - DOMAIN-SUFFIX,twitch.tv,自动选择
+  - DOMAIN-SUFFIX,twitchcdn.net,自动选择
+  - DOMAIN-SUFFIX,ttvnw.net,自动选择
+  - DOMAIN-SUFFIX,jtvnw.net,自动选择
+  - DOMAIN-SUFFIX,viu.com,自动选择
+  - DOMAIN-SUFFIX,viu.tv,自动选择
+  - DOMAIN,api.viu.now.com,自动选择
+  - DOMAIN,d1k2us671qcoau.cloudfront.net,自动选择
+  - DOMAIN,d2anahhhmp1ffz.cloudfront.net,自动选择
+  - DOMAIN,dfp6rglgjqszk.cloudfront.net,自动选择
+  - DOMAIN-SUFFIX,googlevideo.com,自动选择
+  - DOMAIN-SUFFIX,youtube.com,自动选择
+  - DOMAIN,youtubei.googleapis.com,自动选择
+
+  - DOMAIN-SUFFIX,linkedin.com,自动选择
+  - DOMAIN-SUFFIX,licdn.com,自动选择
+
+  - DOMAIN-SUFFIX,local,DIRECT
+  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+  - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+  - IP-CIDR6,::1/128,DIRECT,no-resolve
+  - IP-CIDR6,fc00::/7,DIRECT,no-resolve
+  - IP-CIDR6,fe80::/10,DIRECT,no-resolve
+  - IP-CIDR6,fd00::/8,DIRECT,no-resolve
+
+  - DOMAIN,app.adjust.com,DIRECT
+  - DOMAIN-SUFFIX,googletraveladservices.com,DIRECT
+  - DOMAIN,dl.google.com,DIRECT
+  - DOMAIN,mtalk.google.com,DIRECT
+  - DOMAIN,livew.l.qq.com,DIRECT
+  - DOMAIN,vd.l.qq.com,DIRECT
+  - DOMAIN,analytics.strava.com,DIRECT
+  - DOMAIN,msg.umeng.com,DIRECT
+  - DOMAIN,msg.umengcloud.com,DIRECT
+  - DOMAIN-SUFFIX,qhres.com,DIRECT
+  - DOMAIN-SUFFIX,qhimg.com,DIRECT
+  - DOMAIN-SUFFIX,akadns.net,DIRECT
+  - DOMAIN-SUFFIX,alibaba.com,DIRECT
+  - DOMAIN-SUFFIX,alicdn.com,DIRECT
+  - DOMAIN-SUFFIX,alikunlun.com,DIRECT
+  - DOMAIN-SUFFIX,alipay.com,DIRECT
+  - DOMAIN-SUFFIX,amap.com,DIRECT
+  - DOMAIN-SUFFIX,autonavi.com,DIRECT
+  - DOMAIN-SUFFIX,dingtalk.com,DIRECT
+  - DOMAIN-SUFFIX,mxhichina.com,DIRECT
+  - DOMAIN-SUFFIX,soku.com,DIRECT
+  - DOMAIN-SUFFIX,taobao.com,DIRECT
+  - DOMAIN-SUFFIX,tmall.com,DIRECT
+  - DOMAIN-SUFFIX,tmall.hk,DIRECT
+  - DOMAIN-SUFFIX,ykimg.com,DIRECT
+  - DOMAIN-SUFFIX,youku.com,DIRECT
+  - DOMAIN-SUFFIX,xiami.com,DIRECT
+  - DOMAIN-SUFFIX,xiami.net,DIRECT
+  - DOMAIN-SUFFIX,aaplimg.com,DIRECT
+  - DOMAIN-SUFFIX,apple.co,DIRECT
+  - DOMAIN-SUFFIX,apple.com,DIRECT
+  - DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT
+  - DOMAIN-SUFFIX,appstore.com,DIRECT
+  - DOMAIN-SUFFIX,cdn-apple.com,DIRECT
+  - DOMAIN-SUFFIX,crashlytics.com,DIRECT
+  - DOMAIN-SUFFIX,icloud.com,DIRECT
+  - DOMAIN-SUFFIX,icloud-content.com,DIRECT
+  - DOMAIN-SUFFIX,me.com,DIRECT
+  - DOMAIN-SUFFIX,mzstatic.com,DIRECT
+  - DOMAIN,www-cdn.icloud.com.akadns.net,DIRECT
+  - DOMAIN-SUFFIX,baidu.com,DIRECT
+  - DOMAIN-SUFFIX,baidubcr.com,DIRECT
+  - DOMAIN-SUFFIX,bdstatic.com,DIRECT
+  - DOMAIN-SUFFIX,yunjiasu-cdn.net,DIRECT
+  - DOMAIN-SUFFIX,acgvideo.com,DIRECT
+  - DOMAIN-SUFFIX,hdslb.com,DIRECT
+  - DOMAIN-SUFFIX,blizzard.com,DIRECT
+  - DOMAIN-SUFFIX,battle.net,DIRECT
+  - DOMAIN,blzddist1-a.akamaihd.net,DIRECT
+  - DOMAIN-SUFFIX,feiliao.com,DIRECT
+  - DOMAIN-SUFFIX,pstatp.com,DIRECT
+  - DOMAIN-SUFFIX,snssdk.com,DIRECT
+  - DOMAIN-SUFFIX,iesdouyin.com,DIRECT
+  - DOMAIN-SUFFIX,toutiao.com,DIRECT
+  - DOMAIN-SUFFIX,cctv.com,DIRECT
+  - DOMAIN-SUFFIX,cctvpic.com,DIRECT
+  - DOMAIN-SUFFIX,livechina.com,DIRECT
+  - DOMAIN-SUFFIX,didialift.com,DIRECT
+  - DOMAIN-SUFFIX,didiglobal.com,DIRECT
+  - DOMAIN-SUFFIX,udache.com,DIRECT
+  - DOMAIN-SUFFIX,343480.com,DIRECT
+  - DOMAIN-SUFFIX,baduziyuan.com,DIRECT
+  - DOMAIN-SUFFIX,com-hs-hkdy.com,DIRECT
+  - DOMAIN-SUFFIX,czybjz.com,DIRECT
+  - DOMAIN-SUFFIX,dandanzan.com,DIRECT
+  - DOMAIN-SUFFIX,fjhps.com,DIRECT
+  - DOMAIN-SUFFIX,kuyunbo.club,DIRECT
+  - DOMAIN-SUFFIX,21cn.com,DIRECT
+  - DOMAIN-SUFFIX,hitv.com,DIRECT
+  - DOMAIN-SUFFIX,mgtv.com,DIRECT
+  - DOMAIN-SUFFIX,iqiyi.com,DIRECT
+  - DOMAIN-SUFFIX,iqiyipic.com,DIRECT
+  - DOMAIN-SUFFIX,71.am.com,DIRECT
+  - DOMAIN-SUFFIX,jd.com,DIRECT
+  - DOMAIN-SUFFIX,jd.hk,DIRECT
+  - DOMAIN-SUFFIX,jdpay.com,DIRECT
+  - DOMAIN-SUFFIX,360buyimg.com,DIRECT
+  - DOMAIN-SUFFIX,iciba.com,DIRECT
+  - DOMAIN-SUFFIX,ksosoft.com,DIRECT
+  - DOMAIN-SUFFIX,meitu.com,DIRECT
+  - DOMAIN-SUFFIX,meitudata.com,DIRECT
+  - DOMAIN-SUFFIX,meitustat.com,DIRECT
+  - DOMAIN-SUFFIX,meipai.com,DIRECT
+  - DOMAIN-SUFFIX,duokan.com,DIRECT
+  - DOMAIN-SUFFIX,mi-img.com,DIRECT
+  - DOMAIN-SUFFIX,miui.com,DIRECT
+  - DOMAIN-SUFFIX,miwifi.com,DIRECT
+  - DOMAIN-SUFFIX,xiaomi.com,DIRECT
+  - DOMAIN-SUFFIX,microsoft.com,DIRECT
+  - DOMAIN-SUFFIX,msecnd.net,DIRECT
+  - DOMAIN-SUFFIX,office365.com,DIRECT
+  - DOMAIN-SUFFIX,outlook.com,DIRECT
+  - DOMAIN-SUFFIX,s-microsoft.com,DIRECT
+  - DOMAIN-SUFFIX,visualstudio.com,DIRECT
+  - DOMAIN-SUFFIX,windows.com,DIRECT
+  - DOMAIN-SUFFIX,windowsupdate.com,DIRECT
+  - DOMAIN,officecdn-microsoft-com.akamaized.net,DIRECT
+  - DOMAIN-SUFFIX,163.com,DIRECT
+  - DOMAIN-SUFFIX,126.net,DIRECT
+  - DOMAIN-SUFFIX,127.net,DIRECT
+  - DOMAIN-SUFFIX,163yun.com,DIRECT
+  - DOMAIN-SUFFIX,lofter.com,DIRECT
+  - DOMAIN-SUFFIX,netease.com,DIRECT
+  - DOMAIN-SUFFIX,ydstatic.com,DIRECT
+  - DOMAIN-SUFFIX,sina.com,DIRECT
+  - DOMAIN-SUFFIX,weibo.com,DIRECT
+  - DOMAIN-SUFFIX,weibocdn.com,DIRECT
+  - DOMAIN-SUFFIX,sohu.com,DIRECT
+  - DOMAIN-SUFFIX,sohucs.com,DIRECT
+  - DOMAIN-SUFFIX,sohu-inc.com,DIRECT
+  - DOMAIN-SUFFIX,v-56.com,DIRECT
+  - DOMAIN-SUFFIX,sogo.com,DIRECT
+  - DOMAIN-SUFFIX,sogou.com,DIRECT
+  - DOMAIN-SUFFIX,sogoucdn.com,DIRECT
+  - DOMAIN-SUFFIX,steampowered.com,DIRECT
+  - DOMAIN-SUFFIX,steam-chat.com,DIRECT
+  - DOMAIN-SUFFIX,steamgames.com,DIRECT
+  - DOMAIN-SUFFIX,steamusercontent.com,DIRECT
+  - DOMAIN-SUFFIX,steamcontent.com,DIRECT
+  - DOMAIN-SUFFIX,steamstatic.com,DIRECT
+  - DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,DIRECT
+  - DOMAIN-SUFFIX,steamstat.us,DIRECT
+  - DOMAIN-SUFFIX,gtimg.com,DIRECT
+  - DOMAIN-SUFFIX,idqqimg.com,DIRECT
+  - DOMAIN-SUFFIX,igamecj.com,DIRECT
+  - DOMAIN-SUFFIX,myapp.com,DIRECT
+  - DOMAIN-SUFFIX,myqcloud.com,DIRECT
+  - DOMAIN-SUFFIX,qq.com,DIRECT
+  - DOMAIN-SUFFIX,tencent.com,DIRECT
+  - DOMAIN-SUFFIX,tencent-cloud.net,DIRECT
+  - DOMAIN-SUFFIX,jstucdn.com,DIRECT
+  - DOMAIN-SUFFIX,zimuzu.io,DIRECT
+  - DOMAIN-SUFFIX,zimuzu.tv,DIRECT
+  - DOMAIN-SUFFIX,zmz2019.com,DIRECT
+  - DOMAIN-SUFFIX,zmzapi.com,DIRECT
+  - DOMAIN-SUFFIX,zmzapi.net,DIRECT
+  - DOMAIN-SUFFIX,zmzfile.com,DIRECT
+  - DOMAIN-SUFFIX,ccgslb.com,DIRECT
+  - DOMAIN-SUFFIX,ccgslb.net,DIRECT
+  - DOMAIN-SUFFIX,chinanetcenter.com,DIRECT
+  - DOMAIN-SUFFIX,meixincdn.com,DIRECT
+  - DOMAIN-SUFFIX,ourdvs.com,DIRECT
+  - DOMAIN-SUFFIX,staticdn.net,DIRECT
+  - DOMAIN-SUFFIX,wangsu.com,DIRECT
+  - DOMAIN-SUFFIX,ipip.net,DIRECT
+  - DOMAIN-SUFFIX,ip.la,DIRECT
+  - DOMAIN-SUFFIX,ip-cdn.com,DIRECT
+  - DOMAIN-SUFFIX,ipv6-test.com,DIRECT
+  - DOMAIN-SUFFIX,test-ipv6.com,DIRECT
+  - DOMAIN-SUFFIX,whatismyip.com,DIRECT
+  - DOMAIN-SUFFIX,netspeedtestmaster.com,DIRECT
+  - DOMAIN,speedtest.macpaw.com,DIRECT
+  - DOMAIN-SUFFIX,awesome-hd.me,DIRECT
+  - DOMAIN-SUFFIX,broadcasthe.net,DIRECT
+  - DOMAIN-SUFFIX,chdbits.co,DIRECT
+  - DOMAIN-SUFFIX,classix-unlimited.co.uk,DIRECT
+  - DOMAIN-SUFFIX,empornium.me,DIRECT
+  - DOMAIN-SUFFIX,gazellegames.net,DIRECT
+  - DOMAIN-SUFFIX,hdchina.org,DIRECT
+  - DOMAIN-SUFFIX,hdsky.me,DIRECT
+  - DOMAIN-SUFFIX,icetorrent.org,DIRECT
+  - DOMAIN-SUFFIX,jpopsuki.eu,DIRECT
+  - DOMAIN-SUFFIX,keepfrds.com,DIRECT
+  - DOMAIN-SUFFIX,madsrevolution.net,DIRECT
+  - DOMAIN-SUFFIX,m-team.cc,DIRECT
+  - DOMAIN-SUFFIX,nanyangpt.com,DIRECT
+  - DOMAIN-SUFFIX,ncore.cc,DIRECT
+  - DOMAIN-SUFFIX,open.cd,DIRECT
+  - DOMAIN-SUFFIX,ourbits.club,DIRECT
+  - DOMAIN-SUFFIX,passthepopcorn.me,DIRECT
+  - DOMAIN-SUFFIX,privatehd.to,DIRECT
+  - DOMAIN-SUFFIX,redacted.ch,DIRECT
+  - DOMAIN-SUFFIX,springsunday.net,DIRECT
+  - DOMAIN-SUFFIX,tjupt.org,DIRECT
+  - DOMAIN-SUFFIX,totheglory.im,DIRECT
+  - DOMAIN-SUFFIX,acm.org,DIRECT
+  - DOMAIN-SUFFIX,acs.org,DIRECT
+  - DOMAIN-SUFFIX,aip.org,DIRECT
+  - DOMAIN-SUFFIX,ams.org,DIRECT
+  - DOMAIN-SUFFIX,annualreviews.org,DIRECT
+  - DOMAIN-SUFFIX,aps.org,DIRECT
+  - DOMAIN-SUFFIX,ascelibrary.org,DIRECT
+  - DOMAIN-SUFFIX,asm.org,DIRECT
+  - DOMAIN-SUFFIX,asme.org,DIRECT
+  - DOMAIN-SUFFIX,astm.org,DIRECT
+  - DOMAIN-SUFFIX,bmj.com,DIRECT
+  - DOMAIN-SUFFIX,cambridge.org,DIRECT
+  - DOMAIN-SUFFIX,cas.org,DIRECT
+  - DOMAIN-SUFFIX,clarivate.com,DIRECT
+  - DOMAIN-SUFFIX,ebscohost.com,DIRECT
+  - DOMAIN-SUFFIX,emerald.com,DIRECT
+  - DOMAIN-SUFFIX,engineeringvillage.com,DIRECT
+  - DOMAIN-SUFFIX,icevirtuallibrary.com,DIRECT
+  - DOMAIN-SUFFIX,ieee.org,DIRECT
+  - DOMAIN-SUFFIX,imf.org,DIRECT
+  - DOMAIN-SUFFIX,iop.org,DIRECT
+  - DOMAIN-SUFFIX,jamanetwork.com,DIRECT
+  - DOMAIN-SUFFIX,jhu.edu,DIRECT
+  - DOMAIN-SUFFIX,jstor.org,DIRECT
+  - DOMAIN-SUFFIX,karger.com,DIRECT
+  - DOMAIN-SUFFIX,libguides.com,DIRECT
+  - DOMAIN-SUFFIX,madsrevolution.net,DIRECT
+  - DOMAIN-SUFFIX,mpg.de,DIRECT
+  - DOMAIN-SUFFIX,myilibrary.com,DIRECT
+  - DOMAIN-SUFFIX,nature.com,DIRECT
+  - DOMAIN-SUFFIX,oecd-ilibrary.org,DIRECT
+  - DOMAIN-SUFFIX,osapublishing.org,DIRECT
+  - DOMAIN-SUFFIX,oup.com,DIRECT
+  - DOMAIN-SUFFIX,ovid.com,DIRECT
+  - DOMAIN-SUFFIX,oxfordartonline.com,DIRECT
+  - DOMAIN-SUFFIX,oxfordbibliographies.com,DIRECT
+  - DOMAIN-SUFFIX,oxfordmusiconline.com,DIRECT
+  - DOMAIN-SUFFIX,pnas.org,DIRECT
+  - DOMAIN-SUFFIX,proquest.com,DIRECT
+  - DOMAIN-SUFFIX,rsc.org,DIRECT
+  - DOMAIN-SUFFIX,sagepub.com,DIRECT
+  - DOMAIN-SUFFIX,sciencedirect.com,DIRECT
+  - DOMAIN-SUFFIX,sciencemag.org,DIRECT
+  - DOMAIN-SUFFIX,scopus.com,DIRECT
+  - DOMAIN-SUFFIX,siam.org,DIRECT
+  - DOMAIN-SUFFIX,spiedigitallibrary.org,DIRECT
+  - DOMAIN-SUFFIX,springer.com,DIRECT
+  - DOMAIN-SUFFIX,springerlink.com,DIRECT
+  - DOMAIN-SUFFIX,tandfonline.com,DIRECT
+  - DOMAIN-SUFFIX,un.org,DIRECT
+  - DOMAIN-SUFFIX,uni-bielefeld.de,DIRECT
+  - DOMAIN-SUFFIX,webofknowledge.com,DIRECT
+  - DOMAIN-SUFFIX,westlaw.com,DIRECT
+  - DOMAIN-SUFFIX,wiley.com,DIRECT
+  - DOMAIN-SUFFIX,worldbank.org,DIRECT
+  - DOMAIN-SUFFIX,worldscientific.com,DIRECT
+  - DOMAIN-SUFFIX,cn,DIRECT
+  - DOMAIN-SUFFIX,360in.com,DIRECT
+  - DOMAIN-SUFFIX,51ym.me,DIRECT
+  - DOMAIN-SUFFIX,8686c.com,DIRECT
+  - DOMAIN-SUFFIX,abchina.com,DIRECT
+  - DOMAIN-SUFFIX,accuweather.com,DIRECT
+  - DOMAIN-SUFFIX,aicoinstorge.com,DIRECT
+  - DOMAIN-SUFFIX,air-matters.com,DIRECT
+  - DOMAIN-SUFFIX,air-matters.io,DIRECT
+  - DOMAIN-SUFFIX,aixifan.com,DIRECT
+  - DOMAIN-SUFFIX,amd.com,DIRECT
+  - DOMAIN-SUFFIX,b612.net,DIRECT
+  - DOMAIN-SUFFIX,bdatu.com,DIRECT
+  - DOMAIN-SUFFIX,beitaichufang.com,DIRECT
+  - DOMAIN-SUFFIX,bjango.com,DIRECT
+  - DOMAIN-SUFFIX,booking.com,DIRECT
+  - DOMAIN-SUFFIX,bstatic.com,DIRECT
+  - DOMAIN-SUFFIX,cailianpress.com,DIRECT
+  - DOMAIN-SUFFIX,camera360.com,DIRECT
+  - DOMAIN-SUFFIX,chinaso.com,DIRECT
+  - DOMAIN-SUFFIX,chua.pro,DIRECT
+  - DOMAIN-SUFFIX,chuimg.com,DIRECT
+  - DOMAIN-SUFFIX,chunyu.mobi,DIRECT
+  - DOMAIN-SUFFIX,chushou.tv,DIRECT
+  - DOMAIN-SUFFIX,cmbchina.com,DIRECT
+  - DOMAIN-SUFFIX,cmbimg.com,DIRECT
+  - DOMAIN-SUFFIX,ctrip.com,DIRECT
+  - DOMAIN-SUFFIX,dfcfw.com,DIRECT
+  - DOMAIN-SUFFIX,docschina.org,DIRECT
+  - DOMAIN-SUFFIX,douban.com,DIRECT
+  - DOMAIN-SUFFIX,doubanio.com,DIRECT
+  - DOMAIN-SUFFIX,douyu.com,DIRECT
+  - DOMAIN-SUFFIX,dxycdn.com,DIRECT
+  - DOMAIN-SUFFIX,dytt8.net,DIRECT
+  - DOMAIN-SUFFIX,eastmoney.com,DIRECT
+  - DOMAIN-SUFFIX,eudic.net,DIRECT
+  - DOMAIN-SUFFIX,feng.com,DIRECT
+  - DOMAIN-SUFFIX,fengkongcloud.com,DIRECT
+  - DOMAIN-SUFFIX,frdic.com,DIRECT
+  - DOMAIN-SUFFIX,futu5.com,DIRECT
+  - DOMAIN-SUFFIX,futunn.com,DIRECT
+  - DOMAIN-SUFFIX,gandi.net,DIRECT
+  - DOMAIN-SUFFIX,geilicdn.com,DIRECT
+  - DOMAIN-SUFFIX,getpricetag.com,DIRECT
+  - DOMAIN-SUFFIX,gifshow.com,DIRECT
+  - DOMAIN-SUFFIX,godic.net,DIRECT
+  - DOMAIN-SUFFIX,hicloud.com,DIRECT
+  - DOMAIN-SUFFIX,hongxiu.com,DIRECT
+  - DOMAIN-SUFFIX,hostbuf.com,DIRECT
+  - DOMAIN-SUFFIX,huxiucdn.com,DIRECT
+  - DOMAIN-SUFFIX,huya.com,DIRECT
+  - DOMAIN-SUFFIX,infinitynewtab.com,DIRECT
+  - DOMAIN-SUFFIX,ithome.com,DIRECT
+  - DOMAIN-SUFFIX,java.com,DIRECT
+  - DOMAIN-SUFFIX,jidian.im,DIRECT
+  - DOMAIN-SUFFIX,kaiyanapp.com,DIRECT
+  - DOMAIN-SUFFIX,kaspersky-labs.com,DIRECT
+  - DOMAIN-SUFFIX,keepcdn.com,DIRECT
+  - DOMAIN-SUFFIX,kkmh.com,DIRECT
+#  - DOMAIN-SUFFIX,licdn.com,DIRECT
+#  - DOMAIN-SUFFIX,linkedin.com,DIRECT
+  - DOMAIN-SUFFIX,loli.net,DIRECT
+  - DOMAIN-SUFFIX,luojilab.com,DIRECT
+  - DOMAIN-SUFFIX,maoyan.com,DIRECT
+  - DOMAIN-SUFFIX,maoyun.tv,DIRECT
+  - DOMAIN-SUFFIX,meituan.com,DIRECT
+  - DOMAIN-SUFFIX,meituan.net,DIRECT
+  - DOMAIN-SUFFIX,mobike.com,DIRECT
+  - DOMAIN-SUFFIX,moke.com,DIRECT
+  - DOMAIN-SUFFIX,mubu.com,DIRECT
+  - DOMAIN-SUFFIX,myzaker.com,DIRECT
+  - DOMAIN-SUFFIX,nim-lang-cn.org,DIRECT
+  - DOMAIN-SUFFIX,nvidia.com,DIRECT
+  - DOMAIN-SUFFIX,oracle.com,DIRECT
+  - DOMAIN-SUFFIX,paypal.com,DIRECT
+  - DOMAIN-SUFFIX,paypalobjects.com,DIRECT
+  - DOMAIN-SUFFIX,qdaily.com,DIRECT
+  - DOMAIN-SUFFIX,qidian.com,DIRECT
+  - DOMAIN-SUFFIX,qyer.com,DIRECT
+  - DOMAIN-SUFFIX,qyerstatic.com,DIRECT
+  - DOMAIN-SUFFIX,raychase.net,DIRECT
+  - DOMAIN-SUFFIX,ronghub.com,DIRECT
+  - DOMAIN-SUFFIX,ruguoapp.com,DIRECT
+  - DOMAIN-SUFFIX,s-reader.com,DIRECT
+  - DOMAIN-SUFFIX,sankuai.com,DIRECT
+  - DOMAIN-SUFFIX,scomper.me,DIRECT
+  - DOMAIN-SUFFIX,seafile.com,DIRECT
+  - DOMAIN-SUFFIX,sm.ms,DIRECT
+  - DOMAIN-SUFFIX,smzdm.com,DIRECT
+  - DOMAIN-SUFFIX,snapdrop.net,DIRECT
+  - DOMAIN-SUFFIX,snwx.com,DIRECT
+  - DOMAIN-SUFFIX,sspai.com,DIRECT
+  - DOMAIN-SUFFIX,takungpao.com,DIRECT
+  - DOMAIN-SUFFIX,teamviewer.com,DIRECT
+  - DOMAIN-SUFFIX,tianyancha.com,DIRECT
+  - DOMAIN-SUFFIX,udacity.com,DIRECT
+  - DOMAIN-SUFFIX,uning.com,DIRECT
+  - DOMAIN-SUFFIX,vmware.com,DIRECT
+  - DOMAIN-SUFFIX,weather.com,DIRECT
+  - DOMAIN-SUFFIX,weico.cc,DIRECT
+  - DOMAIN-SUFFIX,weidian.com,DIRECT
+  - DOMAIN-SUFFIX,xiachufang.com,DIRECT
+  - DOMAIN-SUFFIX,ximalaya.com,DIRECT
+  - DOMAIN-SUFFIX,xinhuanet.com,DIRECT
+  - DOMAIN-SUFFIX,xmcdn.com,DIRECT
+  - DOMAIN-SUFFIX,yangkeduo.com,DIRECT
+  - DOMAIN-SUFFIX,zhangzishi.cc,DIRECT
+  - DOMAIN-SUFFIX,zhihu.com,DIRECT
+  - DOMAIN-SUFFIX,zhimg.com,DIRECT
+  - DOMAIN-SUFFIX,zhuihd.com,DIRECT
+  - DOMAIN,download.jetbrains.com,DIRECT
+  - DOMAIN,images-cn.ssl-images-amazon.com,DIRECT
+  - IP-CIDR,119.28.28.28/32,DIRECT,no-resolve
+  - GEOIP,CN,DIRECT
+
+  - MATCH,自动选择
