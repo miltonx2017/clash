@@ -5,6 +5,63 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+ - {type: trojan, name: s00001, server: sg1.qingyun123.xyz, password: b5baea55-e768-4d65-bbe5-62cb473b29ad, port: 10001, udp: true, skip-cert-verify: true}
+ - {type: vmess, server: bgpv2.ktyjsq.com, name: s00002, port: 12223, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, network: tcp}
+ - {type: vmess, server: bgp.keaiyun.top, name: s00003, port: 47515, uuid: 8ee169e4-c232-388e-8143-bf497f48b362, alterId: 0, cipher: auto, network: tcp}
+ - {type: vmess, server: 45.82.78.151, name: s00004, port: 80, uuid: bda51582-46f7-410c-b267-30b7f3681ac0, alterId: 0, cipher: auto, network: ws}
+ - {type: ss, cipher: aes-128-gcm, password: bzUdYJ4JzjGfIwhG, server: bb01.nfeng6.pp.ua, port: 16030, name: s00005}
+ - {type: vmess, server: bgpv2.ktyjsq.com, name: s00006, port: 12224, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, network: tcp}
+ - {type: ss, cipher: aes-128-gcm, password: b6040656-96c5-4748-a73c-5a8f15ed7531, server: cn1.relay.iepl.pw, port: 50300, name: s00007}
+ - {type: ss, cipher: aes-256-gcm, password: c0669346-7ba9-4fda-91a4-238fb8d0a4d2, server: yd.v2yyds.cc, port: 51675, name: s00008}
+ - {type: ss, cipher: aes-256-gcm, password: c0669346-7ba9-4fda-91a4-238fb8d0a4d2, server: yd.v2yyds.cc, port: 51674, name: s00009}
+ - {type: vmess, server: bgpv2.ktyjsq.com, name: s00010, port: 12229, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, network: tcp}
+ - {type: ss, cipher: aes-128-gcm, password: b6040656-96c5-4748-a73c-5a8f15ed7531, server: cn1.relay.iepl.pw, port: 50200, name: s00011}
+ - {type: vmess, server: bgpv2.ktyjsq.com, name: s00012, port: 12222, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, network: tcp}
+ - {type: ss, cipher: aes-128-gcm, password: bzUdYJ4JzjGfIwhG, server: bb01.nfeng6.pp.ua, port: 26220, name: s00013}
+ - {type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, server: 14.29.124.168, port: 24032, name: s00014}
+ - {type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, server: 14.29.124.168, port: 24085, name: s00015}
+ - {type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, server: 14.29.124.168, port: 24063, name: s00016}
+ - {type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, server: 14.29.124.168, port: 24027, name: s00017}
+ - {type: ss, cipher: aes-128-gcm, password: bzUdYJ4JzjGfIwhG, server: bb01.nfeng6.pp.ua, port: 16010, name: s00018}
+ - {type: trojan, name: s00019, server: ussc.scsevers.cf, password: sharecentre, port: 443, udp: true, skip-cert-verify: true}
+ - {type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, server: 14.29.124.168, port: 24070, name: s00020}
+ - {type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, server: 14.29.124.168, port: 24007, name: s00021}
+ - {type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, server: 14.29.124.168, port: 24078, name: s00022}
+ - {type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, server: 14.29.124.168, port: 24079, name: s00023}
+ - {type: ssr, server: 103.172.116.9, port: 9097, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: Sn5B7jTqr76aCJT8, name: s00024}
+ - {type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, server: 14.29.124.168, port: 24021, name: s00025}
+ - {type: vmess, server: bgp.keaiyun.top, name: s00026, port: 47514, uuid: 8ee169e4-c232-388e-8143-bf497f48b362, alterId: 0, cipher: auto, network: tcp}
+ - {type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, server: 14.29.124.168, port: 24080, name: s00027}
+ - {type: ss, cipher: aes-128-gcm, password: bzUdYJ4JzjGfIwhG, server: bb01.nfeng6.pp.ua, port: 16040, name: s00028}
+ - {type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, server: 213.183.53.177, port: 9007, name: s00029}
+ - {type: trojan, name: s00030, server: s4.upyun.online, password: c0276440-f163-4f40-a08c-78b158ce6c4f, port: 12340, udp: true, skip-cert-verify: true, sni: free.upyun.online}
+ - {type: trojan, name: s00031, server: neteasy.cf, password: 2XWUtOT64u, port: 45929, udp: true, skip-cert-verify: true}
+ - {type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, server: 14.29.124.168, port: 24013, name: s00032}
+ - {type: trojan, name: s00033, server: s4.upyun.online, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, port: 12340, udp: true, skip-cert-verify: true}
+ - {type: ss, cipher: aes-128-gcm, password: bzUdYJ4JzjGfIwhG, server: bb01.nfeng6.pp.ua, port: 16000, name: s00034}
+ - {type: ss, cipher: aes-128-gcm, password: b6040656-96c5-4748-a73c-5a8f15ed7531, server: cn1.relay.iepl.pw, port: 50500, name: s00035}
+ - {type: ss, cipher: aes-128-gcm, password: bzUdYJ4JzjGfIwhG, server: bb01.nfeng6.pp.ua, port: 26240, name: s00036}
+ - {type: ss, cipher: aes-128-gcm, password: bzUdYJ4JzjGfIwhG, server: bb01.nfeng6.pp.ua, port: 26210, name: s00037}
+ - {type: vmess, server: bgp.keaiyun.top, name: s00038, port: 47521, uuid: 8ee169e4-c232-388e-8143-bf497f48b362, alterId: 0, cipher: auto, network: tcp}
+ - {type: vmess, server: bgp.keaiyun.top, name: s00039, port: 47522, uuid: 8ee169e4-c232-388e-8143-bf497f48b362, alterId: 0, cipher: auto, network: tcp}
+ - {type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, server: 14.29.124.168, port: 24019, name: s00040}
+ - {type: vmess, ws-opts: {path: /, headers: {host: 23.95.247.209}}, server: 23.95.247.209, name: s00041, port: 80, uuid: bda51582-46f7-410c-b267-30b7f3681ac0, alterId: 0, cipher: auto, network: ws}
+ - {type: vmess, server: 103.170.246.137, name: s00042, port: 30028, uuid: 9cbb9cc5-f0cc-47c8-f5b7-e2c87d605068, alterId: 0, cipher: auto, network: tcp}
+ - {type: trojan, name: s00043, server: s2.upyun.online, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, port: 12340, udp: true, skip-cert-verify: true}
+ - {type: vmess, http-opts: {path: [/], headers: {Host: [43.154.72.145]}}, server: 43.154.72.145, name: s00044, port: 27091, uuid: 2f1e82e4-5319-4278-92aa-74d49c04683f, alterId: 0, cipher: auto, network: http}
+ - {type: trojan, name: s00045, server: s3.upyun.online, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, port: 12340, udp: true, skip-cert-verify: true}
+ - {type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, server: 14.29.124.168, port: 24061, name: s00046}
+ - {type: trojan, name: s00047, server: s1.upyun.online, password: c0276440-f163-4f40-a08c-78b158ce6c4f, port: 12340, udp: true, skip-cert-verify: true}
+ - {type: trojan, name: s00048, server: s1.upyun.online, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, port: 12340, udp: true, skip-cert-verify: true}
+ - {type: trojan, name: s00049, server: s3.upyun.online, password: c0276440-f163-4f40-a08c-78b158ce6c4f, port: 12340, udp: true, skip-cert-verify: true}
+ - {type: trojan, name: s00050, server: s3.upyun.online, password: c0276440-f163-4f40-a08c-78b158ce6c4f, port: 12340, udp: true, skip-cert-verify: true, sni: free.upyun.online}
+ - {type: trojan, name: s00051, server: sg-sr-116.mitoption.com, password: e5d46365e25e31d94279c2bcf93390a2, port: 443, udp: true, skip-cert-verify: true}
+ - {type: trojan, name: s00052, server: s2.upyun.online, password: c0276440-f163-4f40-a08c-78b158ce6c4f, port: 12340, udp: true, skip-cert-verify: true}
+ - {type: trojan, name: s00053, server: sg.sharecentrepro.tk, password: sharecentre, port: 443, udp: true, skip-cert-verify: true}
+ - {type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, server: 14.29.124.168, port: 24071, name: s00054}
+ - {type: trojan, name: s00055, server: s1.upyun.online, password: c0276440-f163-4f40-a08c-78b158ce6c4f, port: 12340, udp: true, skip-cert-verify: true, sni: free.upyun.online}
+ - {type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, server: 14.29.124.168, port: 24050, name: s00056}
+ - {type: vmess, server: bgpv2.ktyjsq.com, name: s00057, port: 12005, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, network: tcp}
 
 
 
@@ -22,6 +79,63 @@ proxy-groups:
 #    interval: 300
 #    proxies:
 #list-of-proxy-names
+       - s00001
+       - s00002
+       - s00003
+       - s00004
+       - s00005
+       - s00006
+       - s00007
+       - s00008
+       - s00009
+       - s00010
+       - s00011
+       - s00012
+       - s00013
+       - s00014
+       - s00015
+       - s00016
+       - s00017
+       - s00018
+       - s00019
+       - s00020
+       - s00021
+       - s00022
+       - s00023
+       - s00024
+       - s00025
+       - s00026
+       - s00027
+       - s00028
+       - s00029
+       - s00030
+       - s00031
+       - s00032
+       - s00033
+       - s00034
+       - s00035
+       - s00036
+       - s00037
+       - s00038
+       - s00039
+       - s00040
+       - s00041
+       - s00042
+       - s00043
+       - s00044
+       - s00045
+       - s00046
+       - s00047
+       - s00048
+       - s00049
+       - s00050
+       - s00051
+       - s00052
+       - s00053
+       - s00054
+       - s00055
+       - s00056
+       - s00057
 
 
 rules:
