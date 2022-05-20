@@ -5,23 +5,16 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
- - {name: s00001, server: 120.233.10.230, port: 50200, type: ss, cipher: aes-128-gcm, password: b6040656-96c5-4748-a73c-5a8f15ed7531, udp: true}
- - {name: s00002, server: cn1.relay.iepl.pw, port: 50200, type: ss, cipher: aes-128-gcm, password: b6040656-96c5-4748-a73c-5a8f15ed7531, udp: true}
- - {type: vmess, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {host: aweikeji-YouTube}}, server: zzcm06.bdate.xyz, name: s00003, port: 1370, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, network: ws}
- - {type: vmess, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {host: aweikeji-YouTube}}, server: zzcm07.bdate.xyz, name: s00004, port: 1370, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, network: ws}
- - {type: vmess, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {host: aweikeji-YouTube}}, server: zzcm09.bdate.xyz, name: s00005, port: 1370, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, network: ws}
- - {type: vmess, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {host: aweikeji-YouTube}}, server: zzcm08.bdate.xyz, name: s00006, port: 1370, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, network: ws}
- - {type: vmess, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {host: aweikeji-YouTube}}, server: zzcm06.bdate.xyz, name: s00007, port: 1580, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, network: ws}
- - {type: vmess, server: bgpv2.ktyjsq.com, name: s00008, port: 12222, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, network: tcp}
- - {type: vmess, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {host: aweikeji-YouTube}}, server: zzcm09.bdate.xyz, name: s00009, port: 1260, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, network: ws}
- - {type: vmess, ws-opts: {path: /ws, headers: {host: ahdaeph8.com}}, server: ahdaeph8.com, name: s00010, port: 443, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, network: ws, tls: true}
- - {type: vmess, server: bgpv2.ktyjsq.com, name: s00011, port: 12223, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, network: tcp}
- - {type: vmess, server: bgpv2.ktyjsq.com, name: s00012, port: 12229, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, network: tcp}
- - {name: s00013, server: sg-sr-116.mitoption.com, port: 443, type: trojan, password: e5d46365e25e31d94279c2bcf93390a2, sni: sg-sr-116.mitoption.com, skip-cert-verify: true, udp: true}
- - {type: trojan, name: s00014, server: sg-sr-116.mitoption.com, password: e5d46365e25e31d94279c2bcf93390a2, port: 443, udp: true, skip-cert-verify: true}
- - {name: s00015, server: bb01.nfeng6.pp.ua, port: 26230, type: ss, cipher: aes-128-gcm, password: bzUdYJ4JzjGfIwhG, udp: true}
- - {type: vmess, server: bgpv2.ktyjsq.com, name: s00016, port: 12224, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, network: tcp}
- - {type: ss, cipher: aes-128-gcm, password: bzUdYJ4JzjGfIwhG, server: bb01.nfeng6.pp.ua, port: 26230, name: s00017}
+ - {name: s00001, server: 330tw.fans8.xyz, port: 443, type: vmess, uuid: dc09c9a0-1697-3f39-8ba9-65f2985e00ec, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 330tw.fans8.xyz}}, udp: true}
+ - {name: s00002, server: 331tw.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 331tw.fans8.xyz}}, udp: true}
+ - {name: s00003, server: bgpv2.ktyjsq.com, port: 12222, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00004, server: bb01.nfeng6.pp.ua, port: 16020, type: ss, cipher: aes-128-gcm, password: bzUdYJ4JzjGfIwhG, udp: true}
+ - {name: s00005, server: bgpv2.ktyjsq.com, port: 12205, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00006, server: bgpv2.ktyjsq.com, port: 12223, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00007, server: bgpv2.ktyjsq.com, port: 12229, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00008, server: bgpv2.ktyjsq.com, port: 12005, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00009, server: bgpv2.ktyjsq.com, port: 12224, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00010, server: 43.128.66.36, port: 8080, type: vmess, uuid: 5bb4d785-4933-44cb-a162-d9a74625d2ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
 
 
 
@@ -49,13 +42,6 @@ proxy-groups:
        - s00008
        - s00009
        - s00010
-       - s00011
-       - s00012
-       - s00013
-       - s00014
-       - s00015
-       - s00016
-       - s00017
 
 
 rules:
