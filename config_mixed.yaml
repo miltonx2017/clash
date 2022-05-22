@@ -5,107 +5,184 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
- - {name: s00001, server: 147.182.151.24, port: 20110, type: ss, cipher: aes-256-cfb, password: f5e0ecc4e6b84a668ee9ed98e0a30ca9, udp: true}
- - {name: s00002, server: 139.99.123.156, type: ss, country: x, port: 7002, password: RexnBgU7EV5ADxG, cipher: aes-256-gcm}
- - {name: s00003, server: jgwxn3.gaox.ml, type: trojan, country: x, port: 443, password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf, skip-cert-verify: true, udp: true}
- - {name: s00004, server: 164.92.99.126, type: ss, country: x, port: 52441, password: 5e04bdc6-6f09-4f5e-a3c7-edf4d3220ad3, cipher: chacha20-ietf-poly1305}
- - {name: s00005, server: jgwdb4.gaox.ml, type: trojan, country: x, port: 443, password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2, skip-cert-verify: true, udp: true}
- - {name: s00006, server: 217.30.10.64, type: ss, country: x, port: 9037, password: TN2YqghxeFDKZfLU, cipher: aes-256-cfb}
- - {name: s00007, server: 139.99.123.156, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
- - {name: s00008, server: jgwxn3.gaox.ml, port: 443, type: trojan, password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf, skip-cert-verify: true, udp: true}
- - {name: s00009, server: 213.183.59.190, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
- - {name: s00010, server: fkgfw-prod.i.sxl.cn, type: ss, country: x, port: 443, password: E4DNMf73kHPrd8Qq7aqGPf7f, cipher: aes-256-cfb}
- - {name: s00011, server: 217.30.10.64, type: ss, country: x, port: 9005, password: ZET59LF6DvCC8KVt, cipher: aes-256-cfb}
- - {name: s00012, server: 213.183.59.190, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
- - {name: s00013, server: 185.4.65.6, type: ss, country: x, port: 21247, password: vDS9G2p, cipher: aes-256-cfb}
- - {name: s00014, server: fkgfw-prod.i.sxl.cn, port: 443, type: ss, cipher: aes-256-cfb, password: E4DNMf73kHPrd8Qq7aqGPf7f, udp: true}
- - {name: s00015, server: 167.172.56.225, type: ss, country: x, port: 54141, password: 54df1ad5-1323-4dd7-b7a1-a53202347526, cipher: chacha20-ietf-poly1305}
- - {name: s00016, server: 167.172.56.225, port: 54141, type: ss, cipher: chacha20-ietf-poly1305, password: 54df1ad5-1323-4dd7-b7a1-a53202347526, udp: true}
- - {name: s00017, server: gy.gothy.cyou, type: vmess, country: x, port: 14401, uuid: 220fc318-ff76-4a26-9ab8-cf8c0e294995, alterId: 0, cipher: auto, network: ws, ws-path: /, http-opts: {}, h2-opts: {}, skip-cert-verify: true}
- - {name: s00018, server: 213.183.63.218, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
- - {name: s00019, server: node.gkddd.buzz, port: 23312, type: vmess, uuid: a6f34df0-6e9e-4522-80ff-a41517803f17, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sometimesnaive, headers: {Host: node.gkddd.buzz}}, udp: true}
- - {name: s00020, server: s4.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
- - {name: s00021, server: 213.183.63.218, type: ss, country: x, port: 9024, password: BejrQvtu9sqUeNuZ, cipher: aes-256-cfb}
- - {name: s00022, server: 213.183.59.190, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
- - {name: s00023, server: 213.183.63.218, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
- - {name: s00024, server: 213.183.59.190, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
- - {name: s00025, server: bb01.nfeng6.pp.ua, type: ss, country: x, port: 16040, password: bzUdYJ4JzjGfIwhG, cipher: aes-128-gcm}
- - {name: s00026, server: s4.upyun.online, type: trojan, country: x, port: 12340, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
- - {name: s00027, server: s1.upyun.online, type: trojan, country: x, port: 12340, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
- - {name: s00028, server: s1.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
- - {name: s00029, server: s1.upyun.online, type: trojan, country: x, port: 12340, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
- - {name: s00030, server: s2.upyun.online, type: trojan, country: x, port: 12340, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
- - {name: s00031, server: 103.172.116.9, type: ss, country: x, port: 9003, password: JdmRK9gMEqFgs8nP, cipher: aes-256-cfb}
- - {name: s00032, server: 213.183.53.177, type: ssr, country: x, port: 9060, password: ueLXVkvh4hckhErQ, cipher: aes-256-cfb, protocol: origin, obfs: plain}
- - {name: s00033, server: s1.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, sni: s1.upyun.online, skip-cert-verify: true, udp: true}
- - {name: s00034, server: 213.183.53.177, type: ssr, country: x, port: 9050, password: FG5ddLsMPbV5CutE, cipher: aes-256-cfb, protocol: origin, obfs: plain}
- - {name: s00035, server: 213.183.53.177, type: ssr, country: x, port: 9056, password: rNBfNuuANFCAk7KB, cipher: aes-256-cfb, protocol: origin, obfs: plain}
- - {name: s00036, server: 103.172.116.9, type: ss, country: x, port: 9041, password: U6qnYRhfyDmn8sgn, cipher: aes-256-cfb}
- - {name: s00037, server: 103.172.116.9, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
- - {name: s00038, server: 217.30.10.63, type: ss, country: x, port: 9006, password: FAdUvMJUq5vDgKEq, cipher: aes-256-cfb}
- - {name: s00039, server: s2.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
- - {name: s00040, server: s2.upyun.online, type: trojan, country: x, port: 12340, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
- - {name: s00041, server: 103.172.116.9, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
- - {name: s00042, server: bgpv2.ktyjsq.com, port: 12205, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
- - {name: s00043, server: 103.172.116.9, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
- - {name: s00044, server: 103.172.116.9, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
- - {name: s00045, server: 213.183.53.177, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
- - {name: s00046, server: 217.30.10.63, type: ss, country: x, port: 9098, password: aLpQtfEZe445QyHk, cipher: aes-256-cfb}
- - {name: s00047, server: 103.172.116.9, type: ss, country: x, port: 9018, password: fG2artUmHfNT2cX7, cipher: aes-256-cfb}
- - {name: s00048, server: 165.154.225.230, type: vmess, country: x, port: 33080, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, network: tcp, ws-path: /, http-opts: {}, h2-opts: {}, tls: true, skip-cert-verify: true}
- - {name: s00049, server: jgwhdlb3.gaox.ml, type: trojan, country: x, port: 443, password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11, skip-cert-verify: true, udp: true}
- - {name: s00050, server: 213.183.53.177, type: ssr, country: x, port: 9088, password: f8npKgNzdkss2ytn, cipher: aes-256-cfb, protocol: origin, obfs: plain}
- - {name: s00051, server: 213.183.53.177, type: ssr, country: x, port: 9003, password: JdmRK9gMEqFgs8nP, cipher: aes-256-cfb, protocol: origin, obfs: plain}
- - {name: s00052, server: 213.183.53.177, type: ssr, country: x, port: 9011, password: M3t2ZEQcMGRWBjRa, cipher: aes-256-cfb, protocol: origin, obfs: plain}
- - {name: s00053, server: 213.183.53.177, type: ssr, country: x, port: 9079, password: TPqX8edgbAURcAMb, cipher: aes-256-cfb, protocol: origin, obfs: plain}
- - {name: s00054, server: 213.183.53.177, type: ssr, country: x, port: 9018, password: fG2artUmHfNT2cX7, cipher: aes-256-cfb, protocol: origin, obfs: plain}
- - {name: s00055, server: 213.183.53.177, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
- - {name: s00056, server: 213.183.53.177, type: ssr, country: x, port: 9043, password: HSZuyJQcWe8dxNdF, cipher: aes-256-cfb, protocol: origin, obfs: plain}
- - {name: s00057, server: 213.183.53.177, type: ssr, country: x, port: 9027, password: EXN3S3eQpjE7EJu8, cipher: aes-256-cfb, protocol: origin, obfs: plain}
- - {name: s00058, server: 213.183.53.177, type: ssr, country: x, port: 9024, password: BejrQvtu9sqUeNuZ, cipher: aes-256-cfb, protocol: origin, obfs: plain}
- - {name: s00059, server: 213.183.53.177, type: ssr, country: x, port: 9042, password: S7KwUu7yBy58S3Ga, cipher: aes-256-cfb, protocol: origin, obfs: plain}
- - {name: s00060, server: 213.183.53.177, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
- - {name: s00061, server: 213.183.53.177, type: ssr, country: x, port: 9098, password: aLpQtfEZe445QyHk, cipher: aes-256-cfb, protocol: origin, obfs: plain}
- - {name: s00062, server: 213.183.53.177, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
- - {name: s00063, server: 213.183.53.177, type: ssr, country: x, port: 9006, password: FAdUvMJUq5vDgKEq, cipher: aes-256-cfb, protocol: origin, obfs: plain}
- - {name: s00064, server: 103.172.116.9, type: ssr, country: x, port: 9088, password: f8npKgNzdkss2ytn, cipher: aes-256-cfb, protocol: origin, obfs: plain}
- - {name: s00065, server: 213.183.53.177, type: ssr, country: x, port: 9097, password: Sn5B7jTqr76aCJT8, cipher: aes-256-cfb, protocol: origin, obfs: plain}
- - {name: s00066, server: 213.183.53.177, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
- - {name: s00067, server: 213.183.53.177, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
- - {name: s00068, server: 213.183.53.177, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
- - {name: s00069, server: 213.183.53.177, type: ssr, country: x, port: 9001, password: UkXRsXvR6buDMG2Y, cipher: aes-256-cfb, protocol: origin, obfs: plain}
- - {name: s00070, server: 213.183.53.177, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
- - {name: s00071, server: ingress-i1.onebox6.org, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
- - {name: s00072, server: 213.183.53.177, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
- - {name: s00073, server: 213.183.53.177, type: ssr, country: x, port: 9026, password: QWDDvVE9npNurQfA, cipher: aes-256-cfb, protocol: origin, obfs: plain}
- - {name: s00074, server: 213.183.53.177, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
- - {name: s00075, server: bgpv2.ktyjsq.com, type: vmess, country: x, port: 12005, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, network: tcp, ws-path: /, http-opts: {}, h2-opts: {}, skip-cert-verify: true}
- - {name: s00076, server: 213.183.53.177, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
- - {name: s00077, server: 213.183.53.177, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
- - {name: s00078, server: 213.183.53.177, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
- - {name: s00079, server: 213.183.53.177, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
- - {name: s00080, server: bgpv2.ktyjsq.com, port: 12005, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
- - {name: s00081, server: 213.183.53.177, type: ssr, country: x, port: 9020, password: BNmAXXxAHYpTRdzu, cipher: aes-256-cfb, protocol: origin, obfs: plain}
- - {name: s00082, server: 213.183.53.177, type: ss, country: x, port: 9007, password: kSPmvwdFzGMMW5pY, cipher: aes-256-cfb}
- - {name: s00083, server: 213.183.53.177, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
- - {name: s00084, server: 213.183.53.177, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
- - {name: s00085, server: 213.183.53.177, type: ssr, country: x, port: 9064, password: cp8pRSUAyLhTfVWH, cipher: aes-256-cfb, protocol: origin, obfs: plain}
- - {name: s00086, server: 213.183.53.177, type: ssr, country: x, port: 9031, password: BwcAUZk8hUFAkDGN, cipher: aes-256-cfb, protocol: origin, obfs: plain}
- - {name: s00087, server: 213.183.53.177, type: ssr, country: x, port: 9032, password: UWZQeLRWnkqgkseq, cipher: aes-256-cfb, protocol: origin, obfs: plain}
- - {name: s00088, server: 213.183.53.177, type: ssr, country: x, port: 9010, password: f63gg8EruDnUrmz4, cipher: aes-256-cfb, protocol: origin, obfs: plain}
- - {name: s00089, server: ahdaeph8.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: ahdaeph8.com}}, udp: true}
- - {name: s00090, server: 213.183.53.177, type: ssr, country: x, port: 9046, password: NvS8N4Vf8qAGPSCL, cipher: aes-256-cfb, protocol: origin, obfs: plain}
- - {name: s00091, server: ingress-i2.onebox6.org, port: 38104, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
- - {name: s00092, server: 213.183.53.177, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
- - {name: s00093, server: 213.183.53.177, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
- - {name: s00094, server: ingress-i1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: ingress-i1.onebox6.org}}, udp: true}
- - {name: s00095, server: 213.183.53.177, type: ssr, country: x, port: 9019, password: GA9KzeEgvfxNrgmM, cipher: aes-256-cfb, protocol: origin, obfs: plain}
- - {name: s00096, server: 185.167.116.252, type: ss, country: x, port: 9080, password: VP8ZPxQpJtZRCjfZ, cipher: aes-256-cfb}
- - {name: s00097, server: in-sg-1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
- - {name: s00098, server: 213.183.53.177, port: 9007, type: ss, password: kSPmvwdFzGMMW5pY, cipher: aes-256-cfb}
- - {name: s00099, server: 213.183.53.177, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
- - {name: s00100, server: jgwld4.gaox.ml, type: trojan, country: x, port: 443, password: 58d32c66-43b1-4561-9951-d87c9123774e, skip-cert-verify: true, udp: true}
- - {name: s00101, server: 213.183.53.177, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+ - {type: vmess, name: s00001, ws-opts: {path: /nmsl, headers: {host: 1.ezydfdd.com}}, server: 1.ezydfdd.com, port: 443, uuid: 4ee48ad8-178c-40a2-9c52-a14e90a06e49, alterId: 0, cipher: auto, network: ws, tls: true}
+ - {type: ss, name: s00002, server: 206.189.136.113, port: 46786, cipher: chacha20-ietf-poly1305, password: 54df1ad5-1323-4dd7-b7a1-a53202347526}
+ - {name: s00003, server: 183.232.48.148, port: 26073, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00004, server: 183.232.48.148, port: 26074, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00005, server: 183.232.48.148, port: 26072, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00006, server: 183.232.48.148, port: 26075, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00007, server: 183.232.48.148, port: 26070, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00008, server: 140.207.232.8, port: 26014, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00009, server: 140.207.232.8, port: 26044, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00010, server: 147.182.151.24, port: 20110, type: ss, cipher: aes-256-cfb, password: f5e0ecc4e6b84a668ee9ed98e0a30ca9, udp: true}
+ - {name: s00011, server: 183.232.48.148, port: 26086, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00012, server: 183.232.48.148, port: 26088, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00013, server: 183.232.48.148, port: 26071, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00014, server: 185.4.65.6, type: ss, country: x, port: 21247, password: vDS9G2p, cipher: aes-256-cfb}
+ - {name: s00015, server: 183.232.48.148, port: 26010, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00016, server: 140.207.232.8, port: 26074, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00017, server: 183.232.48.148, port: 26008, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00018, server: 183.232.48.148, port: 26032, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00019, server: 183.232.48.148, port: 26098, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00020, server: 217.30.10.64, type: ss, country: x, port: 9037, password: TN2YqghxeFDKZfLU, cipher: aes-256-cfb}
+ - {name: s00021, server: 140.207.232.8, port: 26045, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00022, server: 183.232.48.148, port: 26096, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00023, server: 183.232.48.148, port: 26084, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00024, server: s2.upyun.online, type: trojan, country: x, port: 12340, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
+ - {name: s00025, server: s2.upyun.online, type: trojan, country: x, port: 12340, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
+ - {name: s00026, server: 183.232.48.148, port: 26046, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00027, server: 183.232.48.148, port: 26020, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00028, server: fkgfw-prod.i.sxl.cn, type: ss, country: x, port: 443, password: E4DNMf73kHPrd8Qq7aqGPf7f, cipher: aes-256-cfb}
+ - {name: s00029, server: 183.232.48.148, port: 26001, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00030, server: 183.232.48.148, port: 26068, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00031, server: 140.207.232.8, port: 26096, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00032, server: 183.232.48.148, port: 26069, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00033, server: 183.232.48.148, port: 26043, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00034, server: 140.207.232.8, port: 26020, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00035, server: 140.207.232.8, port: 26069, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00036, server: 140.207.232.8, port: 26073, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00037, server: 140.207.232.8, port: 26033, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00038, server: 140.207.232.8, port: 26046, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00039, server: 183.232.48.148, port: 26033, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00040, server: 183.232.48.148, port: 26030, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00041, server: 140.207.232.8, port: 26071, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00042, server: 183.232.48.148, port: 26044, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00043, server: 140.207.232.8, port: 26084, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00044, server: s1.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, sni: s1.upyun.online, skip-cert-verify: true, udp: true}
+ - {name: s00045, server: 140.207.232.8, port: 26061, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00046, server: 183.232.48.148, port: 26014, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00047, server: s1.upyun.online, type: trojan, country: x, port: 12340, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
+ - {name: s00048, server: s1.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
+ - {name: s00049, server: 140.207.232.8, port: 26098, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00050, server: 140.207.232.8, port: 26021, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00051, server: 183.232.48.148, port: 26007, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00052, server: 183.232.48.148, port: 26022, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00053, server: 140.207.232.8, port: 26011, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00054, server: 140.207.232.8, port: 26015, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00055, server: 140.207.232.8, port: 26037, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00056, server: 183.232.48.148, port: 26009, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00057, server: 140.207.232.8, port: 26070, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00058, server: 183.232.48.148, port: 26040, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00059, server: 140.207.232.8, port: 26072, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00060, server: 183.232.48.148, port: 26045, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00061, server: 140.207.232.8, port: 26060, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00062, server: 183.232.48.148, port: 26006, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00063, server: 183.232.48.148, port: 26036, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00064, server: s2.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
+ - {name: s00065, server: 183.232.48.148, port: 26004, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00066, server: 183.232.48.148, port: 26015, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00067, server: 183.232.48.148, port: 26021, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00068, server: 140.207.232.8, port: 26038, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00069, server: 140.207.232.8, port: 26010, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00070, server: 183.232.48.148, port: 26061, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00071, server: 140.207.232.8, port: 26031, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00072, server: 140.207.232.8, port: 26022, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00073, server: 213.183.59.190, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+ - {name: s00074, server: 183.232.48.148, port: 26002, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00075, server: 183.232.48.148, port: 26042, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00076, server: s1.upyun.online, type: trojan, country: x, port: 12340, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
+ - {name: s00077, server: 183.232.48.148, port: 26037, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00078, server: 183.232.48.148, port: 26031, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00079, server: 140.207.232.8, port: 26075, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00080, server: 183.232.48.148, port: 26039, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00081, server: 140.207.232.8, port: 26086, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00082, server: 183.232.48.148, port: 26011, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00083, server: 213.183.63.218, type: ss, country: x, port: 9064, password: cp8pRSUAyLhTfVWH, cipher: aes-256-cfb}
+ - {name: s00084, server: 183.232.48.148, port: 26023, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00085, server: 140.207.232.8, port: 26028, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00086, server: 183.232.48.148, port: 26028, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00087, server: 103.172.116.9, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+ - {name: s00088, server: 140.207.232.8, port: 26023, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00089, server: 213.183.53.177, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+ - {name: s00090, server: 140.207.232.8, port: 26068, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00091, server: 213.183.53.177, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+ - {name: s00092, server: 213.183.59.190, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+ - {name: s00093, server: 213.183.53.177, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+ - {name: s00094, server: 213.183.53.177, type: ssr, country: x, port: 9008, password: y9VURyNzJWNRYEGQ, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: s00095, server: 213.183.53.177, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+ - {name: s00096, server: 213.183.53.177, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+ - {name: s00097, server: 213.183.53.177, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
+ - {name: s00098, server: 183.232.48.148, port: 26092, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00099, server: 213.183.53.177, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+ - {name: s00100, server: 213.183.53.177, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+ - {name: s00101, server: 140.207.232.8, port: 26006, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00102, server: 140.207.232.8, port: 26036, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00103, server: 213.183.53.177, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+ - {name: s00104, server: 140.207.232.8, port: 26012, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00105, server: 140.207.232.8, port: 26029, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00106, server: 213.183.53.177, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+ - {name: s00107, server: 140.207.232.8, port: 26088, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00108, server: 183.232.48.148, port: 26059, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00109, server: 183.232.48.148, port: 26029, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00110, server: 140.207.232.8, port: 26030, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00111, server: 140.207.232.8, port: 26039, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00112, server: 213.183.53.177, type: ssr, country: x, port: 9031, password: BwcAUZk8hUFAkDGN, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: s00113, server: 213.183.53.177, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+ - {name: s00114, server: 213.183.53.177, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+ - {name: s00115, server: 140.207.232.8, port: 26042, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00116, server: 140.207.232.8, port: 26004, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00117, server: 213.183.53.177, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+ - {name: s00118, server: 183.232.48.148, port: 26012, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00119, server: 103.172.116.9, type: ss, country: x, port: 9006, password: FAdUvMJUq5vDgKEq, cipher: aes-256-cfb}
+ - {name: s00120, server: 140.207.232.8, port: 26009, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00121, server: 140.207.232.8, port: 26013, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00122, server: 213.183.53.177, type: ssr, country: x, port: 9027, password: EXN3S3eQpjE7EJu8, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: s00123, server: 183.232.48.148, port: 26003, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00124, server: node.gkddd.buzz, port: 23312, type: vmess, uuid: a6f34df0-6e9e-4522-80ff-a41517803f17, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sometimesnaive, headers: {Host: node.gkddd.buzz}}, udp: true}
+ - {name: s00125, server: 213.183.63.218, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+ - {type: vmess, name: s00126, ws-opts: {path: /api/v3/download.getFile, headers: {host: v4.ssrsub.com}}, server: v4.ssrsub.com, port: 443, uuid: 620d82a8-22ba-4945-90ba-a2bed1cde1d2, alterId: 0, cipher: auto, network: ws, tls: true}
+ - {name: s00127, server: 213.183.53.177, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+ - {name: s00128, server: 213.183.63.218, type: ss, country: x, port: 9057, password: wjTugX3ZtHMB9c3Z, cipher: aes-256-cfb}
+ - {name: s00129, server: 213.183.59.190, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+ - {name: s00130, server: 213.183.53.177, type: ssr, country: x, port: 9040, password: p9z5BVADH2YFs3MN, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: s00131, server: 140.207.232.8, port: 26007, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00132, server: 103.172.116.9, type: ss, port: 9006, udp: true, password: FAdUvMJUq5vDgKEq, cipher: aes-256-cfb}
+ - {name: s00133, server: 213.183.53.177, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+ - {name: s00134, server: s4.upyun.online, type: trojan, country: x, port: 12340, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
+ - {name: s00135, server: s4.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
+ - {name: s00136, server: 183.232.48.148, port: 26013, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {type: vmess, name: s00137, ws-opts: {path: /, headers: {host: ocrb2.moonfree.top}}, server: ocrb2.moonfree.top, port: 443, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, network: ws, tls: true}
+ - {name: s00138, server: 213.183.53.177, type: ssr, country: x, port: 9073, password: daFYagqDdBdA6VTX, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {type: vmess, name: s00139, ws-opts: {path: /sometimesnaive, headers: {host: aws.gkddd.buzz}}, server: aws.gkddd.buzz, port: 32566, uuid: a6f34df0-6e9e-4522-80ff-a41517803f17, alterId: 0, cipher: auto, network: ws, tls: true}
+ - {name: s00140, server: 213.183.53.177, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+ - {name: s00141, server: 140.207.232.8, port: 26059, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00142, server: 213.183.53.177, type: ssr, country: x, port: 9070, password: bf7v334KKDV3YDhH, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: s00143, server: 213.183.53.177, type: ssr, country: x, port: 9098, password: aLpQtfEZe445QyHk, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: s00144, server: 140.207.232.8, port: 26092, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00145, server: 213.183.53.177, type: ssr, country: x, port: 9043, password: HSZuyJQcWe8dxNdF, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: s00146, server: 213.183.53.177, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+ - {name: s00147, server: docs.defun.us, type: trojan, country: x, port: 443, password: WEMagdSekdGBxh6g, skip-cert-verify: true, udp: true}
+ - {name: s00148, server: 213.183.53.177, type: ssr, country: x, port: 9079, password: TPqX8edgbAURcAMb, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: s00149, server: 213.183.63.218, type: ss, country: x, port: 9040, password: p9z5BVADH2YFs3MN, cipher: aes-256-cfb}
+ - {name: s00150, server: sunhaoduo.tk, type: trojan, country: x, port: 443, password: b61d3b3c, skip-cert-verify: true, udp: true}
+ - {name: s00151, server: 140.207.232.8, port: 26040, type: vmess, uuid: 1348e9f7-405e-3030-9e0b-2e69050075e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00152, server: 213.183.53.177, type: ssr, country: x, port: 9056, password: rNBfNuuANFCAk7KB, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: s00153, server: jgwhdlb3.gaox.ml, type: trojan, country: x, port: 443, password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11, skip-cert-verify: true, udp: true}
+ - {name: s00154, server: 217.30.10.63, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+ - {name: s00155, server: 213.183.53.177, type: ssr, country: x, port: 9093, password: wfLC2y7rzZyCmuyt, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: s00156, server: 213.183.53.177, type: ssr, country: x, port: 9064, password: cp8pRSUAyLhTfVWH, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: s00157, server: 213.183.53.177, type: ssr, country: x, port: 9050, password: FG5ddLsMPbV5CutE, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: s00158, server: 213.183.53.177, type: ssr, country: x, port: 9045, password: Lp27rqyJq72bZsqX, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: s00159, server: 217.30.10.63, type: ss, country: x, port: 9098, password: aLpQtfEZe445QyHk, cipher: aes-256-cfb}
+ - {name: s00160, server: 213.183.53.177, type: ssr, country: x, port: 9059, password: 9XwYyZsK8SNzQDtY, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: s00161, server: 213.183.53.177, type: ssr, country: x, port: 9037, password: TN2YqghxeFDKZfLU, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: s00162, server: 213.183.53.177, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+ - {name: s00163, server: 213.183.53.177, type: ssr, country: x, port: 9053, password: SBM7R883jBmnqe6C, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {type: vmess, name: s00164, ws-opts: {path: /, headers: {host: fr1t.moonfree.top}}, server: fr1t.moonfree.top, port: 8443, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, network: ws, tls: true}
+ - {name: s00165, server: 217.30.10.64, type: ss, country: x, port: 9024, password: BejrQvtu9sqUeNuZ, cipher: aes-256-cfb}
+ - {name: s00166, server: 213.183.53.177, type: ssr, country: x, port: 9041, password: U6qnYRhfyDmn8sgn, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: s00167, server: bgpv2.ktyjsq.com, port: 12005, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00168, server: 213.183.53.177, type: ssr, country: x, port: 9088, password: f8npKgNzdkss2ytn, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: s00169, server: 213.183.63.218, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+ - {name: s00170, server: 213.183.53.177, type: ssr, country: x, port: 9010, password: f63gg8EruDnUrmz4, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: s00171, server: bgpv2.ktyjsq.com, port: 12205, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00172, server: 213.183.53.177, type: ssr, country: x, port: 9018, password: fG2artUmHfNT2cX7, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: s00173, server: 213.183.53.177, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+ - {name: s00174, server: 103.172.116.9, type: ss, country: x, port: 9003, password: JdmRK9gMEqFgs8nP, cipher: aes-256-cfb}
+ - {name: s00175, server: bgpv2.ktyjsq.com, port: 12221, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00176, server: 213.183.53.177, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+ - {name: s00177, server: 103.172.116.9, type: ss, country: x, port: 9026, password: QWDDvVE9npNurQfA, cipher: aes-256-cfb}
+ - {name: s00178, server: 213.183.53.177, type: ssr, country: x, port: 9042, password: S7KwUu7yBy58S3Ga, cipher: aes-256-cfb, protocol: origin, obfs: plain}
 
 
 
@@ -224,6 +301,83 @@ proxy-groups:
        - s00099
        - s00100
        - s00101
+       - s00102
+       - s00103
+       - s00104
+       - s00105
+       - s00106
+       - s00107
+       - s00108
+       - s00109
+       - s00110
+       - s00111
+       - s00112
+       - s00113
+       - s00114
+       - s00115
+       - s00116
+       - s00117
+       - s00118
+       - s00119
+       - s00120
+       - s00121
+       - s00122
+       - s00123
+       - s00124
+       - s00125
+       - s00126
+       - s00127
+       - s00128
+       - s00129
+       - s00130
+       - s00131
+       - s00132
+       - s00133
+       - s00134
+       - s00135
+       - s00136
+       - s00137
+       - s00138
+       - s00139
+       - s00140
+       - s00141
+       - s00142
+       - s00143
+       - s00144
+       - s00145
+       - s00146
+       - s00147
+       - s00148
+       - s00149
+       - s00150
+       - s00151
+       - s00152
+       - s00153
+       - s00154
+       - s00155
+       - s00156
+       - s00157
+       - s00158
+       - s00159
+       - s00160
+       - s00161
+       - s00162
+       - s00163
+       - s00164
+       - s00165
+       - s00166
+       - s00167
+       - s00168
+       - s00169
+       - s00170
+       - s00171
+       - s00172
+       - s00173
+       - s00174
+       - s00175
+       - s00176
+       - s00177
+       - s00178
 
 
 rules:
