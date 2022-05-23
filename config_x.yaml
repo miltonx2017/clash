@@ -1,0 +1,1600 @@
+﻿port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: :9090
+proxies:
+ - {name: s00001, server: c61s4.jamjams.net, port: 29907, type: vmess, uuid: bd316a79-4d18-4c8c-82cf-ffe99e7c634d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00002, server: c61s4.jamjams.net, type: vmess, country: x, port: 29907, uuid: bd316a79-4d18-4c8c-82cf-ffe99e7c634d, alterId: 0, cipher: auto, network: tcp, ws-path: /, http-opts: {}, h2-opts: {}, skip-cert-verify: true}
+ - {name: s00003, server: c61s3.jamjams.net, type: vmess, country: x, port: 29907, uuid: bd316a79-4d18-4c8c-82cf-ffe99e7c634d, alterId: 0, cipher: auto, network: tcp, ws-path: /, http-opts: {}, h2-opts: {}, skip-cert-verify: true}
+ - {type: ss, cipher: aes-256-cfb, password: E4DNMf73kHPrd8Qq7aqGPf7f, server: fkgfw-prod.i.sxl.cn, port: 443, name: s00004}
+ - {type: ss, name: s00005, server: fkgfw-prod.i.sxl.cn, port: 443, cipher: aes-256-cfb, password: E4DNMf73kHPrd8Qq7aqGPf7f}
+ - {name: s00006, server: nas5.travelerv2.xyz, port: 21871, type: vmess, uuid: b69f3735-a1a1-3dbf-889b-4594d140752f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: x}}, udp: true}
+ - {name: s00007, server: fkgfw-prod.i.sxl.cn, port: 443, type: ss, cipher: aes-256-cfb, password: E4DNMf73kHPrd8Qq7aqGPf7f, udp: true}
+ - {name: s00008, server: s2.upyun.online, port: 12340, type: trojan, country: x, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
+ - {name: s00009, server: fkgfw-prod.i.sxl.cn, port: 443, type: ss, cipher: aes-256-cfb, password: E4DNMf73kHPrd8Qq7aqGPf7f}
+ - {name: s00010, server: 51jp1.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 51jp1.fans8.xyz}}, udp: true}
+ - {type: trojan, name: s00011, server: s2.upyun.online, port: 12340, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, udp: true, skip-cert-verify: true}
+ - {type: trojan, name: s00012, server: s2.upyun.online, port: 12340, password: c0276440-f163-4f40-a08c-78b158ce6c4f, udp: true, skip-cert-verify: true}
+ - {name: s00013, server: values.pickaxe.sh, port: 443, type: trojan, password: PMQFH35hsbfi5tnw, skip-cert-verify: true, udp: true}
+ - {name: s00014, server: s2.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, sni: s2.upyun.online, skip-cert-verify: true, udp: true}
+ - {name: s00015, server: s2.upyun.online, type: trojan, country: x, port: 12340, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
+ - {type: trojan, name: s00016, server: s1.upyun.online, port: 12340, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, udp: true, skip-cert-verify: true}
+ - {type: trojan, name: s00017, server: s2.upyun.online, password: c0276440-f163-4f40-a08c-78b158ce6c4f, port: 12340, udp: true, skip-cert-verify: true}
+ - {name: s00018, server: sunhaoduo.tk, port: 443, type: trojan, password: b61d3b3c, skip-cert-verify: true, udp: true}
+ - {name: s00019, server: sunhaoduo.tk, type: trojan, country: x, port: 443, password: b61d3b3c, skip-cert-verify: true, udp: true}
+ - {name: s00020, server: sunhaoduo.tk, port: 443, type: trojan, password: b61d3b3c, sni: sunhaoduo.tk, skip-cert-verify: true, udp: true}
+ - {type: trojan, name: s00021, server: s2.upyun.online, port: 12340, password: c0276440-f163-4f40-a08c-78b158ce6c4f, udp: true, skip-cert-verify: true, sni: free.upyun.online}
+ - {name: s00022, server: wg.nfeng6.pp.ua, port: 52217, type: vmess, uuid: 4e66672a-184c-30e4-900a-a19004c38e85, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {name: s00023, server: sunhaoduo.tk, port: 443, type: trojan, password: b61d3b3c, sni: sunhaoduo.tk}
+ - {name: s00024, server: vn04v2.vpnsieure.com, port: 80, type: vmess, uuid: 330efbdb-7171-4fd1-a524-d7b7d8e76732, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnsieure, headers: {Host: livestream2.tv360.vn}}, udp: true}
+ - {name: s00025, server: s2.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
+ - {name: s00026, server: s2.upyun.online, port: 12340, type: trojan, country: x, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
+ - {name: s00027, server: 213.183.59.190, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+ - {name: s00028, server: 103.172.116.9, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+ - {name: s00029, server: s1.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
+ - {name: s00030, server: 213.183.59.190, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+ - {name: s00031, server: 213.183.59.229, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH}
+ - {type: ss, name: s00032, server: 185.4.65.6, port: 21247, cipher: aes-256-cfb, password: vDS9G2p}
+ - {name: s00033, server: zzcm09.bdate.xyz, port: 1040, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: zzcm09.bdate.xyz}}}
+ - {name: s00034, server: 426hk.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 426hk.fans8.xyz}}, udp: true}
+ - {name: s00035, server: s1.upyun.online, port: 12340, type: trojan, country: x, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
+ - {name: s00036, server: 213.183.59.190, type: ssr, country: x, port: 9011, password: M3t2ZEQcMGRWBjRa, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: s00037, server: s1.upyun.online, type: trojan, country: x, port: 12340, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
+ - {name: s00038, server: s1.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, sni: s1.upyun.online, skip-cert-verify: true, udp: true}
+ - {name: s00039, server: 185.4.65.6, type: ss, country: x, port: 21247, password: vDS9G2p, cipher: aes-256-cfb}
+ - {type: ss, name: s00040, server: 213.183.59.229, port: 9006, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq}
+ - {name: s00041, server: s1.upyun.online, port: 12340, type: trojan, country: x, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
+ - {name: s00042, server: 213.183.59.190, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+ - {name: s00043, server: 213.183.59.190, type: ssr, country: x, port: 9033, password: UTJA57ypk2XKQpnm, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {type: ss, name: s00044, server: 14.29.124.168, port: 24088, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+ - {name: s00045, server: jgwxn3.gaox.ml, port: 443, type: trojan, password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf, sni: jgwxn3.gaox.ml}
+ - {name: s00046, server: 103.172.116.9, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+ - {type: ss, name: s00047, server: 213.183.59.190, port: 9057, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z}
+ - {type: ss, name: s00048, server: 213.183.59.190, port: 9033, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm}
+ - {name: s00049, server: s1.upyun.online, type: trojan, country: x, port: 12340, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
+ - {name: s00050, server: zzcm09.bdate.xyz, port: 1420, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: aweikeji-YouTube}}, udp: true}
+ - {name: s00051, server: s1.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, sni: s1.upyun.online, skip-cert-verify: true, udp: true}
+ - {name: s00052, server: 14.29.124.168, type: ssr, country: x, port: 24024, password: QazEdcTgb159@$*, cipher: aes-128-cfb, protocol: origin, obfs: plain}
+ - {type: ss, name: s00053, server: 213.183.59.190, port: 9079, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb}
+ - {type: ss, name: s00054, server: 213.183.59.190, port: 9064, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH}
+ - {type: ss, name: s00055, server: 213.183.59.229, port: 9094, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ}
+ - {type: ss, name: s00056, server: 213.183.59.190, port: 9027, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8}
+ - {type: ss, name: s00057, server: 213.183.59.190, port: 9098, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk}
+ - {type: ss, name: s00058, server: 213.183.59.190, port: 9084, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj}
+ - {type: ss, name: s00059, server: 213.183.59.229, port: 9061, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP}
+ - {name: s00060, server: 14.29.124.168, port: 24086, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+ - {type: ss, name: s00061, server: 213.183.59.190, port: 9001, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y}
+ - {name: s00062, server: 213.183.53.177, type: ssr, country: x, port: 9059, password: 9XwYyZsK8SNzQDtY, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: s00063, server: events.starspace.link, type: trojan, country: x, port: 443, password: 3RWFPCmWd4lYIMof, skip-cert-verify: true, udp: true}
+ - {name: s00064, server: 14.29.124.168, type: ssr, country: x, port: 24084, password: QazEdcTgb159@$*, cipher: aes-128-cfb, protocol: origin, obfs: plain}
+ - {name: s00065, server: 213.183.53.177, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+ - {type: ss, name: s00066, server: 14.29.124.168, port: 24086, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+ - {type: ss, name: s00067, server: 213.183.59.190, port: 9061, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP}
+ - {type: ss, name: s00068, server: 213.183.59.190, port: 9007, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY}
+ - {type: ss, name: s00069, server: 213.183.59.190, port: 9093, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt}
+ - {type: ss, name: s00070, server: 213.183.59.229, port: 9073, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX}
+ - {name: s00071, server: 213.183.53.177, type: ssr, country: x, port: 9070, password: bf7v334KKDV3YDhH, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {type: trojan, name: s00072, server: s3.upyun.online, port: 12340, password: c0276440-f163-4f40-a08c-78b158ce6c4f, udp: true, skip-cert-verify: true}
+ - {name: s00073, server: 14.29.124.168, type: ssr, country: x, port: 24021, password: QazEdcTgb159@$*, cipher: aes-128-cfb, protocol: origin, obfs: plain}
+ - {name: s00074, server: s3.upyun.online, port: 12340, type: trojan, country: x, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
+ - {type: ss, name: s00075, server: 213.183.59.190, port: 9080, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ}
+ - {type: ss, name: s00076, server: 213.183.59.190, port: 9053, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C}
+ - {name: s00077, server: bgpv2.ktyjsq.com, port: 12223, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {type: ss, name: s00078, server: 213.183.59.190, port: 9011, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa}
+ - {name: s00079, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p}
+ - {type: ss, name: s00080, server: 213.183.59.190, port: 9006, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq}
+ - {name: s00081, server: 14.29.124.168, type: ssr, country: x, port: 24095, password: QazEdcTgb159@$*, cipher: aes-128-cfb, protocol: origin, obfs: plain}
+ - {type: ss, name: s00082, server: 213.183.59.229, port: 9080, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ}
+ - {name: s00083, server: 213.183.53.177, type: ss, country: x, port: 9007, password: kSPmvwdFzGMMW5pY, cipher: aes-256-cfb}
+ - {name: s00084, server: 213.183.53.177, type: ssr, country: x, port: 9060, password: ueLXVkvh4hckhErQ, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {type: ss, name: s00085, server: 213.183.59.190, port: 9070, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH}
+ - {name: s00086, server: s3.upyun.online, port: 12340, type: trojan, country: x, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
+ - {name: s00087, server: 213.183.59.229, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+ - {name: s00088, server: 103.172.116.9, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+ - {type: ss, name: s00089, server: 213.183.59.229, port: 9060, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ}
+ - {type: trojan, name: s00090, server: views.pickaxe.sh, port: 443, password: XQ5jxs58ecd403l7, udp: true, skip-cert-verify: true}
+ - {name: s00091, server: 14.29.124.168, type: ssr, country: x, port: 24054, password: QazEdcTgb159@$*, cipher: aes-128-cfb, protocol: origin, obfs: plain}
+ - {type: ss, name: s00092, server: 213.183.59.229, port: 9037, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU}
+ - {name: s00093, server: s3.upyun.online, type: trojan, country: x, port: 12340, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
+ - {name: s00094, server: s3.upyun.online, type: trojan, country: x, port: 12340, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
+ - {name: s00095, server: bgpv2.ktyjsq.com, port: 12223, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false}
+ - {name: s00096, server: s3.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
+ - {name: s00097, server: zzcm09.bdate.xyz, port: 1420, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: zzcm09.bdate.xyz}}, udp: true}
+ - {name: s00098, server: wireless.starspace.link, type: trojan, country: x, port: 443, password: 5LN8SGTqxk336nFg, skip-cert-verify: true, udp: true}
+ - {type: ss, name: s00099, server: 213.183.59.229, port: 9027, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8}
+ - {name: s00100, server: 14.29.124.168, type: ssr, country: x, port: 24092, password: QazEdcTgb159@$*, cipher: aes-128-cfb, protocol: origin, obfs: plain}
+ - {type: ss, name: s00101, server: 213.183.59.190, port: 9050, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE}
+ - {type: vmess, name: s00102, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {host: zzcm09.bdate.xyz}}, server: zzcm09.bdate.xyz, port: 1420, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, network: ws}
+ - {name: s00103, server: 213.183.59.229, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH}
+ - {type: trojan, name: s00104, server: s3.upyun.online, port: 12340, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, udp: true, skip-cert-verify: true}
+ - {type: ssr, name: s00105, server: 213.183.53.177, port: 9043, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: HSZuyJQcWe8dxNdF}
+ - {name: s00106, server: 213.183.53.177, type: ssr, country: x, port: 9098, password: aLpQtfEZe445QyHk, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {type: trojan, name: s00107, server: meet-two.defun.us, port: 443, password: SolQapgEUoQ1ISsB, udp: true, skip-cert-verify: true}
+ - {name: s00108, server: 213.183.53.177, type: ssr, country: x, port: 9043, password: HSZuyJQcWe8dxNdF, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {type: ss, name: s00109, server: 213.183.59.190, port: 9060, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ}
+ - {name: s00110, server: s3.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, sni: s3.upyun.online, skip-cert-verify: true, udp: true}
+ - {name: s00111, server: zzcm09.bdate.xyz, port: 1280, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: aweikeji-YouTube}}}
+ - {type: ss, name: s00112, server: 213.183.59.229, port: 9026, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA}
+ - {type: trojan, name: s00113, server: wireless.starspace.link, password: 5LN8SGTqxk336nFg, port: 443, udp: true, skip-cert-verify: true}
+ - {type: trojan, name: s00114, server: events.starspace.link, port: 443, password: 3RWFPCmWd4lYIMof, udp: true, skip-cert-verify: true}
+ - {name: s00115, server: 51.89.115.71, port: 443, type: vmess, uuid: 10d590b4-f5da-4494-b6ff-51ef38149448, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/120211331422, headers: {Host: 51.89.115.71}}, udp: true}
+ - {type: trojan, name: s00116, server: docs.defun.us, port: 443, password: WEMagdSekdGBxh6g, udp: true, skip-cert-verify: true}
+ - {type: vmess, name: s00117, server: bgpv2.ktyjsq.com, port: 12205, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, network: tcp}
+ - {name: s00118, server: 213.183.59.190, type: ssr, country: x, port: 9030, password: GeregetR8cvQHzYr, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {name: s00119, server: routing.defun.us, port: 443, type: trojan, password: 7B0EhG4n8pgNvOct, sni: routing.defun.us}
+ - {name: s00120, server: docs.defun.us, port: 443, type: trojan, password: WEMagdSekdGBxh6g, sni: docs.defun.us, skip-cert-verify: true, udp: true}
+ - {name: s00121, server: 103.172.116.9, type: ss, country: x, port: 9003, password: JdmRK9gMEqFgs8nP, cipher: aes-256-cfb}
+ - {type: trojan, name: s00122, server: s4.upyun.online, port: 12340, password: c0276440-f163-4f40-a08c-78b158ce6c4f, udp: true, skip-cert-verify: true}
+ - {name: s00123, server: docs.defun.us, port: 443, type: trojan, password: WEMagdSekdGBxh6g, skip-cert-verify: true, udp: true}
+ - {name: s00124, server: 217.30.10.63, type: ss, country: x, port: 9046, password: NvS8N4Vf8qAGPSCL, cipher: aes-256-cfb}
+ - {name: s00125, server: 213.183.63.218, type: ss, country: x, port: 9056, password: rNBfNuuANFCAk7KB, cipher: aes-256-cfb}
+ - {name: s00126, server: zzcm09.bdate.xyz, port: 1040, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: zzcm09.bdate.xyz}}, udp: true}
+ - {type: vmess, name: s00127, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {host: zzcm09.bdate.xyz}}, server: zzcm09.bdate.xyz, port: 1320, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, network: ws}
+ - {name: s00128, server: zzcm09.bdate.xyz, port: 1040, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: aweikeji-YouTube}}, udp: true}
+ - {name: s00129, server: 103.172.116.9, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+ - {name: s00130, server: sh.moonfree.top, port: 11267, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: rackedgeuk510.moonfree.top}}, udp: true}
+ - {name: s00131, server: sh.moonfree.top, port: 11267, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: rackedgeuk510.moonfree.top}}}
+ - {type: ss, name: s00132, server: 92.223.65.31, port: 29092, cipher: chacha20-ietf-poly1305, password: ypoq8dJBPqst}
+ - {type: vmess, name: s00133, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {host: zzcm09.bdate.xyz}}, server: zzcm09.bdate.xyz, port: 1930, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, network: ws}
+ - {type: trojan, name: s00134, server: s4.upyun.online, port: 12340, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, udp: true, skip-cert-verify: true}
+ - {type: ss, name: s00135, server: 213.183.59.211, port: 9094, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ}
+ - {name: s00136, server: holidays.starspace.link, type: trojan, country: x, port: 443, password: XCPKaaV8I1rmb7Ai, skip-cert-verify: true, udp: true}
+ - {type: trojan, name: s00137, server: charge.starspace.link, port: 443, password: 8UnS7eSMi8OFKfje, udp: true, skip-cert-verify: true}
+ - {type: ss, name: s00138, server: 213.183.59.190, port: 9037, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU}
+ - {name: s00139, server: events.starspace.link, port: 443, type: trojan, password: 3RWFPCmWd4lYIMof, sni: events.starspace.link}
+ - {name: s00140, server: views.pickaxe.sh, port: 443, type: trojan, password: XQ5jxs58ecd403l7, sni: views.pickaxe.sh, skip-cert-verify: true, udp: true}
+ - {name: s00141, server: outdoor.starspace.link, type: trojan, country: x, port: 443, password: 4brytjljFgnUu3WU, skip-cert-verify: true, udp: true}
+ - {name: s00142, server: wireless.starspace.link, port: 443, type: trojan, password: 5LN8SGTqxk336nFg, skip-cert-verify: true, udp: true}
+ - {type: ss, name: s00143, server: 213.183.59.229, port: 9038, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ}
+ - {type: trojan, name: s00144, server: s4.upyun.online, port: 12340, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, udp: true, skip-cert-verify: true, sni: s4.upyun.online}
+ - {type: ss, name: s00145, server: 213.183.59.206, port: 9093, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt}
+ - {name: s00146, server: 104.166.135.10, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-opts: {path: /ws, headers: {Host: ahdaeph8.com}}}
+ - {name: s00147, server: views.pickaxe.sh, port: 443, type: trojan, password: XQ5jxs58ecd403l7, skip-cert-verify: true, udp: true}
+ - {name: s00148, server: s4.upyun.online, type: trojan, country: x, port: 12340, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
+ - {type: ss, name: s00149, server: 213.183.59.211, port: 9026, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA}
+ - {name: s00150, server: views.pickaxe.sh, type: trojan, country: x, port: 443, password: XQ5jxs58ecd403l7, skip-cert-verify: true, udp: true}
+ - {type: vmess, name: s00151, server: bgpv2.ktyjsq.com, port: 12223, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, network: tcp}
+ - {name: s00152, server: meet-two.defun.us, port: 443, type: trojan, password: SolQapgEUoQ1ISsB, sni: meet-two.defun.us}
+ - {type: ssr, name: s00153, server: 213.183.59.214, port: 9010, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: f63gg8EruDnUrmz4}
+ - {type: trojan, name: s00154, server: wireless.starspace.link, port: 443, password: 5LN8SGTqxk336nFg, udp: true, skip-cert-verify: true}
+ - {name: s00155, server: living.starspace.link, port: 443, type: trojan, password: NNhSlVRhte1Vzw5D, sni: living.starspace.link}
+ - {name: s00156, server: views.pickaxe.sh, port: 443, type: trojan, password: XQ5jxs58ecd403l7, sni: views.pickaxe.sh}
+ - {type: ss, name: s00157, server: 213.183.53.208, port: 9058, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe}
+ - {name: s00158, server: holidays.starspace.link, port: 443, type: trojan, password: XCPKaaV8I1rmb7Ai, skip-cert-verify: true, udp: true}
+ - {type: ss, name: s00159, server: 213.183.59.211, port: 9098, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk}
+ - {name: s00160, server: 331tw.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 331tw.fans8.xyz}}, udp: true}
+ - {type: trojan, name: s00161, server: storage.starspace.link, port: 443, password: W8gVbKNAZlFzgGPn, udp: true, skip-cert-verify: true}
+ - {type: ss, name: s00162, server: 213.183.59.191, port: 9073, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX}
+ - {name: s00163, server: 51.89.81.132, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/120211331422, headers: {Host: 51.89.81.132}}, udp: true}
+ - {name: s00164, server: bgpv2.ktyjsq.com, port: 12205, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false}
+ - {type: trojan, name: s00165, server: snacks.starspace.link, port: 443, password: 0lbw6RXSl7eqCYMv, udp: true, skip-cert-verify: true}
+ - {type: trojan, name: s00166, server: s4.upyun.online, port: 12340, password: c0276440-f163-4f40-a08c-78b158ce6c4f, udp: true, skip-cert-verify: true, sni: s4.upyun.online}
+ - {name: s00167, server: zzcm09.bdate.xyz, port: 1930, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: zzcm09.bdate.xyz}}, udp: true}
+ - {type: ss, name: s00168, server: 213.183.59.190, port: 9046, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL}
+ - {name: s00169, server: meet-two.defun.us, type: trojan, country: x, port: 443, password: SolQapgEUoQ1ISsB, skip-cert-verify: true, udp: true}
+ - {name: s00170, server: wireless.starspace.link, port: 443, type: trojan, password: 5LN8SGTqxk336nFg, sni: wireless.starspace.link}
+ - {type: ss, name: s00171, server: 213.183.59.206, port: 9020, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu}
+ - {type: ss, name: s00172, server: 213.183.59.211, port: 9088, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn}
+ - {name: s00173, server: 213.183.63.218, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+ - {type: ss, name: s00174, server: 213.183.59.211, port: 9001, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y}
+ - {name: s00175, server: s4.upyun.online, type: trojan, country: x, port: 12340, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
+ - {type: ss, name: s00176, server: 213.183.59.206, port: 9010, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4}
+ - {type: ss, name: s00177, server: 213.183.59.206, port: 9007, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY}
+ - {type: ss, name: s00178, server: 213.183.59.191, port: 9008, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ}
+ - {name: s00179, server: bgpv2.ktyjsq.com, port: 12205, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {type: ss, name: s00180, server: 213.183.59.191, port: 9080, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ}
+ - {type: vmess, name: s00181, server: bgpv2.ktyjsq.com, port: 12005, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, network: tcp}
+ - {type: ss, name: s00182, server: 213.183.53.208, port: 9007, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY}
+ - {type: ss, name: s00183, server: 213.183.59.191, port: 9070, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH}
+ - {type: ss, name: s00184, server: 213.183.59.191, port: 9005, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt}
+ - {type: ss, name: s00185, server: 213.183.59.211, port: 9045, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX}
+ - {type: ssr, server: 213.183.59.214, port: 9008, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: y9VURyNzJWNRYEGQ, name: s00186}
+ - {type: ss, name: s00187, server: 213.183.59.211, port: 9007, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY}
+ - {name: s00188, server: snacks.starspace.link, port: 443, type: trojan, password: 0lbw6RXSl7eqCYMv, sni: snacks.starspace.link}
+ - {type: ss, name: s00189, server: 213.183.59.211, port: 9058, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe}
+ - {name: s00190, server: living.starspace.link, type: trojan, country: x, port: 443, password: NNhSlVRhte1Vzw5D, skip-cert-verify: true, udp: true}
+ - {name: s00191, server: ca1.trojan.tel, type: trojan, port: 443, password: f736834f-1fc8-4738-9884-9afe0eb0d818, sni: douyincdn.com, skip-cert-verify: true, udp: true}
+ - {type: ss, name: s00192, server: 213.183.59.211, port: 9084, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj}
+ - {type: ss, name: s00193, server: 213.183.59.191, port: 9046, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL}
+ - {name: s00194, server: 217.30.10.64, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+ - {type: ssr, server: 213.183.59.206, port: 9005, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: ZET59LF6DvCC8KVt, name: s00195}
+ - {type: ss, name: s00196, server: 213.183.59.211, port: 9024, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ}
+ - {type: ss, name: s00197, server: 213.183.59.206, port: 9040, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN}
+ - {type: ssr, name: s00198, server: 213.183.59.214, port: 9031, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: BwcAUZk8hUFAkDGN}
+ - {type: ss, name: s00199, server: 213.183.59.206, port: 9098, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk}
+ - {type: ss, name: s00200, server: 213.183.53.208, port: 9032, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq}
+ - {name: s00201, server: snacks.starspace.link, port: 443, type: trojan, password: 0lbw6RXSl7eqCYMv, skip-cert-verify: true, udp: true}
+ - {type: ss, name: s00202, server: 213.183.59.191, port: 9030, cipher: aes-256-cfb, password: GeregetR8cvQHzYr}
+ - {name: s00203, server: jgwxn3.gaox.ml, port: 443, type: trojan, password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf, skip-cert-verify: true, udp: true}
+ - {type: ss, name: s00204, server: 213.183.59.206, port: 9005, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt}
+ - {name: s00205, server: storage.starspace.link, port: 443, type: trojan, password: W8gVbKNAZlFzgGPn, skip-cert-verify: true, udp: true}
+ - {type: ss, name: s00206, server: 213.183.59.191, port: 9084, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj}
+ - {type: ss, name: s00207, server: 213.183.59.191, port: 9042, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga}
+ - {type: ss, name: s00208, server: 213.183.59.191, port: 9041, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn}
+ - {type: ss, name: s00209, server: 213.183.59.191, port: 9027, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8}
+ - {type: ssr, server: 213.183.59.214, port: 9010, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: f63gg8EruDnUrmz4, name: s00210}
+ - {type: ss, name: s00211, server: 213.183.59.191, port: 9011, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa}
+ - {type: ss, name: s00212, server: 185.167.116.250, port: 9061, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP}
+ - {type: ss, name: s00213, server: 213.183.59.206, port: 9059, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY}
+ - {type: ss, name: s00214, server: 213.183.59.211, port: 9031, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN}
+ - {name: s00215, server: 54.37.192.112, port: 443, type: vmess, uuid: 9f58234c-355b-4065-ae21-d4a63099aba5, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/120208301422, headers: {Host: 54.37.192.112}}, udp: true}
+ - {type: ssr, server: 213.183.59.214, port: 9007, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: kSPmvwdFzGMMW5pY, name: s00216}
+ - {name: s00217, server: storage.starspace.link, type: trojan, country: x, port: 443, password: W8gVbKNAZlFzgGPn, skip-cert-verify: true, udp: true}
+ - {name: s00218, server: meet-two.defun.us, port: 443, type: trojan, password: SolQapgEUoQ1ISsB, skip-cert-verify: true, udp: true}
+ - {type: ss, name: s00219, server: 185.167.116.250, port: 9064, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH}
+ - {type: ss, name: s00220, server: 213.183.59.191, port: 9097, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8}
+ - {type: ssr, server: 213.183.59.214, port: 9080, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: VP8ZPxQpJtZRCjfZ, name: s00221}
+ - {type: ss, name: s00222, server: 213.183.59.211, port: 9037, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU}
+ - {type: trojan, name: s00223, server: charge.starspace.link, password: 8UnS7eSMi8OFKfje, port: 443, udp: true, skip-cert-verify: true}
+ - {name: s00224, server: holidays.starspace.link, port: 443, type: trojan, password: XCPKaaV8I1rmb7Ai, sni: holidays.starspace.link}
+ - {name: s00225, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
+ - {name: s00226, server: outdoor.starspace.link, port: 443, type: trojan, password: 4brytjljFgnUu3WU, skip-cert-verify: true, udp: true}
+ - {type: ss, name: s00227, server: 213.183.59.211, port: 9000, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9}
+ - {type: ssr, name: s00228, server: 213.183.59.206, port: 9007, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: kSPmvwdFzGMMW5pY}
+ - {name: s00229, server: 217.30.10.64, type: ss, country: x, port: 9025, password: XPtzA9sCug3SPR4c, cipher: aes-256-cfb}
+ - {name: s00230, server: 213.183.53.177, port: 9079, type: ssr, country: x, password: TPqX8edgbAURcAMb, cipher: aes-256-cfb, protocol: origin, obfs: plain}
+ - {type: ssr, name: s00231, server: 213.183.59.214, port: 9008, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: y9VURyNzJWNRYEGQ}
+ - {name: s00232, server: 213.183.53.177, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+ - {type: ss, name: s00233, server: 213.183.59.206, port: 9024, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ}
+ - {name: s00234, server: 213.183.53.177, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+ - {type: trojan, name: s00235, server: outdoor.starspace.link, port: 443, password: 4brytjljFgnUu3WU, udp: true, skip-cert-verify: true}
+ - {name: s00236, server: 213.183.53.177, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+ - {name: s00237, server: s4.upyun.online, port: 12340, type: trojan, country: x, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
+ - {name: s00238, server: 213.183.63.218, type: ss, country: x, port: 9033, password: UTJA57ypk2XKQpnm, cipher: aes-256-cfb}
+ - {name: s00239, server: 213.183.53.177, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+ - {type: ssr, name: s00240, server: 213.183.59.206, port: 9030, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: GeregetR8cvQHzYr}
+ - {name: s00241, server: 217.30.10.64, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu}
+ - {type: ssr, server: 213.183.59.206, port: 9024, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: BejrQvtu9sqUeNuZ, name: s00242}
+ - {type: ssr, name: s00243, server: 213.183.59.214, port: 9015, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: ZpNDDKRu9MagNvaf}
+ - {name: s00244, server: 521sg.fans8.xyz, port: 443, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 521sg.fans8.xyz}}, udp: true}
+ - {type: ss, name: s00245, server: 213.183.59.191, port: 9094, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ}
+ - {type: ss, name: s00246, server: 213.183.59.191, port: 9043, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF}
+ - {type: ss, name: s00247, server: 213.183.59.191, port: 9058, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe}
+ - {name: s00248, server: meet-two.defun.us, port: 443, type: trojan, password: SolQapgEUoQ1ISsB, sni: meet-two.defun.us, skip-cert-verify: true, udp: true}
+ - {type: ss, name: s00249, server: 213.183.59.191, port: 9006, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq}
+ - {type: ss, name: s00250, server: 213.183.59.206, port: 9025, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c}
+ - {type: ssr, server: 213.183.59.206, port: 9030, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: GeregetR8cvQHzYr, name: s00251}
+ - {name: s00252, server: 103.172.116.9, type: ss, country: x, port: 9098, password: aLpQtfEZe445QyHk, cipher: aes-256-cfb}
+ - {type: ssr, server: 213.183.59.214, port: 9025, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: XPtzA9sCug3SPR4c, name: s00253}
+ - {name: s00254, server: 213.183.53.208, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+ - {type: ss, name: s00255, server: 213.183.59.211, port: 9010, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4}
+ - {name: s00256, server: rooms.starspace.link, type: trojan, country: x, port: 443, password: 5HfENR8nt2PR8reH, skip-cert-verify: true, udp: true}
+ - {type: ss, name: s00257, server: 213.183.59.191, port: 9050, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE}
+ - {type: ss, name: s00258, server: 213.183.59.211, port: 9080, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ}
+ - {type: ss, name: s00259, server: 185.167.116.250, port: 9080, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ}
+ - {type: ss, name: s00260, server: 213.183.59.191, port: 9057, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z}
+ - {type: ss, name: s00261, server: 213.183.59.211, port: 9003, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP}
+ - {type: ss, name: s00262, server: 213.183.59.211, port: 9073, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX}
+ - {type: ss, name: s00263, server: 213.183.59.191, port: 9053, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C}
+ - {type: ss, name: s00264, server: 213.183.59.191, port: 9088, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn}
+ - {type: ss, name: s00265, server: 213.183.59.211, port: 9043, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF}
+ - {type: trojan, name: s00266, server: de-03.fireplay.io, port: 443, password: 63X7Dg58EII2qt6f, udp: true, skip-cert-verify: true}
+ - {type: ss, name: s00267, server: 213.183.59.191, port: 9059, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY}
+ - {type: ss, name: s00268, server: 213.183.59.211, port: 9093, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt}
+ - {type: ss, name: s00269, server: 185.167.116.250, port: 9079, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb}
+ - {name: s00270, server: living.starspace.link, port: 443, type: trojan, password: NNhSlVRhte1Vzw5D, sni: living.starspace.link, skip-cert-verify: true, udp: true}
+ - {name: s00271, server: storage.starspace.link, port: 443, type: trojan, password: W8gVbKNAZlFzgGPn, sni: storage.starspace.link}
+ - {type: ss, name: s00272, server: 213.183.59.211, port: 9057, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z}
+ - {name: s00273, server: 213.183.53.177, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+ - {type: ss, name: s00274, server: 213.183.59.191, port: 9010, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4}
+ - {type: ss, name: s00275, server: 213.183.59.211, port: 9015, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf}
+ - {type: ss, name: s00276, server: 213.183.59.191, port: 9014, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX}
+ - {type: ss, name: s00277, server: 213.183.59.191, port: 9007, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY}
+ - {type: ssr, name: s00278, server: 213.183.59.214, port: 9057, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: wjTugX3ZtHMB9c3Z}
+ - {type: ss, name: s00279, server: 213.183.59.191, port: 9020, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu}
+ - {type: ss, name: s00280, server: 213.183.59.206, port: 9011, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa}
+ - {name: s00281, server: snacks.starspace.link, port: 443, type: trojan, password: 0lbw6RXSl7eqCYMv, sni: snacks.starspace.link, skip-cert-verify: true, udp: true}
+ - {type: ss, name: s00282, server: 213.183.59.211, port: 9042, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga}
+ - {name: s00283, server: 92.223.65.31, port: 29092, type: ss, country: x, password: ypoq8dJBPqst, cipher: chacha20-ietf-poly1305}
+ - {type: ss, name: s00284, server: 213.183.59.191, port: 9037, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU}
+ - {type: ss, name: s00285, server: 213.183.59.206, port: 9014, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX}
+ - {type: ssr, server: 213.183.59.206, port: 9007, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: kSPmvwdFzGMMW5pY, name: s00286}
+ - {type: ssr, name: s00287, server: 213.183.59.206, port: 9024, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: BejrQvtu9sqUeNuZ}
+ - {type: ss, name: s00288, server: 213.183.59.191, port: 9018, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7}
+ - {type: ssr, name: s00289, server: 213.183.59.214, port: 9025, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: XPtzA9sCug3SPR4c}
+ - {type: ss, name: s00290, server: 213.183.59.191, port: 9024, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ}
+ - {name: s00291, server: snacks.starspace.link, type: trojan, country: x, port: 443, password: 0lbw6RXSl7eqCYMv, skip-cert-verify: true, udp: true}
+ - {name: s00292, server: 217.30.10.64, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c}
+ - {type: ss, name: s00293, server: 185.167.116.250, port: 9098, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk}
+ - {name: s00294, server: de-03.fireplay.io, type: trojan, country: x, port: 443, password: 63X7Dg58EII2qt6f, skip-cert-verify: true, udp: true}
+ - {type: ssr, name: s00295, server: 213.183.59.214, port: 9027, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: EXN3S3eQpjE7EJu8}
+ - {type: ssr, name: s00296, server: 213.183.59.214, port: 9007, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: kSPmvwdFzGMMW5pY}
+ - {type: vmess, name: s00297, server: bgpv2.ktyjsq.com, port: 12221, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, network: tcp}
+ - {type: ss, name: s00298, server: 213.183.59.211, port: 9038, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ}
+ - {type: ssr, name: s00299, server: 213.183.59.214, port: 9011, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: M3t2ZEQcMGRWBjRa}
+ - {type: ssr, name: s00300, server: 213.183.59.206, port: 9005, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: ZET59LF6DvCC8KVt}
+ - {type: trojan, name: s00301, server: holidays.starspace.link, port: 443, password: XCPKaaV8I1rmb7Ai, udp: true, skip-cert-verify: true}
+ - {type: ss, name: s00302, server: 185.167.116.250, port: 9010, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4}
+ - {type: trojan, name: s00303, server: de-02.fireplay.io, port: 443, password: YrnU2nhCTrx7aPLU, udp: true, skip-cert-verify: true}
+ - {type: ss, name: s00304, server: 213.183.59.191, port: 9001, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y}
+ - {name: s00305, server: rooms.starspace.link, port: 443, type: trojan, password: 5HfENR8nt2PR8reH, skip-cert-verify: true, udp: true}
+ - {name: s00306, server: 213.183.53.177, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+ - {type: ss, name: s00307, server: 185.167.116.250, port: 9088, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn}
+ - {name: s00308, server: 213.183.53.177, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+ - {name: s00309, server: 217.30.10.64, type: ss, country: x, port: 9020, password: BNmAXXxAHYpTRdzu, cipher: aes-256-cfb}
+ - {name: s00310, server: zzcm09.bdate.xyz, port: 1510, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: zzcm09.bdate.xyz}}}
+ - {type: ss, name: s00311, server: 213.183.53.208, port: 9064, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH}
+ - {name: s00312, server: 213.183.53.208, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+ - {type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, server: 213.183.53.208, port: 9079, name: s00313}
+ - {type: ss, name: s00314, server: 213.183.59.206, port: 9033, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm}
+ - {type: ss, name: s00315, server: 213.183.53.208, port: 9079, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb}
+ - {name: s00316, server: rooms.starspace.link, port: 443, type: trojan, password: 5HfENR8nt2PR8reH, sni: rooms.starspace.link}
+ - {type: ssr, name: s00317, server: 213.183.59.214, port: 9050, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: FG5ddLsMPbV5CutE}
+ - {name: s00318, server: 213.183.53.208, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+ - {name: s00319, server: charge.starspace.link, port: 443, type: trojan, password: 8UnS7eSMi8OFKfje, sni: charge.starspace.link}
+ - {type: ss, name: s00320, server: 213.183.59.191, port: 9015, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf}
+ - {name: s00321, server: bgpv2.ktyjsq.com, type: vmess, country: x, port: 12224, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, network: tcp, ws-path: /, http-opts: {}, h2-opts: {}, skip-cert-verify: true}
+ - {type: ss, name: s00322, server: 213.183.53.208, port: 9050, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE}
+ - {name: s00323, server: 92.223.65.31, type: ss, country: x, port: 29092, password: ypoq8dJBPqst, cipher: chacha20-ietf-poly1305}
+ - {name: s00324, server: 92.223.65.31, type: ss, port: 29092, udp: true, password: ypoq8dJBPqst, cipher: chacha20-ietf-poly1305}
+ - {type: ss, name: s00325, server: 185.167.116.250, port: 9020, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu}
+ - {type: ss, name: s00326, server: 185.167.116.250, port: 9011, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa}
+ - {type: ssr, server: 213.183.59.214, port: 9015, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: ZpNDDKRu9MagNvaf, name: s00327}
+ - {type: ss, name: s00328, server: 213.183.53.208, port: 9061, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP}
+ - {name: s00329, server: 92.223.65.31, port: 29092, type: ss, cipher: chacha20-ietf-poly1305, password: ypoq8dJBPqst, udp: true}
+ - {type: trojan, name: s00330, server: living.starspace.link, port: 443, password: NNhSlVRhte1Vzw5D, udp: true, skip-cert-verify: true}
+ - {name: s00331, server: bgpv2.ktyjsq.com, port: 12221, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false}
+ - {name: s00332, server: de-02.fireplay.io, type: trojan, country: x, port: 443, password: YrnU2nhCTrx7aPLU, skip-cert-verify: true, udp: true}
+ - {type: ssr, server: 213.183.59.214, port: 9027, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: EXN3S3eQpjE7EJu8, name: s00333}
+ - {type: ss, name: s00334, server: 185.167.116.250, port: 9018, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7}
+ - {name: s00335, server: bgpv2.ktyjsq.com, port: 12221, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+ - {type: ss, name: s00336, server: 185.167.116.250, port: 9019, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM}
+ - {name: s00337, server: de-03.fireplay.io, port: 443, type: trojan, password: 63X7Dg58EII2qt6f, sni: de-03.fireplay.io}
+ - {name: s00338, server: 37.235.49.158, type: ss, country: x, port: 989, password: f8f7aCzcPKbsF8p3, cipher: aes-256-cfb}
+ - {type: ss, name: s00339, server: 213.183.53.208, port: 9003, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP}
+ - {name: s00340, server: de-03.fireplay.io, port: 443, type: trojan, password: 63X7Dg58EII2qt6f, skip-cert-verify: true, udp: true}
+ - {type: ss, name: s00341, server: 185.167.116.250, port: 9015, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf}
+ - {type: ss, name: s00342, server: 185.167.116.250, port: 9006, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq}
+ - {name: s00343, server: outdoor.starspace.link, port: 443, type: trojan, password: 4brytjljFgnUu3WU, sni: outdoor.starspace.link}
+ - {type: ss, name: s00344, server: 185.167.116.250, port: 9007, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY}
+ - {type: ss, name: s00345, server: 213.183.53.208, port: 9097, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8}
+ - {type: ss, name: s00346, server: 185.167.116.250, port: 9031, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN}
+ - {type: ss, name: s00347, server: 185.167.116.250, port: 9058, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe}
+ - {type: ss, name: s00348, server: 185.167.116.250, port: 9053, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C}
+ - {name: s00349, server: charge.starspace.link, port: 443, type: trojan, password: 8UnS7eSMi8OFKfje, skip-cert-verify: true, udp: true}
+ - {type: ss, name: s00350, server: 213.183.53.208, port: 9094, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ}
+ - {type: ss, name: s00351, server: 185.167.116.250, port: 9041, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn}
+ - {name: s00352, server: storage.starspace.link, port: 443, type: trojan, password: W8gVbKNAZlFzgGPn, sni: storage.starspace.link, skip-cert-verify: true, udp: true}
+ - {type: ss, name: s00353, server: 185.167.116.250, port: 9060, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ}
+ - {type: ss, name: s00354, server: 185.167.116.250, port: 9038, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ}
+ - {name: s00355, server: de-02.fireplay.io, port: 443, type: trojan, password: YrnU2nhCTrx7aPLU, sni: de-02.fireplay.io, skip-cert-verify: true, udp: true}
+ - {name: s00356, server: charge.starspace.link, type: trojan, country: x, port: 443, password: 8UnS7eSMi8OFKfje, skip-cert-verify: true, udp: true}
+ - {name: s00357, server: 213.183.53.208, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+ - {type: ss, name: s00358, server: 213.183.53.208, port: 9040, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN}
+ - {type: ss, name: s00359, server: 213.183.53.208, port: 9020, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu}
+ - {type: vmess, name: s00360, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {host: aweikeji-YouTube}}, server: zzcm09.bdate.xyz, port: 1510, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, network: ws}
+ - {type: ss, name: s00361, server: 213.183.53.208, port: 9070, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH}
+ - {type: ss, name: s00362, server: 213.183.53.208, port: 9084, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj}
+ - {name: s00363, server: 213.183.53.208, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
+ - {name: s00364, server: de-02.fireplay.io, port: 443, type: trojan, password: YrnU2nhCTrx7aPLU, sni: de-02.fireplay.io}
+ - {type: ss, name: s00365, server: 185.167.116.250, port: 9030, cipher: aes-256-cfb, password: GeregetR8cvQHzYr}
+ - {name: s00366, server: de-03.fireplay.io, port: 443, type: trojan, password: 63X7Dg58EII2qt6f, sni: de-03.fireplay.io, skip-cert-verify: true, udp: true}
+ - {type: vmess, name: s00367, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {host: zzcm09.bdate.xyz}}, server: zzcm09.bdate.xyz, port: 1510, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, network: ws}
+ - {type: ss, name: s00368, server: 185.167.116.250, port: 9032, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq}
+ - {name: s00369, server: living.starspace.link, port: 443, type: trojan, password: NNhSlVRhte1Vzw5D, skip-cert-verify: true, udp: true}
+ - {name: s00370, server: 213.183.53.177, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+ - {name: s00371, server: 213.183.53.177, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+ - {name: s00372, server: 14.29.124.168, type: ssr, country: x, port: 24007, password: QazEdcTgb159@$*, cipher: aes-128-cfb, protocol: origin, obfs: plain}
+ - {name: s00373, server: 37.235.49.158, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+ - {type: ss, name: s00374, server: 185.167.116.250, port: 9042, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga}
+
+
+
+#proxy-groups:
+#  - name: 自动选择
+#    type: url-test
+#    url: http://www.gstatic.com/generate_204
+#    interval: 30
+#    tolerance: 30
+#    proxies:
+proxy-groups:
+  - name: 自动选择
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 30
+    proxies:
+#list-of-proxy-names
+       - s00001
+       - s00002
+       - s00003
+       - s00004
+       - s00005
+       - s00006
+       - s00007
+       - s00008
+       - s00009
+       - s00010
+       - s00011
+       - s00012
+       - s00013
+       - s00014
+       - s00015
+       - s00016
+       - s00017
+       - s00018
+       - s00019
+       - s00020
+       - s00021
+       - s00022
+       - s00023
+       - s00024
+       - s00025
+       - s00026
+       - s00027
+       - s00028
+       - s00029
+       - s00030
+       - s00031
+       - s00032
+       - s00033
+       - s00034
+       - s00035
+       - s00036
+       - s00037
+       - s00038
+       - s00039
+       - s00040
+       - s00041
+       - s00042
+       - s00043
+       - s00044
+       - s00045
+       - s00046
+       - s00047
+       - s00048
+       - s00049
+       - s00050
+       - s00051
+       - s00052
+       - s00053
+       - s00054
+       - s00055
+       - s00056
+       - s00057
+       - s00058
+       - s00059
+       - s00060
+       - s00061
+       - s00062
+       - s00063
+       - s00064
+       - s00065
+       - s00066
+       - s00067
+       - s00068
+       - s00069
+       - s00070
+       - s00071
+       - s00072
+       - s00073
+       - s00074
+       - s00075
+       - s00076
+       - s00077
+       - s00078
+       - s00079
+       - s00080
+       - s00081
+       - s00082
+       - s00083
+       - s00084
+       - s00085
+       - s00086
+       - s00087
+       - s00088
+       - s00089
+       - s00090
+       - s00091
+       - s00092
+       - s00093
+       - s00094
+       - s00095
+       - s00096
+       - s00097
+       - s00098
+       - s00099
+
+
+rules:
+  - DOMAIN-SUFFIX,ampproject.org,自动选择
+  - DOMAIN-SUFFIX,appspot.com,自动选择
+  - DOMAIN-SUFFIX,blogger.com,自动选择
+  - DOMAIN-SUFFIX,getoutline.org,自动选择
+  - DOMAIN-SUFFIX,gvt0.com,自动选择
+  - DOMAIN-SUFFIX,gvt1.com,自动选择
+  - DOMAIN-SUFFIX,gvt3.com,自动选择
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,自动选择
+  - DOMAIN-KEYWORD,google,自动选择
+  - DOMAIN-KEYWORD,blogspot,自动选择
+  - DOMAIN-SUFFIX,onedrive.live.com,自动选择
+  - DOMAIN-SUFFIX,xboxlive.com,自动选择
+  - DOMAIN-SUFFIX,cdninstagram.com,自动选择
+  - DOMAIN-SUFFIX,fb.com,自动选择
+  - DOMAIN-SUFFIX,fb.me,自动选择
+  - DOMAIN-SUFFIX,fbaddins.com,自动选择
+  - DOMAIN-SUFFIX,fbcdn.net,自动选择
+  - DOMAIN-SUFFIX,fbsbx.com,自动选择
+  - DOMAIN-SUFFIX,fbworkmail.com,自动选择
+  - DOMAIN-SUFFIX,instagram.com,自动选择
+  - DOMAIN-SUFFIX,m.me,自动选择
+  - DOMAIN-SUFFIX,messenger.com,自动选择
+  - DOMAIN-SUFFIX,oculus.com,自动选择
+  - DOMAIN-SUFFIX,oculuscdn.com,自动选择
+  - DOMAIN-SUFFIX,rocksdb.org,自动选择
+  - DOMAIN-SUFFIX,whatsapp.com,自动选择
+  - DOMAIN-SUFFIX,whatsapp.net,自动选择
+  - DOMAIN-KEYWORD,facebook,自动选择
+  - IP-CIDR,3.123.36.126/32,自动选择,no-resolve
+  - IP-CIDR,35.157.215.84/32,自动选择,no-resolve
+  - IP-CIDR,35.157.217.255/32,自动选择,no-resolve
+  - IP-CIDR,52.58.209.134/32,自动选择,no-resolve
+  - IP-CIDR,54.93.124.31/32,自动选择,no-resolve
+  - IP-CIDR,54.162.243.80/32,自动选择,no-resolve
+  - IP-CIDR,54.173.34.141/32,自动选择,no-resolve
+  - IP-CIDR,54.235.23.242/32,自动选择,no-resolve
+  - IP-CIDR,169.45.248.118/32,自动选择,no-resolve
+  - DOMAIN-SUFFIX,pscp.tv,自动选择
+  - DOMAIN-SUFFIX,periscope.tv,自动选择
+  - DOMAIN-SUFFIX,t.co,自动选择
+  - DOMAIN-SUFFIX,twimg.co,自动选择
+  - DOMAIN-SUFFIX,twimg.com,自动选择
+  - DOMAIN-SUFFIX,twitpic.com,自动选择
+  - DOMAIN-SUFFIX,vine.co,自动选择
+  - DOMAIN-KEYWORD,twitter,自动选择
+  - DOMAIN-SUFFIX,t.me,自动选择
+  - DOMAIN-SUFFIX,tdesktop.com,自动选择
+  - DOMAIN-SUFFIX,telegra.ph,自动选择
+  - DOMAIN-SUFFIX,telegram.me,自动选择
+  - DOMAIN-SUFFIX,telegram.org,自动选择
+  - IP-CIDR,91.108.4.0/22,自动选择,no-resolve
+  - IP-CIDR,91.108.8.0/22,自动选择,no-resolve
+  - IP-CIDR,91.108.12.0/22,自动选择,no-resolve
+  - IP-CIDR,91.108.16.0/22,自动选择,no-resolve
+  - IP-CIDR,91.108.56.0/22,自动选择,no-resolve
+  - IP-CIDR,149.154.160.0/20,自动选择,no-resolve
+  - IP-CIDR6,2001:b28:f23d::/48,自动选择,no-resolve
+  - IP-CIDR6,2001:b28:f23f::/48,自动选择,no-resolve
+  - IP-CIDR6,2001:67c:4e8::/48,自动选择,no-resolve
+  - DOMAIN-SUFFIX,line.me,自动选择
+  - DOMAIN-SUFFIX,line-apps.com,自动选择
+  - DOMAIN-SUFFIX,line-scdn.net,自动选择
+  - DOMAIN-SUFFIX,naver.jp,自动选择
+  - IP-CIDR,103.2.30.0/23,自动选择,no-resolve
+  - IP-CIDR,125.209.208.0/20,自动选择,no-resolve
+  - IP-CIDR,147.92.128.0/17,自动选择,no-resolve
+  - IP-CIDR,203.104.144.0/21,自动选择,no-resolve
+  - DOMAIN-SUFFIX,4shared.com,自动选择
+  - DOMAIN-SUFFIX,520cc.cc,自动选择
+  - DOMAIN-SUFFIX,881903.com,自动选择
+  - DOMAIN-SUFFIX,9cache.com,自动选择
+  - DOMAIN-SUFFIX,9gag.com,自动选择
+  - DOMAIN-SUFFIX,abc.com,自动选择
+  - DOMAIN-SUFFIX,abc.net.au,自动选择
+  - DOMAIN-SUFFIX,abebooks.com,自动选择
+  - DOMAIN-SUFFIX,amazon.co.jp,自动选择
+  - DOMAIN-SUFFIX,apigee.com,自动选择
+  - DOMAIN-SUFFIX,apk-dl.com,自动选择
+  - DOMAIN-SUFFIX,apkfind.com,自动选择
+  - DOMAIN-SUFFIX,apkmirror.com,自动选择
+  - DOMAIN-SUFFIX,apkmonk.com,自动选择
+  - DOMAIN-SUFFIX,apkpure.com,自动选择
+  - DOMAIN-SUFFIX,aptoide.com,自动选择
+  - DOMAIN-SUFFIX,archive.is,自动选择
+  - DOMAIN-SUFFIX,archive.org,自动选择
+  - DOMAIN-SUFFIX,arte.tv,自动选择
+  - DOMAIN-SUFFIX,artstation.com,自动选择
+  - DOMAIN-SUFFIX,arukas.io,自动选择
+  - DOMAIN-SUFFIX,ask.com,自动选择
+  - DOMAIN-SUFFIX,avg.com,自动选择
+  - DOMAIN-SUFFIX,avgle.com,自动选择
+  - DOMAIN-SUFFIX,badoo.com,自动选择
+  - DOMAIN-SUFFIX,bandwagonhost.com,自动选择
+  - DOMAIN-SUFFIX,bbc.com,自动选择
+  - DOMAIN-SUFFIX,behance.net,自动选择
+  - DOMAIN-SUFFIX,bibox.com,自动选择
+  - DOMAIN-SUFFIX,biggo.com.tw,自动选择
+  - DOMAIN-SUFFIX,binance.com,自动选择
+  - DOMAIN-SUFFIX,bitcointalk.org,自动选择
+  - DOMAIN-SUFFIX,bitfinex.com,自动选择
+  - DOMAIN-SUFFIX,bitmex.com,自动选择
+  - DOMAIN-SUFFIX,bit-z.com,自动选择
+  - DOMAIN-SUFFIX,bloglovin.com,自动选择
+  - DOMAIN-SUFFIX,bloomberg.cn,自动选择
+  - DOMAIN-SUFFIX,bloomberg.com,自动选择
+  - DOMAIN-SUFFIX,blubrry.com,自动选择
+  - DOMAIN-SUFFIX,book.com.tw,自动选择
+  - DOMAIN-SUFFIX,booklive.jp,自动选择
+  - DOMAIN-SUFFIX,books.com.tw,自动选择
+  - DOMAIN-SUFFIX,boslife.net,自动选择
+  - DOMAIN-SUFFIX,box.com,自动选择
+  - DOMAIN-SUFFIX,businessinsider.com,自动选择
+  - DOMAIN-SUFFIX,bwh1.net,自动选择
+  - DOMAIN-SUFFIX,castbox.fm,自动选择
+  - DOMAIN-SUFFIX,cbc.ca,自动选择
+  - DOMAIN-SUFFIX,cdw.com,自动选择
+  - DOMAIN-SUFFIX,change.org,自动选择
+  - DOMAIN-SUFFIX,channelnewsasia.com,自动选择
+  - DOMAIN-SUFFIX,ck101.com,自动选择
+  - DOMAIN-SUFFIX,clarionproject.org,自动选择
+  - DOMAIN-SUFFIX,clyp.it,自动选择
+  - DOMAIN-SUFFIX,cna.com.tw,自动选择
+  - DOMAIN-SUFFIX,comparitech.com,自动选择
+  - DOMAIN-SUFFIX,conoha.jp,自动选择
+  - DOMAIN-SUFFIX,crucial.com,自动选择
+  - DOMAIN-SUFFIX,cts.com.tw,自动选择
+  - DOMAIN-SUFFIX,cw.com.tw,自动选择
+  - DOMAIN-SUFFIX,cyberctm.com,自动选择
+  - DOMAIN-SUFFIX,dailymotion.com,自动选择
+  - DOMAIN-SUFFIX,dailyview.tw,自动选择
+  - DOMAIN-SUFFIX,daum.net,自动选择
+  - DOMAIN-SUFFIX,daumcdn.net,自动选择
+  - DOMAIN-SUFFIX,dcard.tw,自动选择
+  - DOMAIN-SUFFIX,deepdiscount.com,自动选择
+  - DOMAIN-SUFFIX,depositphotos.com,自动选择
+  - DOMAIN-SUFFIX,deviantart.com,自动选择
+  - DOMAIN-SUFFIX,disconnect.me,自动选择
+  - DOMAIN-SUFFIX,discordapp.com,自动选择
+  - DOMAIN-SUFFIX,discordapp.net,自动选择
+  - DOMAIN-SUFFIX,disqus.com,自动选择
+  - DOMAIN-SUFFIX,dlercloud.com,自动选择
+  - DOMAIN-SUFFIX,dns2go.com,自动选择
+  - DOMAIN-SUFFIX,dowjones.com,自动选择
+  - DOMAIN-SUFFIX,dropbox.com,自动选择
+  - DOMAIN-SUFFIX,dropboxusercontent.com,自动选择
+  - DOMAIN-SUFFIX,duckduckgo.com,自动选择
+  - DOMAIN-SUFFIX,dw.com,自动选择
+  - DOMAIN-SUFFIX,dynu.com,自动选择
+  - DOMAIN-SUFFIX,earthcam.com,自动选择
+  - DOMAIN-SUFFIX,ebookservice.tw,自动选择
+  - DOMAIN-SUFFIX,economist.com,自动选择
+  - DOMAIN-SUFFIX,edgecastcdn.net,自动选择
+  - DOMAIN-SUFFIX,edu,自动选择
+  - DOMAIN-SUFFIX,elpais.com,自动选择
+  - DOMAIN-SUFFIX,enanyang.my,自动选择
+  - DOMAIN-SUFFIX,encyclopedia.com,自动选择
+  - DOMAIN-SUFFIX,esoir.be,自动选择
+  - DOMAIN-SUFFIX,etherscan.io,自动选择
+  - DOMAIN-SUFFIX,euronews.com,自动选择
+  - DOMAIN-SUFFIX,evozi.com,自动选择
+  - DOMAIN-SUFFIX,feedly.com,自动选择
+  - DOMAIN-SUFFIX,firech.at,自动选择
+  - DOMAIN-SUFFIX,flickr.com,自动选择
+  - DOMAIN-SUFFIX,flitto.com,自动选择
+  - DOMAIN-SUFFIX,foreignpolicy.com,自动选择
+  - DOMAIN-SUFFIX,freebrowser.org,自动选择
+  - DOMAIN-SUFFIX,freewechat.com,自动选择
+  - DOMAIN-SUFFIX,freeweibo.com,自动选择
+  - DOMAIN-SUFFIX,friday.tw,自动选择
+  - DOMAIN-SUFFIX,ftchinese.com,自动选择
+  - DOMAIN-SUFFIX,ftimg.net,自动选择
+  - DOMAIN-SUFFIX,gate.io,自动选择
+  - DOMAIN-SUFFIX,getlantern.org,自动选择
+  - DOMAIN-SUFFIX,getsync.com,自动选择
+  - DOMAIN-SUFFIX,globalvoices.org,自动选择
+  - DOMAIN-SUFFIX,goo.ne.jp,自动选择
+  - DOMAIN-SUFFIX,goodreads.com,自动选择
+  - DOMAIN-SUFFIX,gov,自动选择
+  - DOMAIN-SUFFIX,gov.tw,自动选择
+  - DOMAIN-SUFFIX,greatfire.org,自动选择
+  - DOMAIN-SUFFIX,gumroad.com,自动选择
+  - DOMAIN-SUFFIX,hbg.com,自动选择
+  - DOMAIN-SUFFIX,heroku.com,自动选择
+  - DOMAIN-SUFFIX,hightail.com,自动选择
+  - DOMAIN-SUFFIX,hk01.com,自动选择
+  - DOMAIN-SUFFIX,hkbf.org,自动选择
+  - DOMAIN-SUFFIX,hkbookcity.com,自动选择
+  - DOMAIN-SUFFIX,hkej.com,自动选择
+  - DOMAIN-SUFFIX,hket.com,自动选择
+  - DOMAIN-SUFFIX,hkgolden.com,自动选择
+  - DOMAIN-SUFFIX,hootsuite.com,自动选择
+  - DOMAIN-SUFFIX,hudson.org,自动选择
+  - DOMAIN-SUFFIX,hyread.com.tw,自动选择
+  - DOMAIN-SUFFIX,ibtimes.com,自动选择
+  - DOMAIN-SUFFIX,i-cable.com,自动选择
+  - DOMAIN-SUFFIX,icij.org,自动选择
+  - DOMAIN-SUFFIX,icoco.com,自动选择
+  - DOMAIN-SUFFIX,imgur.com,自动选择
+  - DOMAIN-SUFFIX,initiummall.com,自动选择
+  - DOMAIN-SUFFIX,insecam.org,自动选择
+  - DOMAIN-SUFFIX,ipfs.io,自动选择
+  - DOMAIN-SUFFIX,issuu.com,自动选择
+  - DOMAIN-SUFFIX,istockphoto.com,自动选择
+  - DOMAIN-SUFFIX,japantimes.co.jp,自动选择
+  - DOMAIN-SUFFIX,jiji.com,自动选择
+  - DOMAIN-SUFFIX,jinx.com,自动选择
+  - DOMAIN-SUFFIX,jkforum.net,自动选择
+  - DOMAIN-SUFFIX,joinmastodon.org,自动选择
+  - DOMAIN-SUFFIX,justmysocks.net,自动选择
+  - DOMAIN-SUFFIX,justpaste.it,自动选择
+  - DOMAIN-SUFFIX,kakao.com,自动选择
+  - DOMAIN-SUFFIX,kakaocorp.com,自动选择
+  - DOMAIN-SUFFIX,kik.com,自动选择
+  - DOMAIN-SUFFIX,kobo.com,自动选择
+  - DOMAIN-SUFFIX,kobobooks.com,自动选择
+  - DOMAIN-SUFFIX,kodingen.com,自动选择
+  - DOMAIN-SUFFIX,lemonde.fr,自动选择
+  - DOMAIN-SUFFIX,lepoint.fr,自动选择
+  - DOMAIN-SUFFIX,lihkg.com,自动选择
+  - DOMAIN-SUFFIX,listennotes.com,自动选择
+  - DOMAIN-SUFFIX,livestream.com,自动选择
+  - DOMAIN-SUFFIX,logmein.com,自动选择
+  - DOMAIN-SUFFIX,mail.ru,自动选择
+  - DOMAIN-SUFFIX,mailchimp.com,自动选择
+  - DOMAIN-SUFFIX,marc.info,自动选择
+  - DOMAIN-SUFFIX,matters.news,自动选择
+  - DOMAIN-SUFFIX,maying.co,自动选择
+  - DOMAIN-SUFFIX,medium.com,自动选择
+  - DOMAIN-SUFFIX,mega.nz,自动选择
+  - DOMAIN-SUFFIX,mil,自动选择
+  - DOMAIN-SUFFIX,mingpao.com,自动选择
+  - DOMAIN-SUFFIX,mobile01.com,自动选择
+  - DOMAIN-SUFFIX,myspace.com,自动选择
+  - DOMAIN-SUFFIX,myspacecdn.com,自动选择
+  - DOMAIN-SUFFIX,nanyang.com,自动选择
+  - DOMAIN-SUFFIX,naver.com,自动选择
+  - DOMAIN-SUFFIX,neowin.net,自动选择
+  - DOMAIN-SUFFIX,newstapa.org,自动选择
+  - DOMAIN-SUFFIX,nexitally.com,自动选择
+  - DOMAIN-SUFFIX,nhk.or.jp,自动选择
+  - DOMAIN-SUFFIX,nicovideo.jp,自动选择
+  - DOMAIN-SUFFIX,nii.ac.jp,自动选择
+  - DOMAIN-SUFFIX,nikkei.com,自动选择
+  - DOMAIN-SUFFIX,nofile.io,自动选择
+  - DOMAIN-SUFFIX,now.com,自动选择
+  - DOMAIN-SUFFIX,nrk.no,自动选择
+  - DOMAIN-SUFFIX,nyt.com,自动选择
+  - DOMAIN-SUFFIX,nytchina.com,自动选择
+  - DOMAIN-SUFFIX,nytcn.me,自动选择
+  - DOMAIN-SUFFIX,nytco.com,自动选择
+  - DOMAIN-SUFFIX,nytimes.com,自动选择
+  - DOMAIN-SUFFIX,nytimg.com,自动选择
+  - DOMAIN-SUFFIX,nytlog.com,自动选择
+  - DOMAIN-SUFFIX,nytstyle.com,自动选择
+  - DOMAIN-SUFFIX,ok.ru,自动选择
+  - DOMAIN-SUFFIX,okex.com,自动选择
+  - DOMAIN-SUFFIX,on.cc,自动选择
+  - DOMAIN-SUFFIX,orientaldaily.com.my,自动选择
+  - DOMAIN-SUFFIX,overcast.fm,自动选择
+  - DOMAIN-SUFFIX,paltalk.com,自动选择
+  - DOMAIN-SUFFIX,pao-pao.net,自动选择
+  - DOMAIN-SUFFIX,parsevideo.com,自动选择
+  - DOMAIN-SUFFIX,pbxes.com,自动选择
+  - DOMAIN-SUFFIX,pcdvd.com.tw,自动选择
+  - DOMAIN-SUFFIX,pchome.com.tw,自动选择
+  - DOMAIN-SUFFIX,pcloud.com,自动选择
+  - DOMAIN-SUFFIX,picacomic.com,自动选择
+  - DOMAIN-SUFFIX,pinimg.com,自动选择
+  - DOMAIN-SUFFIX,pixiv.net,自动选择
+  - DOMAIN-SUFFIX,player.fm,自动选择
+  - DOMAIN-SUFFIX,plurk.com,自动选择
+  - DOMAIN-SUFFIX,po18.tw,自动选择
+  - DOMAIN-SUFFIX,potato.im,自动选择
+  - DOMAIN-SUFFIX,potatso.com,自动选择
+  - DOMAIN-SUFFIX,prism-break.org,自动选择
+  - DOMAIN-SUFFIX,proxifier.com,自动选择
+  - DOMAIN-SUFFIX,pt.im,自动选择
+  - DOMAIN-SUFFIX,pts.org.tw,自动选择
+  - DOMAIN-SUFFIX,pubu.com.tw,自动选择
+  - DOMAIN-SUFFIX,pubu.tw,自动选择
+  - DOMAIN-SUFFIX,pureapk.com,自动选择
+  - DOMAIN-SUFFIX,quora.com,自动选择
+  - DOMAIN-SUFFIX,quoracdn.net,自动选择
+  - DOMAIN-SUFFIX,rakuten.co.jp,自动选择
+  - DOMAIN-SUFFIX,readingtimes.com.tw,自动选择
+  - DOMAIN-SUFFIX,readmoo.com,自动选择
+  - DOMAIN-SUFFIX,redbubble.com,自动选择
+  - DOMAIN-SUFFIX,reddit.com,自动选择
+  - DOMAIN-SUFFIX,redditmedia.com,自动选择
+  - DOMAIN-SUFFIX,resilio.com,自动选择
+  - DOMAIN-SUFFIX,reuters.com,自动选择
+  - DOMAIN-SUFFIX,reutersmedia.net,自动选择
+  - DOMAIN-SUFFIX,rfi.fr,自动选择
+  - DOMAIN-SUFFIX,rixcloud.com,自动选择
+  - DOMAIN-SUFFIX,roadshow.hk,自动选择
+  - DOMAIN-SUFFIX,scmp.com,自动选择
+  - DOMAIN-SUFFIX,scribd.com,自动选择
+  - DOMAIN-SUFFIX,seatguru.com,自动选择
+  - DOMAIN-SUFFIX,shadowsocks.org,自动选择
+  - DOMAIN-SUFFIX,shopee.tw,自动选择
+  - DOMAIN-SUFFIX,slideshare.net,自动选择
+  - DOMAIN-SUFFIX,softfamous.com,自动选择
+  - DOMAIN-SUFFIX,soundcloud.com,自动选择
+  - DOMAIN-SUFFIX,ssrcloud.org,自动选择
+  - DOMAIN-SUFFIX,startpage.com,自动选择
+  - DOMAIN-SUFFIX,steamcommunity.com,自动选择
+  - DOMAIN-SUFFIX,steemit.com,自动选择
+  - DOMAIN-SUFFIX,steemitwallet.com,自动选择
+  - DOMAIN-SUFFIX,t66y.com,自动选择
+  - DOMAIN-SUFFIX,tapatalk.com,自动选择
+  - DOMAIN-SUFFIX,teco-hk.org,自动选择
+  - DOMAIN-SUFFIX,teco-mo.org,自动选择
+  - DOMAIN-SUFFIX,teddysun.com,自动选择
+  - DOMAIN-SUFFIX,textnow.me,自动选择
+  - DOMAIN-SUFFIX,theguardian.com,自动选择
+  - DOMAIN-SUFFIX,theinitium.com,自动选择
+  - DOMAIN-SUFFIX,thetvdb.com,自动选择
+  - DOMAIN-SUFFIX,tineye.com,自动选择
+  - DOMAIN-SUFFIX,torproject.org,自动选择
+  - DOMAIN-SUFFIX,tumblr.com,自动选择
+  - DOMAIN-SUFFIX,turbobit.net,自动选择
+  - DOMAIN-SUFFIX,tutanota.com,自动选择
+  - DOMAIN-SUFFIX,tvboxnow.com,自动选择
+  - DOMAIN-SUFFIX,udn.com,自动选择
+  - DOMAIN-SUFFIX,unseen.is,自动选择
+  - DOMAIN-SUFFIX,upmedia.mg,自动选择
+  - DOMAIN-SUFFIX,uptodown.com,自动选择
+  - DOMAIN-SUFFIX,urbandictionary.com,自动选择
+  - DOMAIN-SUFFIX,ustream.tv,自动选择
+  - DOMAIN-SUFFIX,uwants.com,自动选择
+  - DOMAIN-SUFFIX,v2ray.com,自动选择
+  - DOMAIN-SUFFIX,viber.com,自动选择
+  - DOMAIN-SUFFIX,videopress.com,自动选择
+  - DOMAIN-SUFFIX,vimeo.com,自动选择
+  - DOMAIN-SUFFIX,voachinese.com,自动选择
+  - DOMAIN-SUFFIX,voanews.com,自动选择
+  - DOMAIN-SUFFIX,voxer.com,自动选择
+  - DOMAIN-SUFFIX,vzw.com,自动选择
+  - DOMAIN-SUFFIX,w3schools.com,自动选择
+  - DOMAIN-SUFFIX,washingtonpost.com,自动选择
+  - DOMAIN-SUFFIX,wattpad.com,自动选择
+  - DOMAIN-SUFFIX,whoer.net,自动选择
+  - DOMAIN-SUFFIX,wikimapia.org,自动选择
+  - DOMAIN-SUFFIX,wikipedia.org,自动选择
+  - DOMAIN-SUFFIX,wikiquote.org,自动选择
+  - DOMAIN-SUFFIX,wikiwand.com,自动选择
+  - DOMAIN-SUFFIX,winudf.com,自动选择
+  - DOMAIN-SUFFIX,wire.com,自动选择
+  - DOMAIN-SUFFIX,wordpress.com,自动选择
+  - DOMAIN-SUFFIX,workflow.is,自动选择
+  - DOMAIN-SUFFIX,worldcat.org,自动选择
+  - DOMAIN-SUFFIX,wsj.com,自动选择
+  - DOMAIN-SUFFIX,wsj.net,自动选择
+  - DOMAIN-SUFFIX,xhamster.com,自动选择
+  - DOMAIN-SUFFIX,xn--90wwvt03e.com,自动选择
+  - DOMAIN-SUFFIX,xn--i2ru8q2qg.com,自动选择
+  - DOMAIN-SUFFIX,xnxx.com,自动选择
+  - DOMAIN-SUFFIX,xvideos.com,自动选择
+  - DOMAIN-SUFFIX,yahoo.com,自动选择
+  - DOMAIN-SUFFIX,yandex.ru,自动选择
+  - DOMAIN-SUFFIX,ycombinator.com,自动选择
+  - DOMAIN-SUFFIX,yesasia.com,自动选择
+  - DOMAIN-SUFFIX,yes-news.com,自动选择
+  - DOMAIN-SUFFIX,yomiuri.co.jp,自动选择
+  - DOMAIN-SUFFIX,you-get.org,自动选择
+  - DOMAIN-SUFFIX,zaobao.com,自动选择
+  - DOMAIN-SUFFIX,zb.com,自动选择
+  - DOMAIN-SUFFIX,zello.com,自动选择
+  - DOMAIN-SUFFIX,zeronet.io,自动选择
+  - DOMAIN-SUFFIX,zoom.us,自动选择
+  - DOMAIN-KEYWORD,github,自动选择
+  - DOMAIN-KEYWORD,jav,自动选择
+  - DOMAIN-KEYWORD,pinterest,自动选择
+  - DOMAIN-KEYWORD,porn,自动选择
+  - DOMAIN-KEYWORD,wikileaks,自动选择
+  - DOMAIN-SUFFIX,apartmentratings.com,自动选择
+  - DOMAIN-SUFFIX,apartments.com,自动选择
+  - DOMAIN-SUFFIX,bankmobilevibe.com,自动选择
+  - DOMAIN-SUFFIX,bing.com,自动选择
+  - DOMAIN-SUFFIX,booktopia.com.au,自动选择
+  - DOMAIN-SUFFIX,cccat.io,自动选择
+  - DOMAIN-SUFFIX,centauro.com.br,自动选择
+  - DOMAIN-SUFFIX,clearsurance.com,自动选择
+  - DOMAIN-SUFFIX,costco.com,自动选择
+  - DOMAIN-SUFFIX,crackle.com,自动选择
+  - DOMAIN-SUFFIX,depositphotos.cn,自动选择
+  - DOMAIN-SUFFIX,dish.com,自动选择
+  - DOMAIN-SUFFIX,dmm.co.jp,自动选择
+  - DOMAIN-SUFFIX,dmm.com,自动选择
+  - DOMAIN-SUFFIX,dnvod.tv,自动选择
+  - DOMAIN-SUFFIX,esurance.com,自动选择
+  - DOMAIN-SUFFIX,extmatrix.com,自动选择
+  - DOMAIN-SUFFIX,fastpic.ru,自动选择
+  - DOMAIN-SUFFIX,flipboard.com,自动选择
+  - DOMAIN-SUFFIX,fnac.be,自动选择
+  - DOMAIN-SUFFIX,fnac.com,自动选择
+  - DOMAIN-SUFFIX,funkyimg.com,自动选择
+  - DOMAIN-SUFFIX,fxnetworks.com,自动选择
+  - DOMAIN-SUFFIX,gettyimages.com,自动选择
+  - DOMAIN-SUFFIX,go.com,自动选择
+  - DOMAIN-SUFFIX,here.com,自动选择
+  - DOMAIN-SUFFIX,jcpenney.com,自动选择
+  - DOMAIN-SUFFIX,jiehua.tv,自动选择
+  - DOMAIN-SUFFIX,mailfence.com,自动选择
+  - DOMAIN-SUFFIX,nationwide.com,自动选择
+  - DOMAIN-SUFFIX,nbc.com,自动选择
+  - DOMAIN-SUFFIX,nexon.com,自动选择
+  - DOMAIN-SUFFIX,nordstrom.com,自动选择
+  - DOMAIN-SUFFIX,nordstromimage.com,自动选择
+  - DOMAIN-SUFFIX,nordstromrack.com,自动选择
+  - DOMAIN-SUFFIX,superpages.com,自动选择
+  - DOMAIN-SUFFIX,target.com,自动选择
+  - DOMAIN-SUFFIX,thinkgeek.com,自动选择
+  - DOMAIN-SUFFIX,tracfone.com,自动选择
+  - DOMAIN-SUFFIX,unity3d.com,自动选择
+  - DOMAIN-SUFFIX,uploader.jp,自动选择
+  - DOMAIN-SUFFIX,vevo.com,自动选择
+  - DOMAIN-SUFFIX,viu.tv,自动选择
+  - DOMAIN-SUFFIX,vk.com,自动选择
+  - DOMAIN-SUFFIX,vsco.co,自动选择
+  - DOMAIN-SUFFIX,xfinity.com,自动选择
+  - DOMAIN-SUFFIX,zattoo.com,自动选择
+  - DOMAIN,testflight.apple.com,自动选择
+  - DOMAIN-SUFFIX,appsto.re,自动选择
+  - DOMAIN,books.itunes.apple.com,自动选择
+  - DOMAIN,hls.itunes.apple.com,自动选择
+  - DOMAIN,apps.apple.com,自动选择
+  - DOMAIN,itunes.apple.com,自动选择
+  - DOMAIN,api-glb-sea.smoot.apple.com,自动选择
+  - DOMAIN,lookup-api.apple.com,自动选择
+  - DOMAIN-SUFFIX,abc.xyz,自动选择
+  - DOMAIN-SUFFIX,android.com,自动选择
+  - DOMAIN-SUFFIX,androidify.com,自动选择
+  - DOMAIN-SUFFIX,dialogflow.com,自动选择
+  - DOMAIN-SUFFIX,autodraw.com,自动选择
+  - DOMAIN-SUFFIX,capitalg.com,自动选择
+  - DOMAIN-SUFFIX,certificate-transparency.org,自动选择
+  - DOMAIN-SUFFIX,chrome.com,自动选择
+  - DOMAIN-SUFFIX,chromeexperiments.com,自动选择
+  - DOMAIN-SUFFIX,chromestatus.com,自动选择
+  - DOMAIN-SUFFIX,chromium.org,自动选择
+  - DOMAIN-SUFFIX,creativelab5.com,自动选择
+  - DOMAIN-SUFFIX,debug.com,自动选择
+  - DOMAIN-SUFFIX,deepmind.com,自动选择
+  - DOMAIN-SUFFIX,firebaseio.com,自动选择
+  - DOMAIN-SUFFIX,getmdl.io,自动选择
+  - DOMAIN-SUFFIX,ggpht.com,自动选择
+  - DOMAIN-SUFFIX,gmail.com,自动选择
+  - DOMAIN-SUFFIX,gmodules.com,自动选择
+  - DOMAIN-SUFFIX,godoc.org,自动选择
+  - DOMAIN-SUFFIX,golang.org,自动选择
+  - DOMAIN-SUFFIX,gstatic.com,自动选择
+  - DOMAIN-SUFFIX,gv.com,自动选择
+  - DOMAIN-SUFFIX,gwtproject.org,自动选择
+  - DOMAIN-SUFFIX,itasoftware.com,自动选择
+  - DOMAIN-SUFFIX,madewithcode.com,自动选择
+  - DOMAIN-SUFFIX,material.io,自动选择
+  - DOMAIN-SUFFIX,polymer-project.org,自动选择
+  - DOMAIN-SUFFIX,admin.recaptcha.net,自动选择
+  - DOMAIN-SUFFIX,recaptcha.net,自动选择
+  - DOMAIN-SUFFIX,shattered.io,自动选择
+  - DOMAIN-SUFFIX,synergyse.com,自动选择
+  - DOMAIN-SUFFIX,tensorflow.org,自动选择
+  - DOMAIN-SUFFIX,tfhub.dev,自动选择
+  - DOMAIN-SUFFIX,tiltbrush.com,自动选择
+  - DOMAIN-SUFFIX,waveprotocol.org,自动选择
+  - DOMAIN-SUFFIX,waymo.com,自动选择
+  - DOMAIN-SUFFIX,webmproject.org,自动选择
+  - DOMAIN-SUFFIX,webrtc.org,自动选择
+  - DOMAIN-SUFFIX,whatbrowser.org,自动选择
+  - DOMAIN-SUFFIX,widevine.com,自动选择
+  - DOMAIN-SUFFIX,x.company,自动选择
+  - DOMAIN-SUFFIX,youtu.be,自动选择
+  - DOMAIN-SUFFIX,yt.be,自动选择
+  - DOMAIN-SUFFIX,ytimg.com,自动选择
+  - DOMAIN-SUFFIX,1drv.com,自动选择
+  - DOMAIN-SUFFIX,1drv.ms,自动选择
+  - DOMAIN-SUFFIX,blob.core.windows.net,自动选择
+  - DOMAIN-SUFFIX,livefilestore.com,自动选择
+  - DOMAIN-SUFFIX,onedrive.com,自动选择
+  - DOMAIN-SUFFIX,storage.live.com,自动选择
+  - DOMAIN-SUFFIX,storage.msn.com,自动选择
+  - DOMAIN,oneclient.sfx.ms,自动选择
+  - DOMAIN-SUFFIX,0rz.tw,自动选择
+  - DOMAIN-SUFFIX,4bluestones.biz,自动选择
+  - DOMAIN-SUFFIX,9bis.net,自动选择
+  - DOMAIN-SUFFIX,allconnected.co,自动选择
+  - DOMAIN-SUFFIX,aol.com,自动选择
+  - DOMAIN-SUFFIX,bcc.com.tw,自动选择
+  - DOMAIN-SUFFIX,bit.ly,自动选择
+  - DOMAIN-SUFFIX,bitshare.com,自动选择
+  - DOMAIN-SUFFIX,blog.jp,自动选择
+  - DOMAIN-SUFFIX,blogimg.jp,自动选择
+  - DOMAIN-SUFFIX,blogtd.org,自动选择
+  - DOMAIN-SUFFIX,broadcast.co.nz,自动选择
+  - DOMAIN-SUFFIX,camfrog.com,自动选择
+  - DOMAIN-SUFFIX,cfos.de,自动选择
+  - DOMAIN-SUFFIX,citypopulation.de,自动选择
+  - DOMAIN-SUFFIX,cloudfront.net,自动选择
+  - DOMAIN-SUFFIX,ctitv.com.tw,自动选择
+  - DOMAIN-SUFFIX,cuhk.edu.hk,自动选择
+  - DOMAIN-SUFFIX,cusu.hk,自动选择
+  - DOMAIN-SUFFIX,discord.gg,自动选择
+  - DOMAIN-SUFFIX,discuss.com.hk,自动选择
+  - DOMAIN-SUFFIX,dropboxapi.com,自动选择
+  - DOMAIN-SUFFIX,duolingo.cn,自动选择
+  - DOMAIN-SUFFIX,edditstatic.com,自动选择
+  - DOMAIN-SUFFIX,flickriver.com,自动选择
+  - DOMAIN-SUFFIX,focustaiwan.tw,自动选择
+  - DOMAIN-SUFFIX,free.fr,自动选择
+  - DOMAIN-SUFFIX,gigacircle.com,自动选择
+  - DOMAIN-SUFFIX,hk-pub.com,自动选择
+  - DOMAIN-SUFFIX,hosting.co.uk,自动选择
+  - DOMAIN-SUFFIX,hwcdn.net,自动选择
+  - DOMAIN-SUFFIX,ifixit.com,自动选择
+  - DOMAIN-SUFFIX,iphone4hongkong.com,自动选择
+  - DOMAIN-SUFFIX,iphonetaiwan.org,自动选择
+  - DOMAIN-SUFFIX,iptvbin.com,自动选择
+  - DOMAIN-SUFFIX,linksalpha.com,自动选择
+  - DOMAIN-SUFFIX,manyvids.com,自动选择
+  - DOMAIN-SUFFIX,myactimes.com,自动选择
+  - DOMAIN-SUFFIX,newsblur.com,自动选择
+  - DOMAIN-SUFFIX,now.im,自动选择
+  - DOMAIN-SUFFIX,nowe.com,自动选择
+  - DOMAIN-SUFFIX,redditlist.com,自动选择
+  - DOMAIN-SUFFIX,s3.amazonaws.com,自动选择
+  - DOMAIN-SUFFIX,signal.org,自动选择
+  - DOMAIN-SUFFIX,smartmailcloud.com,自动选择
+  - DOMAIN-SUFFIX,sparknotes.com,自动选择
+  - DOMAIN-SUFFIX,streetvoice.com,自动选择
+  - DOMAIN-SUFFIX,supertop.co,自动选择
+  - DOMAIN-SUFFIX,tv.com,自动选择
+  - DOMAIN-SUFFIX,typepad.com,自动选择
+  - DOMAIN-SUFFIX,udnbkk.com,自动选择
+  - DOMAIN-SUFFIX,urbanairship.com,自动选择
+  - DOMAIN-SUFFIX,whispersystems.org,自动选择
+  - DOMAIN-SUFFIX,wikia.com,自动选择
+  - DOMAIN-SUFFIX,wn.com,自动选择
+  - DOMAIN-SUFFIX,wolframalpha.com,自动选择
+  - DOMAIN-SUFFIX,x-art.com,自动选择
+  - DOMAIN-SUFFIX,yimg.com,自动选择
+  - DOMAIN,api.steampowered.com,自动选择
+  - DOMAIN,store.steampowered.com,自动选择
+
+  - DOMAIN-SUFFIX,t.me,自动选择
+  - DOMAIN-SUFFIX,tdesktop.com,自动选择
+  - DOMAIN-SUFFIX,telegra.ph,自动选择
+  - DOMAIN-SUFFIX,telegram.me,自动选择
+  - DOMAIN-SUFFIX,telegram.org,自动选择
+  - IP-CIDR,91.108.4.0/22,自动选择,no-resolve
+  - IP-CIDR,91.108.8.0/22,自动选择,no-resolve
+  - IP-CIDR,91.108.12.0/22,自动选择,no-resolve
+  - IP-CIDR,91.108.16.0/22,自动选择,no-resolve
+  - IP-CIDR,91.108.56.0/22,自动选择,no-resolve
+  - IP-CIDR,149.154.160.0/20,自动选择,no-resolve
+  - IP-CIDR6,2001:b28:f23d::/48,自动选择,no-resolve
+  - IP-CIDR6,2001:b28:f23f::/48,自动选择,no-resolve
+  - IP-CIDR6,2001:67c:4e8::/48,自动选择,no-resolve
+
+  - DOMAIN-SUFFIX,googlevideo.com,自动选择
+  - DOMAIN-SUFFIX,youtube.com,自动选择
+  - DOMAIN,youtubei.googleapis.com,自动选择
+
+  - DOMAIN-SUFFIX,netflix.com,自动选择
+  - DOMAIN-SUFFIX,netflix.net,自动选择
+  - DOMAIN-SUFFIX,nflxext.com,自动选择
+  - DOMAIN-SUFFIX,nflximg.com,自动选择
+  - DOMAIN-SUFFIX,nflximg.net,自动选择
+  - DOMAIN-SUFFIX,nflxso.net,自动选择
+  - DOMAIN-SUFFIX,nflxvideo.net,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest0.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest1.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest2.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest3.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest4.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest5.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest6.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest7.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest8.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest9.com,自动选择
+  - IP-CIDR,23.246.0.0/18,自动选择,no-resolve
+  - IP-CIDR,37.77.184.0/21,自动选择,no-resolve
+  - IP-CIDR,45.57.0.0/17,自动选择,no-resolve
+  - IP-CIDR,64.120.128.0/17,自动选择,no-resolve
+  - IP-CIDR,66.197.128.0/17,自动选择,no-resolve
+  - IP-CIDR,108.175.32.0/20,自动选择,no-resolve
+  - IP-CIDR,192.173.64.0/18,自动选择,no-resolve
+  - IP-CIDR,198.38.96.0/19,自动选择,no-resolve
+  - IP-CIDR,198.45.48.0/20,自动选择,no-resolve
+
+  - DOMAIN-SUFFIX,deezer.com,自动选择
+  - DOMAIN-SUFFIX,dzcdn.net,自动选择
+  - DOMAIN-SUFFIX,kkbox.com,自动选择
+  - DOMAIN-SUFFIX,kkbox.com.tw,自动选择
+  - DOMAIN-SUFFIX,kfs.io,自动选择
+  - DOMAIN-SUFFIX,joox.com,自动选择
+  - DOMAIN-SUFFIX,pandora.com,自动选择
+  - DOMAIN-SUFFIX,p-cdn.us,自动选择
+  - DOMAIN-SUFFIX,sndcdn.com,自动选择
+  - DOMAIN-SUFFIX,soundcloud.com,自动选择
+  - DOMAIN-SUFFIX,pscdn.co,自动选择
+  - DOMAIN-SUFFIX,scdn.co,自动选择
+  - DOMAIN-SUFFIX,spotify.com,自动选择
+  - DOMAIN-SUFFIX,spoti.fi,自动选择
+  - DOMAIN-KEYWORD,spotify.com,自动选择
+  - DOMAIN-KEYWORD,-spotify-com,自动选择
+  - DOMAIN-SUFFIX,tidal.com,自动选择
+  - DOMAIN-SUFFIX,c4assets.com,自动选择
+  - DOMAIN-SUFFIX,channel4.com,自动选择
+  - DOMAIN-SUFFIX,abema.io,自动选择
+  - DOMAIN-SUFFIX,ameba.jp,自动选择
+  - DOMAIN-SUFFIX,abema.tv,自动选择
+  - DOMAIN-SUFFIX,hayabusa.io,自动选择
+  - DOMAIN,abematv.akamaized.net,自动选择
+  - DOMAIN,ds-linear-abematv.akamaized.net,自动选择
+  - DOMAIN,ds-vod-abematv.akamaized.net,自动选择
+  - DOMAIN,linear-abematv.akamaized.net,自动选择
+  - DOMAIN-SUFFIX,aiv-cdn.net,自动选择
+  - DOMAIN-SUFFIX,aiv-delivery.net,自动选择
+  - DOMAIN-SUFFIX,amazonvideo.com,自动选择
+  - DOMAIN-SUFFIX,primevideo.com,自动选择
+  - DOMAIN,avodmp4s3ww-a.akamaihd.net,自动选择
+  - DOMAIN,d25xi40x97liuc.cloudfront.net,自动选择
+  - DOMAIN,dmqdd6hw24ucf.cloudfront.net,自动选择
+  - DOMAIN,d22qjgkvxw22r6.cloudfront.net,自动选择
+  - DOMAIN,d1v5ir2lpwr8os.cloudfront.net,自动选择
+  - DOMAIN-KEYWORD,avoddashs,自动选择
+  - DOMAIN-SUFFIX,bahamut.com.tw,自动选择
+  - DOMAIN-SUFFIX,gamer.com.tw,自动选择
+  - DOMAIN,gamer-cds.cdn.hinet.net,自动选择
+  - DOMAIN,gamer2-cds.cdn.hinet.net,自动选择
+  - DOMAIN-SUFFIX,bbc.co.uk,自动选择
+  - DOMAIN-SUFFIX,bbci.co.uk,自动选择
+  - DOMAIN-KEYWORD,bbcfmt,自动选择
+  - DOMAIN-KEYWORD,uk-live,自动选择
+  - DOMAIN-SUFFIX,dazn.com,自动选择
+  - DOMAIN-SUFFIX,dazn-api.com,自动选择
+  - DOMAIN,d151l6v8er5bdm.cloudfront.net,自动选择
+  - DOMAIN-KEYWORD,voddazn,自动选择
+  - DOMAIN-SUFFIX,bamgrid.com,自动选择
+  - DOMAIN-SUFFIX,disney-plus.net,自动选择
+  - DOMAIN-SUFFIX,disneyplus.com,自动选择
+  - DOMAIN-SUFFIX,dssott.com,自动选择
+  - DOMAIN,cdn.registerdisney.go.com,自动选择
+  - DOMAIN-SUFFIX,encoretvb.com,自动选择
+  - DOMAIN,edge.api.brightcove.com,自动选择
+  - DOMAIN,bcbolt446c5271-a.akamaihd.net,自动选择
+  - DOMAIN-SUFFIX,fox.com,自动选择
+  - DOMAIN-SUFFIX,foxdcg.com,自动选择
+  - DOMAIN-SUFFIX,theplatform.com,自动选择
+  - DOMAIN-SUFFIX,uplynk.com,自动选择
+  - DOMAIN-SUFFIX,hbo.com,自动选择
+  - DOMAIN-SUFFIX,hbogo.com,自动选择
+  - DOMAIN-SUFFIX,hbonow.com,自动选择
+  - DOMAIN-SUFFIX,hbogoasia.com,自动选择
+  - DOMAIN-SUFFIX,hbogoasia.hk,自动选择
+  - DOMAIN,bcbolthboa-a.akamaihd.net,自动选择
+  - DOMAIN,players.brightcove.net,自动选择
+  - DOMAIN,s3-ap-southeast-1.amazonaws.com,自动选择
+  - DOMAIN,dai3fd1oh325y.cloudfront.net,自动选择
+  - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,自动选择
+  - DOMAIN,hboasia1-i.akamaihd.net,自动选择
+  - DOMAIN,hboasia2-i.akamaihd.net,自动选择
+  - DOMAIN,hboasia3-i.akamaihd.net,自动选择
+  - DOMAIN,hboasia4-i.akamaihd.net,自动选择
+  - DOMAIN,hboasia5-i.akamaihd.net,自动选择
+  - DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,自动选择
+  - DOMAIN-SUFFIX,5itv.tv,自动选择
+  - DOMAIN-SUFFIX,ocnttv.com,自动选择
+  - DOMAIN-SUFFIX,hulu.com,自动选择
+  - DOMAIN-SUFFIX,huluim.com,自动选择
+  - DOMAIN-SUFFIX,hulustream.com,自动选择
+  - DOMAIN-SUFFIX,happyon.jp,自动选择
+  - DOMAIN-SUFFIX,hulu.jp,自动选择
+  - DOMAIN-SUFFIX,itv.com,自动选择
+  - DOMAIN-SUFFIX,itvstatic.com,自动选择
+  - DOMAIN,itvpnpmobile-a.akamaihd.net,自动选择
+  - DOMAIN-SUFFIX,kktv.com.tw,自动选择
+  - DOMAIN-SUFFIX,kktv.me,自动选择
+  - DOMAIN,kktv-theater.kk.stream,自动选择
+  - DOMAIN-SUFFIX,linetv.tw,自动选择
+  - DOMAIN,d3c7rimkq79yfu.cloudfront.net,自动选择
+  - DOMAIN-SUFFIX,litv.tv,自动选择
+  - DOMAIN,litvfreemobile-hichannel.cdn.hinet.net,自动选择
+  - DOMAIN-SUFFIX,channel5.com,自动选择
+  - DOMAIN-SUFFIX,my5.tv,自动选择
+  - DOMAIN,d349g9zuie06uo.cloudfront.net,自动选择
+  - DOMAIN-SUFFIX,mytvsuper.com,自动选择
+  - DOMAIN-SUFFIX,tvb.com,自动选择
+  - DOMAIN-SUFFIX,netflix.com,自动选择
+  - DOMAIN-SUFFIX,netflix.net,自动选择
+  - DOMAIN-SUFFIX,nflxext.com,自动选择
+  - DOMAIN-SUFFIX,nflximg.com,自动选择
+  - DOMAIN-SUFFIX,nflximg.net,自动选择
+  - DOMAIN-SUFFIX,nflxso.net,自动选择
+  - DOMAIN-SUFFIX,nflxvideo.net,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest0.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest1.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest2.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest3.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest4.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest5.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest6.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest7.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest8.com,自动选择
+  - DOMAIN-SUFFIX,netflixdnstest9.com,自动选择
+  - IP-CIDR,23.246.0.0/18,自动选择,no-resolve
+  - IP-CIDR,37.77.184.0/21,自动选择,no-resolve
+  - IP-CIDR,45.57.0.0/17,自动选择,no-resolve
+  - IP-CIDR,64.120.128.0/17,自动选择,no-resolve
+  - IP-CIDR,66.197.128.0/17,自动选择,no-resolve
+  - IP-CIDR,108.175.32.0/20,自动选择,no-resolve
+  - IP-CIDR,192.173.64.0/18,自动选择,no-resolve
+  - IP-CIDR,198.38.96.0/19,自动选择,no-resolve
+  - IP-CIDR,198.45.48.0/20,自动选择,no-resolve
+  - DOMAIN-SUFFIX,dmc.nico,自动选择
+  - DOMAIN-SUFFIX,nicovideo.jp,自动选择
+  - DOMAIN-SUFFIX,nimg.jp,自动选择
+  - DOMAIN-SUFFIX,socdm.com,自动选择
+  - DOMAIN-SUFFIX,pbs.org,自动选择
+  - DOMAIN-SUFFIX,phncdn.com,自动选择
+  - DOMAIN-SUFFIX,pornhub.com,自动选择
+  - DOMAIN-SUFFIX,pornhubpremium.com,自动选择
+  - DOMAIN-SUFFIX,skyking.com.tw,自动选择
+  - DOMAIN,hamifans.emome.net,自动选择
+  - DOMAIN-SUFFIX,twitch.tv,自动选择
+  - DOMAIN-SUFFIX,twitchcdn.net,自动选择
+  - DOMAIN-SUFFIX,ttvnw.net,自动选择
+  - DOMAIN-SUFFIX,jtvnw.net,自动选择
+  - DOMAIN-SUFFIX,viu.com,自动选择
+  - DOMAIN-SUFFIX,viu.tv,自动选择
+  - DOMAIN,api.viu.now.com,自动选择
+  - DOMAIN,d1k2us671qcoau.cloudfront.net,自动选择
+  - DOMAIN,d2anahhhmp1ffz.cloudfront.net,自动选择
+  - DOMAIN,dfp6rglgjqszk.cloudfront.net,自动选择
+  - DOMAIN-SUFFIX,googlevideo.com,自动选择
+  - DOMAIN-SUFFIX,youtube.com,自动选择
+  - DOMAIN,youtubei.googleapis.com,自动选择
+
+  - DOMAIN-SUFFIX,linkedin.com,自动选择
+  - DOMAIN-SUFFIX,licdn.com,自动选择
+
+  - DOMAIN-SUFFIX,local,DIRECT
+  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+  - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+  - IP-CIDR6,::1/128,DIRECT,no-resolve
+  - IP-CIDR6,fc00::/7,DIRECT,no-resolve
+  - IP-CIDR6,fe80::/10,DIRECT,no-resolve
+  - IP-CIDR6,fd00::/8,DIRECT,no-resolve
+
+  - DOMAIN,app.adjust.com,DIRECT
+  - DOMAIN-SUFFIX,googletraveladservices.com,DIRECT
+  - DOMAIN,dl.google.com,DIRECT
+  - DOMAIN,mtalk.google.com,DIRECT
+  - DOMAIN,livew.l.qq.com,DIRECT
+  - DOMAIN,vd.l.qq.com,DIRECT
+  - DOMAIN,analytics.strava.com,DIRECT
+  - DOMAIN,msg.umeng.com,DIRECT
+  - DOMAIN,msg.umengcloud.com,DIRECT
+  - DOMAIN-SUFFIX,qhres.com,DIRECT
+  - DOMAIN-SUFFIX,qhimg.com,DIRECT
+  - DOMAIN-SUFFIX,akadns.net,DIRECT
+  - DOMAIN-SUFFIX,alibaba.com,DIRECT
+  - DOMAIN-SUFFIX,alicdn.com,DIRECT
+  - DOMAIN-SUFFIX,alikunlun.com,DIRECT
+  - DOMAIN-SUFFIX,alipay.com,DIRECT
+  - DOMAIN-SUFFIX,amap.com,DIRECT
+  - DOMAIN-SUFFIX,autonavi.com,DIRECT
+  - DOMAIN-SUFFIX,dingtalk.com,DIRECT
+  - DOMAIN-SUFFIX,mxhichina.com,DIRECT
+  - DOMAIN-SUFFIX,soku.com,DIRECT
+  - DOMAIN-SUFFIX,taobao.com,DIRECT
+  - DOMAIN-SUFFIX,tmall.com,DIRECT
+  - DOMAIN-SUFFIX,tmall.hk,DIRECT
+  - DOMAIN-SUFFIX,ykimg.com,DIRECT
+  - DOMAIN-SUFFIX,youku.com,DIRECT
+  - DOMAIN-SUFFIX,xiami.com,DIRECT
+  - DOMAIN-SUFFIX,xiami.net,DIRECT
+  - DOMAIN-SUFFIX,aaplimg.com,DIRECT
+  - DOMAIN-SUFFIX,apple.co,DIRECT
+  - DOMAIN-SUFFIX,apple.com,DIRECT
+  - DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT
+  - DOMAIN-SUFFIX,appstore.com,DIRECT
+  - DOMAIN-SUFFIX,cdn-apple.com,DIRECT
+  - DOMAIN-SUFFIX,crashlytics.com,DIRECT
+  - DOMAIN-SUFFIX,icloud.com,DIRECT
+  - DOMAIN-SUFFIX,icloud-content.com,DIRECT
+  - DOMAIN-SUFFIX,me.com,DIRECT
+  - DOMAIN-SUFFIX,mzstatic.com,DIRECT
+  - DOMAIN,www-cdn.icloud.com.akadns.net,DIRECT
+  - DOMAIN-SUFFIX,baidu.com,DIRECT
+  - DOMAIN-SUFFIX,baidubcr.com,DIRECT
+  - DOMAIN-SUFFIX,bdstatic.com,DIRECT
+  - DOMAIN-SUFFIX,yunjiasu-cdn.net,DIRECT
+  - DOMAIN-SUFFIX,acgvideo.com,DIRECT
+  - DOMAIN-SUFFIX,hdslb.com,DIRECT
+  - DOMAIN-SUFFIX,blizzard.com,DIRECT
+  - DOMAIN-SUFFIX,battle.net,DIRECT
+  - DOMAIN,blzddist1-a.akamaihd.net,DIRECT
+  - DOMAIN-SUFFIX,feiliao.com,DIRECT
+  - DOMAIN-SUFFIX,pstatp.com,DIRECT
+  - DOMAIN-SUFFIX,snssdk.com,DIRECT
+  - DOMAIN-SUFFIX,iesdouyin.com,DIRECT
+  - DOMAIN-SUFFIX,toutiao.com,DIRECT
+  - DOMAIN-SUFFIX,cctv.com,DIRECT
+  - DOMAIN-SUFFIX,cctvpic.com,DIRECT
+  - DOMAIN-SUFFIX,livechina.com,DIRECT
+  - DOMAIN-SUFFIX,didialift.com,DIRECT
+  - DOMAIN-SUFFIX,didiglobal.com,DIRECT
+  - DOMAIN-SUFFIX,udache.com,DIRECT
+  - DOMAIN-SUFFIX,343480.com,DIRECT
+  - DOMAIN-SUFFIX,baduziyuan.com,DIRECT
+  - DOMAIN-SUFFIX,com-hs-hkdy.com,DIRECT
+  - DOMAIN-SUFFIX,czybjz.com,DIRECT
+  - DOMAIN-SUFFIX,dandanzan.com,DIRECT
+  - DOMAIN-SUFFIX,fjhps.com,DIRECT
+  - DOMAIN-SUFFIX,kuyunbo.club,DIRECT
+  - DOMAIN-SUFFIX,21cn.com,DIRECT
+  - DOMAIN-SUFFIX,hitv.com,DIRECT
+  - DOMAIN-SUFFIX,mgtv.com,DIRECT
+  - DOMAIN-SUFFIX,iqiyi.com,DIRECT
+  - DOMAIN-SUFFIX,iqiyipic.com,DIRECT
+  - DOMAIN-SUFFIX,71.am.com,DIRECT
+  - DOMAIN-SUFFIX,jd.com,DIRECT
+  - DOMAIN-SUFFIX,jd.hk,DIRECT
+  - DOMAIN-SUFFIX,jdpay.com,DIRECT
+  - DOMAIN-SUFFIX,360buyimg.com,DIRECT
+  - DOMAIN-SUFFIX,iciba.com,DIRECT
+  - DOMAIN-SUFFIX,ksosoft.com,DIRECT
+  - DOMAIN-SUFFIX,meitu.com,DIRECT
+  - DOMAIN-SUFFIX,meitudata.com,DIRECT
+  - DOMAIN-SUFFIX,meitustat.com,DIRECT
+  - DOMAIN-SUFFIX,meipai.com,DIRECT
+  - DOMAIN-SUFFIX,duokan.com,DIRECT
+  - DOMAIN-SUFFIX,mi-img.com,DIRECT
+  - DOMAIN-SUFFIX,miui.com,DIRECT
+  - DOMAIN-SUFFIX,miwifi.com,DIRECT
+  - DOMAIN-SUFFIX,xiaomi.com,DIRECT
+  - DOMAIN-SUFFIX,microsoft.com,DIRECT
+  - DOMAIN-SUFFIX,msecnd.net,DIRECT
+  - DOMAIN-SUFFIX,office365.com,DIRECT
+  - DOMAIN-SUFFIX,outlook.com,DIRECT
+  - DOMAIN-SUFFIX,s-microsoft.com,DIRECT
+  - DOMAIN-SUFFIX,visualstudio.com,DIRECT
+  - DOMAIN-SUFFIX,windows.com,DIRECT
+  - DOMAIN-SUFFIX,windowsupdate.com,DIRECT
+  - DOMAIN,officecdn-microsoft-com.akamaized.net,DIRECT
+  - DOMAIN-SUFFIX,163.com,DIRECT
+  - DOMAIN-SUFFIX,126.net,DIRECT
+  - DOMAIN-SUFFIX,127.net,DIRECT
+  - DOMAIN-SUFFIX,163yun.com,DIRECT
+  - DOMAIN-SUFFIX,lofter.com,DIRECT
+  - DOMAIN-SUFFIX,netease.com,DIRECT
+  - DOMAIN-SUFFIX,ydstatic.com,DIRECT
+  - DOMAIN-SUFFIX,sina.com,DIRECT
+  - DOMAIN-SUFFIX,weibo.com,DIRECT
+  - DOMAIN-SUFFIX,weibocdn.com,DIRECT
+  - DOMAIN-SUFFIX,sohu.com,DIRECT
+  - DOMAIN-SUFFIX,sohucs.com,DIRECT
+  - DOMAIN-SUFFIX,sohu-inc.com,DIRECT
+  - DOMAIN-SUFFIX,v-56.com,DIRECT
+  - DOMAIN-SUFFIX,sogo.com,DIRECT
+  - DOMAIN-SUFFIX,sogou.com,DIRECT
+  - DOMAIN-SUFFIX,sogoucdn.com,DIRECT
+  - DOMAIN-SUFFIX,steampowered.com,DIRECT
+  - DOMAIN-SUFFIX,steam-chat.com,DIRECT
+  - DOMAIN-SUFFIX,steamgames.com,DIRECT
+  - DOMAIN-SUFFIX,steamusercontent.com,DIRECT
+  - DOMAIN-SUFFIX,steamcontent.com,DIRECT
+  - DOMAIN-SUFFIX,steamstatic.com,DIRECT
+  - DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,DIRECT
+  - DOMAIN-SUFFIX,steamstat.us,DIRECT
+  - DOMAIN-SUFFIX,gtimg.com,DIRECT
+  - DOMAIN-SUFFIX,idqqimg.com,DIRECT
+  - DOMAIN-SUFFIX,igamecj.com,DIRECT
+  - DOMAIN-SUFFIX,myapp.com,DIRECT
+  - DOMAIN-SUFFIX,myqcloud.com,DIRECT
+  - DOMAIN-SUFFIX,qq.com,DIRECT
+  - DOMAIN-SUFFIX,tencent.com,DIRECT
+  - DOMAIN-SUFFIX,tencent-cloud.net,DIRECT
+  - DOMAIN-SUFFIX,jstucdn.com,DIRECT
+  - DOMAIN-SUFFIX,zimuzu.io,DIRECT
+  - DOMAIN-SUFFIX,zimuzu.tv,DIRECT
+  - DOMAIN-SUFFIX,zmz2019.com,DIRECT
+  - DOMAIN-SUFFIX,zmzapi.com,DIRECT
+  - DOMAIN-SUFFIX,zmzapi.net,DIRECT
+  - DOMAIN-SUFFIX,zmzfile.com,DIRECT
+  - DOMAIN-SUFFIX,ccgslb.com,DIRECT
+  - DOMAIN-SUFFIX,ccgslb.net,DIRECT
+  - DOMAIN-SUFFIX,chinanetcenter.com,DIRECT
+  - DOMAIN-SUFFIX,meixincdn.com,DIRECT
+  - DOMAIN-SUFFIX,ourdvs.com,DIRECT
+  - DOMAIN-SUFFIX,staticdn.net,DIRECT
+  - DOMAIN-SUFFIX,wangsu.com,DIRECT
+  - DOMAIN-SUFFIX,ipip.net,DIRECT
+  - DOMAIN-SUFFIX,ip.la,DIRECT
+  - DOMAIN-SUFFIX,ip-cdn.com,DIRECT
+  - DOMAIN-SUFFIX,ipv6-test.com,DIRECT
+  - DOMAIN-SUFFIX,test-ipv6.com,DIRECT
+  - DOMAIN-SUFFIX,whatismyip.com,DIRECT
+  - DOMAIN-SUFFIX,netspeedtestmaster.com,DIRECT
+  - DOMAIN,speedtest.macpaw.com,DIRECT
+  - DOMAIN-SUFFIX,awesome-hd.me,DIRECT
+  - DOMAIN-SUFFIX,broadcasthe.net,DIRECT
+  - DOMAIN-SUFFIX,chdbits.co,DIRECT
+  - DOMAIN-SUFFIX,classix-unlimited.co.uk,DIRECT
+  - DOMAIN-SUFFIX,empornium.me,DIRECT
+  - DOMAIN-SUFFIX,gazellegames.net,DIRECT
+  - DOMAIN-SUFFIX,hdchina.org,DIRECT
+  - DOMAIN-SUFFIX,hdsky.me,DIRECT
+  - DOMAIN-SUFFIX,icetorrent.org,DIRECT
+  - DOMAIN-SUFFIX,jpopsuki.eu,DIRECT
+  - DOMAIN-SUFFIX,keepfrds.com,DIRECT
+  - DOMAIN-SUFFIX,madsrevolution.net,DIRECT
+  - DOMAIN-SUFFIX,m-team.cc,DIRECT
+  - DOMAIN-SUFFIX,nanyangpt.com,DIRECT
+  - DOMAIN-SUFFIX,ncore.cc,DIRECT
+  - DOMAIN-SUFFIX,open.cd,DIRECT
+  - DOMAIN-SUFFIX,ourbits.club,DIRECT
+  - DOMAIN-SUFFIX,passthepopcorn.me,DIRECT
+  - DOMAIN-SUFFIX,privatehd.to,DIRECT
+  - DOMAIN-SUFFIX,redacted.ch,DIRECT
+  - DOMAIN-SUFFIX,springsunday.net,DIRECT
+  - DOMAIN-SUFFIX,tjupt.org,DIRECT
+  - DOMAIN-SUFFIX,totheglory.im,DIRECT
+  - DOMAIN-SUFFIX,acm.org,DIRECT
+  - DOMAIN-SUFFIX,acs.org,DIRECT
+  - DOMAIN-SUFFIX,aip.org,DIRECT
+  - DOMAIN-SUFFIX,ams.org,DIRECT
+  - DOMAIN-SUFFIX,annualreviews.org,DIRECT
+  - DOMAIN-SUFFIX,aps.org,DIRECT
+  - DOMAIN-SUFFIX,ascelibrary.org,DIRECT
+  - DOMAIN-SUFFIX,asm.org,DIRECT
+  - DOMAIN-SUFFIX,asme.org,DIRECT
+  - DOMAIN-SUFFIX,astm.org,DIRECT
+  - DOMAIN-SUFFIX,bmj.com,DIRECT
+  - DOMAIN-SUFFIX,cambridge.org,DIRECT
+  - DOMAIN-SUFFIX,cas.org,DIRECT
+  - DOMAIN-SUFFIX,clarivate.com,DIRECT
+  - DOMAIN-SUFFIX,ebscohost.com,DIRECT
+  - DOMAIN-SUFFIX,emerald.com,DIRECT
+  - DOMAIN-SUFFIX,engineeringvillage.com,DIRECT
+  - DOMAIN-SUFFIX,icevirtuallibrary.com,DIRECT
+  - DOMAIN-SUFFIX,ieee.org,DIRECT
+  - DOMAIN-SUFFIX,imf.org,DIRECT
+  - DOMAIN-SUFFIX,iop.org,DIRECT
+  - DOMAIN-SUFFIX,jamanetwork.com,DIRECT
+  - DOMAIN-SUFFIX,jhu.edu,DIRECT
+  - DOMAIN-SUFFIX,jstor.org,DIRECT
+  - DOMAIN-SUFFIX,karger.com,DIRECT
+  - DOMAIN-SUFFIX,libguides.com,DIRECT
+  - DOMAIN-SUFFIX,madsrevolution.net,DIRECT
+  - DOMAIN-SUFFIX,mpg.de,DIRECT
+  - DOMAIN-SUFFIX,myilibrary.com,DIRECT
+  - DOMAIN-SUFFIX,nature.com,DIRECT
+  - DOMAIN-SUFFIX,oecd-ilibrary.org,DIRECT
+  - DOMAIN-SUFFIX,osapublishing.org,DIRECT
+  - DOMAIN-SUFFIX,oup.com,DIRECT
+  - DOMAIN-SUFFIX,ovid.com,DIRECT
+  - DOMAIN-SUFFIX,oxfordartonline.com,DIRECT
+  - DOMAIN-SUFFIX,oxfordbibliographies.com,DIRECT
+  - DOMAIN-SUFFIX,oxfordmusiconline.com,DIRECT
+  - DOMAIN-SUFFIX,pnas.org,DIRECT
+  - DOMAIN-SUFFIX,proquest.com,DIRECT
+  - DOMAIN-SUFFIX,rsc.org,DIRECT
+  - DOMAIN-SUFFIX,sagepub.com,DIRECT
+  - DOMAIN-SUFFIX,sciencedirect.com,DIRECT
+  - DOMAIN-SUFFIX,sciencemag.org,DIRECT
+  - DOMAIN-SUFFIX,scopus.com,DIRECT
+  - DOMAIN-SUFFIX,siam.org,DIRECT
+  - DOMAIN-SUFFIX,spiedigitallibrary.org,DIRECT
+  - DOMAIN-SUFFIX,springer.com,DIRECT
+  - DOMAIN-SUFFIX,springerlink.com,DIRECT
+  - DOMAIN-SUFFIX,tandfonline.com,DIRECT
+  - DOMAIN-SUFFIX,un.org,DIRECT
+  - DOMAIN-SUFFIX,uni-bielefeld.de,DIRECT
+  - DOMAIN-SUFFIX,webofknowledge.com,DIRECT
+  - DOMAIN-SUFFIX,westlaw.com,DIRECT
+  - DOMAIN-SUFFIX,wiley.com,DIRECT
+  - DOMAIN-SUFFIX,worldbank.org,DIRECT
+  - DOMAIN-SUFFIX,worldscientific.com,DIRECT
+  - DOMAIN-SUFFIX,cn,DIRECT
+  - DOMAIN-SUFFIX,360in.com,DIRECT
+  - DOMAIN-SUFFIX,51ym.me,DIRECT
+  - DOMAIN-SUFFIX,8686c.com,DIRECT
+  - DOMAIN-SUFFIX,abchina.com,DIRECT
+  - DOMAIN-SUFFIX,accuweather.com,DIRECT
+  - DOMAIN-SUFFIX,aicoinstorge.com,DIRECT
+  - DOMAIN-SUFFIX,air-matters.com,DIRECT
+  - DOMAIN-SUFFIX,air-matters.io,DIRECT
+  - DOMAIN-SUFFIX,aixifan.com,DIRECT
+  - DOMAIN-SUFFIX,amd.com,DIRECT
+  - DOMAIN-SUFFIX,b612.net,DIRECT
+  - DOMAIN-SUFFIX,bdatu.com,DIRECT
+  - DOMAIN-SUFFIX,beitaichufang.com,DIRECT
+  - DOMAIN-SUFFIX,bjango.com,DIRECT
+  - DOMAIN-SUFFIX,booking.com,DIRECT
+  - DOMAIN-SUFFIX,bstatic.com,DIRECT
+  - DOMAIN-SUFFIX,cailianpress.com,DIRECT
+  - DOMAIN-SUFFIX,camera360.com,DIRECT
+  - DOMAIN-SUFFIX,chinaso.com,DIRECT
+  - DOMAIN-SUFFIX,chua.pro,DIRECT
+  - DOMAIN-SUFFIX,chuimg.com,DIRECT
+  - DOMAIN-SUFFIX,chunyu.mobi,DIRECT
+  - DOMAIN-SUFFIX,chushou.tv,DIRECT
+  - DOMAIN-SUFFIX,cmbchina.com,DIRECT
+  - DOMAIN-SUFFIX,cmbimg.com,DIRECT
+  - DOMAIN-SUFFIX,ctrip.com,DIRECT
+  - DOMAIN-SUFFIX,dfcfw.com,DIRECT
+  - DOMAIN-SUFFIX,docschina.org,DIRECT
+  - DOMAIN-SUFFIX,douban.com,DIRECT
+  - DOMAIN-SUFFIX,doubanio.com,DIRECT
+  - DOMAIN-SUFFIX,douyu.com,DIRECT
+  - DOMAIN-SUFFIX,dxycdn.com,DIRECT
+  - DOMAIN-SUFFIX,dytt8.net,DIRECT
+  - DOMAIN-SUFFIX,eastmoney.com,DIRECT
+  - DOMAIN-SUFFIX,eudic.net,DIRECT
+  - DOMAIN-SUFFIX,feng.com,DIRECT
+  - DOMAIN-SUFFIX,fengkongcloud.com,DIRECT
+  - DOMAIN-SUFFIX,frdic.com,DIRECT
+  - DOMAIN-SUFFIX,futu5.com,DIRECT
+  - DOMAIN-SUFFIX,futunn.com,DIRECT
+  - DOMAIN-SUFFIX,gandi.net,DIRECT
+  - DOMAIN-SUFFIX,geilicdn.com,DIRECT
+  - DOMAIN-SUFFIX,getpricetag.com,DIRECT
+  - DOMAIN-SUFFIX,gifshow.com,DIRECT
+  - DOMAIN-SUFFIX,godic.net,DIRECT
+  - DOMAIN-SUFFIX,hicloud.com,DIRECT
+  - DOMAIN-SUFFIX,hongxiu.com,DIRECT
+  - DOMAIN-SUFFIX,hostbuf.com,DIRECT
+  - DOMAIN-SUFFIX,huxiucdn.com,DIRECT
+  - DOMAIN-SUFFIX,huya.com,DIRECT
+  - DOMAIN-SUFFIX,infinitynewtab.com,DIRECT
+  - DOMAIN-SUFFIX,ithome.com,DIRECT
+  - DOMAIN-SUFFIX,java.com,DIRECT
+  - DOMAIN-SUFFIX,jidian.im,DIRECT
+  - DOMAIN-SUFFIX,kaiyanapp.com,DIRECT
+  - DOMAIN-SUFFIX,kaspersky-labs.com,DIRECT
+  - DOMAIN-SUFFIX,keepcdn.com,DIRECT
+  - DOMAIN-SUFFIX,kkmh.com,DIRECT
+#  - DOMAIN-SUFFIX,licdn.com,DIRECT
+#  - DOMAIN-SUFFIX,linkedin.com,DIRECT
+  - DOMAIN-SUFFIX,loli.net,DIRECT
+  - DOMAIN-SUFFIX,luojilab.com,DIRECT
+  - DOMAIN-SUFFIX,maoyan.com,DIRECT
+  - DOMAIN-SUFFIX,maoyun.tv,DIRECT
+  - DOMAIN-SUFFIX,meituan.com,DIRECT
+  - DOMAIN-SUFFIX,meituan.net,DIRECT
+  - DOMAIN-SUFFIX,mobike.com,DIRECT
+  - DOMAIN-SUFFIX,moke.com,DIRECT
+  - DOMAIN-SUFFIX,mubu.com,DIRECT
+  - DOMAIN-SUFFIX,myzaker.com,DIRECT
+  - DOMAIN-SUFFIX,nim-lang-cn.org,DIRECT
+  - DOMAIN-SUFFIX,nvidia.com,DIRECT
+  - DOMAIN-SUFFIX,oracle.com,DIRECT
+  - DOMAIN-SUFFIX,paypal.com,DIRECT
+  - DOMAIN-SUFFIX,paypalobjects.com,DIRECT
+  - DOMAIN-SUFFIX,qdaily.com,DIRECT
+  - DOMAIN-SUFFIX,qidian.com,DIRECT
+  - DOMAIN-SUFFIX,qyer.com,DIRECT
+  - DOMAIN-SUFFIX,qyerstatic.com,DIRECT
+  - DOMAIN-SUFFIX,raychase.net,DIRECT
+  - DOMAIN-SUFFIX,ronghub.com,DIRECT
+  - DOMAIN-SUFFIX,ruguoapp.com,DIRECT
+  - DOMAIN-SUFFIX,s-reader.com,DIRECT
+  - DOMAIN-SUFFIX,sankuai.com,DIRECT
+  - DOMAIN-SUFFIX,scomper.me,DIRECT
+  - DOMAIN-SUFFIX,seafile.com,DIRECT
+  - DOMAIN-SUFFIX,sm.ms,DIRECT
+  - DOMAIN-SUFFIX,smzdm.com,DIRECT
+  - DOMAIN-SUFFIX,snapdrop.net,DIRECT
+  - DOMAIN-SUFFIX,snwx.com,DIRECT
+  - DOMAIN-SUFFIX,sspai.com,DIRECT
+  - DOMAIN-SUFFIX,takungpao.com,DIRECT
+  - DOMAIN-SUFFIX,teamviewer.com,DIRECT
+  - DOMAIN-SUFFIX,tianyancha.com,DIRECT
+  - DOMAIN-SUFFIX,udacity.com,DIRECT
+  - DOMAIN-SUFFIX,uning.com,DIRECT
+  - DOMAIN-SUFFIX,vmware.com,DIRECT
+  - DOMAIN-SUFFIX,weather.com,DIRECT
+  - DOMAIN-SUFFIX,weico.cc,DIRECT
+  - DOMAIN-SUFFIX,weidian.com,DIRECT
+  - DOMAIN-SUFFIX,xiachufang.com,DIRECT
+  - DOMAIN-SUFFIX,ximalaya.com,DIRECT
+  - DOMAIN-SUFFIX,xinhuanet.com,DIRECT
+  - DOMAIN-SUFFIX,xmcdn.com,DIRECT
+  - DOMAIN-SUFFIX,yangkeduo.com,DIRECT
+  - DOMAIN-SUFFIX,zhangzishi.cc,DIRECT
+  - DOMAIN-SUFFIX,zhihu.com,DIRECT
+  - DOMAIN-SUFFIX,zhimg.com,DIRECT
+  - DOMAIN-SUFFIX,zhuihd.com,DIRECT
+  - DOMAIN,download.jetbrains.com,DIRECT
+  - DOMAIN,images-cn.ssl-images-amazon.com,DIRECT
+  - IP-CIDR,119.28.28.28/32,DIRECT,no-resolve
+  - GEOIP,CN,DIRECT
+
+  - MATCH,自动选择
