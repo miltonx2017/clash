@@ -5,212 +5,700 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
- - {type: trojan, name: s00001, server: 116.129.253.130, port: 3389, password: e37c6d7efa845d60, udp: true, skip-cert-verify: true}
- - {type: trojan, name: s00002, server: 116.129.254.29, port: 3389, password: a170b44c2dfac9e6, udp: true, skip-cert-verify: true}
- - {type: vmess, name: s00003, server: u4.anmu.one, port: 16199, uuid: 07ec59da-18ad-4224-8ad9-c5a66b1447a9, alterId: 0, cipher: auto, network: tcp, tls: true}
- - {type: ss, name: s00004, server: 38.68.135.19, port: 3389, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
- - {type: vmess, name: s00005, ws-opts: {path: /}, server: ocrb1.moonfree.top, port: 443, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, network: ws, tls: true}
- - {type: ss, name: s00006, server: 169.197.142.99, port: 443, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
- - {type: ss, name: s00007, server: 169.197.142.39, port: 5500, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
- - {type: ss, name: s00008, server: 38.114.114.67, port: 5500, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
- - {type: ss, name: s00009, server: 169.197.142.39, port: 3306, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
- - {type: ss, name: s00010, server: 167.88.63.59, port: 3389, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
- - {type: ss, name: s00011, server: 54.36.174.181, port: 5001, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
- - {type: ss, name: s00012, server: 169.197.142.39, port: 8119, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
- - {type: ss, name: s00013, server: 3.35.207.65, port: 443, cipher: aes-256-cfb, password: amazonskr05}
- - {type: trojan, name: s00014, server: 116.129.254.47, port: 3389, password: c3c448da2363a6f7, udp: true, skip-cert-verify: true}
- - {type: ss, name: s00015, server: 38.114.114.69, port: 3306, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
- - {type: ss, name: s00016, server: 169.197.142.99, port: 6697, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
- - {type: ss, name: s00017, server: 169.197.142.39, port: 5000, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
- - {type: trojan, name: s00018, server: 116.129.254.47, port: 3389, password: a170b44c2dfac9e6, udp: true, skip-cert-verify: true}
- - {type: ss, name: s00019, server: 167.88.61.175, port: 8090, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
- - {type: ss, name: s00020, server: 167.88.61.50, port: 2376, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
- - {type: trojan, name: s00021, server: v2cross.com.03.v2ce.com, port: 443, password: ZD4dLSBXiMrmzdLd, udp: true, skip-cert-verify: true}
- - {type: ss, name: s00022, server: 38.114.114.69, port: 8008, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
- - {type: trojan, name: s00023, server: 331tw9.fans8.xyz, port: 443, password: 4b8f1bc5-9b36-4df8-9e4f-5864b330632f, udp: true, skip-cert-verify: true}
- - {type: ss, name: s00024, server: 167.88.61.175, port: 8008, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
- - {type: ss, name: s00025, server: 38.114.114.69, port: 8119, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
- - {type: ss, name: s00026, server: 169.197.142.99, port: 8009, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
- - {type: ss, name: s00027, server: 38.114.114.67, port: 6697, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
- - {type: ss, name: s00028, server: 38.114.114.69, port: 3389, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
- - {type: ss, name: s00029, server: 38.68.135.19, port: 5004, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
- - {type: ss, name: s00030, server: 38.114.114.67, port: 9101, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
- - {type: ss, name: s00031, server: 167.88.63.59, port: 8009, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
- - {type: ss, name: s00032, server: 169.197.142.99, port: 6679, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
- - {type: vmess, name: s00033, ws-opts: {path: /}, server: oz.moonfree.top, port: 443, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, network: ws, tls: true}
- - {type: vmess, name: s00034, ws-opts: {path: /go, headers: {host: us03.gogogoo.cyou}}, server: us03.gogogoo.cyou, port: 443, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 0, cipher: auto, network: ws, tls: true}
- - {type: ss, name: s00035, server: 38.114.114.69, port: 8080, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
- - {type: ss, name: s00036, server: 169.197.142.99, port: 9102, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
- - {type: ss, name: s00037, server: 38.114.114.67, port: 7002, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
- - {type: ss, name: s00038, server: 169.197.142.99, port: 8118, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
- - {type: ss, name: s00039, server: 167.88.61.175, port: 5500, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
- - {type: ss, name: s00040, server: 38.114.114.67, port: 6379, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
- - {type: trojan, name: s00041, server: snacks.starspace.link, port: 443, password: 0lbw6RXSl7eqCYMv, udp: true, skip-cert-verify: true}
- - {type: ss, name: s00042, server: 198.57.27.225, port: 5500, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
- - {type: ss, name: s00043, server: 38.68.135.19, port: 2376, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
- - {type: ss, name: s00044, server: 38.114.114.69, port: 5500, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
- - {type: ss, name: s00045, server: 167.88.61.50, port: 2375, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
- - {type: trojan, name: s00046, server: wireless.starspace.link, port: 443, password: 5LN8SGTqxk336nFg, udp: true, skip-cert-verify: true}
- - {type: trojan, name: s00047, server: au2-3.nigirocloud.com, port: 443, password: 3yFq7NCP53mVfpXJz3, udp: true, skip-cert-verify: true}
- - {type: ss, name: s00048, server: 167.88.61.175, port: 5000, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
- - {type: ss, name: s00049, server: 54.36.174.181, port: 8119, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
- - {type: ss, name: s00050, server: 38.68.134.71, port: 443, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
- - {type: ss, name: s00051, server: 38.114.114.67, port: 5001, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
- - {type: ss, name: s00052, server: 38.114.114.69, port: 8000, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
- - {type: ss, name: s00053, server: 167.88.63.59, port: 6679, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
- - {type: trojan, name: s00054, server: au2-4.nigirocloud.com, port: 443, password: 3yFq7NCP53mVfpXJz3, udp: true, skip-cert-verify: true}
- - {type: trojan, name: s00055, server: au2-1.nigirocloud.com, port: 443, password: 3yFq7NCP53mVfpXJz3, udp: true, skip-cert-verify: true}
- - {type: ss, name: s00056, server: 169.197.142.39, port: 8091, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
- - {type: ss, name: s00057, server: 38.68.135.19, port: 5001, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
- - {type: vmess, name: s00058, server: 129.226.213.241, port: 24824, uuid: 8c1e17cf-c378-403f-862c-62897510116c, alterId: 0, cipher: auto, network: tcp}
- - {type: ss, name: s00059, server: 38.114.114.67, port: 6679, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
- - {type: trojan, name: s00060, server: 116.129.253.191, port: 3389, password: e37c6d7efa845d60, udp: true, skip-cert-verify: true}
- - {type: ss, name: s00061, server: 38.114.114.69, port: 6697, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
- - {type: ss, name: s00062, server: 38.114.114.67, port: 7001, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
- - {type: vmess, name: s00063, server: 20.243.69.62, port: 80, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, network: ws}
- - {type: ss, name: s00064, server: 213.183.53.177, port: 9015, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf}
- - {type: trojan, name: s00065, server: silicon.starspace.link, port: 443, password: 4ZPDeqJ6g766UKDJ, udp: true, skip-cert-verify: true}
- - {type: trojan, name: s00066, server: 116.129.254.29, port: 3389, password: f6f2072a2e4cfc91, udp: true, skip-cert-verify: true}
- - {type: ss, name: s00067, server: 167.88.61.50, port: 8091, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
- - {type: ss, name: s00068, server: 38.114.114.67, port: 443, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
- - {type: trojan, name: s00069, server: 116.129.253.130, port: 3389, password: f6f2072a2e4cfc91, udp: true, skip-cert-verify: true}
- - {type: ss, name: s00070, server: 38.114.114.69, port: 6679, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
- - {type: trojan, name: s00071, server: 116.129.254.29, port: 3389, password: e37c6d7efa845d60, udp: true, skip-cert-verify: true}
- - {type: ss, name: s00072, server: 213.183.53.177, port: 9000, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9}
- - {type: ss, name: s00073, server: 169.197.142.39, port: 443, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
- - {type: vmess, name: s00074, server: 129.226.95.143, port: 45381, uuid: cd2a260c-f244-4e12-83c3-8a259cf29fc6, alterId: 0, cipher: auto, network: tcp}
- - {type: ss, name: s00075, server: 38.114.114.69, port: 8882, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
- - {type: ss, name: s00076, server: 38.114.114.67, port: 8882, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
- - {type: ss, name: s00077, server: 169.197.142.39, port: 8881, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
- - {type: ss, name: s00078, server: 169.197.142.39, port: 5004, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
- - {type: trojan, name: s00079, server: 116.129.254.47, port: 3389, password: e37c6d7efa845d60, udp: true, skip-cert-verify: true}
- - {type: ss, name: s00080, server: 169.197.142.39, port: 7002, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
- - {type: ss, name: s00081, server: 38.68.135.19, port: 5601, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
- - {type: vmess, name: s00082, server: 129.226.94.145, port: 51848, uuid: ad4757f1-e28c-47b8-970c-51b232c653d8, alterId: 0, cipher: auto, network: tcp}
- - {type: vmess, name: s00083, server: 20.222.106.239, port: 80, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, network: ws}
- - {type: ss, name: s00084, server: 167.88.61.175, port: 7306, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
- - {type: ss, name: s00085, server: 43.200.6.115, port: 443, cipher: aes-256-cfb, password: amazonskr05}
- - {type: ss, name: s00086, server: 169.197.142.39, port: 9102, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
- - {type: ss, name: s00087, server: 167.88.61.50, port: 8119, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
- - {type: ss, name: s00088, server: 167.88.63.59, port: 7307, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
- - {type: ss, name: s00089, server: 38.114.114.69, port: 6379, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
- - {type: ss, name: s00090, server: 38.114.114.69, port: 9101, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
- - {type: ss, name: s00091, server: 167.88.61.50, port: 5003, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
- - {type: ss, name: s00092, server: 169.197.142.99, port: 2375, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
- - {type: ss, name: s00093, server: 213.183.59.214, port: 9010, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4}
- - {type: ss, name: s00094, server: 167.88.63.59, port: 443, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
- - {type: ss, name: s00095, server: 167.88.61.175, port: 8881, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
- - {type: trojan, name: s00096, server: charge.starspace.link, port: 443, password: 8UnS7eSMi8OFKfje, udp: true, skip-cert-verify: true}
- - {type: ss, name: s00097, server: 167.88.61.175, port: 5001, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
- - {type: trojan, name: s00098, server: events.starspace.link, port: 443, password: 3RWFPCmWd4lYIMof, udp: true, skip-cert-verify: true}
- - {type: ss, name: s00099, server: 185.4.65.6, port: 21247, cipher: aes-256-cfb, password: vDS9G2p}
- - {type: vmess, name: s00100, ws-opts: {path: /, headers: {host: tms.dingtalk.com}}, server: 20.222.106.239, port: 80, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, network: ws}
- - {type: trojan, name: s00101, server: ce.rutracker-cn.com, port: 443, password: 5y8y3CwxRVYhyfSY, udp: true, skip-cert-verify: true}
- - {type: ss, name: s00102, server: 167.88.61.50, port: 5004, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
- - {type: ssr, name: s00103, server: 213.183.53.177, port: 9098, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: aLpQtfEZe445QyHk}
- - {type: ss, name: s00104, server: 167.88.61.175, port: 8888, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
- - {type: ss, name: s00105, server: 38.114.114.69, port: 5001, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
- - {type: trojan, name: s00106, server: 5.44.249.43, port: 3389, password: cd39f62aed7b90f6, udp: true, skip-cert-verify: true}
- - {type: ss, name: s00107, server: 167.88.61.175, port: 6379, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
- - {type: trojan, name: s00108, server: storage.starspace.link, port: 443, password: W8gVbKNAZlFzgGPn, udp: true, skip-cert-verify: true}
- - {type: ssr, name: s00109, server: 213.183.53.177, port: 9064, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: cp8pRSUAyLhTfVWH}
- - {type: ss, name: s00110, server: 167.88.61.175, port: 6679, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
- - {type: ss, name: s00111, server: 167.88.63.59, port: 8000, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
- - {type: trojan, name: s00112, server: v2cross.com.05.v2ce.com, port: 443, password: kGrwqmB1nEKUsDwE, udp: true, skip-cert-verify: true}
- - {type: ss, name: s00113, server: 139.219.130.70, port: 443, cipher: aes-256-cfb, password: E4DNMf73kHPrd8Qq7aqGPf7f}
- - {type: ssr, name: s00114, server: 213.183.59.211, port: 9025, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: XPtzA9sCug3SPR4c}
- - {type: ss, name: s00115, server: 167.88.61.175, port: 5003, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
- - {type: ss, name: s00116, server: fkgfw-prod.i.sxl.cn, port: 443, cipher: aes-256-cfb, password: E4DNMf73kHPrd8Qq7aqGPf7f}
- - {type: ssr, name: s00117, server: 213.183.53.177, port: 9059, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: 9XwYyZsK8SNzQDtY}
- - {type: trojan, name: s00118, server: s4.upyun.online, port: 12340, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, udp: true, skip-cert-verify: true}
- - {type: ssr, name: s00119, server: 213.183.53.177, port: 9015, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: ZpNDDKRu9MagNvaf}
- - {type: ss, name: s00120, server: 38.68.134.71, port: 7001, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
- - {type: ss, name: s00121, server: 38.114.114.67, port: 8118, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
- - {type: trojan, name: s00122, server: holidays.starspace.link, port: 443, password: XCPKaaV8I1rmb7Ai, udp: true, skip-cert-verify: true}
- - {type: ss, name: s00123, server: 38.114.114.67, port: 8009, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
- - {type: trojan, name: s00124, server: v2cross.com.04.v2ce.com, port: 443, password: vGWCNNfBHwSY6m6M, udp: true, skip-cert-verify: true}
- - {type: ss, name: s00125, server: 38.114.114.67, port: 8119, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
- - {type: ss, name: s00126, server: 169.197.142.99, port: 8000, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
- - {type: ss, name: s00127, server: 198.57.27.225, port: 443, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
- - {type: trojan, name: s00128, server: s3.upyun.online, port: 12340, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, udp: true, skip-cert-verify: true}
- - {type: trojan, name: s00129, server: s3.upyun.online, port: 12340, password: c0276440-f163-4f40-a08c-78b158ce6c4f, udp: true, skip-cert-verify: true}
- - {type: vmess, name: s00130, ws-opts: {path: /, headers: {host: tms.dingtalk.com}}, server: 20.243.71.225, port: 80, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, network: ws}
- - {type: ssr, name: s00131, server: 213.183.59.214, port: 9001, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: UkXRsXvR6buDMG2Y}
- - {type: vmess, name: s00132, ws-opts: {path: /, headers: {host: tms.dingtalk.com}}, server: 20.243.69.62, port: 80, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, network: ws}
- - {type: ss, name: s00133, server: 169.197.142.39, port: 6679, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
- - {type: ssr, name: s00134, server: 213.183.59.214, port: 9042, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: S7KwUu7yBy58S3Ga}
- - {type: ssr, name: s00135, server: 213.183.53.177, port: 9088, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: f8npKgNzdkss2ytn}
- - {type: trojan, name: s00136, server: neteasy.ga, port: 28931, password: MnROfwtPYa, udp: true, skip-cert-verify: true}
- - {type: vmess, name: s00137, server: 129.226.215.95, port: 43613, uuid: 9e1be3ad-911d-4dcc-822f-f8f8e79f62e2, alterId: 0, cipher: auto, network: tcp}
- - {type: trojan, name: s00138, server: s4.upyun.online, port: 12340, password: c0276440-f163-4f40-a08c-78b158ce6c4f, udp: true, skip-cert-verify: true}
- - {type: ssr, name: s00139, server: 213.183.59.214, port: 9007, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: kSPmvwdFzGMMW5pY}
- - {type: ss, name: s00140, server: 169.197.142.99, port: 9101, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
- - {type: vmess, name: s00141, server: u2.anmu.one, port: 16499, uuid: 32b306e1-d5b1-4913-d8d3-56ac23637de7, alterId: 0, cipher: auto, network: tcp, tls: true}
- - {type: vmess, name: s00142, server: 129.226.216.124, port: 14728, uuid: eea3d090-e068-4b74-8039-91fd79218d1a, alterId: 0, cipher: auto, network: tcp}
- - {type: vmess, name: s00143, server: 129.226.94.27, port: 23785, uuid: d0771055-cccc-4b79-c4db-d2942f8c9e62, alterId: 0, cipher: auto, network: tcp}
- - {type: vmess, name: s00144, server: 20.243.71.225, port: 80, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, network: ws}
- - {type: trojan, name: s00145, server: jgwxn4.gaox.ml, port: 443, password: e8c1ab3c-89b3-4933-92df-682e6dce7819, udp: true, skip-cert-verify: true}
- - {type: trojan, name: s00146, server: tx49sg.fans8.xyz, port: 443, password: 4b8f1bc5-9b36-4df8-9e4f-5864b330632f, udp: true, skip-cert-verify: true}
- - {type: ss, name: s00147, server: 167.88.63.59, port: 8090, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
- - {type: trojan, name: s00148, server: s1.upyun.online, port: 12340, password: c0276440-f163-4f40-a08c-78b158ce6c4f, udp: true, skip-cert-verify: true}
- - {type: ss, name: s00149, server: 167.88.61.50, port: 3306, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
- - {type: ss, name: s00150, server: 167.88.63.59, port: 5004, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
- - {type: trojan, name: s00151, server: s1.upyun.online, port: 12340, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, udp: true, skip-cert-verify: true}
- - {type: ss, name: s00152, server: 38.68.134.71, port: 2376, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
- - {type: ss, name: s00153, server: 167.88.63.59, port: 4444, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
- - {type: ss, name: s00154, server: 54.36.174.181, port: 8882, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
- - {type: ss, name: s00155, server: 54.36.174.181, port: 2376, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
- - {type: trojan, name: s00156, server: s2.upyun.online, port: 12340, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, udp: true, skip-cert-verify: true}
- - {type: ss, name: s00157, server: 38.68.134.71, port: 6379, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
- - {type: trojan, name: s00158, server: rooms.starspace.link, port: 443, password: 5HfENR8nt2PR8reH, udp: true, skip-cert-verify: true}
- - {type: ss, name: s00159, server: 167.88.63.93, port: 5004, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
- - {type: trojan, name: s00160, server: s2.upyun.online, port: 12340, password: c0276440-f163-4f40-a08c-78b158ce6c4f, udp: true, skip-cert-verify: true}
- - {type: ss, name: s00161, server: 169.197.142.39, port: 8882, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
- - {type: ss, name: s00162, server: 167.88.63.59, port: 6697, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
- - {type: ss, name: s00163, server: 167.88.61.50, port: 7307, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
- - {type: ssr, name: s00164, server: 213.183.53.177, port: 9041, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: U6qnYRhfyDmn8sgn}
- - {type: ss, name: s00165, server: 54.36.174.181, port: 5500, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
- - {type: trojan, name: s00166, server: outdoor.starspace.link, port: 443, password: 4brytjljFgnUu3WU, udp: true, skip-cert-verify: true}
- - {type: vmess, name: s00167, server: u2.anmu.one, port: 16161, uuid: 919ac815-1776-47fe-8b54-508ef4f39421, alterId: 0, cipher: auto, network: tcp, tls: true}
- - {type: ss, name: s00168, server: 167.88.63.59, port: 5001, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
- - {type: ss, name: s00169, server: 54.36.174.181, port: 9101, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
- - {type: ss, name: s00170, server: 54.36.174.181, port: 8009, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
- - {type: trojan, name: s00171, server: living.starspace.link, port: 443, password: NNhSlVRhte1Vzw5D, udp: true, skip-cert-verify: true}
- - {type: ss, name: s00172, server: 38.68.134.71, port: 8009, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
- - {type: ss, name: s00173, server: 38.68.135.19, port: 5003, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
- - {type: ss, name: s00174, server: 54.36.174.181, port: 8080, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
- - {type: ss, name: s00175, server: 54.36.174.181, port: 7002, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
- - {type: ss, name: s00176, server: 54.36.174.181, port: 6697, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
- - {type: ss, name: s00177, server: 167.88.63.59, port: 9101, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
- - {type: ss, name: s00178, server: 54.36.174.181, port: 6679, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
- - {type: vmess, name: s00179, server: 129.226.217.168, port: 15322, uuid: 7676a524-3603-473e-de41-2bc6273d52fc, alterId: 0, cipher: auto, network: tcp}
- - {type: ss, name: s00180, server: 167.88.63.59, port: 5601, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
- - {type: ss, name: s00181, server: 167.88.63.59, port: 8881, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
- - {type: ss, name: s00182, server: 54.36.174.181, port: 7001, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
- - {type: ss, name: s00183, server: 38.114.114.69, port: 8090, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
- - {type: ss, name: s00184, server: 54.36.174.181, port: 8008, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
- - {type: ss, name: s00185, server: 198.57.27.225, port: 7002, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
- - {type: ss, name: s00186, server: 54.36.174.181, port: 7306, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
- - {type: ss, name: s00187, server: 38.114.114.69, port: 9102, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
- - {type: ss, name: s00188, server: 54.36.174.181, port: 5004, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
- - {type: ss, name: s00189, server: 167.88.61.50, port: 7306, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
- - {type: ss, name: s00190, server: 167.88.63.93, port: 6697, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
- - {type: ss, name: s00191, server: 167.88.63.59, port: 3306, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
- - {type: ss, name: s00192, server: 167.88.63.59, port: 6379, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
- - {type: ss, name: s00193, server: 167.88.63.59, port: 5000, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
- - {type: ss, name: s00194, server: 54.36.174.181, port: 8881, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
- - {type: ss, name: s00195, server: 54.36.174.181, port: 6379, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
- - {type: ss, name: s00196, server: 167.88.63.93, port: 7002, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
- - {type: ss, name: s00197, server: 167.88.63.59, port: 7306, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
- - {type: ss, name: s00198, server: 38.143.66.20, port: 9101, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
- - {type: ss, name: s00199, server: 38.114.114.69, port: 8881, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
- - {type: trojan, name: s00200, server: 5.44.249.43, port: 3389, password: 6f0a9d0fa39d65fa, udp: true, skip-cert-verify: true}
- - {type: vmess, name: s00201, server: 34.193.237.223, port: 80, uuid: 12fe88a3-6011-44ec-a8ae-3dfd3c678ca7, alterId: 0, cipher: auto, network: tcp}
- - {type: trojan, name: s00202, server: jp1.v2yyds.cc, port: 32111, password: c0669346-7ba9-4fda-91a4-238fb8d0a4d2, udp: true, skip-cert-verify: true}
- - {type: ss, name: s00203, server: 38.143.66.20, port: 5000, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
- - {type: trojan, name: s00204, server: jgwxn3.gaox.ml, port: 443, password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf, udp: true, skip-cert-verify: true}
- - {type: ss, name: s00205, server: 167.88.63.59, port: 9102, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
- - {type: ss, name: s00206, server: 169.197.141.15, port: 5000, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+ - {type: ss, name: s00001, server: 38.68.134.71, port: 443, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+ - {type: ss, name: s00002, server: 167.88.61.50, port: 3306, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+ - {type: trojan, name: s00003, server: jp04.vproxy.us, port: 56565, password: 066771f4-b7f5-426a-bbb2-5fecfe9190f5, udp: true, skip-cert-verify: true, sni: jp04.vproxy.us}
+ - {type: ss, name: s00004, server: 38.68.135.19, port: 5601, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+ - {type: ssr, name: s00005, server: 213.183.53.179, port: 9038, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: gYCYXfkUQEs2TaJQ}
+ - {type: vmess, name: s00006, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {host: jp01-tls-vm0.entry.vm-pass.org}}, server: jp01-tls-vm0.entry.ikuuu.casa, port: 892, uuid: 3046e7e6-1c41-361f-8616-434c76c32d48, alterId: 1, cipher: auto, network: ws, tls: true}
+ - {type: ss, name: s00007, server: 167.88.61.50, port: 8091, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+ - {type: vmess, name: s00008, server: 183.232.239.116, port: 45194, uuid: 6ed1e6ba-d8cc-40e9-8bd3-39fcfc44003b, alterId: 0, cipher: auto, network: ws}
+ - {type: ss, name: s00009, server: 213.183.59.218, port: 9070, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH}
+ - {type: vmess, name: s00010, server: 183.232.239.116, port: 45149, uuid: 6ed1e6ba-d8cc-40e9-8bd3-39fcfc44003b, alterId: 0, cipher: auto, network: ws}
+ - {type: vmess, name: s00011, ws-opts: {path: /, headers: {host: hk01.bosaidong.buzz}}, server: hk01.bosaidong.buzz, port: 80, uuid: 2adef817-ff89-4d0c-8782-694ba4e8d899, alterId: 0, cipher: auto, network: ws}
+ - {type: ss, name: s00012, server: 169.197.142.39, port: 3306, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+ - {type: ss, name: s00013, server: 38.114.114.69, port: 3306, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+ - {type: vmess, name: s00014, server: 150.230.249.169, port: 8888, uuid: f836d00e-73e0-4eb5-a0ac-18a8e9ee61ef, alterId: 0, cipher: auto, network: tcp}
+ - {type: ssr, name: s00015, server: 213.183.53.200, port: 9084, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: c3NtHJ5ujV2tGDfj}
+ - {type: trojan, name: s00016, server: jgwdb4.gaox.ml, port: 443, password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2, udp: true, skip-cert-verify: true}
+ - {type: ssr, name: s00017, server: 213.183.53.179, port: 9019, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: GA9KzeEgvfxNrgmM}
+ - {type: trojan, name: s00018, server: jgwdb3.gaox.ml, port: 443, password: 8d2d5953-d649-4034-94f2-72f2df2623da, udp: true, skip-cert-verify: true}
+ - {type: ss, name: s00019, server: 134.195.196.128, port: 5500, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+ - {type: ss, name: s00020, server: 38.68.134.71, port: 8009, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+ - {type: ss, name: s00021, server: 38.143.66.20, port: 5500, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+ - {type: ss, name: s00022, server: 38.68.134.71, port: 7001, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+ - {type: trojan, name: s00023, server: au2-4.nigirocloud.com, port: 443, password: 3yFq7NCP53mVfpXJz3, udp: true, skip-cert-verify: true, sni: au2-4.nigirocloud.com}
+ - {type: ss, name: s00024, server: 167.88.61.50, port: 7306, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+ - {type: ss, name: s00025, server: 38.143.66.20, port: 5000, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+ - {type: ss, name: s00026, server: 152.89.210.84, port: 9037, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU}
+ - {type: vmess, name: s00027, ws-opts: {path: /, headers: {host: 20.222.106.239}}, server: 20.222.106.239, port: 80, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, network: ws}
+ - {type: vmess, name: s00028, server: ocrb2.moonfree.top, port: 443, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, network: ws, tls: true}
+ - {type: ss, name: s00029, server: 134.195.196.128, port: 8118, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+ - {type: ss, name: s00030, server: 169.197.142.99, port: 8881, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+ - {type: ss, name: s00031, server: 169.197.142.99, port: 443, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+ - {type: ss, name: s00032, server: 167.88.61.50, port: 2375, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+ - {type: ssr, name: s00033, server: 213.183.53.179, port: 9045, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: Lp27rqyJq72bZsqX}
+ - {type: ss, name: s00034, server: 134.195.196.128, port: 2376, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+ - {type: ss, name: s00035, server: 185.167.117.171, port: 9000, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9}
+ - {type: ss, name: s00036, server: 213.183.63.221, port: 9014, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX}
+ - {type: ss, name: s00037, server: 213.183.63.217, port: 9057, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z}
+ - {type: ss, name: s00038, server: 198.57.27.225, port: 5500, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+ - {type: ss, name: s00039, server: 198.57.27.225, port: 3306, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+ - {type: vmess, name: s00040, ws-opts: {path: /v2ray, headers: {host: cn.zzv07.infonode.xyz}}, server: cn.zzv07.infonode.xyz, port: 17011, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, network: ws}
+ - {type: ss, name: s00041, server: 213.183.59.185, port: 9057, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z}
+ - {type: vmess, name: s00042, server: ocrb1.moonfree.top, port: 443, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, network: ws, tls: true}
+ - {type: ss, name: s00043, server: 213.183.59.218, port: 9006, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq}
+ - {type: ss, name: s00044, server: 85.208.108.58, port: 8080, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+ - {type: vmess, name: s00045, ws-opts: {path: /v2ray, headers: {host: cn.zzv12.infonode.xyz}}, server: cn.zzv12.infonode.xyz, port: 17014, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, network: ws}
+ - {type: ss, name: s00046, server: 198.57.27.225, port: 8881, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+ - {type: vmess, name: s00047, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {host: jp01-tls-vm0.entry.vm-pass.org}}, server: jp01-tls-vm0.entry.ikuuu.casa, port: 889, uuid: 62e7b8dd-b9fd-3ea5-aa62-d5e770dd389d, alterId: 1, cipher: auto, network: ws, tls: true}
+ - {type: ss, name: s00048, server: 38.68.134.71, port: 5600, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+ - {type: ss, name: s00049, server: 38.114.114.69, port: 8119, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+ - {type: ssr, name: s00050, server: 213.183.59.206, port: 9097, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: Sn5B7jTqr76aCJT8}
+ - {type: ss, name: s00051, server: 213.183.63.221, port: 9042, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga}
+ - {type: ss, name: s00052, server: 213.183.59.185, port: 9043, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF}
+ - {type: ss, name: s00053, server: 134.195.196.128, port: 7307, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+ - {type: ssr, name: s00054, server: 213.183.59.206, port: 9042, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: S7KwUu7yBy58S3Ga}
+ - {type: trojan, name: s00055, server: 212.81.47.15, port: 443, password: 3yFq7NCP53mVfpXJz3, udp: true, skip-cert-verify: true, sni: t.me.vpnhat}
+ - {type: ss, name: s00056, server: 213.183.53.208, port: 9060, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ}
+ - {type: vmess, name: s00057, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {host: jp01-tls-vm0.entry.vm-pass.org}}, server: jp01-tls-vm0.entry.ikuuu.casa, port: 893, uuid: e1241a61-e533-3aa0-a25e-ad86cf34cd64, alterId: 1, cipher: auto, network: ws, tls: true}
+ - {type: ssr, name: s00058, server: 213.183.59.206, port: 9032, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: UWZQeLRWnkqgkseq}
+ - {type: ss, name: s00059, server: 198.57.27.225, port: 6697, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+ - {type: ss, name: s00060, server: 38.68.134.71, port: 8119, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+ - {type: ss, name: s00061, server: 169.197.142.39, port: 8119, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+ - {type: trojan, name: s00062, server: 0319tw05.fans8.xyz, port: 443, password: c6799a1d-4a74-4683-919f-98b0a5046591, udp: true, skip-cert-verify: true}
+ - {type: ss, name: s00063, server: 169.197.142.99, port: 9102, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+ - {type: trojan, name: s00064, server: 212.81.47.14, port: 443, password: 3yFq7NCP53mVfpXJz3, udp: true, skip-cert-verify: true, sni: t.me.vpnhat}
+ - {type: ssr, name: s00065, server: 213.183.59.206, port: 9084, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: c3NtHJ5ujV2tGDfj}
+ - {type: ss, name: s00066, server: 169.197.142.99, port: 7001, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+ - {type: ss, name: s00067, server: 38.68.135.19, port: 3389, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+ - {type: ss, name: s00068, server: 198.57.27.225, port: 6679, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+ - {type: vmess, name: s00069, ws-opts: {path: /api/v3/download.getFile, headers: {host: v3.ssrsub.com}}, server: v3.ssrsub.com, port: 443, uuid: 620d82a8-22ba-4945-90ba-a2bed1cde1d2, alterId: 0, cipher: auto, network: ws, tls: true}
+ - {type: ssr, name: s00070, server: 213.183.59.206, port: 9027, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: EXN3S3eQpjE7EJu8}
+ - {type: ss, name: s00071, server: 38.114.114.69, port: 8008, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+ - {type: ss, name: s00072, server: 213.183.63.221, port: 9040, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN}
+ - {type: ss, name: s00073, server: 167.88.61.50, port: 8882, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+ - {type: ss, name: s00074, server: 183.232.239.116, port: 45324, cipher: chacha20-ietf-poly1305, password: 6ed1e6ba-d8cc-40e9-8bd3-39fcfc44003b}
+ - {type: ss, name: s00075, server: 213.183.59.185, port: 9098, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk}
+ - {type: ss, name: s00076, server: 213.183.63.221, port: 9057, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z}
+ - {type: trojan, name: s00077, server: 523hk2.fans8.xyz, port: 443, password: c6799a1d-4a74-4683-919f-98b0a5046591, udp: true, skip-cert-verify: true}
+ - {type: ss, name: s00078, server: 213.183.53.208, port: 9001, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y}
+ - {type: ss, name: s00079, server: 169.197.142.99, port: 6697, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+ - {type: ss, name: s00080, server: 198.57.27.225, port: 5600, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+ - {type: ss, name: s00081, server: 38.68.134.71, port: 7307, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+ - {type: ss, name: s00082, server: 38.114.114.69, port: 3389, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+ - {type: vmess, name: s00083, server: oz.moonfree.top, port: 443, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, network: ws, tls: true}
+ - {type: ss, name: s00084, server: 213.183.53.208, port: 9050, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE}
+ - {type: vmess, name: s00085, ws-opts: {path: /, headers: {host: 20.243.69.62}}, server: 20.243.69.62, port: 80, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, network: ws}
+ - {type: ss, name: s00086, server: 213.183.63.221, port: 9050, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE}
+ - {type: ss, name: s00087, server: 217.30.10.65, port: 9038, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ}
+ - {type: ss, name: s00088, server: 217.30.10.66, port: 9014, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX}
+ - {type: ssr, name: s00089, server: 213.183.59.206, port: 9030, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: GeregetR8cvQHzYr}
+ - {type: ss, name: s00090, server: 169.197.142.99, port: 9101, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+ - {type: ssr, name: s00091, server: 213.183.59.206, port: 9043, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: HSZuyJQcWe8dxNdF}
+ - {type: ss, name: s00092, server: 213.183.53.198, port: 9084, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj}
+ - {type: ss, name: s00093, server: 217.30.10.65, port: 9025, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c}
+ - {type: trojan, name: s00094, server: silicon.starspace.link, port: 443, password: 4ZPDeqJ6g766UKDJ, udp: true, skip-cert-verify: true}
+ - {type: ss, name: s00095, server: 213.183.53.179, port: 9010, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4}
+ - {type: ss, name: s00096, server: 213.183.63.221, port: 9064, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH}
+ - {type: ss, name: s00097, server: 213.183.53.214, port: 9000, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9}
+ - {type: ss, name: s00098, server: 172.99.188.71, port: 7002, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+ - {type: ssr, name: s00099, server: 213.183.53.177, port: 9094, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: rpgbNnU9rDDU4aWZ}
+ - {type: ss, name: s00100, server: 213.183.53.214, port: 9011, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa}
+ - {type: vmess, name: s00101, server: 129.226.94.145, port: 51848, uuid: ad4757f1-e28c-47b8-970c-51b232c653d8, alterId: 0, cipher: auto, network: tcp}
+ - {type: vmess, name: s00102, server: d02.v2.gay, port: 58681, uuid: 758c6c64-e7bc-4bbf-dd58-cbd21c09c75a, alterId: 0, cipher: auto, network: tcp}
+ - {type: vmess, name: s00103, ws-opts: {path: /v2ray, headers: {host: cn.zzv02.infonode.xyz}}, server: cn.zzv02.infonode.xyz, port: 17016, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, network: ws}
+ - {type: ss, name: s00104, server: 213.183.59.185, port: 9042, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga}
+ - {type: ss, name: s00105, server: 213.183.53.214, port: 9038, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ}
+ - {type: ss, name: s00106, server: 185.167.117.171, port: 9003, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP}
+ - {type: ss, name: s00107, server: 185.167.117.171, port: 9032, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq}
+ - {type: ssr, name: s00108, server: 213.183.53.177, port: 9041, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: U6qnYRhfyDmn8sgn}
+ - {type: ss, name: s00109, server: 213.183.53.179, port: 9020, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu}
+ - {type: ss, name: s00110, server: 217.30.10.65, port: 9018, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7}
+ - {type: ss, name: s00111, server: 5.183.179.148, port: 9011, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa}
+ - {type: ss, name: s00112, server: 198.57.27.225, port: 5004, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+ - {type: ss, name: s00113, server: 185.167.117.171, port: 9070, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH}
+ - {type: ss, name: s00114, server: 38.68.134.71, port: 6379, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+ - {type: ssr, name: s00115, server: 213.183.53.177, port: 9079, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: TPqX8edgbAURcAMb}
+ - {type: ss, name: s00116, server: 213.183.53.202, port: 9000, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9}
+ - {type: ss, name: s00117, server: 213.183.53.208, port: 9031, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN}
+ - {type: trojan, name: s00118, server: 212.81.47.13, port: 443, password: 3yFq7NCP53mVfpXJz3, udp: true, skip-cert-verify: true}
+ - {type: ss, name: s00119, server: 185.167.117.171, port: 9079, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb}
+ - {type: ss, name: s00120, server: 217.30.10.68, port: 9098, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk}
+ - {type: ss, name: s00121, server: 217.30.10.68, port: 9025, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c}
+ - {type: ssr, name: s00122, server: 213.183.53.177, port: 9033, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: UTJA57ypk2XKQpnm}
+ - {type: ss, name: s00123, server: 213.183.53.202, port: 9097, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8}
+ - {type: ss, name: s00124, server: 198.57.27.225, port: 8118, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+ - {type: ss, name: s00125, server: 213.183.53.221, port: 9057, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z}
+ - {type: vmess, name: s00126, server: 129.226.216.160, port: 49056, uuid: 89d7f316-c0d4-47f2-c6d3-fd9f37c11c7e, alterId: 0, cipher: auto, network: tcp}
+ - {type: ss, name: s00127, server: 213.183.53.214, port: 9053, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C}
+ - {type: ss, name: s00128, server: 38.68.135.19, port: 7306, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+ - {type: ss, name: s00129, server: 213.183.53.221, port: 9041, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn}
+ - {type: ss, name: s00130, server: 167.88.61.50, port: 5003, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+ - {type: ss, name: s00131, server: 134.195.196.128, port: 8080, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+ - {type: ssr, name: s00132, server: 213.183.53.177, port: 9005, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: ZET59LF6DvCC8KVt}
+ - {type: vmess, name: s00133, ws-opts: {path: /v2ray, headers: {host: cn.zzv01.infonode.xyz}}, server: cn.zzv01.infonode.xyz, port: 17013, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, network: ws}
+ - {type: ss, name: s00134, server: 185.167.117.171, port: 9010, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4}
+ - {type: ssr, name: s00135, server: 213.183.53.177, port: 9060, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: ueLXVkvh4hckhErQ}
+ - {type: ssr, name: s00136, server: 213.183.53.177, port: 9043, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: HSZuyJQcWe8dxNdF}
+ - {type: ss, name: s00137, server: 38.68.135.19, port: 5004, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+ - {type: ss, name: s00138, server: 213.183.51.172, port: 9026, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA}
+ - {type: ss, name: s00139, server: 213.183.53.214, port: 9025, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c}
+ - {type: ss, name: s00140, server: 38.114.114.69, port: 7002, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+ - {type: trojan, name: s00141, server: jgwxn2.gaox.ml, port: 443, password: c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, udp: true, skip-cert-verify: true}
+ - {type: ss, name: s00142, server: 213.183.53.200, port: 9010, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4}
+ - {type: ss, name: s00143, server: 213.183.53.221, port: 9003, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP}
+ - {type: ss, name: s00144, server: 213.183.53.221, port: 9088, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn}
+ - {type: ss, name: s00145, server: 213.183.53.202, port: 9043, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF}
+ - {type: ss, name: s00146, server: 213.183.53.208, port: 9064, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH}
+ - {type: trojan, name: s00147, server: au2-3.nigirocloud.com, port: 443, password: 3yFq7NCP53mVfpXJz3, udp: true, skip-cert-verify: true, sni: au2-3.nigirocloud.com}
+ - {type: ss, name: s00148, server: 213.183.53.208, port: 9079, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb}
+ - {type: ss, name: s00149, server: 217.30.10.67, port: 9043, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF}
+ - {type: ss, name: s00150, server: 213.183.53.179, port: 9061, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP}
+ - {type: ss, name: s00151, server: 172.99.188.71, port: 7307, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+ - {type: ssr, name: s00152, server: 213.183.53.200, port: 9088, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: f8npKgNzdkss2ytn}
+ - {type: ssr, name: s00153, server: 213.183.53.177, port: 9042, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: S7KwUu7yBy58S3Ga}
+ - {type: ssr, name: s00154, server: 213.183.59.214, port: 9050, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: FG5ddLsMPbV5CutE}
+ - {type: ss, name: s00155, server: 134.195.196.128, port: 9101, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+ - {type: ss, name: s00156, server: 213.183.63.221, port: 9098, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk}
+ - {type: ss, name: s00157, server: 213.183.53.179, port: 9005, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt}
+ - {type: ss, name: s00158, server: 134.195.196.128, port: 8009, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+ - {type: ssr, name: s00159, server: 213.183.53.200, port: 9027, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: EXN3S3eQpjE7EJu8}
+ - {type: ss, name: s00160, server: 213.183.53.214, port: 9050, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE}
+ - {type: ss, name: s00161, server: 213.183.53.202, port: 9070, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH}
+ - {type: ss, name: s00162, server: 213.183.53.214, port: 9097, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8}
+ - {type: ss, name: s00163, server: 213.183.53.202, port: 9015, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf}
+ - {type: ss, name: s00164, server: 213.183.53.202, port: 9045, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX}
+ - {type: ssr, name: s00165, server: 213.183.53.200, port: 9015, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: ZpNDDKRu9MagNvaf}
+ - {type: ss, name: s00166, server: 213.183.53.221, port: 9026, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA}
+ - {type: ss, name: s00167, server: 213.183.53.214, port: 9014, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX}
+ - {type: ss, name: s00168, server: 213.183.53.207, port: 9003, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP}
+ - {type: ss, name: s00169, server: 217.30.10.64, port: 9045, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX}
+ - {type: ss, name: s00170, server: 213.183.53.202, port: 9098, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk}
+ - {type: ssr, name: s00171, server: 213.183.53.200, port: 9094, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: rpgbNnU9rDDU4aWZ}
+ - {type: ss, name: s00172, server: 172.99.188.71, port: 8888, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+ - {type: ss, name: s00173, server: 213.183.53.214, port: 9042, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga}
+ - {type: ss, name: s00174, server: 213.183.53.202, port: 9056, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB}
+ - {type: ss, name: s00175, server: 183.232.239.116, port: 45240, cipher: chacha20-ietf-poly1305, password: 6ed1e6ba-d8cc-40e9-8bd3-39fcfc44003b}
+ - {type: ss, name: s00176, server: 38.114.114.69, port: 8118, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+ - {type: ss, name: s00177, server: 172.99.188.71, port: 7001, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+ - {type: trojan, name: s00178, server: az.gunangzhui.cloud, port: 12716, password: 9e496875-e09c-451b-a99c-fe2f57e221c2, udp: true, skip-cert-verify: true, sni: hgc.ddag.xyz}
+ - {type: ss, name: s00179, server: 213.183.53.202, port: 9064, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH}
+ - {type: ssr, name: s00180, server: 213.183.53.200, port: 9064, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: cp8pRSUAyLhTfVWH}
+ - {type: ss, name: s00181, server: 213.183.53.202, port: 9007, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY}
+ - {type: ss, name: s00182, server: 134.195.196.128, port: 7001, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+ - {type: trojan, name: s00183, server: au2-1.nigirocloud.com, port: 443, password: 3yFq7NCP53mVfpXJz3, udp: true, skip-cert-verify: true}
+ - {type: ssr, name: s00184, server: 213.183.53.200, port: 9014, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: KnJGad3FqTvjqbaX}
+ - {type: ss, name: s00185, server: 213.183.53.202, port: 9014, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX}
+ - {type: ssr, name: s00186, server: 213.183.59.214, port: 9079, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: TPqX8edgbAURcAMb}
+ - {type: ssr, name: s00187, server: 213.183.59.214, port: 9046, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: NvS8N4Vf8qAGPSCL}
+ - {type: trojan, name: s00188, server: ce.rutracker-cn.com, port: 443, password: 5y8y3CwxRVYhyfSY, udp: true, skip-cert-verify: true}
+ - {type: ss, name: s00189, server: 213.183.53.179, port: 9037, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU}
+ - {type: ssr, name: s00190, server: 213.183.59.214, port: 9084, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: c3NtHJ5ujV2tGDfj}
+ - {type: ss, name: s00191, server: 213.183.53.179, port: 9033, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm}
+ - {type: ss, name: s00192, server: 213.183.53.221, port: 9011, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa}
+ - {type: ss, name: s00193, server: 213.183.53.221, port: 9006, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq}
+ - {type: ssr, name: s00194, server: 213.183.59.214, port: 9080, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: VP8ZPxQpJtZRCjfZ}
+ - {type: ss, name: s00195, server: 213.183.53.179, port: 9030, cipher: aes-256-cfb, password: GeregetR8cvQHzYr}
+ - {type: ss, name: s00196, server: 217.30.10.67, port: 9093, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt}
+ - {type: ss, name: s00197, server: 38.68.135.19, port: 443, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+ - {type: ssr, name: s00198, server: 213.183.53.200, port: 9001, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: UkXRsXvR6buDMG2Y}
+ - {type: vmess, name: s00199, server: 129.226.213.241, port: 24824, uuid: 8c1e17cf-c378-403f-862c-62897510116c, alterId: 0, cipher: auto, network: tcp}
+ - {type: ss, name: s00200, server: 213.183.53.207, port: 9005, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt}
+ - {type: ssr, name: s00201, server: 213.183.53.200, port: 9011, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: M3t2ZEQcMGRWBjRa}
+ - {type: ss, name: s00202, server: 213.183.63.221, port: 9088, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn}
+ - {type: ss, name: s00203, server: 213.183.53.207, port: 9000, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9}
+ - {type: ssr, name: s00204, server: 213.183.53.200, port: 9040, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: p9z5BVADH2YFs3MN}
+ - {type: ss, name: s00205, server: 213.183.53.179, port: 9032, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq}
+ - {type: ss, name: s00206, server: 213.183.53.221, port: 9050, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE}
+ - {type: ss, name: s00207, server: 134.195.196.149, port: 5003, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+ - {type: ssr, name: s00208, server: 213.183.59.206, port: 9046, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: NvS8N4Vf8qAGPSCL}
+ - {type: vmess, name: s00209, server: 129.226.215.211, port: 49981, uuid: 876631b4-3f5c-4289-f266-3c7afa5b9e70, alterId: 0, cipher: auto, network: tcp}
+ - {type: ss, name: s00210, server: 185.167.117.171, port: 9001, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y}
+ - {type: ss, name: s00211, server: 213.183.53.179, port: 9024, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ}
+ - {type: ss, name: s00212, server: 213.183.53.179, port: 9011, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa}
+ - {type: ss, name: s00213, server: 213.183.53.179, port: 9057, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z}
+ - {type: ss, name: s00214, server: 185.126.116.124, port: 9070, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH}
+ - {type: ss, name: s00215, server: 213.183.63.217, port: 9045, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX}
+ - {type: ssr, name: s00216, server: 213.183.53.200, port: 9033, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: UTJA57ypk2XKQpnm}
+ - {type: ss, name: s00217, server: 213.183.53.179, port: 9046, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL}
+ - {type: ss, name: s00218, server: 213.183.53.179, port: 9018, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7}
+ - {type: ss, name: s00219, server: 213.183.63.221, port: 9053, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C}
+ - {type: ss, name: s00220, server: 217.30.10.66, port: 9008, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ}
+ - {type: ss, name: s00221, server: 217.30.10.67, port: 9020, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu}
+ - {type: ss, name: s00222, server: 213.183.63.221, port: 9027, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8}
+ - {type: ssr, name: s00223, server: 213.183.53.202, port: 9001, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: UkXRsXvR6buDMG2Y}
+ - {type: ss, name: s00224, server: 38.68.135.19, port: 7002, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+ - {type: ss, name: s00225, server: 169.197.142.99, port: 5000, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+ - {type: ss, name: s00226, server: 213.183.53.207, port: 9032, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq}
+ - {type: vmess, name: s00227, ws-opts: {path: /, headers: {host: aweikeji-YouTube}}, server: 20.222.106.239, port: 80, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, network: ws}
+ - {type: ss, name: s00228, server: 213.183.53.207, port: 9001, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y}
+ - {type: vmess, name: s00229, server: 129.226.95.188, port: 20792, uuid: b7335dae-b946-46ae-f341-acbf8df21c86, alterId: 0, cipher: auto, network: tcp}
+ - {type: ss, name: s00230, server: 172.99.188.71, port: 443, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+ - {type: ss, name: s00231, server: 213.183.53.208, port: 9046, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL}
+ - {type: ssr, name: s00232, server: 213.183.53.200, port: 9000, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: a3GFYt36Sm82Vys9}
+ - {type: ss, name: s00233, server: 213.183.53.221, port: 9030, cipher: aes-256-cfb, password: GeregetR8cvQHzYr}
+ - {type: ss, name: s00234, server: 38.68.134.71, port: 2376, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+ - {type: ssr, name: s00235, server: 213.183.53.200, port: 9057, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: wjTugX3ZtHMB9c3Z}
+ - {type: ss, name: s00236, server: 213.183.53.214, port: 9019, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM}
+ - {type: ssr, name: s00237, server: 213.183.53.200, port: 9010, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: f63gg8EruDnUrmz4}
+ - {type: ss, name: s00238, server: 198.57.27.225, port: 443, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+ - {type: ss, name: s00239, server: 213.183.53.207, port: 9018, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7}
+ - {type: ssr, name: s00240, server: 213.183.59.211, port: 9098, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: aLpQtfEZe445QyHk}
+ - {type: ss, name: s00241, server: 213.183.53.221, port: 9042, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga}
+ - {type: ss, name: s00242, server: 213.183.53.221, port: 9031, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN}
+ - {type: ssr, name: s00243, server: 213.183.53.200, port: 9053, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: SBM7R883jBmnqe6C}
+ - {type: ss, name: s00244, server: 213.183.53.221, port: 9007, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY}
+ - {type: vmess, name: s00245, ws-opts: {path: /v2ray, headers: {host: cn.zzv06.infonode.xyz}}, server: cn.zzv06.infonode.xyz, port: 17013, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, network: ws}
+ - {type: ss, name: s00246, server: 213.183.53.179, port: 9000, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9}
+ - {type: ssr, name: s00247, server: 213.183.53.200, port: 9005, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: ZET59LF6DvCC8KVt}
+ - {type: ss, name: s00248, server: 213.183.53.207, port: 9070, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH}
+ - {type: ss, name: s00249, server: 213.183.53.202, port: 9026, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA}
+ - {type: vmess, name: s00250, server: 129.226.215.95, port: 43613, uuid: 9e1be3ad-911d-4dcc-822f-f8f8e79f62e2, alterId: 0, cipher: auto, network: tcp}
+ - {type: ss, name: s00251, server: 217.30.10.68, port: 9005, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt}
+ - {type: ss, name: s00252, server: 213.183.63.221, port: 9073, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX}
+ - {type: ss, name: s00253, server: 213.183.53.179, port: 9014, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX}
+ - {type: ssr, name: s00254, server: 213.183.59.211, port: 9014, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: KnJGad3FqTvjqbaX}
+ - {type: ss, name: s00255, server: 198.57.27.225, port: 8009, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+ - {type: ss, name: s00256, server: 134.195.196.149, port: 6679, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+ - {type: ssr, name: s00257, server: 213.183.53.200, port: 9045, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: Lp27rqyJq72bZsqX}
+ - {type: ss, name: s00258, server: 213.183.53.207, port: 9043, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF}
+ - {type: ss, name: s00259, server: 198.57.27.225, port: 7002, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+ - {type: ssr, name: s00260, server: 213.183.59.214, port: 9018, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: fG2artUmHfNT2cX7}
+ - {type: ss, name: s00261, server: 38.114.114.69, port: 443, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+ - {type: ss, name: s00262, server: 213.183.53.214, port: 9040, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN}
+ - {type: ssr, name: s00263, server: 213.183.59.211, port: 9001, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: UkXRsXvR6buDMG2Y}
+ - {type: ssr, name: s00264, server: 213.183.59.214, port: 9033, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: UTJA57ypk2XKQpnm}
+ - {type: ss, name: s00265, server: 213.183.53.207, port: 9058, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe}
+ - {type: ss, name: s00266, server: 169.197.142.99, port: 8882, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+ - {type: ss, name: s00267, server: 213.183.59.218, port: 9053, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C}
+ - {type: ss, name: s00268, server: 185.167.117.171, port: 9038, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ}
+ - {type: ssr, name: s00269, server: 213.183.53.202, port: 9064, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: cp8pRSUAyLhTfVWH}
+ - {type: ssr, name: s00270, server: 152.89.210.105, port: 9032, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: UWZQeLRWnkqgkseq}
+ - {type: ss, name: s00271, server: 38.143.66.20, port: 6679, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+ - {type: ss, name: s00272, server: 5.183.179.148, port: 9031, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN}
+ - {type: ss, name: s00273, server: 169.197.142.99, port: 8888, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+ - {type: ssr, name: s00274, server: 213.183.53.202, port: 9018, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: fG2artUmHfNT2cX7}
+ - {type: ss, name: s00275, server: 213.183.53.202, port: 9042, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga}
+ - {type: ssr, name: s00276, server: 213.183.59.214, port: 9093, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: wfLC2y7rzZyCmuyt}
+ - {type: ssr, name: s00277, server: 213.183.59.211, port: 9041, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: U6qnYRhfyDmn8sgn}
+ - {type: ss, name: s00278, server: 38.114.114.69, port: 8000, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+ - {type: ss, name: s00279, server: 213.183.53.207, port: 9098, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk}
+ - {type: ssr, name: s00280, server: 213.183.59.211, port: 9046, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: NvS8N4Vf8qAGPSCL}
+ - {type: ss, name: s00281, server: 213.183.63.221, port: 9008, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ}
+ - {type: ss, name: s00282, server: 217.30.10.64, port: 9064, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH}
+ - {type: ss, name: s00283, server: 213.183.53.202, port: 9040, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN}
+ - {type: ssr, name: s00284, server: 213.183.59.211, port: 9097, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: Sn5B7jTqr76aCJT8}
+ - {type: ss, name: s00285, server: 213.183.53.179, port: 9084, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj}
+ - {type: ss, name: s00286, server: 38.68.135.18, port: 9101, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+ - {type: ss, name: s00287, server: 169.197.142.39, port: 443, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+ - {type: ssr, name: s00288, server: 213.183.53.200, port: 9059, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: 9XwYyZsK8SNzQDtY}
+ - {type: ss, name: s00289, server: 213.183.53.179, port: 9008, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ}
+ - {type: ss, name: s00290, server: 213.183.53.207, port: 9010, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4}
+ - {type: ssr, name: s00291, server: 213.183.59.214, port: 9041, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: U6qnYRhfyDmn8sgn}
+ - {type: ss, name: s00292, server: 213.183.59.211, port: 9079, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb}
+ - {type: ss, name: s00293, server: 217.30.10.65, port: 9060, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ}
+ - {type: ssr, name: s00294, server: 213.183.53.200, port: 9026, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: QWDDvVE9npNurQfA}
+ - {type: ssr, name: s00295, server: 213.183.53.200, port: 9006, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: FAdUvMJUq5vDgKEq}
+ - {type: ss, name: s00296, server: 213.183.53.214, port: 9084, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj}
+ - {type: vmess, name: s00297, server: 20.243.69.62, port: 80, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, network: ws}
+ - {type: ssr, name: s00298, server: 213.183.59.214, port: 9015, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: ZpNDDKRu9MagNvaf}
+ - {type: ss, name: s00299, server: 213.183.63.221, port: 9084, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj}
+ - {type: ss, name: s00300, server: 217.30.10.67, port: 9057, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z}
+ - {type: ssr, name: s00301, server: 213.183.53.200, port: 9073, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: daFYagqDdBdA6VTX}
+ - {type: ss, name: s00302, server: 213.183.53.221, port: 9032, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq}
+ - {type: ssr, name: s00303, server: 213.183.59.214, port: 9043, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: HSZuyJQcWe8dxNdF}
+ - {type: ss, name: s00304, server: 213.183.53.214, port: 9058, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe}
+ - {type: ssr, name: s00305, server: 213.183.53.200, port: 9050, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: FG5ddLsMPbV5CutE}
+ - {type: ss, name: s00306, server: 213.183.53.207, port: 9057, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z}
+ - {type: ss, name: s00307, server: 213.183.53.207, port: 9015, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf}
+ - {type: vmess, name: s00308, ws-opts: {path: /, headers: {host: tms.dingtalk.com}}, server: 20.243.69.62, port: 80, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, network: ws}
+ - {type: ssr, name: s00309, server: 213.183.59.214, port: 9008, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: y9VURyNzJWNRYEGQ}
+ - {type: ss, name: s00310, server: 213.183.53.208, port: 9058, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe}
+ - {type: ssr, name: s00311, server: 213.183.59.211, port: 9057, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: wjTugX3ZtHMB9c3Z}
+ - {type: ss, name: s00312, server: 213.183.51.171, port: 9040, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN}
+ - {type: ss, name: s00313, server: 213.183.53.214, port: 9046, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL}
+ - {type: ss, name: s00314, server: 213.183.53.179, port: 9094, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ}
+ - {type: ss, name: s00315, server: 185.167.116.253, port: 9059, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY}
+ - {type: ssr, name: s00316, server: 213.183.59.214, port: 9025, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: XPtzA9sCug3SPR4c}
+ - {type: ssr, name: s00317, server: 213.183.53.200, port: 9060, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: ueLXVkvh4hckhErQ}
+ - {type: ssr, name: s00318, server: 213.183.59.214, port: 9032, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: UWZQeLRWnkqgkseq}
+ - {type: ssr, name: s00319, server: 213.183.59.190, port: 9011, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: M3t2ZEQcMGRWBjRa}
+ - {type: ss, name: s00320, server: 213.183.53.179, port: 9088, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn}
+ - {type: vmess, name: s00321, ws-opts: {path: /v2ray, headers: {host: cn.zzv05.infonode.xyz}}, server: cn.zzv05.infonode.xyz, port: 17016, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, network: ws}
+ - {type: ss, name: s00322, server: 38.68.135.19, port: 5001, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+ - {type: trojan, name: s00323, server: au2-1.nigirocloud.com, port: 443, password: 3yFq7NCP53mVfpXJz3, udp: true, skip-cert-verify: true, sni: au2-1.nigirocloud.com}
+ - {type: ssr, name: s00324, server: 213.183.59.211, port: 9003, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: JdmRK9gMEqFgs8nP}
+ - {type: ssr, name: s00325, server: 213.183.59.214, port: 9088, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: f8npKgNzdkss2ytn}
+ - {type: ss, name: s00326, server: 213.183.53.179, port: 9073, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX}
+ - {type: ss, name: s00327, server: 213.183.53.207, port: 9031, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN}
+ - {type: ss, name: s00328, server: 213.183.53.202, port: 9031, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN}
+ - {type: ssr, name: s00329, server: 213.183.59.214, port: 9001, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: UkXRsXvR6buDMG2Y}
+ - {type: ssr, name: s00330, server: 213.183.59.211, port: 9084, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: c3NtHJ5ujV2tGDfj}
+ - {type: ss, name: s00331, server: 213.183.51.172, port: 9070, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH}
+ - {type: ss, name: s00332, server: 217.30.10.64, port: 9001, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y}
+ - {type: ss, name: s00333, server: 213.183.53.207, port: 9026, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA}
+ - {type: ssr, name: s00334, server: 213.183.59.229, port: 9000, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: a3GFYt36Sm82Vys9}
+ - {type: ss, name: s00335, server: 38.68.134.71, port: 8080, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+ - {type: ss, name: s00336, server: 213.183.53.179, port: 9025, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c}
+ - {type: trojan, name: s00337, server: jgwhdlb2.gaox.ml, port: 443, password: 54080134-2cba-4535-8599-95650bd9aa54, udp: true, skip-cert-verify: true}
+ - {type: ss, name: s00338, server: awskr2.698436.xyz, port: 54356, cipher: aes-256-gcm, password: 5e04bdc6-6f09-4f5e-a3c7-edf4d3220ad3}
+ - {type: ss, name: s00339, server: 213.183.53.207, port: 9008, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ}
+ - {type: ss, name: s00340, server: 213.183.53.179, port: 9080, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ}
+ - {type: ssr, name: s00341, server: 213.183.59.229, port: 9046, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: NvS8N4Vf8qAGPSCL}
+ - {type: ss, name: s00342, server: 213.183.53.207, port: 9033, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm}
+ - {type: ss, name: s00343, server: 213.183.53.207, port: 9080, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ}
+ - {type: ssr, name: s00344, server: 213.183.53.200, port: 9037, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: TN2YqghxeFDKZfLU}
+ - {type: ss, name: s00345, server: 213.183.53.207, port: 9041, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn}
+ - {type: ss, name: s00346, server: 213.183.53.207, port: 9006, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq}
+ - {type: ssr, name: s00347, server: 213.183.59.214, port: 9024, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: BejrQvtu9sqUeNuZ}
+ - {type: ss, name: s00348, server: 134.195.196.128, port: 7306, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+ - {type: ssr, name: s00349, server: 213.183.59.214, port: 9056, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: rNBfNuuANFCAk7KB}
+ - {type: vmess, name: s00350, server: 129.226.216.150, port: 16984, uuid: 5a964737-0f49-4a42-9a70-b273207ecf5e, alterId: 0, cipher: auto, network: tcp}
+ - {type: ss, name: s00351, server: 13.215.203.52, port: 443, cipher: aes-256-cfb, password: amazonskr05}
+ - {type: ss, name: s00352, server: 213.183.53.202, port: 9003, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP}
+ - {type: ss, name: s00353, server: 169.197.142.99, port: 6679, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+ - {type: ssr, name: s00354, server: 213.183.59.211, port: 9020, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: BNmAXXxAHYpTRdzu}
+ - {type: ss, name: s00355, server: 172.99.188.71, port: 8118, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+ - {type: ss, name: s00356, server: 213.183.53.214, port: 9030, cipher: aes-256-cfb, password: GeregetR8cvQHzYr}
+ - {type: ss, name: s00357, server: 213.183.53.179, port: 9056, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB}
+ - {type: ss, name: s00358, server: 213.183.59.206, port: 9046, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL}
+ - {type: ss, name: s00359, server: 213.183.53.207, port: 9053, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C}
+ - {type: vmess, name: s00360, ws-opts: {path: /JJkuv3, headers: {host: hk01.bosaidong.buzz}}, server: hk01.bosaidong.buzz, port: 444, uuid: 96e19c0c-ba2f-47cf-b1d6-efef8f8fbb4d, alterId: 0, cipher: auto, network: ws}
+ - {type: ssr, name: s00361, server: 213.183.59.229, port: 9041, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: U6qnYRhfyDmn8sgn}
+ - {type: ss, name: s00362, server: 213.183.53.179, port: 9041, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn}
+ - {type: ss, name: s00363, server: 38.68.134.71, port: 8000, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+ - {type: ss, name: s00364, server: 213.183.53.202, port: 9011, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa}
+ - {type: ss, name: s00365, server: 213.183.53.214, port: 9043, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF}
+ - {type: vmess, name: s00366, server: 20.222.106.239, port: 80, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, network: ws}
+ - {type: ssr, name: s00367, server: 213.183.59.211, port: 9073, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: daFYagqDdBdA6VTX}
+ - {type: ss, name: s00368, server: 38.68.135.19, port: 5003, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+ - {type: ss, name: s00369, server: 213.183.53.207, port: 9064, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH}
+ - {type: ssr, name: s00370, server: 213.183.59.190, port: 9027, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: EXN3S3eQpjE7EJu8}
+ - {type: ss, name: s00371, server: 134.195.196.128, port: 3306, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+ - {type: ss, name: s00372, server: 172.99.188.71, port: 5500, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+ - {type: ss, name: s00373, server: 213.183.59.206, port: 9030, cipher: aes-256-cfb, password: GeregetR8cvQHzYr}
+ - {type: ss, name: s00374, server: 172.99.188.71, port: 6697, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+ - {type: ss, name: s00375, server: 134.195.196.128, port: 5000, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+ - {type: trojan, name: s00376, server: jp1.v2yyds.cc, port: 32111, password: c0669346-7ba9-4fda-91a4-238fb8d0a4d2, udp: true, skip-cert-verify: true}
+ - {type: ss, name: s00377, server: 213.183.59.206, port: 9008, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ}
+ - {type: ssr, name: s00378, server: 213.183.59.190, port: 9043, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: HSZuyJQcWe8dxNdF}
+ - {type: ss, name: s00379, server: 172.99.188.71, port: 8881, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+ - {type: ss, name: s00380, server: 38.68.134.71, port: 8881, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+ - {type: ss, name: s00381, server: 213.183.59.206, port: 9020, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu}
+ - {type: ssr, name: s00382, server: 213.183.59.214, port: 9011, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: M3t2ZEQcMGRWBjRa}
+ - {type: ss, name: s00383, server: 169.197.142.99, port: 8000, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+ - {type: ss, name: s00384, server: 217.30.10.65, port: 9045, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX}
+ - {type: ssr, name: s00385, server: 213.183.59.214, port: 9057, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: wjTugX3ZtHMB9c3Z}
+ - {type: ss, name: s00386, server: 213.183.53.221, port: 9033, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm}
+ - {type: ss, name: s00387, server: 213.183.53.179, port: 9040, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN}
+ - {type: ss, name: s00388, server: 213.183.53.179, port: 9097, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8}
+ - {type: trojan, name: s00389, server: wireless.starspace.link, port: 443, password: 5LN8SGTqxk336nFg, udp: true, skip-cert-verify: true}
+ - {type: ss, name: s00390, server: 217.30.10.68, port: 9093, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt}
+ - {type: ss, name: s00391, server: 38.68.135.18, port: 5003, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+ - {type: ss, name: s00392, server: 169.197.142.39, port: 8881, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+ - {type: ss, name: s00393, server: 213.183.53.208, port: 9000, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9}
+ - {type: ssr, name: s00394, server: 213.183.59.211, port: 9088, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: f8npKgNzdkss2ytn}
+ - {type: ss, name: s00395, server: 38.143.66.20, port: 9102, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+ - {type: ss, name: s00396, server: 198.57.27.225, port: 7001, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+ - {type: ss, name: s00397, server: 213.183.59.211, port: 9056, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB}
+ - {type: ss, name: s00398, server: 217.30.10.64, port: 9070, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH}
+ - {type: ssr, name: s00399, server: 213.183.59.214, port: 9007, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: kSPmvwdFzGMMW5pY}
+ - {type: vmess, name: s00400, ws-opts: {path: /, headers: {host: tms.dingtalk.com}}, server: 20.222.106.239, port: 80, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, network: ws}
+ - {type: ss, name: s00401, server: 213.183.59.211, port: 9007, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY}
+ - {type: trojan, name: s00402, server: 212.81.47.11, port: 443, password: 3yFq7NCP53mVfpXJz3, udp: true, skip-cert-verify: true, sni: t.me.vpnhat}
+ - {type: vmess, name: s00403, ws-opts: {path: /v2ray, headers: {host: cn.zzv01.infonode.xyz}}, server: cn.zzv01.infonode.xyz, port: 17011, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, network: ws}
+ - {type: ss, name: s00404, server: 38.114.114.69, port: 6697, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+ - {type: ss, name: s00405, server: 213.183.53.202, port: 9024, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ}
+ - {type: ssr, name: s00406, server: 213.183.59.214, port: 9098, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: aLpQtfEZe445QyHk}
+ - {type: ss, name: s00407, server: 213.183.53.207, port: 9019, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM}
+ - {type: ss, name: s00408, server: 38.114.114.69, port: 5001, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+ - {type: ss, name: s00409, server: 38.114.114.69, port: 6679, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+ - {type: ss, name: s00410, server: 213.183.53.207, port: 9061, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP}
+ - {type: ss, name: s00411, server: 169.197.142.99, port: 5003, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+ - {type: ss, name: s00412, server: 213.183.53.214, port: 9098, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk}
+ - {type: ssr, name: s00413, server: 213.183.59.214, port: 9064, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: cp8pRSUAyLhTfVWH}
+ - {type: ssr, name: s00414, server: 217.30.10.64, port: 9053, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: SBM7R883jBmnqe6C}
+ - {type: trojan, name: s00415, server: v2cross.com.05.v2ce.com, port: 443, password: kGrwqmB1nEKUsDwE, udp: true, skip-cert-verify: true}
+ - {type: ss, name: s00416, server: 213.183.53.221, port: 9038, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ}
+ - {type: ss, name: s00417, server: 134.195.196.128, port: 6679, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+ - {type: vmess, name: s00418, ws-opts: {path: /xxX6, headers: {host: sg.wweblog.pw}}, server: 172.64.81.27, port: 443, uuid: 80e098a1-f768-3dfb-b97f-6c3a5d34bcd8, alterId: 0, cipher: auto, network: ws, tls: true}
+ - {type: ss, name: s00419, server: 38.68.135.19, port: 7001, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+ - {type: ss, name: s00420, server: 38.114.114.69, port: 8881, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+ - {type: ssr, name: s00421, server: 213.183.59.214, port: 9026, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: QWDDvVE9npNurQfA}
+ - {type: ss, name: s00422, server: 213.183.53.207, port: 9046, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL}
+ - {type: ss, name: s00423, server: 217.30.10.63, port: 9057, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z}
+ - {type: trojan, name: s00424, server: jgwhdlb1.gaox.ml, port: 443, password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a, udp: true, skip-cert-verify: true}
+ - {type: vmess, name: s00425, server: u2.anmu.one, port: 16161, uuid: 919ac815-1776-47fe-8b54-508ef4f39421, alterId: 0, cipher: auto, network: tcp, tls: true}
+ - {type: ss, name: s00426, server: 169.197.142.39, port: 9102, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+ - {type: ss, name: s00427, server: 5.183.179.166, port: 9000, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9}
+ - {type: ss, name: s00428, server: 213.183.53.207, port: 9045, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX}
+ - {type: ss, name: s00429, server: 213.183.53.179, port: 9059, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY}
+ - {type: vmess, name: s00430, ws-opts: {path: /ws, headers: {host: ny56.bulink.xyz.fobzs.com}}, server: ny56.bulink.xyz.fobzs.com, port: 443, uuid: 979280cf-92dc-4333-8ddb-4919293ada60, alterId: 0, cipher: auto, network: ws, tls: true}
+ - {type: ssr, name: s00431, server: 213.183.53.202, port: 9045, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: Lp27rqyJq72bZsqX}
+ - {type: ss, name: s00432, server: 213.183.53.221, port: 9079, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb}
+ - {type: ss, name: s00433, server: 213.183.53.179, port: 9007, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY}
+ - {type: ss, name: s00434, server: 213.183.59.218, port: 9043, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF}
+ - {type: ssr, name: s00435, server: 213.183.59.214, port: 9000, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: a3GFYt36Sm82Vys9}
+ - {type: ss, name: s00436, server: 38.68.135.18, port: 5500, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+ - {type: vmess, name: s00437, ws-opts: {path: /ws, headers: {host: usa-dallas.lvuft.com}}, server: usa-dallas.lvuft.com, port: 443, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, network: ws, tls: true}
+ - {type: ss, name: s00438, server: 213.183.53.221, port: 9008, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ}
+ - {type: ss, name: s00439, server: 169.197.142.99, port: 5004, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+ - {type: ss, name: s00440, server: 134.195.196.128, port: 5003, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+ - {type: ss, name: s00441, server: 213.183.53.177, port: 9046, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL}
+ - {type: ss, name: s00442, server: 213.183.53.207, port: 9011, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa}
+ - {type: ss, name: s00443, server: 213.183.59.229, port: 9064, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH}
+ - {type: ss, name: s00444, server: 213.183.59.185, port: 9059, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY}
+ - {type: vmess, name: s00445, server: u4.anmu.one, port: 16199, uuid: 07ec59da-18ad-4224-8ad9-c5a66b1447a9, alterId: 0, cipher: auto, network: tcp, tls: true}
+ - {type: ss, name: s00446, server: 198.57.27.225, port: 9102, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+ - {type: ss, name: s00447, server: 198.57.27.225, port: 6379, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+ - {type: ss, name: s00448, server: 213.183.63.221, port: 9015, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf}
+ - {type: ss, name: s00449, server: 213.183.53.221, port: 9060, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ}
+ - {type: ssr, name: s00450, server: 213.183.59.211, port: 9006, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: FAdUvMJUq5vDgKEq}
+ - {type: vmess, name: s00451, ws-opts: {path: /, headers: {host: aweikeji-YouTube}}, server: 20.243.71.225, port: 80, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, network: ws}
+ - {type: vmess, name: s00452, server: 129.226.214.101, port: 51332, uuid: 6951282c-94d5-4f5d-cbc5-1e97f90bfe39, alterId: 0, cipher: auto, network: tcp}
+ - {type: ss, name: s00453, server: 167.88.61.50, port: 7307, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+ - {type: ss, name: s00454, server: 213.183.53.214, port: 9093, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt}
+ - {type: ss, name: s00455, server: 38.114.114.69, port: 6379, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+ - {type: ss, name: s00456, server: 213.183.51.172, port: 9005, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt}
+ - {type: vmess, name: s00457, ws-opts: {path: /r76ofJah/, headers: {host: 23.19.26.204}}, server: 23.19.26.204, port: 55212, uuid: bb8a118d-dd20-4146-a989-2e24f1576b15, alterId: 0, cipher: auto, network: ws}
+ - {type: ss, name: s00458, server: 213.183.53.202, port: 9001, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y}
+ - {type: ss, name: s00459, server: 5.183.179.141, port: 9020, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu}
+ - {type: ss, name: s00460, server: 172.99.188.71, port: 8008, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+ - {type: ss, name: s00461, server: 217.30.10.68, port: 9042, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga}
+ - {type: ss, name: s00462, server: 213.183.53.221, port: 9098, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk}
+ - {type: trojan, name: s00463, server: tx49sg.fans8.xyz, port: 443, password: c6799a1d-4a74-4683-919f-98b0a5046591, udp: true, skip-cert-verify: true}
+ - {type: ss, name: s00464, server: 169.197.142.99, port: 2375, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+ - {type: vmess, name: s00465, ws-opts: {path: /, headers: {host: 20.243.71.225}}, server: 20.243.71.225, port: 80, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, network: ws}
+ - {type: ss, name: s00466, server: 185.167.117.171, port: 9015, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf}
+ - {type: vmess, name: s00467, ws-opts: {path: /ws, headers: {host: usa-dallas.lvuft.com}}, server: 45.35.84.162, port: 443, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, network: ws, tls: true}
+ - {type: ss, name: s00468, server: 213.183.53.207, port: 9094, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ}
+ - {type: vmess, name: s00469, server: 146.56.108.108, port: 26113, uuid: 1071810b-8a51-4fba-de7f-1efe88c87ea8, alterId: 0, cipher: auto, network: tcp}
+ - {type: ss, name: s00470, server: 213.183.53.179, port: 9031, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN}
+ - {type: ss, name: s00471, server: 134.195.196.128, port: 7002, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+ - {type: ss, name: s00472, server: 5.183.179.141, port: 9098, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk}
+ - {type: ss, name: s00473, server: 54.214.170.7, port: 443, cipher: aes-256-cfb, password: amazonskr05}
+ - {type: ss, name: s00474, server: 217.30.10.63, port: 9060, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ}
+ - {type: ss, name: s00475, server: 213.183.53.214, port: 9070, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH}
+ - {type: ss, name: s00476, server: 172.99.188.71, port: 8882, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+ - {type: ss, name: s00477, server: 213.183.53.207, port: 9024, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ}
+ - {type: ss, name: s00478, server: 167.88.63.60, port: 2376, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+ - {type: vmess, name: s00479, server: 129.226.95.143, port: 45381, uuid: cd2a260c-f244-4e12-83c3-8a259cf29fc6, alterId: 0, cipher: auto, network: tcp}
+ - {type: ssr, name: s00480, server: 213.183.59.214, port: 9037, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: TN2YqghxeFDKZfLU}
+ - {type: ss, name: s00481, server: 185.167.116.24, port: 9046, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL}
+ - {type: ssr, name: s00482, server: 213.183.59.190, port: 9032, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: UWZQeLRWnkqgkseq}
+ - {type: ss, name: s00483, server: 213.183.63.218, port: 9003, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP}
+ - {type: ss, name: s00484, server: 213.183.59.229, port: 9024, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ}
+ - {type: ss, name: s00485, server: 213.183.53.214, port: 9027, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8}
+ - {type: ss, name: s00486, server: 213.183.59.229, port: 9056, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB}
+ - {type: ss, name: s00487, server: 217.30.10.64, port: 9005, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt}
+ - {type: ss, name: s00488, server: 169.197.142.39, port: 8888, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+ - {type: trojan, name: s00489, server: au2-2.nigirocloud.com, port: 443, password: 3yFq7NCP53mVfpXJz3, udp: true, skip-cert-verify: true}
+ - {type: ss, name: s00490, server: 38.68.135.19, port: 8118, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+ - {type: ss, name: s00491, server: 217.30.10.63, port: 9056, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB}
+ - {type: ss, name: s00492, server: 38.114.114.69, port: 5500, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+ - {type: ss, name: s00493, server: 217.30.10.68, port: 9064, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH}
+ - {type: trojan, name: s00494, server: 212.81.47.12, port: 443, password: 3yFq7NCP53mVfpXJz3, udp: true, skip-cert-verify: true}
+ - {type: ss, name: s00495, server: 213.183.53.207, port: 9027, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8}
+ - {type: ss, name: s00496, server: 213.183.53.179, port: 9058, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe}
+ - {type: ss, name: s00497, server: 145.239.1.100, port: 7001, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+ - {type: vmess, name: s00498, ws-opts: {path: /v2ray, headers: {host: cn.zzv01.infonode.xyz}}, server: cn.zzv01.infonode.xyz, port: 17016, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, network: ws}
+ - {type: ss, name: s00499, server: 217.30.10.66, port: 9000, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9}
+ - {type: ss, name: s00500, server: 38.114.114.69, port: 8882, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+ - {type: ssr, name: s00501, server: 213.183.53.202, port: 9038, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: gYCYXfkUQEs2TaJQ}
+ - {type: ss, name: s00502, server: 185.126.116.117, port: 9003, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP}
+ - {type: ss, name: s00503, server: 5.183.179.139, port: 9011, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa}
+ - {type: ss, name: s00504, server: 217.30.10.65, port: 9042, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga}
+ - {type: ss, name: s00505, server: 38.68.135.18, port: 5601, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+ - {type: ss, name: s00506, server: 213.183.53.179, port: 9093, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt}
+ - {type: ss, name: s00507, server: 169.197.142.39, port: 7002, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+ - {type: vmess, name: s00508, ws-opts: {path: /v2ray, headers: {host: cn.zzv06.infonode.xyz}}, server: cn.zzv06.infonode.xyz, port: 17016, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, network: ws}
+ - {type: ss, name: s00509, server: 217.30.10.67, port: 9059, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY}
+ - {type: ss, name: s00510, server: 213.183.53.214, port: 9020, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu}
+ - {type: ss, name: s00511, server: 172.99.188.71, port: 8119, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+ - {type: ss, name: s00512, server: 217.30.10.64, port: 9042, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga}
+ - {type: ss, name: s00513, server: 217.30.10.65, port: 9079, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb}
+ - {type: ss, name: s00514, server: 217.138.193.6, port: 809, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+ - {type: ss, name: s00515, server: 213.183.53.179, port: 9098, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk}
+ - {type: ss, name: s00516, server: 217.30.10.63, port: 9041, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn}
+ - {type: trojan, name: s00517, server: storage.starspace.link, port: 443, password: W8gVbKNAZlFzgGPn, udp: true, skip-cert-verify: true}
+ - {type: ss, name: s00518, server: 185.167.116.24, port: 9019, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM}
+ - {type: ss, name: s00519, server: 217.30.10.68, port: 9031, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN}
+ - {type: ssr, name: s00520, server: 213.183.59.190, port: 9038, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: gYCYXfkUQEs2TaJQ}
+ - {type: ss, name: s00521, server: 134.195.196.128, port: 9102, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+ - {type: ss, name: s00522, server: 38.68.135.19, port: 2376, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+ - {type: ss, name: s00523, server: 213.183.63.218, port: 9088, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn}
+ - {type: ssr, name: s00524, server: 213.183.59.190, port: 9033, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: UTJA57ypk2XKQpnm}
+ - {type: ss, name: s00525, server: 213.183.59.185, port: 9031, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN}
+ - {type: ss, name: s00526, server: 213.183.59.185, port: 9000, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9}
+ - {type: ss, name: s00527, server: 38.114.114.69, port: 9101, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+ - {type: ss, name: s00528, server: 217.30.10.65, port: 9088, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn}
+ - {type: ss, name: s00529, server: 185.167.117.171, port: 9088, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn}
+ - {type: ss, name: s00530, server: 172.99.188.71, port: 3389, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+ - {type: ss, name: s00531, server: 213.183.59.214, port: 9000, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9}
+ - {type: ss, name: s00532, server: 213.183.63.217, port: 9031, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN}
+ - {type: ss, name: s00533, server: 134.195.196.128, port: 8091, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+ - {type: ss, name: s00534, server: 172.99.188.71, port: 5600, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+ - {type: ss, name: s00535, server: 213.183.53.214, port: 9024, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ}
+ - {type: ss, name: s00536, server: 134.195.196.128, port: 8119, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+ - {type: ss, name: s00537, server: 167.88.61.50, port: 8119, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+ - {type: ss, name: s00538, server: 198.57.27.225, port: 9101, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+ - {type: ss, name: s00539, server: 38.68.135.19, port: 6379, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+ - {type: ss, name: s00540, server: 167.88.63.60, port: 8091, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+ - {type: ss, name: s00541, server: 217.30.10.67, port: 9042, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga}
+ - {type: ss, name: s00542, server: 217.30.10.63, port: 9024, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ}
+ - {type: ss, name: s00543, server: 169.197.142.39, port: 6679, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+ - {type: ss, name: s00544, server: 213.183.63.218, port: 9064, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH}
+ - {type: vmess, name: s00545, ws-opts: {path: /, headers: {host: tms.dingtalk.com}}, server: 20.243.71.225, port: 80, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, network: ws}
+ - {type: ss, name: s00546, server: 167.88.61.50, port: 9102, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+ - {type: ss, name: s00547, server: 213.183.63.218, port: 9032, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq}
+ - {type: ss, name: s00548, server: 213.183.53.221, port: 9043, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF}
+ - {type: ss, name: s00549, server: 185.167.116.38, port: 9000, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9}
+ - {type: ss, name: s00550, server: 38.68.135.19, port: 9102, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+ - {type: ss, name: s00551, server: 169.197.142.39, port: 5003, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+ - {type: vmess, name: s00552, ws-opts: {path: /v2ray, headers: {host: cn.zzv01.infonode.xyz}}, server: cn.zzv01.infonode.xyz, port: 17014, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, network: ws}
+ - {type: ss, name: s00553, server: 5.183.179.146, port: 9007, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY}
+ - {type: ss, name: s00554, server: 172.99.188.71, port: 8091, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+ - {type: ss, name: s00555, server: 172.99.188.71, port: 5601, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+ - {type: ss, name: s00556, server: 169.197.142.99, port: 8009, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+ - {type: ss, name: s00557, server: 213.183.59.214, port: 9070, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH}
+ - {type: ss, name: s00558, server: 185.167.116.24, port: 9018, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7}
+ - {type: ss, name: s00559, server: 217.30.10.67, port: 9000, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9}
+ - {type: vmess, name: s00560, server: u2.anmu.one, port: 16499, uuid: 32b306e1-d5b1-4913-d8d3-56ac23637de7, alterId: 0, cipher: auto, network: tcp, tls: true}
+ - {type: ss, name: s00561, server: 172.99.188.71, port: 8000, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+ - {type: trojan, name: s00562, server: rooms.starspace.link, port: 443, password: 5HfENR8nt2PR8reH, udp: true, skip-cert-verify: true}
+ - {type: ss, name: s00563, server: 134.195.196.128, port: 8881, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+ - {type: ss, name: s00564, server: 213.183.51.172, port: 9073, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX}
+ - {type: ss, name: s00565, server: 213.183.53.214, port: 9079, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb}
+ - {type: ss, name: s00566, server: 213.183.53.177, port: 9057, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z}
+ - {type: ss, name: s00567, server: 217.30.10.67, port: 9026, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA}
+ - {type: ss, name: s00568, server: 38.68.135.18, port: 6697, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+ - {type: vmess, name: s00569, server: bgpv2.ktyjsq.com, port: 12205, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, network: tcp}
+ - {type: ss, name: s00570, server: 217.30.10.67, port: 9031, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN}
+ - {type: ss, name: s00571, server: 172.99.188.71, port: 3306, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+ - {type: ss, name: s00572, server: 134.195.196.128, port: 8090, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+ - {type: vmess, name: s00573, ws-opts: {path: /v2ray, headers: {host: cn.zzv07.infonode.xyz}}, server: cn.zzv07.infonode.xyz, port: 17016, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, network: ws}
+ - {type: ss, name: s00574, server: 217.30.10.66, port: 9045, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX}
+ - {type: ss, name: s00575, server: 38.68.135.18, port: 7306, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+ - {type: ss, name: s00576, server: 172.99.188.71, port: 2376, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+ - {type: ss, name: s00577, server: 217.30.10.63, port: 9018, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7}
+ - {type: ss, name: s00578, server: 169.197.142.39, port: 8882, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+ - {type: vmess, name: s00579, server: tw99-direct.myn1des.com, port: 2096, uuid: 37ad0507-7fae-3165-b839-541d09ab7fef, alterId: 0, cipher: auto, network: ws, tls: true}
+ - {type: vmess, name: s00580, ws-opts: {path: /abstract/document/update/, headers: {host: ssrv2mianfei.academicpapers.cyou}}, server: ssrv2mianfei.academicpapers.cyou, port: 443, uuid: 55dc9daf-ea0e-38f1-aa82-ed76c8b19df2, alterId: 0, cipher: auto, network: ws, tls: true}
+ - {type: ss, name: s00581, server: 198.57.27.225, port: 8008, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+ - {type: trojan, name: s00582, server: jgwhdlb4.gaox.ml, port: 443, password: 081a4198-d664-4bc5-a7c6-e35982da964b, udp: true, skip-cert-verify: true}
+ - {type: ss, name: s00583, server: 38.114.114.69, port: 8080, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+ - {type: ss, name: s00584, server: 169.197.142.39, port: 8091, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+ - {type: vmess, name: s00585, server: 129.226.94.27, port: 23785, uuid: d0771055-cccc-4b79-c4db-d2942f8c9e62, alterId: 0, cipher: auto, network: tcp}
+ - {type: ss, name: s00586, server: 169.197.142.39, port: 5000, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+ - {type: ss, name: s00587, server: 213.183.51.171, port: 9084, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj}
+ - {type: ss, name: s00588, server: 38.68.135.19, port: 8888, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+ - {type: ss, name: s00589, server: 217.30.10.67, port: 9008, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ}
+ - {type: ss, name: s00590, server: 172.99.188.71, port: 2375, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+ - {type: ss, name: s00591, server: 185.167.116.38, port: 9093, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt}
+ - {type: ss, name: s00592, server: 38.68.135.18, port: 8090, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+ - {type: ss, name: s00593, server: 217.30.10.67, port: 9079, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb}
+ - {type: trojan, name: s00594, server: kr04.wangxd.life, port: 3052, password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e, udp: true, skip-cert-verify: true}
+ - {type: ss, name: s00595, server: 213.183.53.221, port: 9037, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU}
+ - {type: vmess, name: s00596, server: bgpv2.ktyjsq.com, port: 12223, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, network: tcp}
+ - {type: ss, name: s00597, server: 213.183.53.202, port: 9010, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4}
+ - {type: ss, name: s00598, server: 169.197.142.39, port: 8118, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+ - {type: ss, name: s00599, server: 172.99.188.71, port: 5001, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+ - {type: vmess, name: s00600, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {host: ingress-i1.onebox6.org}}, server: ingress-i1.onebox6.org, port: 38201, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, network: ws}
+ - {type: vmess, name: s00601, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {host: ingress-i1.onebox6.org}}, server: ingress-i1.onebox6.org, port: 38701, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, network: ws}
+ - {type: vmess, name: s00602, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {host: www.ivpnpro.net}}, server: ingress-i2.onebox6.org, port: 38104, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, network: ws}
+ - {type: ss, name: s00603, server: 213.183.59.229, port: 9084, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj}
+ - {type: vmess, name: s00604, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {host: www.ivpnpro.net}}, server: ingress-i1.onebox6.org, port: 38201, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, network: ws}
+ - {type: ss, name: s00605, server: 185.167.116.24, port: 9093, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt}
+ - {type: ssr, name: s00606, server: 213.183.59.191, port: 9033, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: UTJA57ypk2XKQpnm}
+ - {type: ss, name: s00607, server: 134.195.196.128, port: 5600, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+ - {type: ss, name: s00608, server: 169.197.142.39, port: 6697, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+ - {type: ss, name: s00609, server: 185.167.116.24, port: 9098, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk}
+ - {type: ss, name: s00610, server: 185.167.116.253, port: 9097, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8}
+ - {type: ss, name: s00611, server: 169.197.142.39, port: 5500, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+ - {type: ss, name: s00612, server: 217.30.10.63, port: 9045, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX}
+ - {type: ss, name: s00613, server: 172.99.188.71, port: 6379, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+ - {type: ss, name: s00614, server: 134.195.196.128, port: 2375, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+ - {type: ss, name: s00615, server: 172.99.188.71, port: 7306, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+ - {type: vmess, name: s00616, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {host: www.ivpnpro.net}}, server: ingress-i2.onebox6.org, port: 38101, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, network: ws}
+ - {type: ssr, name: s00617, server: 213.183.59.191, port: 9061, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: 4R3hUfZ2FHhDmNcP}
+ - {type: ssr, name: s00618, server: 213.183.59.191, port: 9026, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: QWDDvVE9npNurQfA}
+ - {type: vmess, name: s00619, server: bgpv2.ktyjsq.com, port: 12229, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, network: tcp}
+ - {type: ss, name: s00620, server: 185.167.116.38, port: 9038, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ}
+ - {type: vmess, name: s00621, server: 129.226.95.108, port: 58681, uuid: 758c6c64-e7bc-4bbf-dd58-cbd21c09c75a, alterId: 0, cipher: auto, network: tcp}
+ - {type: ss, name: s00622, server: 217.138.193.6, port: 803, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+ - {type: vmess, name: s00623, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {host: www.ivpnpro.net}}, server: in-sg-1.onebox6.org, port: 38701, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, network: ws}
+ - {type: ss, name: s00624, server: 213.183.59.229, port: 9045, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX}
+ - {type: ss, name: s00625, server: 38.68.135.19, port: 8008, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+ - {type: ss, name: s00626, server: 142.202.48.74, port: 3389, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+ - {type: ss, name: s00627, server: 149.202.82.172, port: 443, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+ - {type: ss, name: s00628, server: 217.30.10.66, port: 9015, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf}
+ - {type: ss, name: s00629, server: 213.183.51.172, port: 9000, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9}
+ - {type: vmess, name: s00630, server: bgpv2.ktyjsq.com, port: 12221, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, network: tcp}
+ - {type: ss, name: s00631, server: 149.202.82.172, port: 7002, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+ - {type: vmess, name: s00632, ws-opts: {path: /project4gyuna.pw, headers: {host: yuna4g.akamaized.net}}, server: au.project4gyuna.pw, port: 80, uuid: 0613c82b-1f56-432f-b94b-691e294d2314, alterId: 0, cipher: auto, network: ws}
+ - {type: ss, name: s00633, server: 172.99.188.71, port: 6679, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+ - {type: ss, name: s00634, server: 217.30.10.64, port: 9050, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE}
+ - {type: ss, name: s00635, server: 134.195.196.128, port: 5601, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+ - {type: vmess, name: s00636, server: bgpv2.ktyjsq.com, port: 12222, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, network: tcp}
+ - {type: vmess, name: s00637, server: jp04-vm0.entry.ikuuu.casa, port: 447, uuid: f5896503-9069-3967-8979-14af86f5ac96, alterId: 1, cipher: auto, network: ws}
+ - {type: ss, name: s00638, server: 38.114.114.69, port: 8090, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+ - {type: ss, name: s00639, server: 217.30.10.67, port: 9032, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq}
+ - {type: trojan, name: s00640, server: jgwcc1.gaox.ml, port: 443, password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a, udp: true, skip-cert-verify: true}
+ - {type: ss, name: s00641, server: 185.167.117.171, port: 9027, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8}
+ - {type: ss, name: s00642, server: 213.183.53.179, port: 9006, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq}
+ - {type: ss, name: s00643, server: 38.114.114.69, port: 8009, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+ - {type: ss, name: s00644, server: 213.183.63.218, port: 9057, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z}
+ - {type: ss, name: s00645, server: 185.167.117.171, port: 9060, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ}
+ - {type: ssr, name: s00646, server: 213.183.59.190, port: 9019, protocol: origin, cipher: aes-256-cfb, obfs: plain, password: GA9KzeEgvfxNrgmM}
+ - {type: ss, name: s00647, server: 185.126.116.117, port: 9046, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL}
+ - {type: ss, name: s00648, server: 145.239.1.100, port: 8118, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+ - {type: ss, name: s00649, server: 213.183.53.207, port: 9056, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB}
+ - {type: vmess, name: s00650, server: 129.226.216.4, port: 35562, uuid: 48409bbd-a9ee-4d9e-f725-4c81cc0d5009, alterId: 0, cipher: auto, network: tcp}
+ - {type: ss, name: s00651, server: 217.138.193.6, port: 812, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+ - {type: ss, name: s00652, server: 217.30.10.64, port: 9014, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX}
+ - {type: trojan, name: s00653, server: 212.81.47.13, port: 443, password: 3yFq7NCP53mVfpXJz3, udp: true, skip-cert-verify: true, sni: t.me.vpnhat}
+ - {type: ss, name: s00654, server: 217.30.10.66, port: 9027, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8}
+ - {type: ss, name: s00655, server: 185.167.116.24, port: 9008, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ}
+ - {type: ss, name: s00656, server: 185.167.116.24, port: 9014, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX}
+ - {type: ss, name: s00657, server: 185.167.116.24, port: 9058, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe}
+ - {type: ss, name: s00658, server: 185.126.116.117, port: 9014, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX}
+ - {type: vmess, name: s00659, server: bgpv2.ktyjsq.com, port: 12224, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, network: tcp}
+ - {type: trojan, name: s00660, server: jp04.vproxy.us, port: 56565, password: acf34fb3-6fed-40c6-b6ab-b5bedf5827a2, udp: true, skip-cert-verify: true}
+ - {type: ss, name: s00661, server: 145.239.1.100, port: 6697, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+ - {type: ss, name: s00662, server: 213.183.51.171, port: 9064, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH}
+ - {type: ss, name: s00663, server: 172.99.188.71, port: 5003, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+ - {type: ss, name: s00664, server: 185.167.116.252, port: 9001, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y}
+ - {type: ss, name: s00665, server: 213.183.53.179, port: 9015, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf}
+ - {type: ss, name: s00666, server: 185.167.116.24, port: 9040, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN}
+ - {type: ss, name: s00667, server: 213.183.63.218, port: 9025, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c}
+ - {type: ss, name: s00668, server: 217.30.10.67, port: 9011, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa}
+ - {type: ss, name: s00669, server: 217.30.10.66, port: 9094, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ}
+ - {type: ss, name: s00670, server: 217.30.10.66, port: 9059, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY}
+ - {type: ss, name: s00671, server: 169.197.142.99, port: 2376, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+ - {type: trojan, name: s00672, server: v2cross.com.04.v2ce.com, port: 443, password: vGWCNNfBHwSY6m6M, udp: true, skip-cert-verify: true}
+ - {type: ss, name: s00673, server: 213.183.53.207, port: 9073, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX}
+ - {type: ss, name: s00674, server: 38.68.135.18, port: 8009, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+ - {type: ss, name: s00675, server: 172.99.188.71, port: 8080, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+ - {type: trojan, name: s00676, server: jgwcc3.gaox.ml, port: 443, password: b291d129-ee55-4801-a9b8-b5316e5c37b7, udp: true, skip-cert-verify: true}
+ - {type: ss, name: s00677, server: 169.197.142.99, port: 6379, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+ - {type: ss, name: s00678, server: 5.183.179.146, port: 9032, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq}
+ - {type: trojan, name: s00679, server: neteasy.ga, port: 28931, password: MnROfwtPYa, udp: true, skip-cert-verify: true}
+ - {type: ss, name: s00680, server: 213.183.51.171, port: 9053, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C}
+ - {type: ss, name: s00681, server: 185.167.116.38, port: 9006, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq}
+ - {type: ss, name: s00682, server: 185.167.116.24, port: 9094, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ}
+ - {type: ss, name: s00683, server: 149.202.82.172, port: 8881, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+ - {type: ss, name: s00684, server: 213.183.59.229, port: 9038, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ}
+ - {type: ss, name: s00685, server: 167.88.63.60, port: 3389, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+ - {type: vmess, name: s00686, server: 129.226.216.121, port: 49381, uuid: 2f6d0f82-80c4-42ed-fd46-c76e7cc81de0, alterId: 0, cipher: auto, network: tcp}
+ - {type: vmess, name: s00687, ws-opts: {path: /ws, headers: {host: ahdaeph8.com}}, server: 104.166.135.10, port: 443, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, network: ws, tls: true}
+ - {type: ss, name: s00688, server: 213.183.51.172, port: 9038, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ}
+ - {type: ss, name: s00689, server: 217.30.10.68, port: 9070, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH}
+ - {type: ss, name: s00690, server: 213.183.63.221, port: 9006, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq}
+ - {type: ss, name: s00691, server: 213.183.51.171, port: 9061, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP}
+ - {type: ss, name: s00692, server: 169.197.142.39, port: 5004, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+ - {type: ss, name: s00693, server: 152.89.210.84, port: 9060, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ}
+ - {type: ss, name: s00694, server: 213.183.53.214, port: 9031, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN}
 
 
 
@@ -434,6 +922,494 @@ proxy-groups:
        - s00204
        - s00205
        - s00206
+       - s00207
+       - s00208
+       - s00209
+       - s00210
+       - s00211
+       - s00212
+       - s00213
+       - s00214
+       - s00215
+       - s00216
+       - s00217
+       - s00218
+       - s00219
+       - s00220
+       - s00221
+       - s00222
+       - s00223
+       - s00224
+       - s00225
+       - s00226
+       - s00227
+       - s00228
+       - s00229
+       - s00230
+       - s00231
+       - s00232
+       - s00233
+       - s00234
+       - s00235
+       - s00236
+       - s00237
+       - s00238
+       - s00239
+       - s00240
+       - s00241
+       - s00242
+       - s00243
+       - s00244
+       - s00245
+       - s00246
+       - s00247
+       - s00248
+       - s00249
+       - s00250
+       - s00251
+       - s00252
+       - s00253
+       - s00254
+       - s00255
+       - s00256
+       - s00257
+       - s00258
+       - s00259
+       - s00260
+       - s00261
+       - s00262
+       - s00263
+       - s00264
+       - s00265
+       - s00266
+       - s00267
+       - s00268
+       - s00269
+       - s00270
+       - s00271
+       - s00272
+       - s00273
+       - s00274
+       - s00275
+       - s00276
+       - s00277
+       - s00278
+       - s00279
+       - s00280
+       - s00281
+       - s00282
+       - s00283
+       - s00284
+       - s00285
+       - s00286
+       - s00287
+       - s00288
+       - s00289
+       - s00290
+       - s00291
+       - s00292
+       - s00293
+       - s00294
+       - s00295
+       - s00296
+       - s00297
+       - s00298
+       - s00299
+       - s00300
+       - s00301
+       - s00302
+       - s00303
+       - s00304
+       - s00305
+       - s00306
+       - s00307
+       - s00308
+       - s00309
+       - s00310
+       - s00311
+       - s00312
+       - s00313
+       - s00314
+       - s00315
+       - s00316
+       - s00317
+       - s00318
+       - s00319
+       - s00320
+       - s00321
+       - s00322
+       - s00323
+       - s00324
+       - s00325
+       - s00326
+       - s00327
+       - s00328
+       - s00329
+       - s00330
+       - s00331
+       - s00332
+       - s00333
+       - s00334
+       - s00335
+       - s00336
+       - s00337
+       - s00338
+       - s00339
+       - s00340
+       - s00341
+       - s00342
+       - s00343
+       - s00344
+       - s00345
+       - s00346
+       - s00347
+       - s00348
+       - s00349
+       - s00350
+       - s00351
+       - s00352
+       - s00353
+       - s00354
+       - s00355
+       - s00356
+       - s00357
+       - s00358
+       - s00359
+       - s00360
+       - s00361
+       - s00362
+       - s00363
+       - s00364
+       - s00365
+       - s00366
+       - s00367
+       - s00368
+       - s00369
+       - s00370
+       - s00371
+       - s00372
+       - s00373
+       - s00374
+       - s00375
+       - s00376
+       - s00377
+       - s00378
+       - s00379
+       - s00380
+       - s00381
+       - s00382
+       - s00383
+       - s00384
+       - s00385
+       - s00386
+       - s00387
+       - s00388
+       - s00389
+       - s00390
+       - s00391
+       - s00392
+       - s00393
+       - s00394
+       - s00395
+       - s00396
+       - s00397
+       - s00398
+       - s00399
+       - s00400
+       - s00401
+       - s00402
+       - s00403
+       - s00404
+       - s00405
+       - s00406
+       - s00407
+       - s00408
+       - s00409
+       - s00410
+       - s00411
+       - s00412
+       - s00413
+       - s00414
+       - s00415
+       - s00416
+       - s00417
+       - s00418
+       - s00419
+       - s00420
+       - s00421
+       - s00422
+       - s00423
+       - s00424
+       - s00425
+       - s00426
+       - s00427
+       - s00428
+       - s00429
+       - s00430
+       - s00431
+       - s00432
+       - s00433
+       - s00434
+       - s00435
+       - s00436
+       - s00437
+       - s00438
+       - s00439
+       - s00440
+       - s00441
+       - s00442
+       - s00443
+       - s00444
+       - s00445
+       - s00446
+       - s00447
+       - s00448
+       - s00449
+       - s00450
+       - s00451
+       - s00452
+       - s00453
+       - s00454
+       - s00455
+       - s00456
+       - s00457
+       - s00458
+       - s00459
+       - s00460
+       - s00461
+       - s00462
+       - s00463
+       - s00464
+       - s00465
+       - s00466
+       - s00467
+       - s00468
+       - s00469
+       - s00470
+       - s00471
+       - s00472
+       - s00473
+       - s00474
+       - s00475
+       - s00476
+       - s00477
+       - s00478
+       - s00479
+       - s00480
+       - s00481
+       - s00482
+       - s00483
+       - s00484
+       - s00485
+       - s00486
+       - s00487
+       - s00488
+       - s00489
+       - s00490
+       - s00491
+       - s00492
+       - s00493
+       - s00494
+       - s00495
+       - s00496
+       - s00497
+       - s00498
+       - s00499
+       - s00500
+       - s00501
+       - s00502
+       - s00503
+       - s00504
+       - s00505
+       - s00506
+       - s00507
+       - s00508
+       - s00509
+       - s00510
+       - s00511
+       - s00512
+       - s00513
+       - s00514
+       - s00515
+       - s00516
+       - s00517
+       - s00518
+       - s00519
+       - s00520
+       - s00521
+       - s00522
+       - s00523
+       - s00524
+       - s00525
+       - s00526
+       - s00527
+       - s00528
+       - s00529
+       - s00530
+       - s00531
+       - s00532
+       - s00533
+       - s00534
+       - s00535
+       - s00536
+       - s00537
+       - s00538
+       - s00539
+       - s00540
+       - s00541
+       - s00542
+       - s00543
+       - s00544
+       - s00545
+       - s00546
+       - s00547
+       - s00548
+       - s00549
+       - s00550
+       - s00551
+       - s00552
+       - s00553
+       - s00554
+       - s00555
+       - s00556
+       - s00557
+       - s00558
+       - s00559
+       - s00560
+       - s00561
+       - s00562
+       - s00563
+       - s00564
+       - s00565
+       - s00566
+       - s00567
+       - s00568
+       - s00569
+       - s00570
+       - s00571
+       - s00572
+       - s00573
+       - s00574
+       - s00575
+       - s00576
+       - s00577
+       - s00578
+       - s00579
+       - s00580
+       - s00581
+       - s00582
+       - s00583
+       - s00584
+       - s00585
+       - s00586
+       - s00587
+       - s00588
+       - s00589
+       - s00590
+       - s00591
+       - s00592
+       - s00593
+       - s00594
+       - s00595
+       - s00596
+       - s00597
+       - s00598
+       - s00599
+       - s00600
+       - s00601
+       - s00602
+       - s00603
+       - s00604
+       - s00605
+       - s00606
+       - s00607
+       - s00608
+       - s00609
+       - s00610
+       - s00611
+       - s00612
+       - s00613
+       - s00614
+       - s00615
+       - s00616
+       - s00617
+       - s00618
+       - s00619
+       - s00620
+       - s00621
+       - s00622
+       - s00623
+       - s00624
+       - s00625
+       - s00626
+       - s00627
+       - s00628
+       - s00629
+       - s00630
+       - s00631
+       - s00632
+       - s00633
+       - s00634
+       - s00635
+       - s00636
+       - s00637
+       - s00638
+       - s00639
+       - s00640
+       - s00641
+       - s00642
+       - s00643
+       - s00644
+       - s00645
+       - s00646
+       - s00647
+       - s00648
+       - s00649
+       - s00650
+       - s00651
+       - s00652
+       - s00653
+       - s00654
+       - s00655
+       - s00656
+       - s00657
+       - s00658
+       - s00659
+       - s00660
+       - s00661
+       - s00662
+       - s00663
+       - s00664
+       - s00665
+       - s00666
+       - s00667
+       - s00668
+       - s00669
+       - s00670
+       - s00671
+       - s00672
+       - s00673
+       - s00674
+       - s00675
+       - s00676
+       - s00677
+       - s00678
+       - s00679
+       - s00680
+       - s00681
+       - s00682
+       - s00683
+       - s00684
+       - s00685
+       - s00686
+       - s00687
+       - s00688
+       - s00689
+       - s00690
+       - s00691
+       - s00692
+       - s00693
+       - s00694
 
 
 rules:
